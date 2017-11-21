@@ -1,0 +1,38 @@
+<PISI>
+    <Source>
+        <Name>deepin-polkit-agent</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">Deepin Polkit Agent</Summary>
+        <Description xml:lang="en">Deepin Polkit Agent
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-polkit-agent</Name>
+        <Summary xml:lang="en">Deepin Polkit Agent</Summary>
+        <Description xml:lang="en">Deepin Polkit Agent
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="config">/etc/xdg/autostart/polkit-dde-authentication-agent-1.desktop</Path>
+            <Path fileType="library">/usr/lib/polkit-1-dde/dde-polkit-agent</Path>
+            <Path fileType="data">/usr/share/dde-polkit-agent/translations/dde-polkit-agent.qm</Path>
+            <Path fileType="data">/usr/share/dde-polkit-agent/translations/dde-polkit-agent_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/dde-polkit-agent/translations/dde-polkit-agent_zh_TW.qm</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-20</Date>
+            <Version>0.1.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

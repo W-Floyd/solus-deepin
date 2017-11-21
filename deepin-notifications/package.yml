@@ -1,0 +1,30 @@
+name       : deepin-notifications
+version    : 3.1.2
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-notifications/archive/3.1.2.tar.gz : 5cadd54ebf7ce362dddceab92f5291f40ac60697bdb6c91110b5c780c7746580
+license    : GPL-3.0
+component  : desktop
+summary    : An implementation of Gnome Desktop Notifications Specification
+description: |
+    An implementation of Gnome Desktop Notifications Specification
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(glu)
+    - pkgconfig(Qt5Svg)
+    - qt5-tools-devel
+rundeps    :
+    - dbus
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd

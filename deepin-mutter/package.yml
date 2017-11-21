@@ -1,0 +1,49 @@
+name       : deepin-mutter
+version    : 3.20.26
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-mutter/archive/3.20.26.tar.gz : 6222906490d4e8a2656c09863fde01714baf2d3bd0cd1a9b49495286c4b7c0dc
+license    : GPL-3.0
+component  : desktop
+summary    : Base window manager for Deepin, fork of Gnome mutter
+description: |
+    Base window manager for Deepin, fork of Gnome mutter
+builddeps  :
+    - deepin-clutter-devel
+    - deepin-cogl-devel
+    - gnome-common
+    - pkgconfig(cairo)
+    - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(gsettings-desktop-schemas)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libinput)
+    - pkgconfig(pango)
+    - pkgconfig(upower-glib)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(x11-xcb)
+    - pkgconfig(xcb-randr)
+    - pkgconfig(xcomposite)
+    - pkgconfig(xcursor)
+    - pkgconfig(xdamage)
+    - pkgconfig(xext)
+    - pkgconfig(xfixes)
+    - pkgconfig(xi)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(xkbcommon-x11)
+    - pkgconfig(xkbfile)
+    - pkgconfig(xkeyboard-config)
+    - pkgconfig(xrender)
+    - zenity
+setup      : |
+    %autogen --sysconfdir=/etc \
+    --libexecdir=%libdir%/deepin-mutter \
+    --localstatedir=/var \
+    --enable-gtk-doc \
+    --enable-wayland \
+    --enable-native-backend \
+    --disable-static \
+    --disable-schemas-compile \
+build      : |
+    %make
+install    : |
+    %make_install

@@ -1,0 +1,31 @@
+name       : gsettings-qt
+version    : 0.1.20170824
+release    : 1
+source     :
+    - https://launchpad.net/ubuntu/+archive/primary/+files/gsettings-qt_0.1+17.10.20170824.orig.tar.gz : f2fb6243adb3d41ad7ec50ed32c89bcbc0b8227e0af53b62765faed78ad0f0b8
+license    : LGPL
+component  : programming.devel
+summary    : Qml bindings for GSettings.
+description: |
+    Qml bindings for GSettings.
+builddeps  :
+    - qt5-base-devel
+setup      : |
+    pushd src
+    mkdir Build
+    pushd Build
+    %qmake ..
+    popd
+    popd
+build      : |
+    pushd src
+    pushd Build
+    %make
+    popd
+    popd
+install    : |
+    pushd src
+    pushd Build
+    %make_install INSTALL_ROOT=$installdir
+    popd
+    popd

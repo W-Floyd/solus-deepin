@@ -1,0 +1,14 @@
+name       : deepin-gtk-theme
+version    : 17.10.5
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-gtk-theme/archive/17.10.5.tar.gz : 85dbc48b50a392668591cb94e61f05bf88b39291e19a935b4e194b9a4991b982
+license    : GPL-3.0
+component  : desktop.theme
+summary    : Deepin GTK Theme.
+description: |
+    Deepin GTK Theme.
+build      : |
+    %make
+install    : |
+    %make_install

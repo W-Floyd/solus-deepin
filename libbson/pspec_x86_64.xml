@@ -1,0 +1,51 @@
+<PISI>
+    <Source>
+        <Name>libbson</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">A BSON utility library.</Summary>
+        <Description xml:lang="en">libbson is a library providing useful routines related to building, parsing, and iterating BSON documents.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>libbson</Name>
+        <Summary xml:lang="en">A BSON utility library.</Summary>
+        <Description xml:lang="en">libbson is a library providing useful routines related to building, parsing, and iterating BSON documents.
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libbson-devel</Name>
+        <Summary xml:lang="en">Development files for libbson</Summary>
+        <Description xml:lang="en">libbson is a library providing useful routines related to building, parsing, and iterating BSON documents.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="2">libbson</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/cmake/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="2">
+            <Date>2017-11-20</Date>
+            <Version>1.9.0_rc0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

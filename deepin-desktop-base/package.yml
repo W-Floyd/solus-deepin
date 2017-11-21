@@ -1,0 +1,22 @@
+name       : deepin-desktop-base
+version    : 2016.13.4
+release    : 2
+source     :
+    - https://github.com/linuxdeepin/deepin-desktop-base/archive/2016.13.4.tar.gz : 7591dd30ef1627da9b1f17a00bb8bc3574893ed45bca69d640b7df75dea2600c
+license    : GPL-3.0
+component  : desktop
+summary    : Base component for Deepin.
+description: |
+    Base component for Deepin.
+rundeps    :
+    - deepin-wallpapers
+setup      : |
+    %patch -p1 < $pkgfiles/libdir.patch
+build      : |
+    %make
+install    : |
+    %make_install LIBDIR=%libdir%
+    rm "${installdir}/etc/lsb-release"
+    rm -r "${installdir}/etc/systemd"
+    ln -s ..%libdir%/deepin/desktop-version "${installdir}/etc/deepin-version"
+    rm -r "${installdir}/usr/share/python-apt"

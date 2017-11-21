@@ -1,0 +1,77 @@
+<PISI>
+    <Source>
+        <Name>python-jieba</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">Chinese Words Segementation Utilities</Summary>
+        <Description xml:lang="en">Chinese Words Segementation Utilities
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-jieba</Name>
+        <Summary xml:lang="en">Chinese Words Segementation Utilities</Summary>
+        <Description xml:lang="en">Chinese Words Segementation Utilities
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba-0.39-py2.7.egg-info</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/__main__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/__main__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/_compat.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/_compat.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/analyzer.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/analyzer.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/idf.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/textrank.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/textrank.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/tfidf.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/analyse/tfidf.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/dict.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_emit.p</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_emit.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_emit.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_start.p</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_start.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_start.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_trans.p</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_trans.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/finalseg/prob_trans.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/char_state_tab.p</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/char_state_tab.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/char_state_tab.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_emit.p</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_emit.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_emit.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_start.p</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_start.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_start.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_trans.p</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_trans.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/prob_trans.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/viterbi.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/jieba/posseg/viterbi.pyc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-18</Date>
+            <Version>0.39</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

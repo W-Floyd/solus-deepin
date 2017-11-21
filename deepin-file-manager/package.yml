@@ -1,0 +1,49 @@
+name       : deepin-file-manager
+version    : 4.4.2
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/dde-file-manager.git : 03dc7ca2210fc120c591fff3442add735e5520f8
+license    : GPL-3.0
+component  : desktop
+summary    : Deepin File Manager is a file management tool developed for Deepin
+description: |
+    Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
+rundeps    :
+    - avfs
+    - deepin-api
+builddeps  :
+    - deepin-dock-devel
+    - deepin-gettext-tools
+    - pkgconfig(dframeworkdbus)
+    - pkgconfig(dtkwidget)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(gtk+-2.0)
+    - pkgconfig(gsettings-qt)
+    - pkgconfig(libffmpegthumbnailer)
+    - pkgconfig(libsecret-1)
+    - pkgconfig(libudev)
+    - pkgconfig(polkit-qt5-1)
+    - pkgconfig(poppler-cpp)
+    - pkgconfig(Qt5Multimedia)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(taglib)
+    - pkgconfig(uchardet)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-ewmh)
+    - pkgconfig(xext)
+    - qt5-tools-devel
+    - treefrog-framework
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd

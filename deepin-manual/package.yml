@@ -1,0 +1,29 @@
+name       : deepin-manual
+version    : 1.0.6
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-manual/archive/1.0.6.tar.gz : 22cf297433eb6c6c4090762c0fda73420c594fcc96c6a6378c7defebea9cd718
+networking : yes
+license    : GPL-3.0
+component  : desktop
+summary    : Deepin User Manual
+description: |
+    Deepin User Manual
+builddeps  :
+    - nodejs
+    - sassc
+    - yarn
+rundeps    :
+    - deepin-qml-widgets
+    - python-dae
+    - python-gobject
+    - python-jieba
+    - python-qtpy
+setup      : |
+    %patch -p1 < $pkgfiles/sass.patch
+build      : |
+    make deepclean
+    yarn
+    %make dist
+install    : |
+    %make_install

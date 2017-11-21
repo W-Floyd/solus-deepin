@@ -1,0 +1,29 @@
+name       : deepin-polkit-agent
+version    : 0.1.1
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dde-polkit-agent/archive/0.1.1.tar.gz : 558d319b81aad8a64397e7f364a7205d97021ad44ff947f6728320868586f6de
+license    : GPL-3.0
+component  : desktop
+summary    : Deepin Polkit Agent
+description: |
+    Deepin Polkit Agent
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(dframeworkdbus)
+    - pkgconfig(glu)
+    - pkgconfig(polkit-qt5-1)
+    - qt5-tools-devel
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd

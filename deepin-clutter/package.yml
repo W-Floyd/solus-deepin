@@ -1,0 +1,33 @@
+name       : deepin-clutter
+version    : 1.26.2
+release    : 1
+source     :
+    - https://github.com/sonald/clutter/archive/1.26.2.tar.gz : 08cc169af09b89a4fb09c38fa5732d7995f73f865783882f2bf91423830d97ba
+license    : LGPL-2.1
+component  : desktop
+summary    : A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
+description: |
+    A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
+builddeps  :
+    - deepin-cogl-devel
+    - gtk-doc
+    - pkgconfig(atk)
+    - pkgconfig(gdk-3.0)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(pangocairo)
+    - pkgconfig(json-glib-1.0)
+setup      : |
+    NOCONFIGURE=1 %autogen --enable-introspection \
+    --enable-egl-backend \
+    --enable-gdk-backend \
+    --enable-wayland-backend \
+    --enable-x11-backend \
+    --enable-evdev-input \
+    --enable-wayland-compositor \
+    --enable-gtk-doc
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+build      : |
+    %make
+install    : |
+    %make_install
+    libtool --finish $installdir/%libdir%

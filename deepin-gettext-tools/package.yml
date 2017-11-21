@@ -1,0 +1,15 @@
+name       : deepin-gettext-tools
+version    : 1.0.7
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-gettext-tools/archive/1.0.7.tar.gz : 12c6eac5c1545e6818df84f5bd384a99ed4dfb44a80a4afeb82d572e0a14ee24
+license    : GPL-3.0
+component  : programming.tools
+summary    : Deepin Gettext Tools
+description: |
+    Deepin Gettext Tools
+rundeps    :
+    - perl-config-tiny
+    - perl-xml-libxml
+install    : |
+    %make_install

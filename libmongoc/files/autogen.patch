@@ -1,0 +1,24 @@
+diff --git a/autogen.sh b/autogen.sh
+index 06c8fa966..cd7c6636c 100755
+--- a/autogen.sh
++++ b/autogen.sh
+@@ -23,19 +23,6 @@ if test -z "$(which libtoolize)" && test -z "$(which glibtoolize)"; then
+     exit 1
+ fi
+ 
+-if [ -d .git ]; then
+-    git submodule init
+-    git submodule update
+-
+-    cd src/libbson
+-    NOCONFIGURE=1 ./autogen.sh
+-    cd ../../
+-elif [ ! -f src/libbson/autogen.sh ]; then
+-    echo "Not a release archive or a git clone"
+-    echo "Please download mongoc from https://github.com/mongodb/mongo-c-driver/releases"
+-    exit 1
+-fi
+-
+ if test -z `which autoreconf`; then
+     echo "Error: autoreconf not found, please install it."
+     exit 1

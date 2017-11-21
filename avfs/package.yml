@@ -1,0 +1,21 @@
+name       : avfs
+version    : 1.0.5
+release    : 1
+source     :
+    - https://sourceforge.net/projects/avf/files/avfs/1.0.5/avfs-1.0.5.tar.bz2/download : e5ce6b1f4193c37148b1b8a021f4f3d05e88f725cf11b16b95a58e8fdae50176
+license    : GPL-2.0
+component  : system.utils
+summary    : AVFS enables all programs to access archived, compressed, or remote files transparently.
+description: |
+    AVFS is a system, which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
+rundeps    :
+    - perl
+builddeps  :
+    - pkgconfig(fuse)
+    - pkgconfig(liblzma)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install

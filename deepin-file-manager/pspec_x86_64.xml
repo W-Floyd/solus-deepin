@@ -1,0 +1,316 @@
+<PISI>
+    <Source>
+        <Name>deepin-file-manager</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">Deepin File Manager is a file management tool developed for Deepin</Summary>
+        <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-file-manager</Name>
+        <Summary xml:lang="en">Deepin File Manager is a file management tool developed for Deepin</Summary>
+        <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="config">/etc/dbus-1/system.d/com.deepin.filemanager.daemon.conf</Path>
+            <Path fileType="config">/etc/xdg/autostart/dde-file-manager-dialog-autostart.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/dde-file-manager-xdg-autostart.desktop</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/dde-dock/plugins/libdde-disk-mount-plugin.so</Path>
+            <Path fileType="library">/usr/lib/dde-dock/plugins/libdde-trash-plugin.so</Path>
+            <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-image-preview-plugin.so</Path>
+            <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-music-preview-plugin.so</Path>
+            <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-pdf-preview-plugin.so</Path>
+            <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-text-preview-plugin.so</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="data">/usr/share/applications/dde-computer.desktop</Path>
+            <Path fileType="data">/usr/share/applications/dde-file-manager.desktop</Path>
+            <Path fileType="data">/usr/share/applications/dde-trash.desktop</Path>
+            <Path fileType="data">/usr/share/dbus-1/interfaces/com.deepin.filemanager.filedialog.xml</Path>
+            <Path fileType="data">/usr/share/dbus-1/interfaces/com.deepin.filemanager.filedialogmanager.xml</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.desktop.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.filemanager.filedialog.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/org.freedesktop.FileManager.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.filemanager.daemon.service</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_am_ET.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ar.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ast.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_bg.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_cs.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_da.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_de.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_es.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_fr.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_hr.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_hu.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_id.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_it.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ja.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_lt.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ms.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_nl.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_pl.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_pt.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ru.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_sk.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_sl.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_sr.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_tr.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_uk.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_zh_TW.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/config/default-view-states.json</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/dbusfiledialog/dbus_filedialog_blacklist.conf</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/mimetypeassociations/mimetypeassociations.json</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/mimetypes/archive.mimetype</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/mimetypes/audio.mimetype</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/mimetypes/executable.mimetype</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/mimetypes/image.mimetype</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/mimetypes/text.mimetype</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/mimetypes/video.mimetype</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/templates/newDoc.doc</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/templates/newExcel.xls</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/templates/newPowerPoint.ppt</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/templates/newTxt.txt</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ar.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ast.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_bg.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_cs.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_da.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_de.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_es.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_fr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_hr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_hu.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_id.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_it.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ja.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_lt.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ms.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_nl.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_pl.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_pt.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ru.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sk.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sl.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_tr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_zh_TW.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ar.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ast.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_bg.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_cs.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_da.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_de.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_fr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_hr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_hu.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_id.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_it.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ja.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_lt.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ms.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_nl.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_pl.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_pt.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ru.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_sk.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_sl.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_sr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_tr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_uk.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_zh_TW.qm</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/deepin-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_basicfuncton.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_basicfuncton_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_commoncoperat.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_commoncoperat_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_diskmanagement.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_diskmanagement_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_guide.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_guide_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_maininterface.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_maininterface_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_optionsetting.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_optionsetting_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_overview.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/common/icon_overview_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/Ctrl.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/Enter.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/Slash.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/T.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/attention.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/backward_normal.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/close_icon.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/close_normal.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/deepin-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/forward_normal.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/home_normal_22px.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/icon_menu.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/icon_share.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/icon_view_normal.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/launcher-24.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/list_view_normal.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/network_server.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/notes.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/search-noamal.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/tips.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/icon/unmount_normal.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/index.md</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/about.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/add_bookmark.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/addressbar1.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/batch_rename.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/compress.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/copy.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/create_link.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/delete.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/display.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/eject.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/format.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/help.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/list-view.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/main-interface.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/network.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/new_tab.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/newdoc.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/newfolder.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/normal-view.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/open_with.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/openinterminal.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/overview.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/paste.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/properties.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/rename.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/safely_remove.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/search.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/send_to.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/settings.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/share.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/sort.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/en_US/png/viewshare.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/Ctrl.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/Enter.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/Shift.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/Slash.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/T.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/attention.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/close_icon.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/deepin-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/icon_menu.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/icon_view_normal.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/launcher_icon.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/list_view_normal.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/network_server_symbolic_normal_22px.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/notes.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/icon/tips.svg</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/index.md</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/about.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/addressbar.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/compress.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/copy.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/creat-link.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/delete.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/disk.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/disk2.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/format.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/help.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/info.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/lan.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/list-view.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/mainpage-note.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/mainpage.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/new-file.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/new-fold.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/newtag.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/open-in-terminal.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/openway.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/prename.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/rename.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/sendto.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/setting.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/share.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/sort.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/stick.png</Path>
+            <Path fileType="data">/usr/share/dman/dde-file-manager/zh_CN/png/visitshare.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.filemanager.daemon.policy</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.pkexec.dde-file-manager.policy</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.pkexec.usb-device-formatter.policy</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_am_ET.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ar.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ast.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_bg.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_cs.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_da.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_de.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_es.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_es_419.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_fr.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_hr.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_hu.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_id.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_it.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_lt.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ms.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_nl.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_pl.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_pt.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ru.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_sk.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_sl.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_sr.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_tr.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_zh_TW.qm</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>deepin-file-manager-devel</Name>
+        <Summary xml:lang="en">Development files for deepin-file-manager</Summary>
+        <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">deepin-file-manager</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-17</Date>
+            <Version>4.4.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

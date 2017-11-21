@@ -1,0 +1,32 @@
+name       : deepin-cogl
+version    : 1.22.5
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-cogl/archive/1.22.5.tar.gz : fb86a54084e45cd80b9785ab6a1457ff50005467e215221d037bd1bf81485d98
+license    : GPL-2.0
+component  : desktop
+summary    : An object oriented GL/GLES Abstraction/Utility Layer for Deepin
+description: |
+    An object oriented GL/GLES Abstraction/Utility Layer for Deepin
+builddeps  :
+    - gtk-doc
+    - pkgconfig(cairo)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(glu)
+    - pkgconfig(pangocairo)
+    - pkgconfig(x11)
+    - pkgconfig(xcomposite)
+    - pkgconfig(xdamage)
+    - pkgconfig(xext)
+    - pkgconfig(xfixes)
+    - pkgconfig(xrandr)
+setup      : |
+    NOCONFIGURE=1 %autogen --enable-gles{1,2} \
+    --enable-{kms,wayland}-egl-platform \
+    --enable-wayland-egl-server
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+build      : |
+    %make
+install    : |
+    %make_install
+    libtool --finish $installdir/%libdir%

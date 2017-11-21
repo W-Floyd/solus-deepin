@@ -1,0 +1,28 @@
+name       : treefrog-framework
+version    : 1.19.0
+release    : 1
+source     :
+    - https://github.com/treefrogframework/treefrog-framework/archive/v1.19.0.tar.gz : 7e1017c00dba4aa111882aa7ac334956a3b8b64466bf1137379b2b326caf4047
+license    : BSD
+component  : programming.library
+summary    : High-speed C++ MVC Framework for Web Application
+description: |
+    TreeFrog Framework is a high-speed and full-stack web application framework based on C++ and Qt, which supports HTTP and WebSocket protocol. Web applications can run faster than that of lightweight programming language. In application development, it provides an O/R mapping system and template system on an MVC architecture, aims to achieve high productivity through the policy of convention over configuration.
+builddeps  :
+    - qt5-tools-devel
+    - qt5-declarative-devel
+    - pkgconfig(Qt5Core)
+    - pkgconfig(libmongoc-1.0)
+setup      : |
+    %patch -p1 < $pkgfiles/3rdparty.patch
+    %patch -p1 < $pkgfiles/corelib.patch
+    rm -r 3rdparty
+    ./configure --prefix=%installroot%/%PREFIX% --libdir=%libdir% --datadir=/usr/share
+build      : |
+    pushd src
+    %make
+    popd
+install    : |
+    pushd src
+    %make_install
+    popd

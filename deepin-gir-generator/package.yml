@@ -1,0 +1,19 @@
+name       : deepin-gir-generator
+version    : 1.0.2
+release    : 1
+source     :
+    - git|https://github.com/linuxdeepin/go-gir-generator.git : e3d326e213aa6da39a5854578873bac42e7bba6e
+license    : GPL-3.0
+component  : programming.library
+summary    : Static golang bindings for GObject.
+description: |
+    Static golang bindings for GObject.
+builddeps  :
+    - golang
+setup      : |
+    %patch -p1 < $pkgfiles/SettingsBackendLike.patch
+build      : |
+    export GOPATH="${workdir}"
+    %make
+install    : |
+    %make_install

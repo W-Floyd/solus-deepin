@@ -1,0 +1,88 @@
+<PISI>
+    <Source>
+        <Name>python-dae</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>system.utils</PartOf>
+        <Summary xml:lang="en">Deepin desktop application engine.</Summary>
+        <Description xml:lang="en">Deepin desktop application engine.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-dae</Name>
+        <Summary xml:lang="en">Deepin desktop application engine.</Summary>
+        <Description xml:lang="en">Deepin desktop application engine.
+</Description>
+        <PartOf>system.utils</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae-0.1-py2.7.egg-info</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/api.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/api.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/assets.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/assets.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/codec.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/codec.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/daeclient.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/daeclient.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/datajar.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/datajar.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/downloader.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/downloader.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/events.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/events.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/ewmh.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/ewmh.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/file.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/file.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/filedialog.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/filedialog.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/filesystem.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/filesystem.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/init.js</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/menu.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/menu.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/plugins.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/plugins.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/process.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/process.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/qmlloader.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/qmlloader.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/shadowwindow.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/shadowwindow.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/socketclient.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/socketclient.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/socketserver.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/socketserver.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/system.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/system.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/trayicon.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/trayicon.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/utils.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/utils.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/webpage.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/webpage.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/webview.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/window.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/window.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/xrobot.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/xrobot.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/xutils.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/dae/xutils.pyc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-20</Date>
+            <Version>1.0.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

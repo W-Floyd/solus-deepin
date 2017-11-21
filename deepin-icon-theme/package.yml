@@ -1,0 +1,14 @@
+name       : deepin-icon-theme
+version    : 15.12.50
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-icon-theme/archive/15.12.50.tar.gz : f8e75d26491b52b4b11ed1a13ab46c13d341f148259ee162a3b11573bcb2562c
+license    : GPL-3.0
+component  : desktop.theme
+summary    : Deepin Icons
+description: |
+    Deepin Icons
+rundeps    :
+    - papirus-icon-theme
+install    : |
+    %make_install

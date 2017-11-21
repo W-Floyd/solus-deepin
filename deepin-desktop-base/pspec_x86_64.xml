@@ -1,0 +1,42 @@
+<PISI>
+    <Source>
+        <Name>deepin-desktop-base</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">Base component for Deepin.</Summary>
+        <Description xml:lang="en">Base component for Deepin.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-desktop-base</Name>
+        <Summary xml:lang="en">Base component for Deepin.</Summary>
+        <Description xml:lang="en">Base component for Deepin.
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="config">/etc/appstore.json</Path>
+            <Path fileType="config">/etc/deepin-version</Path>
+            <Path fileType="library">/usr/lib64/deepin/desktop-version</Path>
+            <Path fileType="data">/usr/share/backgrounds/deepin/desktop.jpg</Path>
+            <Path fileType="data">/usr/share/distro-info/deepin.csv</Path>
+            <Path fileType="data">/usr/share/i18n/i18n_dependent.json</Path>
+            <Path fileType="data">/usr/share/i18n/language_info.json</Path>
+            <Path fileType="data">/usr/share/plymouth/deepin-logo.png</Path>
+            <Path fileType="data">/var/cache/image-blur/13ada65a5cf7674cb0a68dd1db9cb37c.jpg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="2">
+            <Date>2017-11-20</Date>
+            <Version>2016.13.4</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

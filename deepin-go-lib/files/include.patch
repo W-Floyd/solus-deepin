@@ -1,0 +1,906 @@
+diff --git a/README.md b/README.md
+index e5112db..bcfd268 100644
+--- a/README.md
++++ b/README.md
+@@ -29,7 +29,7 @@ Install
+ 
+ ```
+ mkdir -p $GOPATH/src/pkg.deepin.io
+-cp -r go-lib $GOPATH/src/pkg.deepin.io/lib
++cp -r go-lib $GOPATH/src/lib
+ ```
+ 
+ ## Getting help
+diff --git a/app/app.go b/app/app.go
+index f3ae5ca..54d10a9 100644
+--- a/app/app.go
++++ b/app/app.go
+@@ -23,8 +23,8 @@ package app
+ import (
+ 	"fmt"
+ 	"gopkg.in/alecthomas/kingpin.v2"
+-	"pkg.deepin.io/lib/log"
+-	"pkg.deepin.io/lib/profile"
++	"log"
++	"profile"
+ 	"strings"
+ )
+ 
+diff --git a/appinfo/desktopappinfo/desktopappinfo.go b/appinfo/desktopappinfo/desktopappinfo.go
+index ed14e43..6b93e4c 100644
+--- a/appinfo/desktopappinfo/desktopappinfo.go
++++ b/appinfo/desktopappinfo/desktopappinfo.go
+@@ -24,9 +24,9 @@ import (
+ 	"os"
+ 	"os/exec"
+ 	"path/filepath"
+-	"pkg.deepin.io/lib/appinfo"
+-	"pkg.deepin.io/lib/keyfile"
+-	"pkg.deepin.io/lib/xdg/basedir"
++	"appinfo"
++	"keyfile"
++	"basedir"
+ 	"strings"
+ 	"sync"
+ )
+diff --git a/appinfo/desktopappinfo/desktopappinfo_test.go b/appinfo/desktopappinfo/desktopappinfo_test.go
+index 4d08bc1..af1689a 100644
+--- a/appinfo/desktopappinfo/desktopappinfo_test.go
++++ b/appinfo/desktopappinfo/desktopappinfo_test.go
+@@ -23,7 +23,7 @@ import (
+ 	. "github.com/smartystreets/goconvey/convey"
+ 	"os"
+ 	"path/filepath"
+-	"pkg.deepin.io/lib/keyfile"
++	"keyfile"
+ 	"testing"
+ )
+ 
+diff --git a/appinfo/desktopappinfo/exec.go b/appinfo/desktopappinfo/exec.go
+index 91ffe8b..31b7e77 100644
+--- a/appinfo/desktopappinfo/exec.go
++++ b/appinfo/desktopappinfo/exec.go
+@@ -24,7 +24,7 @@ import (
+ 	"errors"
+ 	"fmt"
+ 	"net/url"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ 	"strings"
+ )
+ 
+diff --git a/archive/archive.go b/archive/archive.go
+index f33f36b..ad06952 100644
+--- a/archive/archive.go
++++ b/archive/archive.go
+@@ -21,7 +21,7 @@ package archive
+ 
+ import (
+ 	"fmt"
+-	"pkg.deepin.io/lib/archive/gzip"
++	"gzip"
+ 	"strings"
+ )
+ 
+diff --git a/archive/gzip/tar.go b/archive/gzip/tar.go
+index 7db32dd..7887a37 100644
+--- a/archive/gzip/tar.go
++++ b/archive/gzip/tar.go
+@@ -23,7 +23,7 @@ import (
+ 	"archive/tar"
+ 	"compress/gzip"
+ 	"os"
+-	"pkg.deepin.io/lib/archive/utils"
++	"utils"
+ )
+ 
+ func tarCompressFiles(files []string, dest string) error {
+diff --git a/archive/tar.go b/archive/tar.go
+index 30a059b..919deae 100644
+--- a/archive/tar.go
++++ b/archive/tar.go
+@@ -22,7 +22,7 @@ package archive
+ import (
+ 	"archive/tar"
+ 	"os"
+-	"pkg.deepin.io/lib/archive/utils"
++	"utils"
+ )
+ 
+ func tarCompressFiles(files []string, dest string) error {
+diff --git a/archive/utils/tar.go b/archive/utils/tar.go
+index 8264322..07830dc 100644
+--- a/archive/utils/tar.go
++++ b/archive/utils/tar.go
+@@ -25,7 +25,7 @@ import (
+ 	"io"
+ 	"os"
+ 	"path"
+-	dutils "pkg.deepin.io/lib/utils"
++	dutils "utils"
+ )
+ 
+ func TarWriterCompressFiles(writer *tar.Writer, files []string) error {
+diff --git a/backlight/display/display.go b/backlight/display/display.go
+index f135ff3..30d4c42 100644
+--- a/backlight/display/display.go
++++ b/backlight/display/display.go
+@@ -20,7 +20,7 @@
+ package display
+ 
+ import (
+-	"pkg.deepin.io/lib/backlight/common"
++	"common"
+ 	"strings"
+ )
+ 
+diff --git a/backlight/keyboard/keyboard.go b/backlight/keyboard/keyboard.go
+index b51e22e..17003dc 100644
+--- a/backlight/keyboard/keyboard.go
++++ b/backlight/keyboard/keyboard.go
+@@ -21,7 +21,7 @@ package keyboard
+ 
+ import (
+ 	"path/filepath"
+-	. "pkg.deepin.io/lib/backlight/common"
++	. "common"
+ 	"strings"
+ )
+ 
+diff --git a/calendar/calendar.go b/calendar/calendar.go
+index ce92d6a..f792726 100644
+--- a/calendar/calendar.go
++++ b/calendar/calendar.go
+@@ -20,7 +20,7 @@
+ package calendar
+ 
+ import (
+-	"pkg.deepin.io/lib/calendar/lunar"
++	"lunar"
+ )
+ 
+ type LunarDayInfo struct {
+diff --git a/calendar/lunar/elp82.go b/calendar/lunar/elp82.go
+index be15c57..5d47222 100644
+--- a/calendar/lunar/elp82.go
++++ b/calendar/lunar/elp82.go
+@@ -21,7 +21,7 @@ package lunar
+ 
+ import (
+ 	"math"
+-	"pkg.deepin.io/lib/calendar/util"
++	"util"
+ )
+ 
+ // 参数 T 儒略世纪数
+diff --git a/calendar/lunar/lunar.go b/calendar/lunar/lunar.go
+index 3102e18..4cc7cfb 100644
+--- a/calendar/lunar/lunar.go
++++ b/calendar/lunar/lunar.go
+@@ -20,7 +20,7 @@
+ package lunar
+ 
+ import (
+-	"pkg.deepin.io/lib/calendar/util"
++	"util"
+ 	"time"
+ )
+ 
+diff --git a/calendar/lunar/newmoon_test.go b/calendar/lunar/newmoon_test.go
+index 25d8590..a8fbc6a 100644
+--- a/calendar/lunar/newmoon_test.go
++++ b/calendar/lunar/newmoon_test.go
+@@ -20,7 +20,7 @@
+ package lunar
+ 
+ import (
+-	"pkg.deepin.io/lib/calendar/util"
++	"util"
+ 	"testing"
+ )
+ 
+diff --git a/calendar/lunar/solarterms.go b/calendar/lunar/solarterms.go
+index e575023..4b39ad4 100644
+--- a/calendar/lunar/solarterms.go
++++ b/calendar/lunar/solarterms.go
+@@ -21,7 +21,7 @@ package lunar
+ 
+ import (
+ 	"math"
+-	"pkg.deepin.io/lib/calendar/util"
++	"util"
+ )
+ 
+ var SolarTermNames = []string{
+diff --git a/calendar/lunar/solarterms_test.go b/calendar/lunar/solarterms_test.go
+index 760af80..07642b2 100644
+--- a/calendar/lunar/solarterms_test.go
++++ b/calendar/lunar/solarterms_test.go
+@@ -21,7 +21,7 @@ package lunar
+ 
+ import (
+ 	. "github.com/smartystreets/goconvey/convey"
+-	"pkg.deepin.io/lib/calendar/util"
++	"util"
+ 	"strings"
+ 	"testing"
+ )
+diff --git a/calendar/lunar/vsop87earthd.go b/calendar/lunar/vsop87earthd.go
+index d07edd8..733466b 100644
+--- a/calendar/lunar/vsop87earthd.go
++++ b/calendar/lunar/vsop87earthd.go
+@@ -21,7 +21,7 @@ package lunar
+ 
+ import (
+ 	"math"
+-	"pkg.deepin.io/lib/calendar/util"
++	"util"
+ )
+ 
+ /**
+diff --git a/calendar/lunar/vsop87earthd_test.go b/calendar/lunar/vsop87earthd_test.go
+index d770566..572a113 100644
+--- a/calendar/lunar/vsop87earthd_test.go
++++ b/calendar/lunar/vsop87earthd_test.go
+@@ -20,7 +20,7 @@
+ package lunar
+ 
+ import (
+-	"pkg.deepin.io/lib/calendar/util"
++	"util"
+ 	"testing"
+ )
+ 
+diff --git a/dbus/autogen.go b/dbus/autogen.go
+index c1491ff..0558a4b 100644
+--- a/dbus/autogen.go
++++ b/dbus/autogen.go
+@@ -24,8 +24,8 @@ import "errors"
+ import "fmt"
+ import "strings"
+ import "log"
+-import "pkg.deepin.io/lib/dbus/interfaces"
+-import "pkg.deepin.io/lib/dbus/introspect"
++import "interfaces"
++import "introspect"
+ 
+ func splitObjectPath(path ObjectPath) (parent ObjectPath, base string) {
+ 	if !path.IsValid() {
+diff --git a/dbus/freedesktop.dbus.go b/dbus/freedesktop.dbus.go
+index 98c767f..76778a7 100644
+--- a/dbus/freedesktop.dbus.go
++++ b/dbus/freedesktop.dbus.go
+@@ -23,7 +23,7 @@ import "encoding/xml"
+ import "bytes"
+ import "fmt"
+ import "reflect"
+-import "pkg.deepin.io/lib/dbus/introspect"
++import "introspect"
+ import "sync"
+ 
+ const InterfaceIntrospectProxy = "org.freedesktop.DBus.Introspectable"
+diff --git a/dbus/property/gsetting_property.go b/dbus/property/gsetting_property.go
+index 5b35046..48a7af5 100644
+--- a/dbus/property/gsetting_property.go
++++ b/dbus/property/gsetting_property.go
+@@ -20,7 +20,7 @@
+ package property
+ 
+ import "gir/gio-2.0"
+-import "pkg.deepin.io/lib/dbus"
++import "dbus"
+ import "reflect"
+ import "fmt"
+ import "unicode"
+diff --git a/dbus/property/normal_property.go b/dbus/property/normal_property.go
+index 881d3f8..6cdd505 100644
+--- a/dbus/property/normal_property.go
++++ b/dbus/property/normal_property.go
+@@ -20,7 +20,7 @@
+ package property
+ 
+ import "reflect"
+-import "pkg.deepin.io/lib/dbus"
++import "dbus"
+ import "log"
+ 
+ type NormalProperty struct {
+diff --git a/dbus/property/wrap_property.go b/dbus/property/wrap_property.go
+index 598a6a6..77716f6 100644
+--- a/dbus/property/wrap_property.go
++++ b/dbus/property/wrap_property.go
+@@ -20,7 +20,7 @@
+ package property
+ 
+ import "reflect"
+-import "pkg.deepin.io/lib/dbus"
++import "dbus"
+ 
+ type BaseObserver struct {
+ 	cbs []func()
+diff --git a/debian/rules b/debian/rules
+index dcf0407..6ffbb25 100755
+--- a/debian/rules
++++ b/debian/rules
+@@ -1,6 +1,6 @@
+ #!/usr/bin/make -f
+ 
+-export DH_GOPKG := pkg.deepin.io/lib
++export DH_GOPKG := lib
+ export DH_GOLANG_INSTALL_ALL := 1
+  
+ 
+diff --git a/gdkpixbuf/README.md b/gdkpixbuf/README.md
+index c9570b0..2a11f02 100644
+--- a/gdkpixbuf/README.md
++++ b/gdkpixbuf/README.md
+@@ -1,7 +1,7 @@
+ Go 图形处理库, 主要围绕 GdkPixbuf 库进行增强开发. 支持对图片进行
+ 剪切, 翻转, 缩放, 混合, 模糊处理等操作.
+ 
+-API 的命名风格与 pkg.deepin.io/lib/graphic 库相同, 以 Blur 操作为例:
++API 的命名风格与 graphic 库相同, 以 Blur 操作为例:
+ - **Blur** 对 C.GdkPixbuf 对象进行模糊处理
+ 
+ - **BlurImage** 对目标文件进行模糊处理
+diff --git a/gdkpixbuf/blur.go b/gdkpixbuf/blur.go
+index 6b4b834..668ae21 100644
+--- a/gdkpixbuf/blur.go
++++ b/gdkpixbuf/blur.go
+@@ -27,7 +27,7 @@ import "C"
+ 
+ import (
+ 	"fmt"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ )
+ 
+ // BlurImage generate blur effect to an image file.
+diff --git a/gdkpixbuf/gdkpixbuf.go b/gdkpixbuf/gdkpixbuf.go
+index cfa5b7f..c64503a 100644
+--- a/gdkpixbuf/gdkpixbuf.go
++++ b/gdkpixbuf/gdkpixbuf.go
+@@ -29,7 +29,7 @@ import "unsafe"
+ import (
+ 	"fmt"
+ 	"github.com/BurntSushi/xgb/xproto"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ )
+ 
+ // Format defines the type of image format.
+diff --git a/gdkpixbuf/gdkpixbuf_test.go b/gdkpixbuf/gdkpixbuf_test.go
+index d14d79c..287b067 100644
+--- a/gdkpixbuf/gdkpixbuf_test.go
++++ b/gdkpixbuf/gdkpixbuf_test.go
+@@ -23,7 +23,7 @@ import (
+ 	"fmt"
+ 	C "gopkg.in/check.v1"
+ 	"os"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ 	"testing"
+ )
+ 
+diff --git a/gdkpixbuf/utils.go b/gdkpixbuf/utils.go
+index 55ea5e9..e6139d8 100644
+--- a/gdkpixbuf/utils.go
++++ b/gdkpixbuf/utils.go
+@@ -20,8 +20,8 @@
+ package gdkpixbuf
+ 
+ import (
+-	"pkg.deepin.io/lib/graphic"
+-	"pkg.deepin.io/lib/utils"
++	"graphic"
++	"utils"
+ )
+ 
+ // function links to lib/graphic
+diff --git a/graphic/graphic_test.go b/graphic/graphic_test.go
+index 99109bf..b895c2e 100644
+--- a/graphic/graphic_test.go
++++ b/graphic/graphic_test.go
+@@ -21,7 +21,7 @@ package graphic
+ 
+ import (
+ 	C "gopkg.in/check.v1"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ 	"testing"
+ )
+ 
+diff --git a/graphic/info.go b/graphic/info.go
+index 8c229b2..471b5a9 100644
+--- a/graphic/info.go
++++ b/graphic/info.go
+@@ -22,7 +22,7 @@ package graphic
+ import (
+ 	"image"
+ 	"os"
+-	dutils "pkg.deepin.io/lib/utils"
++	dutils "utils"
+ )
+ 
+ // GetImageSize return image's width and height.
+diff --git a/graphic/testdata/sniff_format.tiff b/graphic/testdata/sniff_format.tiff
+index f639afa..6538a90 100644
+Binary files a/graphic/testdata/sniff_format.tiff and b/graphic/testdata/sniff_format.tiff differ
+diff --git a/graphic/utils.go b/graphic/utils.go
+index 429a3cc..abaded3 100644
+--- a/graphic/utils.go
++++ b/graphic/utils.go
+@@ -23,7 +23,7 @@ import (
+ 	"image"
+ 	"image/draw"
+ 	"os"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ )
+ 
+ func generateCacheFilePath(keyword string) (dstfile string) {
+diff --git a/initializer/initializer.go b/initializer/initializer.go
+index 1ae1549..160ce12 100644
+--- a/initializer/initializer.go
++++ b/initializer/initializer.go
+@@ -20,7 +20,7 @@
+ package initializer
+ 
+ import (
+-	"pkg.deepin.io/lib/dbus"
++	"dbus"
+ )
+ 
+ // TODO:
+diff --git a/initializer/initializer_test.go b/initializer/initializer_test.go
+index 48ce6a1..c085200 100644
+--- a/initializer/initializer_test.go
++++ b/initializer/initializer_test.go
+@@ -22,7 +22,7 @@ package initializer_test
+ import (
+ 	"errors"
+ 	. "github.com/smartystreets/goconvey/convey"
+-	. "pkg.deepin.io/lib/initializer"
++	. "initializer"
+ 	"testing"
+ )
+ 
+diff --git a/initializer/v2/initializer_test.go b/initializer/v2/initializer_test.go
+index bef2e66..4bf04e4 100644
+--- a/initializer/v2/initializer_test.go
++++ b/initializer/v2/initializer_test.go
+@@ -22,7 +22,7 @@ package initializer_test
+ import (
+ 	"errors"
+ 	. "github.com/smartystreets/goconvey/convey"
+-	"pkg.deepin.io/lib/initializer/v2"
++	"v2"
+ 	"testing"
+ )
+ 
+diff --git a/initializer/v2/initializer_unix.go b/initializer/v2/initializer_unix.go
+index 70fb986..08e63dd 100644
+--- a/initializer/v2/initializer_unix.go
++++ b/initializer/v2/initializer_unix.go
+@@ -20,7 +20,7 @@
+ package initializer
+ 
+ import (
+-	"pkg.deepin.io/lib/dbus"
++	"dbus"
+ )
+ 
+ // DoWithSessionBus starts the initialization and install dbus object to session bus.
+diff --git a/iso/country.go b/iso/country.go
+index f0077f6..e6be436 100644
+--- a/iso/country.go
++++ b/iso/country.go
+@@ -24,7 +24,7 @@ import (
+ 	"fmt"
+ 	"io/ioutil"
+ 	"os"
+-	. "pkg.deepin.io/lib/gettext"
++	. "gettext"
+ 	"strings"
+ 	"sync"
+ )
+diff --git a/iso/country_test.go b/iso/country_test.go
+index 07ae5e9..78270a1 100644
+--- a/iso/country_test.go
++++ b/iso/country_test.go
+@@ -22,7 +22,7 @@ package iso
+ import (
+ 	C "gopkg.in/check.v1"
+ 	"os"
+-	. "pkg.deepin.io/lib/gettext"
++	. "gettext"
+ )
+ 
+ const envLanguage = "LANGUAGE"
+diff --git a/keyfile/get.go b/keyfile/get.go
+index 3236973..813ba65 100644
+--- a/keyfile/get.go
++++ b/keyfile/get.go
+@@ -22,7 +22,7 @@ package keyfile
+ import (
+ 	"bytes"
+ 	"fmt"
+-	libLocale "pkg.deepin.io/lib/locale"
++	libLocale "locale"
+ 	"strconv"
+ 	"strings"
+ 	"unicode/utf8"
+diff --git a/log/README.md b/log/README.md
+index e6c6bf4..d3c79a3 100644
+--- a/log/README.md
++++ b/log/README.md
+@@ -56,7 +56,7 @@ env DDE_DEBUG_MATCH="network" DDE_DEBUG_LEVEL="warning" dde-session-daemon
+ ## 示例代码
+ 
+ ```go
+-import "pkg.deepin.io/lib/log"
++import "log"
+ import "flag"
+ 
+ var (
+diff --git a/log/backend_console.go b/log/backend_console.go
+index 92d7d34..f978f64 100644
+--- a/log/backend_console.go
++++ b/log/backend_console.go
+@@ -22,7 +22,7 @@ package log
+ import (
+ 	"fmt"
+ 	"os"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ 	"time"
+ )
+ 
+diff --git a/log/logger.go b/log/logger.go
+index bdf5a82..3718b8b 100644
+--- a/log/logger.go
++++ b/log/logger.go
+@@ -26,7 +26,7 @@ import (
+ 	golog "log"
+ 	"os"
+ 	"path/filepath"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ 	"reflect"
+ 	"regexp"
+ 	"runtime"
+diff --git a/mime/mime.go b/mime/mime.go
+index 67289e1..85e346f 100644
+--- a/mime/mime.go
++++ b/mime/mime.go
+@@ -22,7 +22,7 @@ package mime
+ import (
+ 	"fmt"
+ 	"gir/gio-2.0"
+-	dutils "pkg.deepin.io/lib/utils"
++	dutils "utils"
+ )
+ 
+ const (
+diff --git a/mime/theme.go b/mime/theme.go
+index b126ef5..f917e98 100644
+--- a/mime/theme.go
++++ b/mime/theme.go
+@@ -22,7 +22,7 @@ package mime
+ import (
+ 	"fmt"
+ 	"path"
+-	dutils "pkg.deepin.io/lib/utils"
++	dutils "utils"
+ )
+ 
+ const (
+diff --git a/misc.go b/misc.go
+index 2f31e8e..83b50ef 100644
+--- a/misc.go
++++ b/misc.go
+@@ -19,7 +19,7 @@
+ 
+ package lib
+ 
+-import "pkg.deepin.io/lib/dbus"
++import "dbus"
+ 
+ const (
+ 	SystemBus  = 1
+diff --git a/notify/dbusnotify/init.go b/notify/dbusnotify/init.go
+index 3ccadee..24e255e 100644
+--- a/notify/dbusnotify/init.go
++++ b/notify/dbusnotify/init.go
+@@ -19,7 +19,7 @@
+ 
+ package dbusnotify
+ 
+-import "pkg.deepin.io/lib/dbus"
++import "dbus"
+ import "fmt"
+ import "sync"
+ 
+diff --git a/notify/dbusnotify/notify.go b/notify/dbusnotify/notify.go
+index dde1766..003cf86 100644
+--- a/notify/dbusnotify/notify.go
++++ b/notify/dbusnotify/notify.go
+@@ -19,8 +19,8 @@
+ 
+ package dbusnotify
+ 
+-import "pkg.deepin.io/lib/dbus"
+-import "pkg.deepin.io/lib/dbus/property"
++import "dbus"
++import "property"
+ import "reflect"
+ import "sync"
+ import "runtime"
+diff --git a/notify/examples/action.go b/notify/examples/action.go
+index 6fef1c4..e1144a3 100644
+--- a/notify/examples/action.go
++++ b/notify/examples/action.go
+@@ -23,7 +23,7 @@ package main
+ 
+ import (
+ 	"log"
+-	"pkg.deepin.io/lib/notify"
++	"notify"
+ 	"time"
+ )
+ 
+diff --git a/notify/examples/image.go b/notify/examples/image.go
+index bb2cb81..3360695 100644
+--- a/notify/examples/image.go
++++ b/notify/examples/image.go
+@@ -27,7 +27,7 @@ import (
+ 	_ "image/png"
+ 	"log"
+ 	"os"
+-	"pkg.deepin.io/lib/notify"
++	"notify"
+ )
+ 
+ func init() {
+diff --git a/notify/examples/simple.go b/notify/examples/simple.go
+index 087dafd..82545ea 100644
+--- a/notify/examples/simple.go
++++ b/notify/examples/simple.go
+@@ -22,7 +22,7 @@
+ package main
+ 
+ import (
+-	"pkg.deepin.io/lib/notify"
++	"notify"
+ )
+ 
+ func init() {
+diff --git a/notify/examples/update.go b/notify/examples/update.go
+index a0e4fd7..c3247c5 100644
+--- a/notify/examples/update.go
++++ b/notify/examples/update.go
+@@ -23,7 +23,7 @@ package main
+ 
+ import (
+ 	"log"
+-	"pkg.deepin.io/lib/notify"
++	"notify"
+ 	"time"
+ )
+ 
+diff --git a/notify/notification.go b/notify/notification.go
+index dd85b58..1a64a75 100644
+--- a/notify/notification.go
++++ b/notify/notification.go
+@@ -21,8 +21,8 @@ package notify
+ 
+ import (
+ 	"errors"
+-	"pkg.deepin.io/lib/dbus"
+-	"pkg.deepin.io/lib/event"
++	"dbus"
++	"event"
+ 	"runtime"
+ )
+ 
+diff --git a/notify/notify.go b/notify/notify.go
+index b924ab7..b9d02d6 100644
+--- a/notify/notify.go
++++ b/notify/notify.go
+@@ -20,7 +20,7 @@
+ package notify
+ 
+ import (
+-	"pkg.deepin.io/lib/notify/dbusnotify"
++	"dbusnotify"
+ )
+ 
+ var (
+diff --git a/polkit/policykit1/dbus-authority.go b/polkit/policykit1/dbus-authority.go
+index 08d51c2..34c4435 100644
+--- a/polkit/policykit1/dbus-authority.go
++++ b/polkit/policykit1/dbus-authority.go
+@@ -19,8 +19,8 @@
+ 
+ package policykit1
+ 
+-import "pkg.deepin.io/lib/dbus"
+-import "pkg.deepin.io/lib/dbus/property"
++import "dbus"
++import "property"
+ import "reflect"
+ import "sync"
+ import "runtime"
+diff --git a/polkit/policykit1/init.go b/polkit/policykit1/init.go
+index 78c6598..0d55dbc 100644
+--- a/polkit/policykit1/init.go
++++ b/polkit/policykit1/init.go
+@@ -19,7 +19,7 @@
+ 
+ package policykit1
+ 
+-import "pkg.deepin.io/lib/dbus"
++import "dbus"
+ import "fmt"
+ import "sync"
+ 
+diff --git a/polkit/polkit.go b/polkit/polkit.go
+index a01b61d..b595599 100644
+--- a/polkit/polkit.go
++++ b/polkit/polkit.go
+@@ -21,8 +21,8 @@ package polkit
+ 
+ import (
+ 	"errors"
+-	"pkg.deepin.io/lib/dbus"
+-	pk "pkg.deepin.io/lib/polkit/policykit1"
++	"dbus"
++	pk "policykit1"
+ )
+ 
+ // dbus
+diff --git a/procfs/procfs.go b/procfs/procfs.go
+index 84866d7..21bfac3 100644
+--- a/procfs/procfs.go
++++ b/procfs/procfs.go
+@@ -24,7 +24,7 @@ import (
+ 	"io/ioutil"
+ 	"os"
+ 	"path/filepath"
+-	"pkg.deepin.io/lib/encoding/kv"
++	"kv"
+ 	"strconv"
+ 	"strings"
+ )
+diff --git a/procfs/procfs_test.go b/procfs/procfs_test.go
+index 2ed1f78..c07f5f1 100644
+--- a/procfs/procfs_test.go
++++ b/procfs/procfs_test.go
+@@ -26,7 +26,7 @@ import (
+ 	"testing"
+ )
+ 
+-const packagePath = "/pkg.deepin.io/lib/procfs/"
++const packagePath = "/"
+ 
+ func TestGetFile(t *testing.T) {
+ 	Convey("getFile", t, func() {
+diff --git a/profile/profile.go b/profile/profile.go
+index 3f94789..fc55618 100644
+--- a/profile/profile.go
++++ b/profile/profile.go
+@@ -28,7 +28,7 @@ import (
+ 	"runtime/pprof"
+ 	"sync"
+ 
+-	"pkg.deepin.io/lib/initializer/v2"
++	"v2"
+ )
+ 
+ type _Profile struct {
+diff --git a/profile/profile_test.go b/profile/profile_test.go
+index 328bdad..8ab6221 100644
+--- a/profile/profile_test.go
++++ b/profile/profile_test.go
+@@ -20,7 +20,7 @@
+ package profile_test
+ 
+ import (
+-	"pkg.deepin.io/lib/profile"
++	"profile"
+ )
+ 
+ func ExampleCPUProfile() {
+diff --git a/proxy/README.md b/proxy/README.md
+index 55bdc1d..c4aa5bc 100644
+--- a/proxy/README.md
++++ b/proxy/README.md
+@@ -18,7 +18,7 @@ no_proxy="localhost,127.0.0.0/8,::1"
+ ```go
+ import (
+ 	"gir/glib-2.0"
+-	"pkg.deepin.io/lib/proxy"
++	"proxy"
+ )
+ 
+ func main() {
+diff --git a/proxy/dev_test.go b/proxy/dev_test.go
+index b799db6..80a14d3 100644
+--- a/proxy/dev_test.go
++++ b/proxy/dev_test.go
+@@ -24,7 +24,7 @@ package proxy
+ import (
+ 	"gir/glib-2.0"
+ 	C "gopkg.in/check.v1"
+-	"pkg.deepin.io/lib/log"
++	"log"
+ 	"testing"
+ )
+ 
+diff --git a/proxy/proxy.go b/proxy/proxy.go
+index a1523cc..cd61c7b 100644
+--- a/proxy/proxy.go
++++ b/proxy/proxy.go
+@@ -23,8 +23,8 @@ import (
+ 	"fmt"
+ 	"gir/gio-2.0"
+ 	"os"
+-	"pkg.deepin.io/lib/log"
+-	"pkg.deepin.io/lib/utils"
++	"log"
++	"utils"
+ 	"strconv"
+ 	"strings"
+ )
+diff --git a/sound/utils.go b/sound/utils.go
+index 6ae2055..15dfb5d 100644
+--- a/sound/utils.go
++++ b/sound/utils.go
+@@ -23,7 +23,7 @@ import (
+ 	"fmt"
+ 	"os"
+ 	"path"
+-	"pkg.deepin.io/lib/utils"
++	"utils"
+ )
+ 
+ var (
+diff --git a/timer/timer_test.go b/timer/timer_test.go
+index 0526eda..a68bf91 100644
+--- a/timer/timer_test.go
++++ b/timer/timer_test.go
+@@ -21,7 +21,7 @@ package timer_test
+ 
+ import (
+ 	. "github.com/smartystreets/goconvey/convey"
+-	. "pkg.deepin.io/lib/timer"
++	. "timer"
+ 	"testing"
+ 	"time"
+ )
+diff --git a/utils/watch_proxy.go b/utils/watch_proxy.go
+index 1ffc545..c3101f3 100644
+--- a/utils/watch_proxy.go
++++ b/utils/watch_proxy.go
+@@ -20,7 +20,7 @@
+ package utils
+ 
+ import (
+-	"pkg.deepin.io/lib/fsnotify"
++	"fsnotify"
+ 	"sync"
+ )
+ 
+diff --git a/xdg/userdir/userdir.go b/xdg/userdir/userdir.go
+index c432c27..94eb12b 100644
+--- a/xdg/userdir/userdir.go
++++ b/xdg/userdir/userdir.go
+@@ -26,7 +26,7 @@ import (
+ 	"io"
+ 	"os"
+ 	"path/filepath"
+-	"pkg.deepin.io/lib/xdg/basedir"
++	"basedir"
+ 	"sync"
+ 	"unicode"
+ )

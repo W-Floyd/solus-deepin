@@ -1,0 +1,55 @@
+<PISI>
+    <Source>
+        <Name>deepin-sound-theme</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop.theme</PartOf>
+        <Summary xml:lang="en">The freedesktop sound theme for Deepin.</Summary>
+        <Description xml:lang="en">The freedesktop sound theme for Deepin.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-sound-theme</Name>
+        <Summary xml:lang="en">The freedesktop sound theme for Deepin.</Summary>
+        <Description xml:lang="en">The freedesktop sound theme for Deepin.
+</Description>
+        <PartOf>desktop.theme</PartOf>
+        <Files>
+            <Path fileType="data">/usr/share/sounds/deepin/index.theme</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/audio-volume-change.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/camera-shutter.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/complete-copy.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/complete-print.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/desktop-login.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/desktop-logout.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/device-added.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/device-removed.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error-critical.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error-serious.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/message.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-plug.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-unplug-battery-low.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-unplug.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/screen-capture-complete.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/screen-capture.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/suspend-resume.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/system-shutdown.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/trash-empty.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/x-deepin-app-sent-to-desktop.ogg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-19</Date>
+            <Version>15.10.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

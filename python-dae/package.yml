@@ -1,0 +1,17 @@
+name       : python-dae
+version    : 1.0.2
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dae/archive/1.0.2.tar.gz : e0f217dc549d719998e8b93a53ef98c779d1a913cab71c4f804d4b8a4aab36af
+license    : GPL-3.0
+component  : system.utils
+summary    : Deepin desktop application engine.
+description: |
+    Deepin desktop application engine.
+rundeps    :
+    - python-qtpy
+    - python-xlib
+build      : |
+    %python_setup
+install    : |
+    %python_install

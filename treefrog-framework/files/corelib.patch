@@ -1,0 +1,31 @@
+diff --git a/src/corelib.pro b/src/corelib.pro
+index d111220..638b794 100644
+--- a/src/corelib.pro
++++ b/src/corelib.pro
+@@ -11,6 +11,7 @@ OBJECTS_DIR = .obj/
+ windows:CONFIG(debug, debug|release) {
+   TARGET = $$join(TARGET,,,d)
+ }
++DESTDIR = /
+ 
+ include(../tfbase.pri)
+ include(../include/headers.pri)
+@@ -22,7 +23,7 @@ isEmpty(target.path) {
+   } else:macx {
+     target.path = /usr/local/lib
+   } else:unix {
+-    target.path = /usr/lib
++    target.path = ${DESTDIR}/usr/lib
+   }
+ }
+ INSTALLS += target
+@@ -384,7 +385,8 @@ windows {
+     }
+   }
+ } else {
+-  LIBS += ../3rdparty/mongo-c-driver/libmongoc.a
++  LIBS += -lmongoc-1.0
++INCLUDEPATH += /usr/include/libbson-1.0 /usr/include/libmongoc-1.0
+ }
+ #DEFINES += MONGO_HAVE_STDINT
+ 
