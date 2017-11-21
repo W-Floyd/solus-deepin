@@ -1,0 +1,26 @@
+name       : deepin-wm-switcher
+version    : 1.1.7
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-wm-switcher/archive/1.1.7.tar.gz : 2731807938f675e0f4a5f72c579e16e44338120032a1402b3098dbfc55855e4c
+license    : GPL-3.0
+component  : desktop
+summary    : Deepin window manager monitoring and auto-switching service.
+description: |
+    Deepin window manager monitoring and auto-switching service.
+    It is capable of monitoring the health of the 3D WM and falling back to 2D if bad things happened, and detecting platform capability and choose 2D/3D WM accordingly.
+builddeps  :
+    - pkgconfig(gl)
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(x11)
+    - pkgconfig(xcb-keysyms)
+rundeps    :
+    - deepin-metacity
+    - deepin-wm
+setup      : |
+    %cmake .
+build      : |
+    %make
+install    : |
+    %make_install
