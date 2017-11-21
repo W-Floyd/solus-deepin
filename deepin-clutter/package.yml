@@ -27,6 +27,7 @@ setup      : |
     --enable-gtk-doc
     sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 build      : |
+    export PYTHONIOENCODING=utf-8
     %make
 install    : |
     %make_install
