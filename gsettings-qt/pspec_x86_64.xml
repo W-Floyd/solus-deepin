@@ -39,7 +39,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-16</Date>
+            <Date>2017-11-21</Date>
             <Version>0.1.20170824</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
