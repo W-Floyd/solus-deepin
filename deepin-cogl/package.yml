@@ -12,7 +12,7 @@ builddeps  :
     - gtk-doc
     - pkgconfig(cairo)
     - pkgconfig(gdk-pixbuf-2.0)
-    - pkgconfig(glu)
+    - pkgconfig(gl)
     - pkgconfig(pangocairo)
     - pkgconfig(x11)
     - pkgconfig(xcomposite)
@@ -21,10 +21,20 @@ builddeps  :
     - pkgconfig(xfixes)
     - pkgconfig(xrandr)
 setup      : |
-    NOCONFIGURE=1 %autogen --enable-gles{1,2} \
-    --enable-{kms,wayland}-egl-platform \
-    --enable-wayland-egl-server
-    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+    %autogen --disable-static \
+             --enable-glib \
+             --enable-cogl-pango \
+             --disable-cogl-gst \
+             --enable-gdk-pixbuf \
+             --enable-examples-install \
+             --enable-gles2 \
+             --enable-gl \
+             --enable-cogl-gles2 \
+             --enable-glx \
+             --enable-wayland-egl-platform \
+             --enable-kms-egl-platform \
+             --enable-wayland-egl-server \
+             --enable-xlib-egl-platform
 build      : |
     %make
 install    : |

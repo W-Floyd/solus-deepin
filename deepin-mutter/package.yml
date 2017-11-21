@@ -8,31 +8,29 @@ component  : desktop
 summary    : Base window manager for Deepin, fork of Gnome mutter
 description: |
     Base window manager for Deepin, fork of Gnome mutter
+ccache     : no
 builddeps  :
     - deepin-clutter-devel
     - deepin-cogl-devel
     - gnome-common
-    - pkgconfig(cairo)
     - pkgconfig(gnome-desktop-3.0)
+    - pkgconfig(gobject-introspection-1.0)
     - pkgconfig(gsettings-desktop-schemas)
     - pkgconfig(gtk+-3.0)
-    - pkgconfig(libinput)
-    - pkgconfig(pango)
+    - pkgconfig(gudev-1.0)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(libwacom)
+    - pkgconfig(sm)
     - pkgconfig(upower-glib)
-    - pkgconfig(wayland-protocols)
-    - pkgconfig(x11-xcb)
-    - pkgconfig(xcb-randr)
-    - pkgconfig(xcomposite)
     - pkgconfig(xcursor)
-    - pkgconfig(xdamage)
-    - pkgconfig(xext)
-    - pkgconfig(xfixes)
-    - pkgconfig(xi)
-    - pkgconfig(xkbcommon)
-    - pkgconfig(xkbcommon-x11)
     - pkgconfig(xkbfile)
     - pkgconfig(xkeyboard-config)
-    - pkgconfig(xrender)
+    - pkgconfig(xtst)
+    - zenity
+rundeps    :
+    - dconf
+    - deepin-desktop-schemas
     - zenity
 setup      : |
     %autogen --sysconfdir=/etc \
@@ -43,6 +41,7 @@ setup      : |
     --enable-native-backend \
     --disable-static \
     --disable-schemas-compile \
+    --enable-compile-warnings=minimum
 build      : |
     %make
 install    : |

@@ -12,20 +12,22 @@ builddeps  :
     - deepin-cogl-devel
     - gtk-doc
     - pkgconfig(atk)
+    - pkgconfig(cairo-gobject)
     - pkgconfig(gdk-3.0)
-    - pkgconfig(gdk-pixbuf-2.0)
-    - pkgconfig(pangocairo)
     - pkgconfig(json-glib-1.0)
+    - pkgconfig(libinput)
+    - pkgconfig(pangocairo)
 setup      : |
-    NOCONFIGURE=1 %autogen --enable-introspection \
-    --enable-egl-backend \
-    --enable-gdk-backend \
-    --enable-wayland-backend \
-    --enable-x11-backend \
-    --enable-evdev-input \
-    --enable-wayland-compositor \
-    --enable-gtk-doc
-    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+    %autogen --disable-static \
+             --enable-egl-backend \
+             --enable-evdev-input \
+             --enable-gdk-backend \
+             --enable-gdk-pixbuf \
+             --enable-introspection \
+             --enable-wayland-backend \
+             --enable-wayland-compositor \
+             --enable-x11-backend \
+             --enable-xinput
 build      : |
     export PYTHONIOENCODING=utf-8
     %make

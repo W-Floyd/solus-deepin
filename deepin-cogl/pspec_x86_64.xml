@@ -19,6 +19,7 @@
 </Description>
         <PartOf>desktop</PartOf>
         <Files>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib64/girepository-1.0/Cogl-1.0.typelib</Path>
             <Path fileType="library">/usr/lib64/girepository-1.0/Cogl-2.0.typelib</Path>
             <Path fileType="library">/usr/lib64/girepository-1.0/CoglPango-1.0.typelib</Path>

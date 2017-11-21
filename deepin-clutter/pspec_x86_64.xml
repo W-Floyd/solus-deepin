@@ -46,16 +46,6 @@
             <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
         </Files>
     </Package>
-    <Package>
-        <Name>deepin-clutter-docs</Name>
-        <Summary xml:lang="en">Documentation for deepin-clutter</Summary>
-        <Description xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
-</Description>
-        <PartOf>programming.docs</PartOf>
-        <Files>
-            <Path fileType="doc">/usr/share/gtk-doc/html/</Path>
-        </Files>
-    </Package>
     <History>
         <Update release="1">
             <Date>2017-11-21</Date>
