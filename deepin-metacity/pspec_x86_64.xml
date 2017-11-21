@@ -1,0 +1,164 @@
+<PISI>
+    <Source>
+        <Name>deepin-metacity</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">2D window manager for Deepin</Summary>
+        <Description xml:lang="en">2D window manager for Deepin
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-metacity</Name>
+        <Summary xml:lang="en">2D window manager for Deepin</Summary>
+        <Description xml:lang="en">2D window manager for Deepin
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="data">/usr/share/GConf/gsettings/deepin-metacity-schemas.convert</Path>
+            <Path fileType="data">/usr/share/applications/deepin-metacity.desktop</Path>
+            <Path fileType="data">/usr/share/deepin-metacity</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.wrap.gnome.metacity.gschema.xml</Path>
+            <Path fileType="data">/usr/share/gnome-control-center/keybindings/50-deepin-metacity-navigation.xml</Path>
+            <Path fileType="data">/usr/share/gnome-control-center/keybindings/50-deepin-metacity-system.xml</Path>
+            <Path fileType="data">/usr/share/gnome-control-center/keybindings/50-deepin-metacity-windows.xml</Path>
+            <Path fileType="data">/usr/share/gnome/wm-properties/deepin-metacity-wm.desktop</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/themes/Adwaita/deepin-metacity-1/metacity-theme-3.xml</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-close-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-close-menu-icon.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-maximize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-maximize-menu-icon.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-menu-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-minimize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/active-minimize-menu-icon.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/inactive-close-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/inactive-maximize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/inactive-menu-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/inactive-minimize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/AgingGorilla/deepin-metacity-1/metacity-theme-1.xml</Path>
+            <Path fileType="data">/usr/share/themes/Atlanta/deepin-metacity-1/metacity-theme-1.xml</Path>
+            <Path fileType="data">/usr/share/themes/Bright/deepin-metacity-1/metacity-theme-1.xml</Path>
+            <Path fileType="data">/usr/share/themes/Bright/deepin-metacity-1/metacity-theme-2.xml</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-above-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-border-top-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-border-top-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-bottom-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-bottom-left-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-bottom-mid-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-bottom-mid-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-bottom-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-bottom-right-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-button-prelight.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-button-pressed.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-close-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-left-top-border-shaded.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-left-top-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-maximize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-menu-button-prelight.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-menu-button-pressed.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-menu-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-minimize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-restore-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-right-top-border-shaded.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-right-top-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-shade-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-stick-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-center-left.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-center-mid-left.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-center-mid-right.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-center-right.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-left-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-mid-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-mid-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-top-right-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-unabove-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-unshade-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/active-unstick-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-above-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-border-top-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-border-top-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-bottom-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-bottom-left-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-bottom-mid-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-bottom-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-bottom-right-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-button-prelight.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-button-pressed.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-close-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-left-top-border-shaded.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-left-top-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-maximize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-menu-button-prelight.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-menu-button-pressed.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-menu-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-minimize-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-restore-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-right-top-border-shaded.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-right-top-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-shade-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-stick-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-center-left.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-center-mid.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-center-right.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-left-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-left-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-mid-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-right-border.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-top-right-corner.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-unabove-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-unshade-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/inactive-unstick-button.png</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/metacity-theme-1.xml</Path>
+            <Path fileType="data">/usr/share/themes/Crux/deepin-metacity-1/metacity-theme-2.xml</Path>
+            <Path fileType="data">/usr/share/themes/Esco/deepin-metacity-1/metacity-theme-1.xml</Path>
+            <Path fileType="data">/usr/share/themes/HighContrast/deepin-metacity-1/metacity-theme-3.xml</Path>
+            <Path fileType="data">/usr/share/themes/Metabox/deepin-metacity-1/metacity-theme-1.xml</Path>
+            <Path fileType="data">/usr/share/themes/Simple/deepin-metacity-1/close.png</Path>
+            <Path fileType="data">/usr/share/themes/Simple/deepin-metacity-1/maximize.png</Path>
+            <Path fileType="data">/usr/share/themes/Simple/deepin-metacity-1/maximized.png</Path>
+            <Path fileType="data">/usr/share/themes/Simple/deepin-metacity-1/metacity-theme-1.xml</Path>
+            <Path fileType="data">/usr/share/themes/Simple/deepin-metacity-1/minimize.png</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>deepin-metacity-devel</Name>
+        <Summary xml:lang="en">Development files for deepin-metacity</Summary>
+        <Description xml:lang="en">2D window manager for Deepin
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">deepin-metacity</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-21</Date>
+            <Version>3.22.13</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
