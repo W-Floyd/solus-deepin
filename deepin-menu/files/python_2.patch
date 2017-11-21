@@ -1,0 +1,40 @@
+diff --git a/deepin_menu/DBusInterfaces.py b/deepin_menu/DBusInterfaces.py
+index e663d46..0a6cd15 100644
+--- a/deepin_menu/DBusInterfaces.py
++++ b/deepin_menu/DBusInterfaces.py
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python
++#! /usr/bin/env python2
+ # -*- coding: utf-8 -*-
+ 
+ # Copyright (C) 2015 Deepin Technology Co., Ltd.
+diff --git a/deepin_menu/__init__.py b/deepin_menu/__init__.py
+index 1cfc637..cbd3e4d 100644
+--- a/deepin_menu/__init__.py
++++ b/deepin_menu/__init__.py
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python
++#! /usr/bin/env python2
+ # -*- coding: utf-8 -*-
+ 
+ # Copyright (C) 2015 Deepin Technology Co., Ltd.
+diff --git a/deepin_menu/menu.py b/deepin_menu/menu.py
+index 5587e77..740994b 100644
+--- a/deepin_menu/menu.py
++++ b/deepin_menu/menu.py
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python
++#! /usr/bin/env python2
+ # -*- coding: utf-8 -*-
+ 
+ # Copyright (C) 2015 Deepin Technology Co., Ltd.
+diff --git a/setup.py b/setup.py
+index 9ae4990..783629b 100644
+--- a/setup.py
++++ b/setup.py
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python
++#! /usr/bin/env python2
+ # -*- coding: utf-8 -*-
+ 
+ # Copyright (C) 2015 Deepin Technology Co., Ltd.
