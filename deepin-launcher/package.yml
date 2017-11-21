@@ -3,15 +3,35 @@ version    : 4.2.5
 release    : 1
 source     :
     - https://github.com/linuxdeepin/dde-launcher/archive/4.2.5.tar.gz : b56a7ca7c57b326355a05ce016e26ff9537d6fb9a34183248eb2da3054e363f4
-license    : GPL-2.0 # CHECK ME
-component  : PLEASE FILL ME IN
-summary    : PLEASE FILL ME IN
+license    : GPL-3.0
+component  : desktop
+summary    : Launcher for the Deepin Desktop Environment.
 description: |
-    PLEASE FILL ME IN
-#builddeps  :
+    Launcher for the Deepin Desktop Environment.
+builddeps  :
+    - pkgconfig(dframeworkdbus)
+    - pkgconfig(dtkwidget)
+    - pkgconfig(gl)
+    - pkgconfig(gsettings-qt)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-ewmh)
+    - qt5-tools-devel
+rundeps    :
+    - deepin-daemon
+    - deepin-menu
+    - startdde
 setup      : |
-    %configure
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
 build      : |
+    pushd build
     %make
+    popd
 install    : |
-    %make_install
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd
