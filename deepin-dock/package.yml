@@ -21,15 +21,8 @@ builddeps  :
     - pkgconfig(xcb-image)
     - pkgconfig(xtst)
 rundeps    :
-#    - deepin-daemon
-#    - deepin-qt-dbus-factory
-#    - deepin-daemon
-#    - deepin-launcher
-#    - deepin-menu
-#    - deepin-qt-dbus-factory
-#    - deepin-qt5integration
-#    - dtkwidget
-#    - qt5-svg
+    - deepin-launcher
+    - deepin-qt5integration
 setup      : |
     mkdir build
     pushd build
