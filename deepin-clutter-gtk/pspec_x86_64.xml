@@ -1,0 +1,62 @@
+<PISI>
+    <Source>
+        <Name>deepin-clutter-gtk</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>LGPL-2.0</License>
+        <PartOf>desktop.gnome.core</PartOf>
+        <Summary xml:lang="en">Clutter GTK+ API, build for Deepin</Summary>
+        <Description xml:lang="en">Clutter GTK+ API, build for Deepin
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-clutter-gtk</Name>
+        <Summary xml:lang="en">Clutter GTK+ API, build for Deepin</Summary>
+        <Description xml:lang="en">Clutter GTK+ API, build for Deepin
+</Description>
+        <PartOf>desktop.gnome.core</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/girepository-1.0/GtkClutter-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="data">/usr/share/gir-1.0/GtkClutter-1.0.gir</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>deepin-clutter-gtk-devel</Name>
+        <Summary xml:lang="en">Development files for deepin-clutter-gtk</Summary>
+        <Description xml:lang="en">Clutter GTK+ API, build for Deepin
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">deepin-clutter-gtk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>deepin-clutter-gtk-docs</Name>
+        <Summary xml:lang="en">Documentation for deepin-clutter-gtk</Summary>
+        <Description xml:lang="en">Clutter GTK+ API, build for Deepin
+</Description>
+        <PartOf>programming.docs</PartOf>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc/html/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-21</Date>
+            <Version>1.8.4</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
