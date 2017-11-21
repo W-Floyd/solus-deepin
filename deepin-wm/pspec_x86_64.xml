@@ -1,0 +1,62 @@
+<PISI>
+    <Source>
+        <Name>deepin-wm</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">Deepin Window Manager</Summary>
+        <Description xml:lang="en">Default window manager for Deepin, started as a fork of Elementary Gala, based on libmutter. Mostly rewritten to work with Deepin Desktop Environment, such as redesign the UI for window switching, enhance user experience for the workspace preview mode, support multiple backgrounds, and many of other changes.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-wm</Name>
+        <Summary xml:lang="en">Deepin Window Manager</Summary>
+        <Description xml:lang="en">Default window manager for Deepin, started as a fork of Elementary Gala, based on libmutter. Mostly rewritten to work with Deepin Desktop Environment, such as redesign the UI for window switching, enhance user experience for the workspace preview mode, support multiple backgrounds, and many of other changes.
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/deepin-wm/plugins/libgala-zoom.so</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="data">/usr/share/applications/deepin-wm-multitaskingview.desktop</Path>
+            <Path fileType="data">/usr/share/applications/deepin-wm-wayland.desktop</Path>
+            <Path fileType="data">/usr/share/applications/deepin-wm.desktop</Path>
+            <Path fileType="data">/usr/share/deepin-wm</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.wrap.pantheon.desktop.gala.gschema.xml</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/deepin-multitasking-view.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/deepin-multitasking-view.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/deepin-multitasking-view.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-multitasking-view.svg</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>deepin-wm-devel</Name>
+        <Summary xml:lang="en">Development files for deepin-wm</Summary>
+        <Description xml:lang="en">Default window manager for Deepin, started as a fork of Elementary Gala, based on libmutter. Mostly rewritten to work with Deepin Desktop Environment, such as redesign the UI for window switching, enhance user experience for the workspace preview mode, support multiple backgrounds, and many of other changes.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">deepin-wm</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="data">/usr/share/vala*/vapi/*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-21</Date>
+            <Version>1.9.21</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
