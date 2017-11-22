@@ -24,6 +24,9 @@
             <Path fileType="data">/usr/share/gir-1.0/GtkClutter-1.0.gir</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
+        <Conflicts>
+            <Package>clutter-gtk</Package>
+        </Conflicts>
     </Package>
     <Package>
         <Name>deepin-clutter-gtk-devel</Name>
@@ -52,7 +55,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-21</Date>
+            <Date>2017-11-22</Date>
             <Version>1.8.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
