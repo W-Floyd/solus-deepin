@@ -1,0 +1,38 @@
+name       : deepin-control-center
+version    : 4.3.3
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dde-control-center/archive/4.3.3.tar.gz : 4cb004cf1f18509be87e8f9f39162482436acd4831bdcce2278254260a2fb6d1
+license    : GPL-3.0
+component  : desktop
+summary    : Control panel of the Deepin Desktop Environment.
+description: |
+    Control panel of the Deepin Desktop Environment.
+builddeps  :
+    - pkgconfig(dframeworkdbus)
+    - pkgconfig(dtkwidget)
+    - pkgconfig(geoip)
+    - pkgconfig(gl)
+    - pkgconfig(gsettings-qt)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - qt5-tools-devel
+rundeps    :
+    - deepin-account-faces
+    - deepin-artwork-themes
+    - deepin-dock
+    - deepin-qt5integration
+    - startdde
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd
