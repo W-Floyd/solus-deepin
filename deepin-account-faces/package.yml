@@ -1,0 +1,14 @@
+name       : deepin-account-faces
+version    : 1.0.10
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dde-account-faces/archive/1.0.10.tar.gz : 4922536b58db603c3cbf596a60aa2afed3d263a06422794151ccb9bf1955e660
+license    : GPL-3.0
+component  : desktop
+summary    : Account faces for Linux Deepin
+description: |
+    Account faces for Linux Deepin
+build      : |
+    %make
+install    : |
+    %make_install
