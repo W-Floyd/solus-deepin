@@ -31,3 +31,6 @@ build      : |
     %make
 install    : |
     %make_install
+    mv ${installdir}/lib/systemd ${installdir}/usr/lib/systemd
+    rmdir ${installdir}/lib
+    ln -sf ../dde-readahead.service ${installdir}/usr/lib/systemd/system/multi-user.target.wants/dde-readahead.service

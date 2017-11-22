@@ -19,16 +19,16 @@
 </Description>
         <PartOf>desktop</PartOf>
         <Files>
-            <Path fileType="data">/lib/systemd/system/dde-readahead.service</Path>
-            <Path fileType="data">/lib/systemd/system/multi-user.target.wants/dde-readahead.service</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-readahead</Path>
+            <Path fileType="library">/usr/lib/systemd/system/dde-readahead.service</Path>
+            <Path fileType="library">/usr/lib/systemd/system/multi-user.target.wants/dde-readahead.service</Path>
             <Path fileType="data">/usr/share/xsessions/deepin.desktop</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-20</Date>
+            <Date>2017-11-22</Date>
             <Version>3.1.19</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
