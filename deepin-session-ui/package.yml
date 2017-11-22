@@ -1,0 +1,38 @@
+name       : deepin-session-ui
+version    : 4.1.5
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dde-session-ui/archive/4.1.5.tar.gz : 9bcf9da150391d0bf2a7e965a916a59e3376d9fff09366fa367010e0b00c65d8
+license    : GPL-3.0
+component  : desktop
+summary    : Deepin desktop-environment - Session UI module
+description: |
+    Deepin desktop-environment - Session UI module
+builddeps  :
+    - deepin-gettext-tools
+    - pkgconfig(dframeworkdbus)
+    - pkgconfig(dtkwidget)
+    - pkgconfig(gsettings-qt)
+    - pkgconfig(gl)
+    - pkgconfig(liblightdm-qt5-3)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcursor)
+    - pkgconfig(xtst)
+    - qt5-tools-devel
+rundeps    :
+    - deepin-control-center
+    - deepin-daemon
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd

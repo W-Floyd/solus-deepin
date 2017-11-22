@@ -1,0 +1,116 @@
+<PISI>
+    <Source>
+        <Name>deepin-session-ui</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">Deepin desktop-environment - Session UI module</Summary>
+        <Description xml:lang="en">Deepin desktop-environment - Session UI module
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-session-ui</Name>
+        <Summary xml:lang="en">Deepin desktop-environment - Session UI module</Summary>
+        <Description xml:lang="en">Deepin desktop-environment - Session UI module
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="config">/etc/xdg/autostart/dde-osd_autostart.desktop</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-lowpower</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-osd</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-suspend-dialog</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-warning-dialog</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-welcome</Path>
+            <Path fileType="data">/usr/local/bin/dde-lock</Path>
+            <Path fileType="data">/usr/local/bin/dde-shutdown</Path>
+            <Path fileType="data">/usr/local/bin/dde-switchtogreeter</Path>
+            <Path fileType="data">/usr/local/bin/lightdm-deepin-greeter</Path>
+            <Path fileType="data">/usr/local/share/dbus-1/services/com.deepin.dman.service</Path>
+            <Path fileType="data">/usr/local/share/xgreeters/lightdm-deepin-greeter.desktop</Path>
+            <Path fileType="data">/usr/share/applications/deepin-toggle-desktop.desktop</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.WarningDialog.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.lockFront.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.osd.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.shutdownFront.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.welcome.service</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_af.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_am.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_am_ET.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ar.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ast.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_az.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_bg.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_bn.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ca.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_cs.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_da.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_de.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_el.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_en_AU.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_eo.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_es.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_fa.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_fi.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_fr.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_gl.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_he.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_hi_IN.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_hr.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_hu.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_hy.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_id.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_it.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ja.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ko.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ku_IQ.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_lt.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ml.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_mn.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_mr.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ms.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_nb.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_nl.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_pam.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_pl.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_pt.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ro.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ru.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_si.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_sk.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_sl.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_sr.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_sv.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ta.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_tr.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ug.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_uk.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_ur.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_vi.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_zh_HK.qm</Path>
+            <Path fileType="data">/usr/share/dde-session-ui/translations/dde-session-ui_zh_TW.qm</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/deepin-toggle-desktop.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/deepin-toggle-desktop.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/96x96/apps/deepin-toggle-desktop.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-toggle-desktop.svg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-11-22</Date>
+            <Version>4.1.5</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
