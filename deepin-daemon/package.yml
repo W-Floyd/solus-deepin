@@ -55,7 +55,6 @@ setup      : |
     %patch -p1 < $pkgfiles/nm-1.10.patch
     %patch -p1 < $pkgfiles/desktop.patch
     %patch -p1 < $pkgfiles/dde-daemon_3.2.3.patch
-    %patch -p1 < $pkgfiles/libdir.patch
     go get github.com/axgle/mahonia
     go get github.com/BurntSushi/freetype-go/freetype
     go get github.com/BurntSushi/freetype-go/freetype/truetype
@@ -76,4 +75,5 @@ build      : |
     export GOPATH="${workdir}/:/usr/share/gocode"
     %make
 install    : |
-    %make_install 
+    %make_install
+    install -Dm0644 $pkgfiles/deepin-daemon.sysusers "$installdir/%libdir%/sysusers.d/deepin-daemon.conf"

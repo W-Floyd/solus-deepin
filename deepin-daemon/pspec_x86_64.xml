@@ -19,20 +19,21 @@
 </Description>
         <PartOf>desktop</PartOf>
         <Files>
-            <Path fileType="data">/deepin-daemon/backlight_helper</Path>
-            <Path fileType="data">/deepin-daemon/dde-greeter-setter</Path>
-            <Path fileType="data">/deepin-daemon/dde-lockservice</Path>
-            <Path fileType="data">/deepin-daemon/dde-session-daemon</Path>
-            <Path fileType="data">/deepin-daemon/dde-session-initializer</Path>
-            <Path fileType="data">/deepin-daemon/dde-system-daemon</Path>
-            <Path fileType="data">/deepin-daemon/default-file-manager</Path>
-            <Path fileType="data">/deepin-daemon/default-terminal</Path>
-            <Path fileType="data">/deepin-daemon/desktop-toggle</Path>
-            <Path fileType="data">/deepin-daemon/grub2</Path>
-            <Path fileType="data">/deepin-daemon/langselector</Path>
-            <Path fileType="data">/deepin-daemon/search</Path>
-            <Path fileType="data">/deepin-daemon/soundeffect</Path>
-            <Path fileType="data">/deepin-daemon/theme-thumb-tool</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/backlight_helper</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-greeter-setter</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-lockservice</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-session-daemon</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-session-initializer</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-system-daemon</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/default-file-manager</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/default-terminal</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/desktop-toggle</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/grub2</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/langselector</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/search</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/soundeffect</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/theme-thumb-tool</Path>
+            <Path fileType="library">/usr/lib64/sysusers.d/deepin-daemon.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.daemon.Appearance.service</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.daemon.Audio.service</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.daemon.Bluetooth.service</Path>
@@ -113,7 +114,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-20</Date>
+            <Date>2017-11-21</Date>
             <Version>3.2.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
