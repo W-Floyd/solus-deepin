@@ -91,7 +91,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-19</Date>
+            <Date>2017-11-22</Date>
             <Version>3.2.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

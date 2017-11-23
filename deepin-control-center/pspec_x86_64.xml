@@ -143,9 +143,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-11-21</Date>
-            <Version>4.3.3</Version>
+        <Update release="2">
+            <Date>2017-11-23</Date>
+            <Version>4.3.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

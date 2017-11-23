@@ -27,7 +27,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-20</Date>
+            <Date>2017-11-22</Date>
             <Version>0.2.8.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

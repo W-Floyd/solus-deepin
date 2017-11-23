@@ -1,8 +1,8 @@
 name       : startdde
-version    : 3.1.19
-release    : 1
+version    : 3.1.20
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/startdde/archive/3.1.19.tar.gz : 24dcdaaf530f33aaac953179077ce38f01cf3a18321f01bdbdff5dc9a524d0a0
+    - https://github.com/linuxdeepin/startdde/archive/3.1.20.tar.gz : a7c35962b04d18f3e2d32b88590caa65dfdec87086e1b3bc2fc34e0387649a98
 networking : yes
 license    : GPL-3.0
 component  : desktop

@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0f1c0e9..6eb23de 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -10,7 +10,7 @@ include(ValaVersion)
+ find_package(Vala)
+ ensure_vala_version("0.22.0" MINIMUM)
+ find_package(PkgConfig)
+-find_package(GLib "2.48" REQUIRED)
++find_package(GLib REQUIRED)
+ find_package(JsonGlib)
+ find_package(Libsecret)
+ find_package(FontConfig)

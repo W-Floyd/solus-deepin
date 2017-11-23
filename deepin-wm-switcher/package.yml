@@ -1,8 +1,8 @@
 name       : deepin-wm-switcher
-version    : 1.1.7
-release    : 1
+version    : 1.1.9
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-wm-switcher/archive/1.1.7.tar.gz : 2731807938f675e0f4a5f72c579e16e44338120032a1402b3098dbfc55855e4c
+    - https://github.com/linuxdeepin/deepin-wm-switcher/archive/1.1.9.tar.gz : 6c1a9931b956c3a73dd20bf598336216c8656250379ace62a3b3b9a170cd323c
 license    : GPL-3.0
 component  : desktop
 summary    : Deepin window manager monitoring and auto-switching service.

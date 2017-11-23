@@ -1,0 +1,27 @@
+name       : deepin-shortcut-viewer
+version    : 1.3.2
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-shortcut-viewer/archive/1.3.2.tar.gz : 916eb017bce889d275aa835cdaec710b469189fa7f7b17f3d14271066c7f0ec4
+license    : GPL-3.0
+component  : desktop
+summary    : Deepin Shortcut Viewer
+description: |
+    Deepin Shortcut Viewer
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(gl)
+    - qt5-tools-devel
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd

@@ -1,0 +1,39 @@
+name       : deepin-terminal
+version    : '2.8'
+release    : 2
+source     :
+    - https://github.com/linuxdeepin/deepin-terminal/archive/2.8.tar.gz : 9abcbbefd1b60835d66700c97cd5dcd37481496da32b986b6c23fd5d88f1a3be
+license    : GPL-3.0
+component  : desktop
+summary    : This is default terminal emulation application for Deepin.
+description: |
+    This is default terminal emulation application for Deepin.
+builddeps  :
+    - gperf
+    - pkgconfig(gee-0.8)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(gnutls)
+    - pkgconfig(gobject-2.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libpcre2-8)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(libsecret-1)
+    - pkgconfig(libwnck-3.0)
+    - vala
+rundeps    :
+    - deepin-shortcut-viewer
+setup      : |
+    %patch -p1 < $pkgfiles/glib.patch
+    mkdir build
+    pushd build
+    %cmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install
+    popd

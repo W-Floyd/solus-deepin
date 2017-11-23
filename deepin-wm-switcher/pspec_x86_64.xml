@@ -25,9 +25,9 @@ It is capable of monitoring the health of the 3D WM and falling back to 2D if ba
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-11-21</Date>
-            <Version>1.1.7</Version>
+        <Update release="3">
+            <Date>2017-11-23</Date>
+            <Version>1.1.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
