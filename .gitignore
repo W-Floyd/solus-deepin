@@ -3,3 +3,4 @@ Makefile.common
 Makefile.iso
 common/
 *.eopkg
+graph.dot
