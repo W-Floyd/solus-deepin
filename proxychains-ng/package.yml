@@ -8,7 +8,6 @@ component  : network.util
 summary    : A preloader which hooks calls to sockets in dynamically linked programs and redirects it through one or more socks/http proxies
 description: |
     ProxyChains is a UNIX program, that hooks network-related libc functions in DYNAMICALLY LINKED programs via a preloaded DLL (dlsym(), LD_PRELOAD) and redirects the connections through SOCKS4a/5 or HTTP proxies. It supports TCP only (no UDP/ICMP etc).
-#builddeps  :
 setup      : |
     %configure
 build      : |
