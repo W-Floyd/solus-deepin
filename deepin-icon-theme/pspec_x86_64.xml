@@ -996,7 +996,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-multitasking-view.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-screen-recorder.svg</Path>
@@ -1045,7 +1044,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-multitasking-view.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-screen-recorder.svg</Path>
@@ -1095,7 +1093,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-multitasking-view.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-screen-recorder.svg</Path>
@@ -1144,7 +1141,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-multitasking-view.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-screen-recorder.svg</Path>
@@ -1193,7 +1189,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-multitasking-view.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-screen-recorder.svg</Path>
@@ -1224,7 +1219,9 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/0xdbe.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/360logo.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/360safeforcnos.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/4kvideodownloader.png.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/DaVinci-Resolve.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/Elaunch.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/QtProject-qtcreator-qt5.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/QtProject-qtcreator.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/Sci48M.svg</Path>
@@ -1235,10 +1232,13 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/aegisub.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/aisleriot.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/alien-arena.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/allo.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/alltomp3.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/amarok.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/amule.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/android-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/anjuta.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/ao-app.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/appimagekit-gravit-designer.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/application-x-deepinclone-dim.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/apps.bible.cbol.svg</Path>
@@ -1355,6 +1355,8 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/blender.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/blobby.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/bluefish.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/bookworm.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/boostnote.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/brackets.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/brasero.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/brutalchess.svg</Path>
@@ -1364,6 +1366,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/calibre-gui.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/calibre.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/calligrakrita.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/caprine.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/caret.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/catfish.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/cheese.svg</Path>
@@ -1376,6 +1379,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/clion.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/clipgrab.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/clonezilla.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/code.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/codeblocks.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/codelite.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/comix.svg</Path>
@@ -1384,6 +1388,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/cxmenu-cxoffice-0-crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/d-feet.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/darktable.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/dbschema.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-file-manager.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde.svg</Path>
@@ -1411,7 +1416,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-music-player.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-screen-recorder.svg</Path>
@@ -1427,6 +1431,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin.com.qq.im.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin.com.qq.office.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin.com.thunderspeed.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin.com.wechat.devtools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin.com.wechat.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin.com.weixin.work.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepinwine-360zip.svg</Path>
@@ -1579,9 +1584,12 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/lives.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/lmms.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/lollypop.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/losslesscut.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/lovewallpaper.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/lutris.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/lyx.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/mailspring.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/maltego.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/mame.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/master-pdf-editor.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/master-pdf-editor3.svg</Path>
@@ -1597,6 +1605,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/momo.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/monodevelop.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/mu.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/multibootusb.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/muse.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/musescore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/mypaint.svg</Path>
@@ -1622,6 +1631,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/opera-browser.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/opera-developer.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/opera.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/p3x-onenote.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/pdfsam.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/pdfshuffler.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/pencil.svg</Path>
@@ -1636,6 +1646,8 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/poedit.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/point.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/pointdownload.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/popcorn-time.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/postman.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/ppsspp.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/preferences-desktop-font.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/preferences-system.svg</Path>
@@ -1654,6 +1666,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/recordmydesktop.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/redeclipse.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/remmina.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/riot-web.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/roxterm.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/rubymine.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/scanner.svg</Path>
@@ -1735,6 +1748,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/wire-desktop.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/wireshark.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/wiznote.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/wpcoms.png.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/wps-office-etmain.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/wps-office-wppmain.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/wps-office-wpsmain.svg</Path>
@@ -1775,7 +1789,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-multitasking-view.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-screen-recorder.svg</Path>
@@ -1823,7 +1836,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-multitasking-view.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-note.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-oem-studio.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-picker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-screen-recorder.svg</Path>
@@ -5002,7 +5014,6 @@
             <Path fileType="data">/usr/share/icons/deepin/places/22/folder-remote.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/places/22/folder-videos.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/places/22/folder.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/places/22/inode-directory.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/places/22/network-server.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/places/22/network-workgroup.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/places/22/user-desktop.svg</Path>
@@ -5162,6 +5173,13 @@
             <Path fileType="data">/usr/share/icons/deepin/status/16/network-wirelss-no-route-secure-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/status/16/network-wirelss-no-route-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/status/16/system-shutdown-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/status/16/wireless-0-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/status/16/wireless-20-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/status/16/wireless-40-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/status/16/wireless-60-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/status/16/wireless-80-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/status/16/wireless-disconnect-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/status/16/wireless-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/status/24/audio-volume-000-muted.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/status/24/audio-volume-000.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/status/24/audio-volume-010-muted.svg</Path>
@@ -5560,9 +5578,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-11-22</Date>
-            <Version>15.12.50</Version>
+        <Update release="2">
+            <Date>2018-01-12</Date>
+            <Version>15.12.52</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
