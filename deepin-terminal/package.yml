@@ -1,8 +1,8 @@
 name       : deepin-terminal
-version    : '2.8'
-release    : 2
+version    : 2.9.2
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-terminal/archive/2.8.tar.gz : 9abcbbefd1b60835d66700c97cd5dcd37481496da32b986b6c23fd5d88f1a3be
+    - https://github.com/linuxdeepin/deepin-terminal/archive/2.9.2.tar.gz : 0869789d9a235929ebaf1e16e81c4e34076df0712ade7b4530797a19c9ce241a
 license    : GPL-3.0
 component  : desktop
 summary    : This is default terminal emulation application for Deepin.
