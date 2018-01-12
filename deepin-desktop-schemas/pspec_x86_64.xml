@@ -22,6 +22,7 @@
             <Path fileType="data">/usr/share/glib-2.0/schemas/90_deepin-default-gsettings.gschema.override</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.appearance.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.audio.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.control-center.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.daemon.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.datetime.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.default-applications.gschema.xml</Path>
@@ -29,6 +30,7 @@
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.display.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.dock.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.gesture.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.inputdevices.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.keybinding.mediakey.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.keybinding.system.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.keyboard.gschema.xml</Path>
@@ -90,9 +92,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-11-22</Date>
-            <Version>3.2.2</Version>
+        <Update release="2">
+            <Date>2018-01-12</Date>
+            <Version>3.2.5</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
