@@ -1,3 +1,5 @@
+libdtkcore.so.2:_Z19qInitResources_utilv
+libdtkcore.so.2:_Z22qCleanupResources_utilv
 libdtkcore.so.2:_ZN3Dtk4Core11DLogManager12setLogFormatERK7QString
 libdtkcore.so.2:_ZN3Dtk4Core11DLogManager14getlogFilePathEv
 libdtkcore.so.2:_ZN3Dtk4Core11DLogManager19initConsoleAppenderEv
