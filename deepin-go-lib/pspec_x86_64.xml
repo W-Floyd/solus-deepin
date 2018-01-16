@@ -49,6 +49,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/archive/testdata/tar-compress-datas/data2</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/archive/testdata/tar-extracte-data.tar</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/archive/utils/tar.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/asound/asound.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/backlight/common/common.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/backlight/display/display.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/backlight/display/display_test.go</Path>
@@ -326,6 +327,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/proplist.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/pulse.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/server.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/simple/simple.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/sink.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/sink_input.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/source.go</Path>
@@ -337,6 +339,15 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound/player.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound/player.h</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound/utils.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound_effect/alsa_backend.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound_effect/ogg.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound_effect/player.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound_effect/pulse_backend.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound_effect/theme/theme.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound_effect/wav.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/stb_vorbis/stb_vorbis.c</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/stb_vorbis/stb_vorbis.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/stb_vorbis/stb_vorbis.h</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/strv/strv.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/strv/strv_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/tasker/delay_task.go</Path>
@@ -386,9 +397,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-11-22</Date>
-            <Version>1.2.1</Version>
+        <Update release="2">
+            <Date>2018-01-16</Date>
+            <Version>1.2.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
