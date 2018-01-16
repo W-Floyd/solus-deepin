@@ -1,6 +1,6 @@
 name       : deepin-qt-dbus-factory
-version    : 0.4.1
-release    : 1
+version    : 0.4.2
+release    : 2
 source     :
     - https://github.com/linuxdeepin/dde-qt-dbus-factory/archive/0.4.2.tar.gz : 4c620acca735c204456e6efe2552638e57127bf9ca28240f5c40693af591c22d
 license    : GPL-3.0
