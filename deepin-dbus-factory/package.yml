@@ -1,8 +1,8 @@
 name       : deepin-dbus-factory
-version    : 3.1.10
-release    : 1
+version    : 3.1.12
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/dbus-factory/archive/3.1.10.tar.gz : de6010d21784b5338960861840a526e3768b11953b1f387c171467fd5d3edf68
+    - https://github.com/linuxdeepin/dbus-factory/archive/3.1.12.tar.gz : 733c0b6a0a932eb03809c1409d51a6cb5729cde674142566d64187c29682d6c3
 license    : GPL-3.0
 component  : programming.devel
 summary    : GO DBus factory for Deepin
