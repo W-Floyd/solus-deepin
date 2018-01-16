@@ -1,8 +1,8 @@
 name       : deepin-api
-version    : 3.1.17
-release    : 1
+version    : 3.1.19
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/dde-api/archive/3.1.17.tar.gz : ec34df71e0f1ce42bcf89089ecd2fd51b073eed41ac7a50bba3ed33f3d98edd6
+    - https://github.com/linuxdeepin/dde-api/archive/3.1.19.tar.gz : 53095f900d9834382d4a3eb98c1712fe2ca08e7fb975ea377bb4f43487e2ff7a
 extract    : no
 networking : yes
 license    : GPL-3.0
@@ -14,6 +14,7 @@ rundeps    :
     - blur-effect
     - deepin-desktop-base
     - rfkill
+    - xcur2png
 builddeps  :
     - deepin-dbus-factory
     - deepin-gettext-tools
@@ -21,7 +22,9 @@ builddeps  :
     - deepin-gir-generator
     - git
     - golang
+    - pkgconfig(alsa)
     - pkgconfig(gdk-3.0)
+    - pkgconfig(libpulse-simple)
     - pkgconfig(librsvg-2.0)
     - pkgconfig(poppler-glib)
     - pkgconfig(libcanberra)
@@ -37,6 +40,7 @@ build      : |
     export GOPATH=$workdir/:/usr/share/gocode
     go get gopkg.in/alecthomas/kingpin.v2
     go get github.com/nfnt/resize
+    go get github.com/cryptix/wav
     pushd src/github.com/linuxdeepin/dde-api
     make build-dep
     %make
