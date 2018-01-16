@@ -1,8 +1,8 @@
 name       : libbson
-version    : 1.9.0_rc0
-release    : 2
+version    : 1.9.2
+release    : 3
 source     :
-    - https://github.com/mongodb/libbson/archive/1.9.0-rc0.tar.gz : acda3dbbe89a22f9e82c442952e389b42e83617bfb4c72a959f7ad61c3693478
+    - https://github.com/mongodb/libbson/archive/1.9.2.tar.gz : 726068026025c84bc3161d6a54209a75490bd3387d4739fbce34f3fd3fed08dc
 license    : Apache-2.0
 component  : programming.library
 summary    : A BSON utility library.
