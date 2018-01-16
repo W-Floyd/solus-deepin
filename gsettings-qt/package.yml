@@ -12,20 +12,20 @@ builddeps  :
     - qt5-base-devel
 setup      : |
     pushd src
-    mkdir Build
-    pushd Build
+    mkdir build
+    pushd build
     %qmake ..
     popd
     popd
 build      : |
     pushd src
-    pushd Build
+    pushd build
     %make
     popd
     popd
 install    : |
     pushd src
-    pushd Build
+    pushd build
     %make_install INSTALL_ROOT=$installdir
     popd
     popd
