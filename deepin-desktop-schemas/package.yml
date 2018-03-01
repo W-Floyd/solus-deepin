@@ -1,18 +1,13 @@
 name       : deepin-desktop-schemas
-version    : 3.2.5
-release    : 2
+version    : 3.2.6
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-desktop-schemas/archive/3.2.5.tar.gz : a109327e3651462e7cf16896f408c42f1ef443a23e7d782aa247bbb49ae13f52
+    - https://github.com/linuxdeepin/deepin-desktop-schemas/archive/3.2.6.tar.gz : 57ef7f17fd48f9a1dd51ef28ce77a2822735d46d314548be6ec0cb43aa611702
 license    : GPL-3.0
 component  : desktop
 summary    : GSettings Deepin desktop-wide schemas
 description: |
     GSettings Deepin desktop-wide schemas
-rundeps    :
-    - dconf
-    - deepin-artwork-themes
-    - deepin-gtk-theme
-    - deepin-sound-theme
 build      : |
     %make
 install    : |
