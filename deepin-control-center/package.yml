@@ -1,8 +1,8 @@
 name       : deepin-control-center
-version    : 4.3.4
-release    : 2
+version    : 4.3.7
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/dde-control-center/archive/4.3.4.tar.gz : feac32526792d5eef4439671864f2bdc1776cb425cdb3c56c6ced2e9cdd62bb3
+    - https://github.com/linuxdeepin/dde-control-center/archive/4.3.7.tar.gz : e1d5b706f47443d9474165f4bddeec468faffc96c35d687286429146c1934542
 license    : GPL-3.0
 component  : desktop
 summary    : Control panel of the Deepin Desktop Environment.
@@ -19,7 +19,9 @@ builddeps  :
     - qt5-tools-devel
 rundeps    :
     - deepin-account-faces
+    - deepin-api
     - deepin-artwork-themes
+    - deepin-daemon
     - deepin-dock
     - deepin-qt5integration
     - startdde

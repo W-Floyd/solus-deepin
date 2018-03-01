@@ -3,9 +3,9 @@
 __ignore='common
 .git'
 
-__new="$(git status --porcelain --untracked-files=all | grep -E '^\?\?' | grep -E '/' | sed -e 's/^[^ ]* //' -e 's#^\([^/]*\)/.*#\1#' | grep -Fxvf <(echo "${__ignore}"))"
-__modified="$(git diff --name-only | sed 's#^\([^/]*\)/.*#\1#' | sort | uniq | grep -Fxvf <(echo "${__ignore}"))"
-__done="$(find ./ -maxdepth 1 -type d | sed -e 's#^\./##' -e '/^$/d' | sort | uniq | grep -Fxvf <(echo "${__ignore}") | grep -Fxvf <(echo "${__modified}") | grep -Fxvf <(echo "${__new}"))"
+__new="$(git status --porcelain --untracked-files=all | grep -E '^\?\?' | grep '/' | sed -e 's/^[^ ]* //' -e 's#^\([^/]*\)/.*#\1#' | grep -Fxvf <(echo "${__ignore}"))"
+__modified="$(git diff --name-only | grep '/' | sed 's#^\([^/]*\)/.*#\1#' | sort | uniq | grep -Fxvf <(echo "${__ignore}"))"
+__done="$(find ./ -maxdepth 1 -type d | grep '/' | sed -e 's#^\./##' -e '/^$/d' | sort | uniq | grep -Fxvf <(echo "${__ignore}") | grep -Fxvf <(echo "${__modified}") | grep -Fxvf <(echo "${__new}"))"
 
 __ignore_list="$(cat ignore_list)"
 
@@ -16,6 +16,7 @@ geoip geoip
 libbson-1.0 libbson
 libdeepin-mutter deepin-mutter
 libmongoc-1.0 libmongoc
+libqcef libqcef
 Qt5Xdg libqtxdg'
 
 (

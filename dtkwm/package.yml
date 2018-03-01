@@ -1,0 +1,31 @@
+name       : dtkwm
+version    : 2.0.6
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/dtkwm/archive/2.0.6.tar.gz : d352c458ebce3e12f1cddc3bc4176d78ad4aee682eb0bcf7f11b4e0bdf703370
+license    : GPL-3.0
+component  : desktop.deepin
+summary    : Deepin Tool Kit Wm.
+description: |
+    Deepin Tool Kit Wm.
+builddeps  :
+    - pkgconfig(dtkcore)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xext)
+    - qt5-tools-devel
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd

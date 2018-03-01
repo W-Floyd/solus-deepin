@@ -1,8 +1,8 @@
 name       : deepin-file-manager
-version    : 4.4.4
-release    : 2
+version    : 4.4.7
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.4.tar.gz : 602f1ccc4753cda2c9999f819765a01611e78b918f155c675604c678deaeac0d
+    - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.7.tar.gz : a9fdbf9fa9a4d2037e05f6e7b357728b420212c4f789f2fb042ed2b7d62e40d8
 license    : GPL-3.0
 component  : desktop
 summary    : Deepin File Manager is a file management tool developed for Deepin
@@ -11,6 +11,9 @@ description: |
 rundeps    :
     - avfs
     - deepin-api
+    - deepin-manual
+    - deepin-shortcut-viewer
+    - deepin-terminal
     - socat
 builddeps  :
     - deepin-dock-devel

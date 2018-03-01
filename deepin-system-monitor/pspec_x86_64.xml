@@ -1,0 +1,107 @@
+<PISI>
+    <Source>
+        <Name>deepin-system-monitor</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop.deepin</PartOf>
+        <Summary xml:lang="en">A more user-friendly system monitor.</Summary>
+        <Description xml:lang="en">Deepin system monitor: a more user-friendly system monitor.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-system-monitor</Name>
+        <Summary xml:lang="en">A more user-friendly system monitor.</Summary>
+        <Description xml:lang="en">Deepin system monitor: a more user-friendly system monitor.
+</Description>
+        <PartOf>desktop.deepin</PartOf>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="data">/share/applications/deepin-system-monitor.desktop</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_bg.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_cs.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_de.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_es.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_es_419.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_he.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_it.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_lt.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_pt_BR.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_ru.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_sk.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_tr.qm</Path>
+            <Path fileType="data">/share/deepin-system-monitor/translations/deepin-system-monitor_zh_CN.qm</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/common/icon_basicfuncton.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/common/icon_basicfuncton_small.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/common/icon_optionsetting.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/common/icon_optionsetting_small.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/common/icon_overview.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/common/icon_overview_small.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/common/monitor.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/Esc.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/F1.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/all.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/application.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/arrow_down_light_normal.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/arrow_up_light_normal.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/deepin-system-monitor.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/icon_cpu_light.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/icon_memory_light.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/icon_menu.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/icon_network_light.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/kill.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/kill_cursor.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/logo_24.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/logo_48.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/notes.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/tips.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/icon/user.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/index.md</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/about.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/end.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/force.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/help.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/order.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/properties.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/search.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/status.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/status1.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/status2.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/suspend.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/en_US/png/theme.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/icon/Esc.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/icon/F1.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/icon/icon_menu.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/icon/monitor.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/icon/notes.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/icon/tips.svg</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/index.md</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/about.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/help.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/info.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/kill.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/kill2.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/monitor.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/monitor1.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/monitor2.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/pause.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/search.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/sort.png</Path>
+            <Path fileType="data">/share/dman/deepin-system-monitor/zh_CN/png/thems.png</Path>
+            <Path fileType="data">/share/icons/hicolor/scalable/apps/deepin-system-monitor.svg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-02-27</Date>
+            <Version>1.3.7</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

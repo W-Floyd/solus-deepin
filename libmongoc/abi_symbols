@@ -93,6 +93,7 @@ libmongoc-1.0.so.0:_mongoc_cyrus_step
 libmongoc-1.0.so.0:_mongoc_database_new
 libmongoc-1.0.so.0:_mongoc_get_command_name
 libmongoc-1.0.so.0:_mongoc_get_db_name
+libmongoc-1.0.so.0:_mongoc_get_documents_field_name
 libmongoc-1.0.so.0:_mongoc_get_server_id_from_opts
 libmongoc-1.0.so.0:_mongoc_gridfs_file_list_new
 libmongoc-1.0.so.0:_mongoc_gridfs_file_list_new_with_opts
@@ -273,6 +274,7 @@ libmongoc-1.0.so.0:mongoc_apm_command_started_get_operation_id
 libmongoc-1.0.so.0:mongoc_apm_command_started_get_request_id
 libmongoc-1.0.so.0:mongoc_apm_command_started_get_server_id
 libmongoc-1.0.so.0:mongoc_apm_command_started_init
+libmongoc-1.0.so.0:mongoc_apm_command_started_init_with_cmd
 libmongoc-1.0.so.0:mongoc_apm_command_succeeded_cleanup
 libmongoc-1.0.so.0:mongoc_apm_command_succeeded_get_command_name
 libmongoc-1.0.so.0:mongoc_apm_command_succeeded_get_context
@@ -728,6 +730,7 @@ libmongoc-1.0.so.0:mongoc_stream_file_new
 libmongoc-1.0.so.0:mongoc_stream_file_new_for_path
 libmongoc-1.0.so.0:mongoc_stream_flush
 libmongoc-1.0.so.0:mongoc_stream_get_base_stream
+libmongoc-1.0.so.0:mongoc_stream_get_root_stream
 libmongoc-1.0.so.0:mongoc_stream_get_tls_stream
 libmongoc-1.0.so.0:mongoc_stream_gridfs_new
 libmongoc-1.0.so.0:mongoc_stream_poll

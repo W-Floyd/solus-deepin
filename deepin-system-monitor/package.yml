@@ -1,0 +1,36 @@
+name       : deepin-system-monitor
+version    : 1.3.7
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-system-monitor/archive/1.3.7.tar.gz : 91555d7c229f1ea24e05bf030abb97c84abb4b883909d979bee8e5a26439e0ea
+license    : GPL-3.0
+component  : desktop.deepin
+summary    : A more user-friendly system monitor.
+description: |
+    Deepin system monitor: a more user-friendly system monitor.
+builddeps  :
+    - libpcap-devel
+    - pkgconfig(dtkwidget)
+    - pkgconfig(dtkwm)
+    - pkgconfig(libprocps)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xext)
+    - pkgconfig(xtst)
+    - qt5-tools-devel
+rundeps    :
+    - deepin-desktop-schemas
+setup      : |
+    mkdir build
+    pushd build
+    %qmake ..
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd

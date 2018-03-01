@@ -4,3 +4,4 @@ Makefile.iso
 common/
 *.eopkg
 graph.dot
+*.tar.gz

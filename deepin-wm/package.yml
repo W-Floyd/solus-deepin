@@ -25,6 +25,7 @@ builddeps  :
     - pkgconfig(libcanberra-gtk3)
     - vala
 rundeps    :
+    - deepin-desktop-schemas
     - deepin-menu
 setup      : |
     %autogen --disable-schemas-compile

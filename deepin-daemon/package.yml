@@ -1,8 +1,8 @@
 name       : deepin-daemon
-version    : 3.2.6
-release    : 1
+version    : 3.2.8
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/dde-daemon/archive/3.2.6.tar.gz : e86267b5f7e9f161111a67f7e7e3a77fc1d5121b7e097b7c7f075f35d6272de7
+    - https://github.com/linuxdeepin/dde-daemon/archive/3.2.8.tar.gz : a6b4b7b184b4ddfb83ff3e4eea1d3130b9f9ec7c84a9190c41d87633c9a23b82
 networking : yes
 license    : GPL-3.0
 component  : desktop
@@ -47,6 +47,7 @@ rundeps    :
     - network-manager
     - noto-sans-ttf
     - poppler
+    - proxychains-ng
     - rfkill
     - udisks
     - upower
