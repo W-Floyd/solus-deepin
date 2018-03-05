@@ -19,12 +19,10 @@ builddeps  :
     - pkgconfig(xext)
     - pkgconfig(xtst)
     - qt5-tools-devel
-rundeps    :
-    - deepin-desktop-schemas
 setup      : |
     mkdir build
     pushd build
-    %qmake ..
+    %qmake .. PREFIX=%PREFIX%
     popd
 build      : |
     pushd build

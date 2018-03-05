@@ -7,15 +7,15 @@
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>programming.library</PartOf>
-        <Summary xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic,etc.</Summary>
-        <Description xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic,etc.
+        <Summary xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.</Summary>
+        <Description xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-go-lib</Name>
-        <Summary xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic,etc.</Summary>
-        <Description xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic,etc.
+        <Summary xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.</Summary>
+        <Description xml:lang="en">A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.
 </Description>
         <PartOf>programming.library</PartOf>
         <Files>
@@ -96,6 +96,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/calendar/util/julianday_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/calendar/util/util.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/calendar/util/util_test.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/cgroup/cgroup.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus/LICENSE</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus/README.markdown</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus/auth.go</Path>
@@ -147,7 +148,6 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/debian/compat</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/debian/control</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/debian/copyright</Path>
-            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/debian/docs</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/debian/rules</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/debian/source/format</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/encoding/kv/reader.go</Path>
@@ -397,9 +397,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2018-01-16</Date>
-            <Version>1.2.3</Version>
+        <Update release="3">
+            <Date>2018-03-01</Date>
+            <Version>1.2.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

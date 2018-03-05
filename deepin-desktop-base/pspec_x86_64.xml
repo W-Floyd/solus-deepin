@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin-core</PartOf>
         <Summary xml:lang="en">Base component for Deepin.</Summary>
         <Description xml:lang="en">Base component for Deepin.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Base component for Deepin.</Summary>
         <Description xml:lang="en">Base component for Deepin.
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin-core</PartOf>
         <Files>
             <Path fileType="config">/etc/appstore.json</Path>
             <Path fileType="config">/etc/deepin-version</Path>
@@ -32,7 +32,7 @@
     </Package>
     <History>
         <Update release="3">
-            <Date>2018-01-16</Date>
+            <Date>2018-03-01</Date>
             <Version>2017.11.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

@@ -4,7 +4,7 @@ release    : 1
 source     :
     - https://github.com/linuxdeepin/dtkwm/archive/2.0.6.tar.gz : d352c458ebce3e12f1cddc3bc4176d78ad4aee682eb0bcf7f11b4e0bdf703370
 license    : GPL-3.0
-component  : desktop.deepin
+component  : desktop.deepin.core
 summary    : Deepin Tool Kit Wm.
 description: |
     Deepin Tool Kit Wm.

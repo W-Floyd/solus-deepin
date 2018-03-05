@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop.deepin</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Deepin Tool Kit Wm.</Summary>
         <Description xml:lang="en">Deepin Tool Kit Wm.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Deepin Tool Kit Wm.</Summary>
         <Description xml:lang="en">Deepin Tool Kit Wm.
 </Description>
-        <PartOf>desktop.deepin</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="library">/usr/lib/lib*.so.*</Path>
         </Files>
@@ -39,7 +39,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-02-27</Date>
+            <Date>2018-03-01</Date>
             <Version>2.0.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

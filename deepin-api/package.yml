@@ -1,33 +1,31 @@
 name       : deepin-api
-version    : 3.1.19
-release    : 2
+version    : 3.1.20
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/dde-api/archive/3.1.19.tar.gz : 53095f900d9834382d4a3eb98c1712fe2ca08e7fb975ea377bb4f43487e2ff7a
+    - https://github.com/linuxdeepin/dde-api/archive/3.1.20.tar.gz : 696df478ece82d508001328ee06f0219f81a40e88e49ab85c17ba1e2f6942b70
 extract    : no
 networking : yes
 license    : GPL-3.0
-component  : programming.library
+component  : desktop.deepin.core
 summary    : Go-lang bindings for deepin-daemon
 description: |
     Go-lang bindings for deepin-daemon
 rundeps    :
-    - blur-effect
     - deepin-desktop-base
-    - rfkill
     - xcur2png
 builddeps  :
     - deepin-dbus-factory
     - deepin-gettext-tools
-    - deepin-go-lib
     - deepin-gir-generator
+    - deepin-go-lib
     - git
     - golang
     - pkgconfig(alsa)
     - pkgconfig(gdk-3.0)
+    - pkgconfig(libcanberra)
     - pkgconfig(libpulse-simple)
     - pkgconfig(librsvg-2.0)
     - pkgconfig(poppler-glib)
-    - pkgconfig(libcanberra)
 setup      : |
     mkdir {bin,pkg,src}
     mkdir -p src/github.com/linuxdeepin/

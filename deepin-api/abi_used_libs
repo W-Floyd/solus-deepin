@@ -2,6 +2,7 @@ libX11.so.6
 libXcursor.so.1
 libXfixes.so.3
 libXi.so.6
+libasound.so.2
 libc.so.6
 libcairo.so.2
 libcanberra.so.0
@@ -16,4 +17,6 @@ libgtk-3.so.0
 libm.so.6
 libpoppler-glib.so.8
 libpthread.so.0
+libpulse-simple.so.0
+libpulse.so.0
 librsvg-2.so.2

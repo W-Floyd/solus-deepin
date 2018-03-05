@@ -4,12 +4,10 @@ release    : 3
 source     :
     - https://github.com/linuxdeepin/deepin-desktop-base/archive/2017.11.1.tar.gz : 9d2f549c2ac707c18f418f88c0d3bf94a316bafe0bccff7bcba6e5ca59471ef4
 license    : GPL-3.0
-component  : desktop
+component  : desktop.deepin-core
 summary    : Base component for Deepin.
 description: |
     Base component for Deepin.
-rundeps    :
-    - deepin-wallpapers
 setup      : |
     %patch -p1 < $pkgfiles/libdir.patch
 build      : |

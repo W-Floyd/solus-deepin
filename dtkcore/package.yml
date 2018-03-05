@@ -14,7 +14,7 @@ builddeps  :
 setup      : |
     mkdir build
     pushd build
-    %qmake ..
+    %qmake .. PREFIX=%PREFIX%
     popd
 build      : |
     pushd build

@@ -1,22 +1,22 @@
 name       : deepin-daemon
-version    : 3.2.8
-release    : 2
+version    : 3.2.9
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/dde-daemon/archive/3.2.8.tar.gz : a6b4b7b184b4ddfb83ff3e4eea1d3130b9f9ec7c84a9190c41d87633c9a23b82
+    - https://github.com/linuxdeepin/dde-daemon/archive/3.2.9.tar.gz : 778e368898d828522c2b32aad2c886ef84d776d4702ab19fbf6f857686067e88
 networking : yes
 license    : GPL-3.0
-component  : desktop
+component  : desktop.deepin.core
 summary    : Daemon handling the DDE session settings
 description: |
     Daemon handling the DDE session settings
 builddeps  :
     - deepin-api
     - deepin-dbus-factory
-    - deepin-gettext-tools
     - deepin-gir-generator
     - deepin-go-lib
     - git
     - golang
+    - pkgconfig(alsa)
     - pkgconfig(gdk-pixbuf-2.0)
     - pkgconfig(gdk-3.0)
     - pkgconfig(gtk+-3.0)
@@ -62,6 +62,7 @@ setup      : |
     go get github.com/BurntSushi/graphics-go/graphics
     go get github.com/BurntSushi/xgb
     go get github.com/BurntSushi/xgbutil
+    go get github.com/cryptix/wav
     go get github.com/disintegration/imaging
     go get github.com/howeyc/fsnotify
     go get github.com/linuxdeepin/go-x11-client
