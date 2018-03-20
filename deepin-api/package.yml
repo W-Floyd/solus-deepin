@@ -1,8 +1,8 @@
 name       : deepin-api
-version    : 3.1.20
-release    : 3
+version    : 3.1.22
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/dde-api/archive/3.1.20.tar.gz : 696df478ece82d508001328ee06f0219f81a40e88e49ab85c17ba1e2f6942b70
+    - https://github.com/linuxdeepin/dde-api/archive/3.1.22.tar.gz : c7355da4238957f95322c06e4104c52f2a18c908b17d7c22625b98bb6127859f
 extract    : no
 networking : yes
 license    : GPL-3.0
