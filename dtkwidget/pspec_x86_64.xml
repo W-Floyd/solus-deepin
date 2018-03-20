@@ -7,41 +7,44 @@
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>desktop.deepin.core</PartOf>
-        <Summary xml:lang="en">Deepint Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.</Summary>
-        <Description xml:lang="en">Deepint Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+        <Summary xml:lang="en">Base devlopment tool of all C++/Qt Developer work on Deepin.</Summary>
+        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>dtkwidget</Name>
-        <Summary xml:lang="en">Deepint Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.</Summary>
-        <Description xml:lang="en">Deepint Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+        <Summary xml:lang="en">Base devlopment tool of all C++/Qt Developer work on Deepin.</Summary>
+        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib/dtk2/dtk-svgc</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/qt5/mkspecs/modules/qt_lib_dtkwidget.pri</Path>
             <Path fileType="data">/usr/share/dtkwidget</Path>
         </Files>
     </Package>
     <Package>
         <Name>dtkwidget-devel</Name>
         <Summary xml:lang="en">Development files for dtkwidget</Summary>
-        <Description xml:lang="en">Deepint Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="6">dtkwidget</Dependency>
+            <Dependency release="9">dtkwidget</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/*.pc</Path>
+            <Path fileType="library">/usr/lib64/cmake/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="6">
-            <Date>2018-03-02</Date>
-            <Version>2.0.6.1</Version>
+        <Update release="9">
+            <Date>2018-03-20</Date>
+            <Version>2.0.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

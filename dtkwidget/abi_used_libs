@@ -3,13 +3,14 @@ libQt5DBus.so.5
 libQt5Gui.so.5
 libQt5Multimedia.so.5
 libQt5Network.so.5
+libQt5Svg.so.5
 libQt5Widgets.so.5
 libQt5X11Extras.so.5
 libX11.so.6
 libXext.so.6
 libc.so.6
 libcairo.so.2
-libdframeworkdbus.so.1
+libdframeworkdbus.so.2
 libdtkcore.so.2
 libgcc_s.so.1
 libglib-2.0.so.0
