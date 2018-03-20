@@ -9,7 +9,7 @@ libQt5Widgets.so.5
 libQt5X11Extras.so.5
 libX11.so.6
 libc.so.6
-libdframeworkdbus.so.1
+libdframeworkdbus.so.2
 libdtkcore.so.2
 libdtkwidget.so.2
 libffmpegthumbnailer.so.4

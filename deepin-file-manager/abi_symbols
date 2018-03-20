@@ -8,9 +8,11 @@ libdde-file-manager.so.1:_Z10isAppGroup7QString
 libdde-file-manager.so.1:_Z10isComputer7QString
 libdde-file-manager.so.1:_Z10sizeStringRK7QString
 libdde-file-manager.so.1:_Z10trimmedEnd7QString
+libdde-file-manager.so.1:_Z10x2nreallocPvPmm
 libdde-file-manager.so.1:_Z11isInDesktop7QString
 libdde-file-manager.so.1:_Z11svgToPixmapRK7QStringii
 libdde-file-manager.so.1:_Z13isAvfsMountedv
+libdde-file-manager.so.1:_Z13streamsavedirP11__dirstream
 libdde-file-manager.so.1:_Z14getQssFromFile7QString
 libdde-file-manager.so.1:_Z14parentPathListRK7QString
 libdde-file-manager.so.1:_Z15getMimeTypeName7QString
@@ -41,6 +43,7 @@ libdde-file-manager.so.1:_Z29qCleanupResources_filemanagerv
 libdde-file-manager.so.1:_Z5isApp7QString
 libdde-file-manager.so.1:_Z5qHashRK4DUrlj
 libdde-file-manager.so.1:_Z7isTrash7QString
+libdde-file-manager.so.1:_Z7savedirPKc
 libdde-file-manager.so.1:_Z8dRound64di
 libdde-file-manager.so.1:_Z8isAllApp11QStringList
 libdde-file-manager.so.1:_Z8isFolder7QString
@@ -1406,7 +1409,6 @@ libdde-file-manager.so.1:_ZN15SectionKeyLabel11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN15SectionKeyLabelC1ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE
 libdde-file-manager.so.1:_ZN15SectionKeyLabelC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE
 libdde-file-manager.so.1:_ZN15UDiskDeviceInfo11setDiskInfoE9QDiskInfo
-libdde-file-manager.so.1:_ZN15UDiskDeviceInfo16getMountPointUrlER9QDiskInfo
 libdde-file-manager.so.1:_ZN15UDiskDeviceInfo16getMountPointUrlEv
 libdde-file-manager.so.1:_ZN15UDiskDeviceInfo7getFreeEv
 libdde-file-manager.so.1:_ZN15UDiskDeviceInfo8getTotalEv
@@ -1601,6 +1603,7 @@ libdde-file-manager.so.1:_ZN16GvfsMountManager14volume_changedERK9QDiskInfo
 libdde-file-manager.so.1:_ZN16GvfsMountManager14volume_removedERK9QDiskInfo
 libdde-file-manager.so.1:_ZN16GvfsMountManager15ask_password_cbEP16_GMountOperationPKcS3_S3_17GAskPasswordFlags
 libdde-file-manager.so.1:_ZN16GvfsMountManager15drive_connectedERK6QDrive
+libdde-file-manager.so.1:_ZN16GvfsMountManager15getRealMountUrlERK9QDiskInfo
 libdde-file-manager.so.1:_ZN16GvfsMountManager15unmount_done_cbEP8_GObjectP13_GAsyncResultPv
 libdde-file-manager.so.1:_ZN16GvfsMountManager15unmount_mountedERK7QString
 libdde-file-manager.so.1:_ZN16GvfsMountManager15updateDiskInfosEv
@@ -1939,6 +1942,7 @@ libdde-file-manager.so.1:_ZN17DFMNewFolderEventC1EPK7QObjectRK4DUrl
 libdde-file-manager.so.1:_ZN17DFMNewFolderEventC2EPK7QObjectRK4DUrl
 libdde-file-manager.so.1:_ZN17DFMPlaformManager11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN17DFMPlaformManager11qt_metacastEPKc
+libdde-file-manager.so.1:_ZN17DFMPlaformManager13isRoot_hiddenEv
 libdde-file-manager.so.1:_ZN17DFMPlaformManager16isDisableUnMountEv
 libdde-file-manager.so.1:_ZN17DFMPlaformManager18platformConfigPathEv
 libdde-file-manager.so.1:_ZN17DFMPlaformManagerC1EP7QObject
@@ -2158,6 +2162,7 @@ libdde-file-manager.so.1:_ZN18DFileManagerWindow11initConnectEv
 libdde-file-manager.so.1:_ZN18DFileManagerWindow11initToolBarEv
 libdde-file-manager.so.1:_ZN18DFileManagerWindow11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN18DFileManagerWindow11qt_metacastEPKc
+libdde-file-manager.so.1:_ZN18DFileManagerWindow11resizeEventEP12QResizeEvent
 libdde-file-manager.so.1:_ZN18DFileManagerWindow12aboutToCloseEv
 libdde-file-manager.so.1:_ZN18DFileManagerWindow12initSplitterEv
 libdde-file-manager.so.1:_ZN18DFileManagerWindow12initTitleBarEv
@@ -2309,10 +2314,12 @@ libdde-file-manager.so.1:_ZN19DStyledItemDelegate11qt_metacallEN11QMetaObject4Ca
 libdde-file-manager.so.1:_ZN19DStyledItemDelegate11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN19DStyledItemDelegate12decreaseIconEv
 libdde-file-manager.so.1:_ZN19DStyledItemDelegate12increaseIconEv
+libdde-file-manager.so.1:_ZN19DStyledItemDelegate13getIconPixmapERK5QIconRK5QSizedNS0_4ModeENS0_5StateE
 libdde-file-manager.so.1:_ZN19DStyledItemDelegate19hideAllIIndexWidgetEv
 libdde-file-manager.so.1:_ZN19DStyledItemDelegate25hideNotEditingIndexWidgetEv
 libdde-file-manager.so.1:_ZN19DStyledItemDelegate26setIconSizeByIconSizeLevelEi
 libdde-file-manager.so.1:_ZN19DStyledItemDelegate30commitDataAndCloseActiveEditorEv
+libdde-file-manager.so.1:_ZN19DStyledItemDelegate9paintIconEP8QPainterRK5QIconRK5QRect6QFlagsIN2Qt13AlignmentFlagEENS2_4ModeENS2_5StateE
 libdde-file-manager.so.1:_ZN19DStyledItemDelegateC1EP15DFileViewHelper
 libdde-file-manager.so.1:_ZN19DStyledItemDelegateC1ER26DStyledItemDelegatePrivateP15DFileViewHelper
 libdde-file-manager.so.1:_ZN19DStyledItemDelegateC2EP15DFileViewHelper
@@ -3136,6 +3143,7 @@ libdde-file-manager.so.1:_ZN9DFMGlobal14startWithHanziERK7QString
 libdde-file-manager.so.1:_ZN9DFMGlobal15applicationNameEv
 libdde-file-manager.so.1:_ZN9DFMGlobal15initFileServiceEv
 libdde-file-manager.so.1:_ZN9DFMGlobal16convertStrToUtf8ERK10QByteArray
+libdde-file-manager.so.1:_ZN9DFMGlobal16isDisableUnmountERK9QDiskInfo
 libdde-file-manager.so.1:_ZN9DFMGlobal16keyCtrlIsPressedEv
 libdde-file-manager.so.1:_ZN9DFMGlobal16organizationNameEv
 libdde-file-manager.so.1:_ZN9DFMGlobal17autoMountAllDisksEv
@@ -3745,6 +3753,7 @@ libdde-file-manager.so.1:_ZNK15DesktopFileInfo7getExecEv
 libdde-file-manager.so.1:_ZNK15DesktopFileInfo7getNameEv
 libdde-file-manager.so.1:_ZNK15DesktopFileInfo7getTypeEv
 libdde-file-manager.so.1:_ZNK15DesktopFileInfo8fileIconEv
+libdde-file-manager.so.1:_ZNK15DesktopFileInfo8fileNameEv
 libdde-file-manager.so.1:_ZNK15DesktopFileInfo8iconNameEv
 libdde-file-manager.so.1:_ZNK15FileDirIterator4pathEv
 libdde-file-manager.so.1:_ZNK15FileDirIterator7hasNextEv
@@ -3962,6 +3971,7 @@ libdde-file-manager.so.1:_ZNK17DAbstractFileInfo10permissionE6QFlagsIN11QFileDev
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo11mimeDataUrlEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo11permissionsEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo11toLocalFileEv
+libdde-file-manager.so.1:_ZNK17DAbstractFileInfo11toQFileInfoEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo12absolutePathEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo12isExecutableEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo12lastModifiedEv
@@ -3974,6 +3984,7 @@ libdde-file-manager.so.1:_ZNK17DAbstractFileInfo13userRowHeightEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14additionalIconEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14canIteratorDirEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14completeSuffixEv
+libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14createIODeviceEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14fileSharedNameEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14isAncestorsUrlERK4DUrlP5QListIS0_E
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14menuActionListENS_8MenuTypeE
