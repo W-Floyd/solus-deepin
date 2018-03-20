@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Convert dbus interfaces to go-lang or qml wrapper code.</Summary>
         <Description xml:lang="en">Convert dbus interfaces to go-lang or qml wrapper code.
 </Description>
@@ -17,14 +17,14 @@
         <Summary xml:lang="en">Convert dbus interfaces to go-lang or qml wrapper code.</Summary>
         <Description xml:lang="en">Convert dbus interfaces to go-lang or qml wrapper code.
 </Description>
-        <PartOf>programming.tools</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
         </Files>
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-03-01</Date>
+            <Date>2018-03-20</Date>
             <Version>0.6.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
