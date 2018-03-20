@@ -1,21 +1,20 @@
 name       : deepin-dock
-version    : 4.5.0
-release    : 1
+version    : 4.6.1
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/dde-dock/archive/4.5.0.tar.gz : ef3faae63bef536d57c618daf9aa515a6b478308d3f96d2cb1af3e3edfc729d8
+    - https://github.com/linuxdeepin/dde-dock/archive/4.6.1.tar.gz : 8dfaf44a81cf9f37a32bde088e2aebbe1c8775259ded67262c43f7b197bc64d1
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin Dock is the dock of Deepin Desktop Environment.
 description: |
     Deepin Dock is the dock of Deepin Desktop Environment.
 builddeps  :
+    - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkwidget)
     - pkgconfig(gl)
     - pkgconfig(gsettings-qt)
     - pkgconfig(Qt5Svg)
     - pkgconfig(Qt5X11Extras)
-    - pkgconfig(x11)
-    - pkgconfig(xcb)
     - pkgconfig(xcb-ewmh)
     - pkgconfig(xcb-image)
     - pkgconfig(xtst)
@@ -23,7 +22,7 @@ builddeps  :
 setup      : |
     mkdir build
     pushd build
-    %qmake ..
+    %cmake ..
     popd
 build      : |
     pushd build
