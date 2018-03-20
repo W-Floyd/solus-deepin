@@ -1,8 +1,8 @@
 name       : deepin-go-lib
-version    : 1.2.4
-release    : 3
+version    : 1.2.6
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/go-lib/archive/1.2.4.tar.gz : 58bae9c3c79fd698258b708a0bdc76326816670299f056b90d5269adf5006bae
+    - https://github.com/linuxdeepin/go-lib/archive/1.2.6.tar.gz : 57f1f70e800915cdcc0821146fb4b71289b511b4a54b504238daafa8444f4781
 license    : GPL-3.0
 component  : programming.library
 summary    : A library containing many useful go routines for things such as glib, gettext, archive, graphic, etc.
