@@ -15,7 +15,7 @@ setup      : |
     %patch -p1 < $pkgfiles/rename-xmousearea.patch
     mkdir build
     pushd build
-    %qmake ..
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
     popd
 build      : |
     pushd build

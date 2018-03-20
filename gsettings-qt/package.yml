@@ -11,21 +11,15 @@ description: |
 builddeps  :
     - qt5-base-devel
 setup      : |
-    pushd src
-    mkdir build
-    pushd build
+    mkdir src/build
+    pushd src/build
     %qmake ..
     popd
-    popd
 build      : |
-    pushd src
-    pushd build
+    pushd src/build
     %make
     popd
-    popd
 install    : |
-    pushd src
-    pushd build
+    pushd src/build
     %make_install INSTALL_ROOT=$installdir
-    popd
     popd

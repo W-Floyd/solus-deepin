@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">This is default terminal emulation application for Deepin.</Summary>
         <Description xml:lang="en">This is default terminal emulation application for Deepin.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">This is default terminal emulation application for Deepin.</Summary>
         <Description xml:lang="en">This is default terminal emulation application for Deepin.
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/deepin-terminal/ssh_login.sh</Path>
@@ -183,7 +183,7 @@
     </Package>
     <History>
         <Update release="5">
-            <Date>2018-03-01</Date>
+            <Date>2018-03-20</Date>
             <Version>2.9.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
