@@ -1,7 +1,7 @@
-Makefile
-Makefile.common
-Makefile.iso
-common/
+/Makefile
+/Makefile.common
+/Makefile.iso
+/common/
 *.eopkg
-graph.dot
+/graph.dot
 *.tar.gz
