@@ -1,8 +1,8 @@
 name       : deepin-qt-dbus-factory
-version    : 0.4.2
-release    : 3
+version    : 1.0.1
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/dde-qt-dbus-factory/archive/0.4.2.tar.gz : 4c620acca735c204456e6efe2552638e57127bf9ca28240f5c40693af591c22d
+    - https://github.com/linuxdeepin/dde-qt-dbus-factory/archive/1.0.1.tar.gz : c283127b14f6dd8750e26be4c90a31b94bd6b1648537547d9ada724ecca732ce
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Automatically storing of automatically generated Qt DBus code used by Deepin.
@@ -12,7 +12,6 @@ builddeps  :
     - qt5-tools-devel
     - pkgconfig(glu)
 setup      : |
-    %patch -p1 < $pkgfiles/rename-xmousearea.patch
     mkdir build
     pushd build
     %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
