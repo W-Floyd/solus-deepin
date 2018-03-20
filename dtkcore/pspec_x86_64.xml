@@ -37,7 +37,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">dtkcore</Dependency>
+            <Dependency release="5">dtkcore</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -47,9 +47,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-03-10</Date>
-            <Version>2.0.7</Version>
+        <Update release="5">
+            <Date>2018-03-20</Date>
+            <Version>2.0.7.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
