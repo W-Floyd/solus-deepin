@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL</License>
+        <License>GPL-2.0</License>
         <PartOf>programming.perl</PartOf>
         <Summary xml:lang="en">Read/Write .ini style files with as little code as possible.</Summary>
         <Description xml:lang="en">Read/Write .ini style files with as little code as possible.
@@ -25,8 +25,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-03-01</Date>
+        <Update release="2">
+            <Date>2018-03-20</Date>
             <Version>2.23</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
