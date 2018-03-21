@@ -1,6 +1,6 @@
 name       : dtkwidget
 version    : 2.0.8
-release    : 9
+release    : 10
 source     :
     - https://github.com/linuxdeepin/dtkwidget/archive/2.0.8.tar.gz : 525128b4331d3e9989597559bbc0b6021a3d2001916f0783201e973b24e5dc18
 license    : GPL-3.0

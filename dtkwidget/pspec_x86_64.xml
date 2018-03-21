@@ -32,7 +32,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="9">dtkwidget</Dependency>
+            <Dependency release="10">dtkwidget</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -42,8 +42,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-03-20</Date>
+        <Update release="10">
+            <Date>2018-03-21</Date>
             <Version>2.0.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
