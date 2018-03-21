@@ -1,8 +1,8 @@
 name       : deepin-desktop-schemas
-version    : 3.2.6
-release    : 3
+version    : 3.2.9
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/deepin-desktop-schemas/archive/3.2.6.tar.gz : 57ef7f17fd48f9a1dd51ef28ce77a2822735d46d314548be6ec0cb43aa611702
+    - https://github.com/linuxdeepin/deepin-desktop-schemas/archive/3.2.9.tar.gz : 2081c75156450cb376623ccf35020bad8f6543186cf9f9aa1210491580ad2a1d
 license    : GPL-3.0
 component  : desktop
 summary    : GSettings Deepin desktop-wide schemas
