@@ -25,6 +25,7 @@ builddeps  :
 rundeps    :
     - deepin-daemon
     - deepin-desktop-schemas
+    - deepin-dock
     - deepin-wm-switcher
 setup      : |
     export GOPATH="${workdir}/:/usr/share/gocode"
