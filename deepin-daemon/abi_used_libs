@@ -1,8 +1,8 @@
 libX11.so.6
 libXcursor.so.1
 libXi.so.6
+libasound.so.2
 libc.so.6
-libcanberra.so.0
 libcrypt.so.1
 libfontconfig.so.1
 libgdk-3.so.0
@@ -19,6 +19,7 @@ libnl-3.so.200
 libnl-genl-3.so.200
 libpam.so.0
 libpthread.so.0
+libpulse-simple.so.0
 libpulse.so.0
 librsvg-2.so.2
 libudev.so.1

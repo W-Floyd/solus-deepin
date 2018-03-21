@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Daemon handling the DDE session settings</Summary>
         <Description xml:lang="en">Daemon handling the DDE session settings
 </Description>
@@ -17,8 +17,9 @@
         <Summary xml:lang="en">Daemon handling the DDE session settings</Summary>
         <Description xml:lang="en">Daemon handling the DDE session settings
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
+            <Path fileType="data">/lib/systemd/system/deepin-accounts-daemon.service</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/backlight_helper</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-greeter-setter</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-lockservice</Path>
@@ -34,6 +35,7 @@
             <Path fileType="library">/usr/lib/deepin-daemon/soundeffect</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/theme-thumb-tool</Path>
             <Path fileType="library">/usr/lib64/sysusers.d/deepin-daemon.conf</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.api.XEventMonitor.service</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.daemon.Appearance.service</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.daemon.Audio.service</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.daemon.Bluetooth.service</Path>
@@ -59,6 +61,7 @@
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Gesture.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Greeter.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Grub2.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.SwapSchedHelper.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Timedated.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.helper.Backlight.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.dde.LockService.service</Path>
@@ -69,6 +72,7 @@
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Gesture.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Greeter.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Grub2.conf</Path>
+            <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.SwapSchedHelper.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Timedated.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.helper.Backlight.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.dde.LockService.conf</Path>
@@ -113,9 +117,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-11-21</Date>
-            <Version>3.2.6</Version>
+        <Update release="4">
+            <Date>2018-03-21</Date>
+            <Version>3.2.11</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
