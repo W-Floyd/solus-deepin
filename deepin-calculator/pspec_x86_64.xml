@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>PLEASE FILL ME IN</PartOf>
+        <PartOf>deepin.desktop</PartOf>
         <Summary xml:lang="en">An easy to use calculator for ordinary users.</Summary>
         <Description xml:lang="en">Deepin calculator is an easy to use calculator for ordinary users.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">An easy to use calculator for ordinary users.</Summary>
         <Description xml:lang="en">Deepin calculator is an easy to use calculator for ordinary users.
 </Description>
-        <PartOf>PLEASE FILL ME IN</PartOf>
+        <PartOf>deepin.desktop</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/deepin-calculator.desktop</Path>
