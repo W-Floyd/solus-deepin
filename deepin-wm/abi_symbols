@@ -36,6 +36,7 @@ libdeepin-wm.so.0:gala_utils_get_close_button_pixbuf
 libdeepin-wm.so.0:gala_utils_get_icon_for_flatpak_app
 libdeepin-wm.so.0:gala_utils_get_icon_for_window
 libdeepin-wm.so.0:gala_utils_get_icon_for_xid
+libdeepin-wm.so.0:gala_utils_get_icon_from_desktop_file
 libdeepin-wm.so.0:gala_utils_get_icon_from_gicon
 libdeepin-wm.so.0:gala_utils_get_icon_theme
 libdeepin-wm.so.0:gala_utils_get_n_windows
