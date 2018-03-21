@@ -1,5 +1,11 @@
+commit a1ac72b2566c85d2b6316a20739b48577077334f
+Author: William Floyd <william.png2000@gmail.com>
+Date:   Tue Mar 20 20:33:45 2018 -0400
+
+    Makefile: Use LIBDIR.
+
 diff --git a/Makefile b/Makefile
-index 2ffddb6..eaae557 100644
+index 9a6a92e..f672e50 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -15,7 +15,7 @@ install:
