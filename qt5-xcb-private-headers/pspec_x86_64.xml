@@ -27,8 +27,8 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2017-11-22</Date>
-            <Version>5.9.2</Version>
+            <Date>2018-03-21</Date>
+            <Version>5.10.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
