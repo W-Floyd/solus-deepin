@@ -30,18 +30,19 @@ builddeps  :
     - pkgconfig(xcb-ewmh)
     - qt5-tools-devel
 rundeps    :
+    - deepin-terminal
     - ^deepin-desktop :
         - deepin-control-center
         - deepin-dock
         - deepin-launcher
         - deepin-session-ui
+        - deepin-wallpapers
 patterns   :
     - ^deepin-desktop :
         - /usr/bin/dde-desktop
         - /usr/share/dbus-1/services/com.deepin.dde.desktop.service
         - /usr/share/dde-desktop/*
 setup      : |
-    %patch -p1 < $pkgfiles/disable_autostart.patch
     mkdir build
     pushd build
     %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%

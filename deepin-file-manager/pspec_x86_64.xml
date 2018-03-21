@@ -18,6 +18,8 @@
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="config">/etc/dbus-1/system.d/com.deepin.filemanager.daemon.conf</Path>
+            <Path fileType="config">/etc/xdg/autostart/dde-file-manager-dialog-autostart.desktop</Path>
+            <Path fileType="config">/etc/xdg/autostart/dde-file-manager-xdg-autostart.desktop</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libdde-disk-mount-plugin.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libdde-trash-plugin.so</Path>
