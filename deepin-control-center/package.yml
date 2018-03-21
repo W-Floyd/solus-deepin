@@ -18,6 +18,12 @@ builddeps  :
     - pkgconfig(xcb)
     - pkgconfig(xext)
     - qt5-tools-devel
+rundeps    :
+    - deepin-api
+    - deepin-daemon
+    - deepin-qt-dbus-factory
+    - deepin-qt5integration
+    - startdde
 setup      : |
     mkdir build
     pushd build
