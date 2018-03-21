@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>LGPL-2.1</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.</Summary>
         <Description xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.</Summary>
         <Description xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/girepository-1.0/Cally-1.0.typelib</Path>
             <Path fileType="library">/usr/lib64/girepository-1.0/Clutter-1.0.typelib</Path>
@@ -51,7 +51,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2018-01-16</Date>
+            <Date>2018-03-21</Date>
             <Version>1.26.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
