@@ -1,0 +1,58 @@
+<PISI>
+    <Source>
+        <Name>deepin-calculator</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>PLEASE FILL ME IN</PartOf>
+        <Summary xml:lang="en">An easy to use calculator for ordinary users.</Summary>
+        <Description xml:lang="en">Deepin calculator is an easy to use calculator for ordinary users.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-calculator</Name>
+        <Summary xml:lang="en">An easy to use calculator for ordinary users.</Summary>
+        <Description xml:lang="en">Deepin calculator is an easy to use calculator for ordinary users.
+</Description>
+        <PartOf>PLEASE FILL ME IN</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/deepin-calculator.desktop</Path>
+            <Path fileType="data">/usr/share/deepin-calculator</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/common/deepin-calculator.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/common/icon_commoncoperat.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/common/icon_commoncoperat_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/common/icon_optionsetting.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/common/icon_optionsetting_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/common/icon_overview.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/common/icon_overview_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/en_US/icon/delete.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/en_US/icon/main_menu.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/en_US/icon/tips.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/en_US/index.md</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/en_US/png/about.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/en_US/png/calculator.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/en_US/png/help.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/zh_CN/icon/delete.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/zh_CN/icon/icon_menu.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/zh_CN/icon/tips.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/zh_CN/index.md</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/zh_CN/png/about.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/zh_CN/png/help.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-calculator/zh_CN/png/main.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-calculator.svg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-03-21</Date>
+            <Version>1.0.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
