@@ -11,7 +11,8 @@ It is not ready - nor intended - for actual use, and it *will not* go into the S
 
 ### TODO
 
-* ensure all reasonable desktop apps may run without interfering with another DE (file-manager possible exempt).
+* ensure all reasonable desktop apps may run without interfering with another DE (file-manager possible exempt).  
+* build freeimage with os provided libraries (?). Deepin image viewer ~~complains some otherwise~~ mostly does not work at viewing images.
 
 ***
 
