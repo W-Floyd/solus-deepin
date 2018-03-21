@@ -1,0 +1,136 @@
+<PISI>
+    <Source>
+        <Name>deepin-image-viewer</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop.deepin</PartOf>
+        <Summary xml:lang="en">Deepin Desktop Environment Image Viewer.</Summary>
+        <Description xml:lang="en">Deepin Image Viewer is Deepin Desktop Environment Image Viewer.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-image-viewer</Name>
+        <Summary xml:lang="en">Deepin Desktop Environment Image Viewer.</Summary>
+        <Description xml:lang="en">Deepin Image Viewer is Deepin Desktop Environment Image Viewer.
+</Description>
+        <PartOf>desktop.deepin</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/qt5/plugins/imageformats/libxfreeimage.so</Path>
+            <Path fileType="library">/usr/lib64/qt5/plugins/imageformats/libxraw.so</Path>
+            <Path fileType="data">/usr/share/applications/deepin-image-viewer.desktop</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.ImageViewer.service</Path>
+            <Path fileType="data">/usr/share/deepin-image-viewer</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/deepin-image-viewer.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_guide.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_guide_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_optionsetting.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_optionsetting_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_overview.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_overview_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_picturemanagement.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_picturemanagement_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_pictureview.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/common/icon_pictureview_small.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/Delete.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/Enter.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/Esc.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/Synchronize.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/adapt-image-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/adapt-screen-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/album-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/clockwise-rotation.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/close_icon.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/collect-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/collect.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/contrarotate.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/deepin-image-viewer.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/delete.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/folder.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/icon_menu.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/launcher-24.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/next.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/notes.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/previous.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/timeline-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/tips.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/icon/viewer.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/index.md</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/about.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/add-to-album.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/album-rename.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/album.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/copy-album.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/copy.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/delete.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/display.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/favorites.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/help.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/info.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/main.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/print.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/remove-from-album.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/rotate.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/setting.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/slideshow.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/timeline.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/en_US/png/wallpaper.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/Delete.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/Enter.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/Esc.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/Synchronize.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/adapt-image.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/adapt-screen.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/album-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/clockwise-rotation.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/close_icon.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/collect-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/collect.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/contrarotate.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/deepin-image-viewer.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/delete.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/folder.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/icon_menu.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/launcher_icon.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/next.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/notes.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/previous.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/timeline-active.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/icon/tips.svg</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/index.md</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/about.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/add-to-album.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/album.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/copy.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/delete.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/display.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/favorites.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/help.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/info.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/main.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/print.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/remove.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/rename.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/rotate.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/setting.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/slideshow.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/timeline.png</Path>
+            <Path fileType="data">/usr/share/dman/deepin-image-viewer/zh_CN/png/wallpaper.png</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/scalable/deepin-image-viewer.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-image-viewer.svg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-03-21</Date>
+            <Version>1.2.17</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
