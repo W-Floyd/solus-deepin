@@ -1,0 +1,51 @@
+<PISI>
+    <Source>
+        <Name>freeimage</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <License>GPL-3.0</License>
+        <License>FIPL</License>
+        <PartOf>multimedia.library</PartOf>
+        <Summary xml:lang="en">Library to support popular graphics image formats.</Summary>
+        <Description xml:lang="en">FreeImage is an Open Source library project for developers who would like to support popular graphics image formats like PNG, BMP, JPEG, TIFF and others as needed by today&apos;s multimedia applications. FreeImage is easy to use, fast, multithreading safe, compatible with all 32-bit or 64-bit versions of Windows, and cross-platform (works both with Linux and Mac OS X).
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>freeimage</Name>
+        <Summary xml:lang="en">Library to support popular graphics image formats.</Summary>
+        <Description xml:lang="en">FreeImage is an Open Source library project for developers who would like to support popular graphics image formats like PNG, BMP, JPEG, TIFF and others as needed by today&apos;s multimedia applications. FreeImage is easy to use, fast, multithreading safe, compatible with all 32-bit or 64-bit versions of Windows, and cross-platform (works both with Linux and Mac OS X).
+</Description>
+        <PartOf>multimedia.library</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/lib*.so.*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>freeimage-devel</Name>
+        <Summary xml:lang="en">Development files for freeimage</Summary>
+        <Description xml:lang="en">FreeImage is an Open Source library project for developers who would like to support popular graphics image formats like PNG, BMP, JPEG, TIFF and others as needed by today&apos;s multimedia applications. FreeImage is easy to use, fast, multithreading safe, compatible with all 32-bit or 64-bit versions of Windows, and cross-platform (works both with Linux and Mac OS X).
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">freeimage</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib/lib*.a</Path>
+            <Path fileType="library">/usr/lib/lib*.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-03-21</Date>
+            <Version>3.17.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
