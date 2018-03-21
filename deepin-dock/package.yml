@@ -1,6 +1,6 @@
 name       : deepin-dock
 version    : 4.6.1
-release    : 2
+release    : 3
 source     :
     - https://github.com/linuxdeepin/dde-dock/archive/4.6.1.tar.gz : 8dfaf44a81cf9f37a32bde088e2aebbe1c8775259ded67262c43f7b197bc64d1
 license    : GPL-3.0
