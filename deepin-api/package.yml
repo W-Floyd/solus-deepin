@@ -11,6 +11,7 @@ summary    : Go-lang bindings for deepin-daemon
 description: |
     Go-lang bindings for deepin-daemon
 rundeps    :
+    - blur-effect
     - deepin-desktop-base
     - xcur2png
 builddeps  :
