@@ -17,7 +17,6 @@ builddeps  :
     - pkgconfig(xcb-keysyms)
 rundeps    :
     - deepin-daemon
-    - deepin-wm
 setup      : |
     %cmake .
 build      : |
