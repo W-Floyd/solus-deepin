@@ -1,13 +1,16 @@
 name       : deepin-file-manager
 version    : 4.4.8.2
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.8.2.tar.gz : 195a7502dea2dc9863c5f9e98683649876677b0e3c442eda969d1b81b5ce19b7
 license    : GPL-3.0
 component  : desktop.deepin.core
-summary    : Deepin File Manager is a file management tool developed for Deepin
-description: |
-    Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
+summary    :
+    - Deepin File Manager is a file management tool developed for Deepin
+    - ^deepin-desktop : Deepin Desktop
+description:
+    - Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
+    - ^deepin-desktop : Deepin Desktop
 builddeps  :
     - deepin-dock-devel
     - deepin-gettext-tools
@@ -26,7 +29,19 @@ builddeps  :
     - pkgconfig(uchardet)
     - pkgconfig(xcb-ewmh)
     - qt5-tools-devel
+rundeps    :
+    - ^deepin-desktop :
+        - deepin-control-center
+        - deepin-dock
+        - deepin-launcher
+        - deepin-session-ui
+patterns   :
+    - ^deepin-desktop :
+        - /usr/bin/dde-desktop
+        - /usr/share/dbus-1/services/com.deepin.dde.desktop.service
+        - /usr/share/dde-desktop/*
 setup      : |
+    %patch -p1 < $pkgfiles/disable_autostart.patch
     mkdir build
     pushd build
     %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
