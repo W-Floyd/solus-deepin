@@ -1,14 +1,15 @@
 name       : deepin-qt5dxcb-plugin
-version    : 1.1.6
-release    : 2
+version    : 1.1.8.3
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/qt5dxcb-plugin/archive/1.1.6.tar.gz : 9179b963decb29528fff80ef1692ac4fdf6e87ad8035a8317daf3cce198d8550
+    - https://github.com/linuxdeepin/qt5dxcb-plugin/archive/1.1.8.3.tar.gz : 31ad4796f11341c1e0ae9020cc0ce1ce5735996eae5bf481eb4193f9001cf781
 license    : GPL-3.0
 component  : desktop.qt
 summary    : Qt platform plugins for DDE
 description: |
     Qt platform plugins for DDE
 builddeps  :
+    - pkgconfig(cairo)
     - pkgconfig(egl)
     - pkgconfig(fontconfig)
     - pkgconfig(freetype2)
