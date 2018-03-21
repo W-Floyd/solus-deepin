@@ -24,6 +24,7 @@ builddeps  :
     - pkgconfig(xi)
 rundeps    :
     - deepin-daemon
+    - deepin-desktop-schemas
     - deepin-wm-switcher
 setup      : |
     export GOPATH="${workdir}/:/usr/share/gocode"
