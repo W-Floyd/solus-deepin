@@ -1,11 +1,11 @@
 name       : startdde
-version    : 3.1.23
-release    : 3
+version    : 3.1.26
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/startdde/archive/3.1.23.tar.gz : b2395f58e2a8819490c2b235fffc8f5c2081153ab23f306b55c2e81ccd582c59
+    - https://github.com/linuxdeepin/startdde/archive/3.1.26.tar.gz : 5a8d65b09b6e94956c36c0869ffd2550daa1ced1833fd7b0aff18e656b2aa8ad
 networking : yes
 license    : GPL-3.0
-component  : desktop
+component  : desktop.desktop.core
 summary    : Starter of deepin desktop environment
 description: |
     Launches Deepin Desktop Envrionment components and invoking user's custom applications which compliant with xdg autostart specification.
@@ -16,21 +16,22 @@ builddeps  :
     - deepin-go-lib
     - git
     - golang
+    - pkgconfig(alsa)
     - pkgconfig(gdk-3.0)
-    - pkgconfig(libcanberra)
+    - pkgconfig(gnome-keyring-1)
+    - pkgconfig(libpulse-simple)
+    - pkgconfig(x11)
+    - pkgconfig(xi)
 rundeps    :
     - deepin-daemon
     - deepin-wm-switcher
 setup      : |
     export GOPATH="${workdir}/:/usr/share/gocode"
+    go get github.com/cryptix/wav
     go get github.com/BurntSushi/xgb
     go get github.com/BurntSushi/xgbutil
-    go get github.com/howeyc/fsnotify
 build      : |
     export GOPATH="${workdir}/:/usr/share/gocode"
     %make
 install    : |
     %make_install
-    mv ${installdir}/lib/systemd ${installdir}/usr/lib/systemd
-    rmdir ${installdir}/lib
-    ln -sf ../dde-readahead.service ${installdir}/usr/lib/systemd/system/multi-user.target.wants/dde-readahead.service

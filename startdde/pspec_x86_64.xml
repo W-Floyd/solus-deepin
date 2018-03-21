@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.desktop.core</PartOf>
         <Summary xml:lang="en">Starter of deepin desktop environment</Summary>
         <Description xml:lang="en">Launches Deepin Desktop Envrionment components and invoking user&apos;s custom applications which compliant with xdg autostart specification.
 </Description>
@@ -17,19 +17,19 @@
         <Summary xml:lang="en">Starter of deepin desktop environment</Summary>
         <Description xml:lang="en">Launches Deepin Desktop Envrionment components and invoking user&apos;s custom applications which compliant with xdg autostart specification.
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.desktop.core</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/deepin-daemon/dde-readahead</Path>
-            <Path fileType="library">/usr/lib/systemd/system/dde-readahead.service</Path>
-            <Path fileType="library">/usr/lib/systemd/system/multi-user.target.wants/dde-readahead.service</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share/lightdm/lightdm.conf.d/60-deepin.conf</Path>
+            <Path fileType="data">/usr/share/startdde</Path>
             <Path fileType="data">/usr/share/xsessions/deepin.desktop</Path>
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2017-11-22</Date>
-            <Version>3.1.20</Version>
+        <Update release="4">
+            <Date>2018-03-21</Date>
+            <Version>3.1.26</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
