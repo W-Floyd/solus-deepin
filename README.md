@@ -9,6 +9,12 @@ It is not ready - nor intended - for actual use, and it *will not* go into the S
 
 ***
 
+### TODO
+
+* ensure all reasonable desktop apps may run without interfering with another DE (file-manager possible exempt).
+
+***
+
 A collection of packages meant for getting Deepin running on Solus. Almost entirely lifted from the Arch repo.
 
 Put together over a week or so, trying to learn a bit and fill time. I don't see myself seeing this to any level of completion, I'm surprised I got as far as I did.
