@@ -1,17 +1,16 @@
 name       : deepin-mutter
-version    : 3.20.26
-release    : 1
+version    : 3.20.28
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/deepin-mutter/archive/3.20.26.tar.gz : 6222906490d4e8a2656c09863fde01714baf2d3bd0cd1a9b49495286c4b7c0dc
+    - https://github.com/linuxdeepin/deepin-mutter/archive/3.20.28.tar.gz : 60cca58c2aa740bb12ca16624caf2c3c573959d52c2c4c54d234dffe96d69a1b
 license    : GPL-3.0
 component  : desktop
-summary    : Base window manager for Deepin, fork of Gnome mutter
+summary    : Base window manager for Deepin, fork of Gnome Mutter
 description: |
-    Base window manager for Deepin, fork of Gnome mutter
+    Base window manager for Deepin, fork of Gnome Mutter
 ccache     : no
 builddeps  :
     - deepin-clutter-devel
-    - deepin-cogl-devel
     - gnome-common
     - pkgconfig(gnome-desktop-3.0)
     - pkgconfig(gobject-introspection-1.0)
