@@ -13,6 +13,8 @@ A collection of packages meant for getting Deepin running on Solus. Almost entir
 
 Put together over a week or so, trying to learn a bit and fill time. I don't see myself seeing this to any level of completion, I'm surprised I got as far as I did.
 
+*Update 4* - I've been working through, trying to get a functioning desktop. Takes a while though...
+
 *Update 3* - I've sorta gotten past the point of needing to watch the Arch repos, so maybe I'll do more here?
 Thinking I'll be ironing things out, package by package (i.e. Terminal and all deps, file manager and all deps, etc.)
 Ideally, I will keep rundeps to a minumum, since someone might only want one app.
