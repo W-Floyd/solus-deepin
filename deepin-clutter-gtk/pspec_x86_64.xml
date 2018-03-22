@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>LGPL-2.0</License>
-        <PartOf>desktop.gnome.core</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Clutter GTK+ API, build for Deepin</Summary>
         <Description xml:lang="en">Clutter GTK+ API, build for Deepin
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Clutter GTK+ API, build for Deepin</Summary>
         <Description xml:lang="en">Clutter GTK+ API, build for Deepin
 </Description>
-        <PartOf>desktop.gnome.core</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/girepository-1.0/GtkClutter-1.0.typelib</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
@@ -35,7 +35,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">deepin-clutter-gtk</Dependency>
+            <Dependency release="2">deepin-clutter-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -54,8 +54,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-03-21</Date>
+        <Update release="2">
+            <Date>2018-03-22</Date>
             <Version>1.8.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
