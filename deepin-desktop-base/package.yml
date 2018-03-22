@@ -1,6 +1,6 @@
 name       : deepin-desktop-base
 version    : 2017.11.2
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/deepin-desktop-base/archive/2017.11.2.tar.gz : 4c58e7c69a00ef06ceba610912278732938c1c8bc46e7f5d02aa9d683e44b177
 license    : GPL-3.0
