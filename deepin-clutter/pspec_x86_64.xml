@@ -41,7 +41,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">deepin-clutter</Dependency>
+            <Dependency release="2">deepin-clutter</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -50,8 +50,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-03-21</Date>
+        <Update release="2">
+            <Date>2018-03-22</Date>
             <Version>1.26.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
