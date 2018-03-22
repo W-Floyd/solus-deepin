@@ -1,6 +1,6 @@
 name       : deepin-mutter
 version    : 3.20.28
-release    : 2
+release    : 3
 source     :
     - https://github.com/linuxdeepin/deepin-mutter/archive/3.20.28.tar.gz : 60cca58c2aa740bb12ca16624caf2c3c573959d52c2c4c54d234dffe96d69a1b
 license    : GPL-3.0
