@@ -1,0 +1,38 @@
+<PISI>
+    <Source>
+        <Name>deepin-picker</Name>
+        <Packager>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>deepin.desktop</PartOf>
+        <Summary xml:lang="en">Simplest color picker.</Summary>
+        <Description xml:lang="en">Deepin Picker is a fast screen color picking tool developed by Deepin Technology. The RGB, RGBA, HEX, CMYK and HSV code can be obtained according color picked and auto saved to the clipboard.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>deepin-picker</Name>
+        <Summary xml:lang="en">Simplest color picker.</Summary>
+        <Description xml:lang="en">Deepin Picker is a fast screen color picking tool developed by Deepin Technology. The RGB, RGBA, HEX, CMYK and HSV code can be obtained according color picked and auto saved to the clipboard.
+</Description>
+        <PartOf>deepin.desktop</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/deepin-picker.desktop</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/com.deepin.Picker.service</Path>
+            <Path fileType="data">/usr/share/deepin-picker</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-picker.svg</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-03-22</Date>
+            <Version>1.6.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>William Floyd</Name>
+            <Email>william.png2000@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

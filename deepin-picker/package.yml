@@ -1,0 +1,34 @@
+name       : deepin-picker
+version    : 1.6.2
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-picker/archive/1.6.2.tar.gz : ef3cad26ff421f0d1f3f587e1dc824b1521c0467911f9d975c0ea6b268f984c8
+license    : GPL-3.0
+component  : deepin.desktop
+summary    : Simplest color picker.
+description: |
+    Deepin Picker is a fast screen color picking tool developed by Deepin Technology. The RGB, RGBA, HEX, CMYK and HSV code can be obtained according color picked and auto saved to the clipboard.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xtst)
+    - qt5-tools-devel
+rundeps    :
+    - gtk2-engine-murrine
+setup      : |
+    mkdir build
+    pushd build
+    %qmake .. PREFIX=%PREFIX%
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd
