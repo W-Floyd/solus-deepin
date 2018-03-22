@@ -1,6 +1,6 @@
 name       : deepin-calculator
 version    : 1.0.2
-release    : 1
+release    : 2
 source     :
     - https://github.com/linuxdeepin/deepin-calculator/archive/1.0.2.tar.gz : 325630e1816d95904ac64395b9c6dfcac290a6e8d7846bb1f5a114a0da3fdaff
 license    : GPL-3.0
@@ -12,6 +12,8 @@ builddeps  :
     - pkgconfig(dtkwidget)
     - pkgconfig(Qt5Svg)
     - qt5-tools-devel
+rundeps    :
+    - deepin-qt5dxcb-plugin
 setup      : |
     mkdir build
     pushd build
