@@ -1,6 +1,6 @@
 name       : qt5-xcb-private-headers
 version    : 5.10.0
-release    : 1
+release    : 2
 source     :
     - https://download.qt.io/official_releases/qt/5.10/5.10.0/submodules/qtbase-everywhere-src-5.10.0.tar.xz : fd5578cd320a13617c12cf2b19439386b203d6d45548e855f94e07be9829f762
 license    :
@@ -15,5 +15,5 @@ description: |
 rundeps    :
     - qt5-base
 install    : |
-  install -d -m0755 "${installdir}/usr/include/qtxcb-private"
-  cp -r src/plugins/platforms/xcb/*.h "${installdir}/usr/include/qtxcb-private/"
+    install -d -m0755 "${installdir}/usr/include/qtxcb-private"
+    cp -r src/plugins/platforms/xcb/*.h "${installdir}/usr/include/qtxcb-private/"
