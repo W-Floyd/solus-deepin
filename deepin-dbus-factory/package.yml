@@ -1,6 +1,6 @@
 name       : deepin-dbus-factory
 version    : 3.1.14
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/dbus-factory/archive/3.1.14.tar.gz : 4aa603441568e533eb0ac70e624e083b3a2a4abb155934d57acc268f9ab39c86
 license    : GPL-3.0
