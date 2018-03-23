@@ -117,8 +117,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="6">
-            <Date>2018-03-22</Date>
+        <Update release="7">
+            <Date>2018-03-23</Date>
             <Version>3.2.12</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

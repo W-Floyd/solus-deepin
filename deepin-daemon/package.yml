@@ -1,6 +1,6 @@
 name       : deepin-daemon
 version    : 3.2.12
-release    : 6
+release    : 7
 source     :
     - https://github.com/linuxdeepin/dde-daemon/archive/3.2.12.tar.gz : a014f6f850ec7ca52bdd99bf0037e42d9f0374c39fdb258bbeaae47a2e425c0a
 networking : yes
