@@ -1,6 +1,6 @@
 name       : deepin-notifications
 version    : 3.2.0
-release    : 3
+release    : 4
 source     :
     - https://github.com/linuxdeepin/deepin-notifications/archive/3.2.0.tar.gz : 1f31510ea0d6862723104c8cad9b731121d583e6e24dac53eb2282a575158b0b
 license    : GPL-3.0
