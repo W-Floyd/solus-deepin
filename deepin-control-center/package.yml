@@ -1,6 +1,6 @@
 name       : deepin-control-center
 version    : 4.4.1
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/dde-control-center/archive/4.4.1.tar.gz : 7bc98c52b1c1b49210c1a1a1d011d87cd6133732f432c4c84e7b780607199853
 license    : GPL-3.0
@@ -19,11 +19,11 @@ builddeps  :
     - pkgconfig(xext)
     - qt5-tools-devel
 rundeps    :
+    - deepin-account-faces
     - deepin-api
     - deepin-daemon
     - deepin-qt-dbus-factory
     - deepin-qt5integration
-    - startdde
 setup      : |
     mkdir build
     pushd build
