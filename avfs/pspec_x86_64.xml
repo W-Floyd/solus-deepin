@@ -8,14 +8,14 @@
         <License>GPL-2.0</License>
         <PartOf>system.utils</PartOf>
         <Summary xml:lang="en">AVFS enables all programs to access archived, compressed, or remote files transparently.</Summary>
-        <Description xml:lang="en">AVFS is a system, which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
+        <Description xml:lang="en">AVFS is a system which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>avfs</Name>
         <Summary xml:lang="en">AVFS enables all programs to access archived, compressed, or remote files transparently.</Summary>
-        <Description xml:lang="en">AVFS is a system, which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
+        <Description xml:lang="en">AVFS is a system which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
 </Description>
         <PartOf>system.utils</PartOf>
         <Files>
@@ -64,11 +64,11 @@
     <Package>
         <Name>avfs-devel</Name>
         <Summary xml:lang="en">Development files for avfs</Summary>
-        <Description xml:lang="en">AVFS is a system, which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
+        <Description xml:lang="en">AVFS is a system which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">avfs</Dependency>
+            <Dependency release="2">avfs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -77,8 +77,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-01-12</Date>
+        <Update release="2">
+            <Date>2018-03-23</Date>
             <Version>1.0.5</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
