@@ -1,6 +1,6 @@
 name       : deepin-launcher
 version    : 4.3.2
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/dde-launcher/archive/4.3.2.tar.gz : e467c657bdf05f7b03700743534836c1c70fba98e26c16a36c529a1c44d2d945
 license    : GPL-3.0
