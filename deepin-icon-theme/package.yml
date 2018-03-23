@@ -1,8 +1,8 @@
 name       : deepin-icon-theme
-version    : 15.12.53
-release    : 3
+version    : 15.12.54
+release    : 5
 source     :
-    - https://github.com/linuxdeepin/deepin-icon-theme/archive/15.12.53.tar.gz : ee2b5685d3582fbe0339615e3d48742273d393e5e7feb9d9f462bf04e2b97e01
+    - https://github.com/linuxdeepin/deepin-icon-theme/archive/15.12.54.tar.gz : 79dbf7224e66ec25bb8551f23dc2f8e460da72e383e82794b23079054e00082c
 license    : GPL-3.0
 component  : desktop.theme
 summary    : Deepin Icons
