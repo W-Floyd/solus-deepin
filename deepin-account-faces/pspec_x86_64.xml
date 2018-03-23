@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Account faces for Linux Deepin</Summary>
         <Description xml:lang="en">Account faces for Linux Deepin
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Account faces for Linux Deepin</Summary>
         <Description xml:lang="en">Account faces for Linux Deepin
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="data">/var/lib/AccountsService/icons/1.png</Path>
             <Path fileType="data">/var/lib/AccountsService/icons/10.png</Path>
@@ -55,8 +55,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-01-12</Date>
+        <Update release="2">
+            <Date>2018-03-23</Date>
             <Version>1.0.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
