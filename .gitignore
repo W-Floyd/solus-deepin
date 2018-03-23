@@ -5,3 +5,4 @@
 *.eopkg
 /graph.dot
 *.tar.gz
+/solus-image-deepin
