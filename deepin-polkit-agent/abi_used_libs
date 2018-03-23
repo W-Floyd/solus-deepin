@@ -3,7 +3,7 @@ libQt5DBus.so.5
 libQt5Gui.so.5
 libQt5Widgets.so.5
 libc.so.6
-libdframeworkdbus.so.1
+libdframeworkdbus.so.2
 libdtkcore.so.2
 libdtkwidget.so.2
 libgcc_s.so.1

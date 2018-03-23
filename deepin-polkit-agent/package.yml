@@ -1,8 +1,8 @@
 name       : deepin-polkit-agent
-version    : 0.1.1
-release    : 1
+version    : 0.2.0
+release    : 2
 source     :
-    - https://github.com/linuxdeepin/dde-polkit-agent/archive/0.1.1.tar.gz : 558d319b81aad8a64397e7f364a7205d97021ad44ff947f6728320868586f6de
+    - https://github.com/linuxdeepin/dde-polkit-agent/archive/0.2.0.tar.gz : ea069778eac421005abc07eea538dcb58c48754c832c81221c0fd95a8d9cbc2a
 license    : GPL-3.0
 component  : desktop
 summary    : Deepin Polkit Agent
@@ -17,7 +17,7 @@ builddeps  :
 setup      : |
     mkdir build
     pushd build
-    %qmake ..
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
     popd
 build      : |
     pushd build
