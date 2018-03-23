@@ -1,6 +1,6 @@
 name       : deepin-file-manager
 version    : 4.4.8.2
-release    : 7
+release    : 8
 source     :
     - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.8.2.tar.gz : 195a7502dea2dc9863c5f9e98683649876677b0e3c442eda969d1b81b5ce19b7
 license    : GPL-3.0
@@ -32,6 +32,7 @@ builddeps  :
     - pkgconfig(xcb-ewmh)
     - qt5-tools-devel
 rundeps    :
+    - avfs
     - deepin-qt5dxcb-plugin
     - ^deepin-desktop :
         - deepin-control-center
