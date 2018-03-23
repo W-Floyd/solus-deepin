@@ -1,6 +1,6 @@
 name       : startdde
 version    : 3.1.26
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/startdde/archive/3.1.26.tar.gz : 5a8d65b09b6e94956c36c0869ffd2550daa1ced1833fd7b0aff18e656b2aa8ad
 networking : yes
@@ -23,9 +23,16 @@ builddeps  :
     - pkgconfig(x11)
     - pkgconfig(xi)
 rundeps    :
+    - deepin-control-center
     - deepin-daemon
-    - deepin-desktop-schemas
+    - deepin-desktop
     - deepin-dock
+    - deepin-gtk-theme
+    - deepin-icon-theme
+    - deepin-launcher
+    - deepin-polkit-agent
+    - deepin-session-ui
+    - deepin-sound-theme
     - deepin-wm-switcher
 setup      : |
     export GOPATH="${workdir}/:/usr/share/gocode"
