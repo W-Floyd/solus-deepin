@@ -48,7 +48,9 @@ dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
 freeimage libjxr
+libmongoc libbson
 startdde deepin-api
 startdde deepin-dbus-factory
 startdde deepin-gir-generator
 startdde deepin-go-lib
+treefrog-framework libmongoc
