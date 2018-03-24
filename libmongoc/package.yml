@@ -1,8 +1,8 @@
 name       : libmongoc
-version    : 1.9.2
-release    : 5
+version    : 1.9.3
+release    : 6
 source     :
-    - https://github.com/mongodb/mongo-c-driver/archive/1.9.2.tar.gz : c8305e49c8b37bf94a82daab73410015c6790cb56b88b8e461e51848d311abb1
+    - https://github.com/mongodb/mongo-c-driver/archive/1.9.3.tar.gz : 4eac81b880a5aab42b63b83975521a75ba85a9838bafe104feb825f9f4ab4370
 license    : Apache-2.0
 component  : programming.library
 summary    : A high-performance MongoDB driver for C
