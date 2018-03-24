@@ -2,18 +2,36 @@ name       : freeimage
 version    : 3.17.0
 release    : 1
 source     :
-    - https://sourceforge.net/projects/freeimage/files/Source%20Distribution/3.17.0/FreeImage3170.zip/download : fbfc65e39b3d4e2cb108c4ffa8c41fd02c07d4d436c594fff8dab1a6d5297f89
+    - http://downloads.sourceforge.net/freeimage/FreeImage3170.zip : fbfc65e39b3d4e2cb108c4ffa8c41fd02c07d4d436c594fff8dab1a6d5297f89
 license    :
+    - FreeImage
     - GPL-2.0
     - GPL-3.0
-    - FIPL
 component  : multimedia.library
-summary    : Library to support popular graphics image formats.
-clang      : yes
+summary    : Library to support graphics image formats.
 description: |
-    FreeImage is an Open Source library project for developers who would like to support popular graphics image formats like PNG, BMP, JPEG, TIFF and others as needed by today's multimedia applications. FreeImage is easy to use, fast, multithreading safe, compatible with all 32-bit or 64-bit versions of Windows, and cross-platform (works both with Linux and Mac OS X).
-#builddeps  :
+    FreeImage is a library project for developers who would like to support popular graphics image formats (PNG, JPEG, TIFF, BMP and others).
+builddeps  :
+    - dos2unix
+    - libjxr-devel
+    - pkgconfig(libjpeg)
+    - pkgconfig(libopenjp2)
+    - pkgconfig(libpng)
+    - pkgconfig(libraw_r)
+    - pkgconfig(libtiff-4)
+    - pkgconfig(libwebp)
+    - pkgconfig(OpenEXR)
+    - pkgconfig(zlib)
+setup  : |
+    %apply_patches
+    rm -r $workdir/Source/Lib* $workdir/Source/ZLib $workdir/Source/OpenEXR
+    sh $workdir/gensrclist.sh
+    %make -f Makefile.gnu dos2unix
+    sh $workdir/genfipsrclist.sh
+    %make -f Makefile.fip dos2unix
 build      : |
-    %make
+    %make -f Makefile.gnu
+    %make -f Makefile.fip
 install    : |
-    %make_install
+    %make_install -f Makefile.gnu
+    %make_install -f Makefile.fip
