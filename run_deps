@@ -51,6 +51,7 @@ deepin-wm-switcher deepin-wm
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
+libmongoc libbson
 startdde deepin-control-center
 startdde deepin-daemon
 startdde deepin-desktop
@@ -62,3 +63,4 @@ startdde deepin-polkit-agent
 startdde deepin-session-ui
 startdde deepin-sound-theme
 startdde deepin-wm-switcher
+treefrog-framework libmongoc
