@@ -1,8 +1,8 @@
 name       : deepin-image-viewer
-version    : 1.2.17
-release    : 2
+version    : 1.2.18
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-image-viewer/archive/1.2.17.tar.gz : 9e4148c773a7ce8880848057abf3fd8dda5bb0c1737708f5bef31af7b760d14a
+    - https://github.com/linuxdeepin/deepin-image-viewer/archive/1.2.18.tar.gz : 7da90ad963da66dd448116f993ca28a5476fa7b33700804b61a2b21cc69ea6ce
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : Deepin Desktop Environment Image Viewer.

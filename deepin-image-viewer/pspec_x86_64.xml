@@ -125,9 +125,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2018-03-24</Date>
-            <Version>1.2.17</Version>
+            <Version>1.2.18</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
