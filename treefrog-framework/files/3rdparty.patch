@@ -2,19 +2,6 @@ diff --git a/configure b/configure
 index c0d7609..4119a91 100755
 --- a/configure
 +++ b/configure
-@@ -135,8 +135,10 @@ while [ -n "`echo $1 | grep '-'`" ]; do
- done
- 
- cd "$BASEDIR"
--replace "s|unix:LIBS +=.*$|unix:LIBS += -Wl,-rpath,. -Wl,-rpath,$LIBDIR -L$LIBDIR -ltreefrog|" defaults/appbase.pri
--replace "s|unix:INCLUDEPATH +=.*$|unix:INCLUDEPATH += $INCLUDEDIR|" defaults/appbase.pri
-+replace "s|unix:LIBS +=.*$|unix:LIBS += -Wl,-rpath,. -Wl,-rpath,$LIBDIR -L$LIBDIR -ltreefrog
-+|" defaults/appbase.pri
-+replace "s|unix:INCLUDEPATH +=.*$|unix:INCLUDEPATH += $INCLUDEDIR
-+|" defaults/appbase.pri
- 
- if [ -n "$ENABLE_DEBUG" ]; then
-   OPT="$OPT CONFIG+=debug"
 @@ -165,21 +167,6 @@ cd "$BASEDIR/tools"
  $QMAKE -recursive $OPT target.path=\"$BINDIR\" header.path=\"$INCLUDEDIR\" datadir=\"$DATADIR\" lib.path=\"$LIBDIR\"
  make qmake
