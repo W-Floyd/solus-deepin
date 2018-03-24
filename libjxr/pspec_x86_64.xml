@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>jxrlib</Name>
+        <Name>libjxr</Name>
         <Packager>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
@@ -13,7 +13,7 @@
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>jxrlib</Name>
+        <Name>libjxr</Name>
         <Summary xml:lang="en">Open source implementation of jpegxr</Summary>
         <Description xml:lang="en">An open source implementation of the jpegxr image format standard.
 </Description>
@@ -24,13 +24,13 @@
         </Files>
     </Package>
     <Package>
-        <Name>jxrlib-devel</Name>
-        <Summary xml:lang="en">Development files for jxrlib</Summary>
+        <Name>libjxr-devel</Name>
+        <Summary xml:lang="en">Development files for libjxr</Summary>
         <Description xml:lang="en">An open source implementation of the jpegxr image format standard.
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">jxrlib</Dependency>
+            <Dependency release="1">libjxr</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
