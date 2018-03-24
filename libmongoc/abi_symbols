@@ -220,6 +220,7 @@ libmongoc-1.0.so.0:_mongoc_topology_set_appname
 libmongoc-1.0.so.0:_mongoc_topology_start_background_scanner
 libmongoc-1.0.so.0:_mongoc_topology_update_cluster_time
 libmongoc-1.0.so.0:_mongoc_topology_update_from_handshake
+libmongoc-1.0.so.0:_mongoc_topology_update_last_used
 libmongoc-1.0.so.0:_mongoc_uri_set_option_as_int32
 libmongoc-1.0.so.0:_mongoc_usleep
 libmongoc-1.0.so.0:_mongoc_validate_new_document
@@ -353,6 +354,7 @@ libmongoc-1.0.so.0:mongoc_bulk_operation_replace_one
 libmongoc-1.0.so.0:mongoc_bulk_operation_replace_one_with_opts
 libmongoc-1.0.so.0:mongoc_bulk_operation_set_bypass_document_validation
 libmongoc-1.0.so.0:mongoc_bulk_operation_set_client
+libmongoc-1.0.so.0:mongoc_bulk_operation_set_client_session
 libmongoc-1.0.so.0:mongoc_bulk_operation_set_collection
 libmongoc-1.0.so.0:mongoc_bulk_operation_set_database
 libmongoc-1.0.so.0:mongoc_bulk_operation_set_hint
