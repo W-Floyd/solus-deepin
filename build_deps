@@ -21,6 +21,8 @@ deepin-dock gsettings-qt
 deepin-file-manager deepin-dock
 deepin-file-manager deepin-gettext-tools
 deepin-file-manager dtkwidget
+deepin-image-viewer dtkwidget
+deepin-image-viewer freeimage
 deepin-launcher deepin-qt-dbus-factory
 deepin-launcher dtkwidget
 deepin-launcher gsettings-qt
@@ -45,6 +47,7 @@ deepin-wm deepin-mutter
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
+freeimage libjxr
 startdde deepin-api
 startdde deepin-dbus-factory
 startdde deepin-gir-generator

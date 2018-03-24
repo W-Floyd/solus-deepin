@@ -26,6 +26,7 @@ deepin-file-manager deepin-qt5dxcb-plugin
 deepin-file-manager dtkcore
 deepin-file-manager dtkwidget
 deepin-gettext-tools perl-config-tiny
+deepin-image-viewer freeimage-devel
 deepin-menu dtkwidget
 deepin-mutter deepin-desktop-schemas
 deepin-notifications dtkwidget
@@ -54,6 +55,7 @@ startdde deepin-dock
 startdde deepin-gtk-theme
 startdde deepin-icon-theme
 startdde deepin-launcher
+startdde deepin-polkit-agent
 startdde deepin-session-ui
 startdde deepin-sound-theme
 startdde deepin-wm-switcher

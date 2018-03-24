@@ -45,16 +45,17 @@ done < <(
         echo "${1}"
         shift
     done
-    ) | uuniq | while read -r __dir; do
+    ) | uuniq | while read -r __name; do
+        __dir="$(sed 's#-devel$##' <<< "${__name}")"
         if ! [ -d "${__dir}" ]; then
             echo
             echo "${__dir} does not exist" >&2
         else
             cd "${__dir}"
-            local __package="$(find . | grep -E "./${__dir}-[0-9]+.*\.eopkg$" | sort -g | tail -n 1 | sed "s#^\./#./${__dir}/#")"
+            local __package="$(find . | grep -E "./${__name}-[0-9]+.*\.eopkg$" | sort -g | tail -n 1 | sed "s#^\./#./${__dir}/#")"
             if [ -z "${__package}" ]; then
                 echo 
-                echo  "${__dir} is missing" >&2
+                echo  "${__name} is missing" >&2
             else
                 echo "${__package}"
             fi
