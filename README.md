@@ -22,6 +22,13 @@ Initially put together over a week or so, since worked on off and on for months,
 
 ***
 
+*2018-03-24.1* - Gone back through all my packages, spent way too long fighting `treefrog-framework`, but have no un-commited files or changes now. Will start upgrading more things in the morning...  
+Some things of note:
+* If I don't include a rundep that the arch repos do, it's because I can't see why I need it. I will slowly try to add these back in as I determine why I need them
+* All things considered, the desktop is running really well. Niggling issues include:
+  * Dock power menu does not work, can't see why (that is, the error message says it can't find a file that I think exists)
+  * Dock/Launcher/Control Center are sporadic about HiDPI support when launched by startdde (that is, at login). If manually launched from the terminal, they're fine. Need to investigate what flags might cause that.
+
 *2018-03-23.1* - Still more combing through. Trying to make sure `startdde` has all the correct deps to run the DE. Mostly working? Running under a VM to test stock has issues since window manager stuff gets knocked about for the sake of performance (and perhaps rightly so, but still).
 
 *2018-03-22.1* - Combing back through with a locked set of packages (there are some updates floating out there - I'm leaving them until I rebuild the whole stack). Have pretty much made sure the current (normally working, i.e - not the image viewer) desktop apps have all the correct deps to run solo.
