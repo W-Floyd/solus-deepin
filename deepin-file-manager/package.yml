@@ -1,17 +1,15 @@
 name       : deepin-file-manager
-version    : 4.4.8.2
-release    : 9
+version    : 4.4.8.3
+release    : 10
 source     :
-    - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.8.2.tar.gz : 195a7502dea2dc9863c5f9e98683649876677b0e3c442eda969d1b81b5ce19b7
+    - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.8.3.tar.gz : bd61b2699292524dffac40622a9ce5858b2ce5dc22a0c0befc25409b0b6ab14f
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    :
     - Deepin File Manager is a file management tool developed for Deepin
     - ^deepin-desktop : Deepin Desktop
 description:
-    - Deepin File Manager is a file management tool independently developed by Deepin
-        Technology, featured with searching, copying, trash, compression/decompression,
-        file property and other file management functions.
+    - Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.
     - ^deepin-desktop : Deepin Desktop
 builddeps  :
     - deepin-dock-devel

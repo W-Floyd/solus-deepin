@@ -301,7 +301,7 @@ libdde-file-manager.so.1:_ZN11DScrollAreaC1EP7QWidget
 libdde-file-manager.so.1:_ZN11DScrollAreaC2EP7QWidget
 libdde-file-manager.so.1:_ZN11DTaskDialog10adjustSizeEv
 libdde-file-manager.so.1:_ZN11DTaskDialog10closeEventEP11QCloseEvent
-libdde-file-manager.so.1:_ZN11DTaskDialog10removeTaskERK4QMapI7QStringS1_E
+libdde-file-manager.so.1:_ZN11DTaskDialog10removeTaskERK4QMapI7QStringS1_Eb
 libdde-file-manager.so.1:_ZN11DTaskDialog11initConnectEv
 libdde-file-manager.so.1:_ZN11DTaskDialog11moveYCenterEv
 libdde-file-manager.so.1:_ZN11DTaskDialog11qt_metacallEN11QMetaObject4CallEiPPv
@@ -2888,6 +2888,7 @@ libdde-file-manager.so.1:_ZN7FileJob13moveFileByGioERK7QStringS2_PS0_
 libdde-file-manager.so.1:_ZN7FileJob13setApplyToAllEb
 libdde-file-manager.so.1:_ZN7FileJob14deleteEmptyDirERK7QString
 libdde-file-manager.so.1:_ZN7FileJob14doTrashRestoreERK7QStringS2_
+libdde-file-manager.so.1:_ZN7FileJob14getStorageInfoERK7QString
 libdde-file-manager.so.1:_ZN7FileJob14moveDirToTrashERK7QStringPS0_
 libdde-file-manager.so.1:_ZN7FileJob14setIsCoExistedEb
 libdde-file-manager.so.1:_ZN7FileJob14writeTrashInfoERK7QStringS2_S2_
