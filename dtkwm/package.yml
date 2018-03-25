@@ -1,6 +1,6 @@
 name       : dtkwm
 version    : 2.0.7
-release    : 3
+release    : 4
 source     :
     - https://github.com/linuxdeepin/dtkwm/archive/2.0.7.tar.gz : 3bf42a5ee25c9d78494a7abb78a9743d0c15b2cee9577118751725d544c937ec
 license    : GPL-3.0
@@ -19,7 +19,7 @@ builddeps  :
 setup      : |
     mkdir build
     pushd build
-    %qmake ..
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
     popd
 build      : |
     pushd build
