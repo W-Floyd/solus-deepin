@@ -12,7 +12,6 @@ It is not ready - nor intended - for actual use, and it *will not* go into the S
 ### TODO
 
 * ensure all reasonable desktop apps may run without interfering with another DE (file-manager possible exempt).  
-* build freeimage with os provided libraries (?). Deepin image viewer ~~complains some otherwise~~ mostly does not work at viewing images.
 
 ***
 
@@ -21,6 +20,8 @@ A collection of packages meant for getting Deepin running on Solus. Almost entir
 Initially put together over a week or so, since worked on off and on for months, trying to learn a bit and fill time. I don't see myself seeing this to any level of polished completion, I'm surprised I've gotten as far as I did.
 
 ***
+
+*2018-03-25.1* - Redid a lot of my build script to work correctly. Opted to force `LIB_INSTALL_DIR` and `PREFIX` on all similar Deepin packages, even if they don't *strictly* need it. Having done that has fixed an issue with the dock not finding a file for the power menu.
 
 *2018-03-24.2* - Got my build script set up, should now help insulate me from accidentally inheriting deps that are not in my lists. Will in due course rebuild all packages to validate my run/build_dep files. For now though, I've updated everything! 
 
