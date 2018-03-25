@@ -12,16 +12,18 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-uuniq () {
-    awk '!x[$0]++'
-}
+if [ $SUDO_USER ]; then
+    real_user=$SUDO_USER
+else
+    real_user=$(whoami)
+fi
 
 __list_rundeps () {
-grep -E "^${1} " 'run_deps' | sed -e 's#-devel$##' -e 's#-devel ##'
+grep -E "^${1} " 'run_deps' | sed -e 's#-devel$##' -e 's#-devel ##' -e 's/.* //'
 }
 
 __list_builddeps () {
-grep -E "^${1} " 'build_deps' | sed -e 's#-devel$##' -e 's#-devel ##'
+grep -E "^${1} " 'build_deps' | sed -e 's#-devel$##' -e 's#-devel ##' -e 's/.* //'
 }
 
 __check_built () {
@@ -32,58 +34,60 @@ __check_built () {
 }
 
 __copy_to_cache () {
+echo "Copying '${1}' to cache."
 cd "${1}"
 cp *.eopkg /var/lib/solbuild/local/
 cd ../
 }
 
-__recurse_rundep_copy () {
-
-    __internal () {
-        __list_rundeps "${1}" | while read -r __line_; do
-            local __dependant_="${__line_/ *}"
-            local __dependancy_="${__line_/* }"
-            __internal "${__dependancy_}"
-            __copy_to_cache "${__dependancy_}"
-        done || exit 1
-    }
+__recurse_copy_rundeps () {
+__list_rundeps "${1}" | while read -r __package; do
     
-    __list_builddeps "${1}" | while read -r __line; do
-        local __dependant="${__line/ *}"
-        local __dependancy="${__line/* }"
-        __internal "${__dependancy}"
-        __copy_to_cache "${__dependancy}"
-    done
-
+    __copy_to_cache "${__package}"
+    
+    __recurse_copy_rundeps "${__package}"
+    
+done
 }
 
-__recurse () {
-__list_builddeps "${1}" | while read -r __line; do
-    local __dependant="${__line/ *}"
-    local __dependancy="${__line/* }"
+__setup () {
+
+echo 'Cleaning cache.'
+rm -f /var/lib/solbuild/local/*.eopkg
+
+__list_builddeps "${1}" | while read -r __package; do
     
-    __build "${__dependancy}" || exit 1
-    __copy_to_cache "${__dependancy}"
+    if __check_built "${1}"; then
+        echo "Package '${__package}' already built."
+    else
+        __build "${__package}" || exit 1
+    fi
     
-    __list_rundeps "${__dependancy}" | while read -r __line_; do
-        local __dependant_="${__line_/ *}"
-        local __dependancy_="${__line_/* }"
-        __build "${__dependancy_}" || exit 1
-        __copy_to_cache "${__dependancy_}"
-    done || exit 1
+    __list_rundeps "${__package}" | while read -r __package_; do
+        
+        __build "${__package_}" || exit 1
+        
+    done
     
 done || exit 1
+
+__list_builddeps "${1}" | while read -r __package; do
+
+    __copy_to_cache "${__package}"
+
+    __recurse_copy_rundeps "${__package}"
+    
+done || exit 1
+
 }
 
 __build () {
 
+__setup "${1}" || exit 1
+
 if __check_built "${1}"; then
     echo "Package '${1}' already built."
 else
-
-    __recurse "${1}"
-    
-    __recurse_rundep_copy "${1}"
     
     echo "Building package '${1}'"
     
@@ -98,7 +102,7 @@ else
     
 fi
 
-rm -f /var/lib/solbuild/local/*.eopkg
+chown "${real_user}:${real_user}" ./*
 
 }
 
@@ -106,10 +110,10 @@ rm -f /var/lib/solbuild/local/*.eopkg
 
 until [ "${#}" = '0' ]; do
 
-    __build "${1}"
+    __build "${1}" || exit 1
     
     shift
     
-done
+done || exit 1
 
 exit

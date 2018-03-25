@@ -2,6 +2,9 @@ deepin-api deepin-dbus-factory
 deepin-api deepin-gettext-tools
 deepin-api deepin-gir-generator
 deepin-api deepin-go-lib
+deepin-calculator dtkwidget
+deepin-calendar dtkwidget
+deepin-calendar deepin-gettext-tools
 deepin-clutter deepin-cogl
 deepin-clutter-gtk deepin-clutter
 deepin-control-center deepin-qt-dbus-factory
@@ -51,6 +54,7 @@ deepin-wm deepin-mutter
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
+dtkwm dtkcore
 freeimage libjxr
 libmongoc libbson
 startdde deepin-api
