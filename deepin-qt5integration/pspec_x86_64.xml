@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>programming.library</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Qt platform theme integration plugins for DDE</Summary>
         <Description xml:lang="en">The Qt platform theme integration plugins for Deepin Desktop Environment. It includes multiple Qt5 plugins to make make DDE more Qt5 Apps friendly.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Qt platform theme integration plugins for DDE</Summary>
         <Description xml:lang="en">The Qt platform theme integration plugins for Deepin Desktop Environment. It includes multiple Qt5 plugins to make make DDE more Qt5 Apps friendly.
 </Description>
-        <PartOf>programming.library</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/qt5/plugins/iconengines/libdsvgicon.so</Path>
             <Path fileType="library">/usr/lib64/qt5/plugins/imageformats/libdsvg.so</Path>
@@ -26,8 +26,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2018-03-23</Date>
+        <Update release="6">
+            <Date>2018-03-25</Date>
             <Version>0.2.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

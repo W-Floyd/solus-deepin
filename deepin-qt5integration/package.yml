@@ -1,10 +1,10 @@
 name       : deepin-qt5integration
 version    : 0.2.10
-release    : 5
+release    : 6
 source     :
     - https://github.com/linuxdeepin/qt5integration/archive/0.2.10.tar.gz : b6f8f2ddc4ce68d1f35b8446703e7b8a447bfaa9b332fb9e27ce43b19e94b95b
 license    : GPL-3.0
-component  : programming.library
+component  : desktop.deepin.core
 summary    : Qt platform theme integration plugins for DDE
 description: |
     The Qt platform theme integration plugins for Deepin Desktop Environment. It includes multiple Qt5 plugins to make make DDE more Qt5 Apps friendly.
@@ -21,7 +21,7 @@ setup      : |
     %patch -p1 < $pkgfiles/version.patch
     mkdir build
     pushd build
-    %qmake ..
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
     popd
 build      : |
     pushd build
