@@ -25,11 +25,6 @@
             <Path fileType="library">/usr/lib/deepin-daemon/dde-suspend-dialog</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-warning-dialog</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-welcome</Path>
-            <Path fileType="data">/usr/local/bin/dde-lock</Path>
-            <Path fileType="data">/usr/local/bin/dde-shutdown</Path>
-            <Path fileType="data">/usr/local/bin/dde-switchtogreeter</Path>
-            <Path fileType="data">/usr/local/bin/lightdm-deepin-greeter</Path>
-            <Path fileType="data">/usr/local/share/xgreeters/lightdm-deepin-greeter.desktop</Path>
             <Path fileType="data">/usr/share/applications/deepin-toggle-desktop.desktop</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.MemoryWarningDialog.service</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.WarningDialog.service</Path>
@@ -103,10 +98,11 @@
             <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/deepin-toggle-desktop.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/96x96/apps/deepin-toggle-desktop.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-toggle-desktop.svg</Path>
+            <Path fileType="data">/usr/share/xgreeters/lightdm-deepin-greeter.desktop</Path>
         </Files>
     </Package>
     <History>
-        <Update release="7">
+        <Update release="8">
             <Date>2018-03-25</Date>
             <Version>4.3.2</Version>
             <Comment>Packaging update</Comment>
