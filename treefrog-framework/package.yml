@@ -1,8 +1,8 @@
 name       : treefrog-framework
-version    : 1.20.0
-release    : 3
+version    : 1.21.0
+release    : 4
 source     :
-    - https://github.com/treefrogframework/treefrog-framework/archive/v1.20.0.tar.gz : 72d22e3051cea9c42ad163c9f2a706d0b47640648c594ec7c4beebb0899ee57b
+    - https://github.com/treefrogframework/treefrog-framework/archive/v1.21.0.tar.gz : 85fb8bb4271fc482959f9d0f46eb28b6abe8453d378341a99774a43d1f7c87c9
 license    : BSD
 component  : programming.library
 summary    : High-speed C++ MVC Framework for Web Application
@@ -14,10 +14,7 @@ builddeps  :
     - pkgconfig(Qt5Core)
     - pkgconfig(libmongoc-1.0)
 setup      : |
-    %patch -p1 < $pkgfiles/3rdparty.patch
-    %patch -p1 < $pkgfiles/corelib.patch
-    rm -r 3rdparty
-    ./configure --prefix=%installroot%/%PREFIX% --libdir=%installroot%/%libdir% --datadir=%installroot%/usr/share
+    ./configure --enable-shared-mongoc --prefix=%installroot%/%PREFIX% --libdir=%installroot%/%libdir% --datadir=%installroot%/usr/share
 build      : |
     pushd src
     %make
