@@ -1,6 +1,6 @@
 name       : deepin-system-monitor
 version    : 1.4.3
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/deepin-system-monitor/archive/1.4.3.tar.gz : 35c68d6d99cb8504c26f0d6eef3a6510d0dcd4cce3a41c5e0f820fa99404ba55
 license    : GPL-3.0
@@ -24,7 +24,7 @@ rundeps    :
 setup      : |
     mkdir build
     pushd build
-    %qmake .. PREFIX=%PREFIX%
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
     popd
 build      : |
     pushd build
