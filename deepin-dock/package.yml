@@ -1,8 +1,8 @@
 name       : deepin-dock
-version    : 4.6.1
-release    : 4
+version    : 4.6.2
+release    : 5
 source     :
-    - https://github.com/linuxdeepin/dde-dock/archive/4.6.1.tar.gz : 8dfaf44a81cf9f37a32bde088e2aebbe1c8775259ded67262c43f7b197bc64d1
+    - https://github.com/linuxdeepin/dde-dock/archive/4.6.2.tar.gz : efa92bf9cd142e3d85672725472894def0634279d349cd20c28701a7a2d3e345
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin Dock is the dock of Deepin Desktop Environment.
