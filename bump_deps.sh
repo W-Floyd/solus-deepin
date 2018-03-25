@@ -5,11 +5,11 @@ uuniq () {
 }
 
 __list_rundeps () {
-sort < 'run_deps' | uniq | grep -E " ${1}$" | sed 's#-devel$##'
+sort < 'run_deps' | uniq | grep -E " ${1}$" | sed -e 's#-devel$##' -e 's#-devel ##'
 }
 
 __list_builddeps () {
-sort < 'build_deps' | uniq | grep -E " ${1}$" | sed 's#-devel$##'
+sort < 'build_deps' | uniq | grep -E " ${1}$" | sed -e 's#-devel$##' -e 's#-devel ##'
 }
 
 __recurse () {
@@ -37,8 +37,16 @@ done
 }
 
 __recurse "${1}" | sort | uniq | tsort | tac | sed '1d' | while read -r __package; do
-    echo "${__package}"
-    #cd "${__package}" && make bump &> /dev/null && cd ../
+    echo -n "${__package}"
+    cd "${__package}"
+    if [ -z "$(git diff . | grep -E '^[+|-]' | sed 's/^.//' | grep -E '^release')" ]; then
+        make bump &> /dev/null
+        echo
+    else
+        echo ', already bumped.'
+    fi
+    rm -f *.eopkg
+    cd ../
 done
 
 exit
