@@ -17,53 +17,99 @@ uuniq () {
 }
 
 __list_rundeps () {
-sort < 'run_deps' | uniq | grep -E "^${1} " | sed 's#-devel$##'
+grep -E "^${1} " 'run_deps' | sed -e 's#-devel$##' -e 's#-devel ##'
 }
 
 __list_builddeps () {
-sort < 'build_deps' | uniq | grep -E "^${1} " | sed 's#-devel$##'
+grep -E "^${1} " 'build_deps' | sed -e 's#-devel$##' -e 's#-devel ##'
+}
+
+__check_built () {
+    if [ -z "$(find "./${1}/" -iname '*.eopkg')" ]; then
+        return 1
+    fi
+    return 0
+}
+
+__copy_to_cache () {
+cd "${1}"
+cp *.eopkg /var/lib/solbuild/local/
+cd ../
+}
+
+__recurse_rundep_copy () {
+
+    __internal () {
+        __list_rundeps "${1}" | while read -r __line_; do
+            local __dependant_="${__line_/ *}"
+            local __dependancy_="${__line_/* }"
+            __internal "${__dependancy_}"
+            __copy_to_cache "${__dependancy_}"
+        done || exit 1
+    }
+    
+    __list_builddeps "${1}" | while read -r __line; do
+        local __dependant="${__line/ *}"
+        local __dependancy="${__line/* }"
+        __internal "${__dependancy}"
+        __copy_to_cache "${__dependancy}"
+    done
+
 }
 
 __recurse () {
-sleep 0.1s
 __list_builddeps "${1}" | while read -r __line; do
     local __dependant="${__line/ *}"
     local __dependancy="${__line/* }"
     
-    __recurse "${__dependancy}"
+    __build "${__dependancy}" || exit 1
+    __copy_to_cache "${__dependancy}"
     
-    __list_rundeps "${__dependant}" | while read -r __line; do
-        local __dependant="${__line/ *}"
-        local __dependancy="${__line/* }"
-        
-        __recurse "${__dependancy}"
-        echo "${__line}"
-    done
-done
+    __list_rundeps "${__dependancy}" | while read -r __line_; do
+        local __dependant_="${__line_/ *}"
+        local __dependancy_="${__line_/* }"
+        __build "${__dependancy_}" || exit 1
+        __copy_to_cache "${__dependancy_}"
+    done || exit 1
+    
+done || exit 1
 }
 
 __build () {
-__recurse "${1}"
+
+if __check_built "${1}"; then
+    echo "Package '${1}' already built."
+else
+
+    __recurse "${1}"
+    
+    __recurse_rundep_copy "${1}"
+    
+    echo "Building package '${1}'"
+    
+    cd "${1}"
+    
+    make local || {
+        echo "Building '${1}' failed, exiting."
+        exit 1
+    }
+    
+    cd ../
+    
+fi
+
+rm -f /var/lib/solbuild/local/*.eopkg
+
 }
 
 rm -f /var/lib/solbuild/local/*.eopkg
 
-__recurse "${1}" | sort | uniq | tsort | tac | while read -r __package; do
-    cd "${__package}"
+until [ "${#}" = '0' ]; do
+
+    __build "${1}"
     
-    if [ -z "$(find . -iname '*.eopkg')" ]; then
-        echo "Building '${__package}'"
-        make local || {
-            echo "Building '${__package}' failed, exiting."
-            exit 1
-        }
-        echo "Built '${__package}'"
-    else
-        echo "Package '${__package}' already built."
-    fi
+    shift
     
-    cp *.eopkg /var/lib/solbuild/local/
-    cd ../
 done
 
 exit
