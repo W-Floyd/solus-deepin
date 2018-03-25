@@ -18,7 +18,7 @@ deepin-dbus-generator deepin-go-lib
 deepin-dock deepin-qt-dbus-factory
 deepin-dock dtkwidget
 deepin-dock gsettings-qt
-deepin-file-manager deepin-dock
+deepin-file-manager deepin-dock-devel
 deepin-file-manager deepin-gettext-tools
 deepin-file-manager dtkwidget
 deepin-image-viewer dtkwidget
@@ -26,6 +26,9 @@ deepin-image-viewer freeimage
 deepin-launcher deepin-qt-dbus-factory
 deepin-launcher dtkwidget
 deepin-launcher gsettings-qt
+deepin-menu deepin-qt-dbus-factory
+deepin-menu dtkwidget
+deepin-menu qt5-xcb-private-headers
 deepin-mutter deepin-clutter
 deepin-notifications dtkwidget
 deepin-picker dtkwidget
@@ -34,6 +37,7 @@ deepin-polkit-agent dtkwidget
 deepin-qt5dxcb-plugin qt5-xcb-private-headers
 deepin-qt5integration dtkwidget
 deepin-qt5integration libqtxdg
+deepin-session-ui deepin-gettext-tools
 deepin-session-ui deepin-qt-dbus-factory
 deepin-session-ui dtkwidget
 deepin-session-ui gsettings-qt
@@ -42,7 +46,7 @@ deepin-system-monitor dtkwidget
 deepin-system-monitor dtkwm
 deepin-wallpapers deepin-api
 deepin-wm deepin-clutter
-deepin-wm deepin-clutter-gtk
+deepin-wm deepin-clutter-gtk-devel
 deepin-wm deepin-mutter
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
