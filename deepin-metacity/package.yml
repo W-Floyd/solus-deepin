@@ -1,8 +1,8 @@
 name       : deepin-metacity
-version    : 3.22.13
-release    : 2
+version    : 3.22.15
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-metacity/archive/3.22.13.tar.gz : f091fea29bcb52584375da1bf7baa4f959f40fbf724320a8579434c112d0b47f
+    - https://github.com/linuxdeepin/deepin-metacity/archive/3.22.15.tar.gz : e827ef8ad0a9e4fbdfb53c9a3c93b18332f97c589aca8ebcf03dccb8537fdd75
 license    : GPL-2.0
 component  : desktop.deepin.core
 summary    : 2D window manager for Deepin

@@ -666,6 +666,7 @@ libdeepin-metacity-private.so.3:meta_screen_ungrab_all_keys
 libdeepin-metacity-private.so.3:meta_screen_ungrab_keys
 libdeepin-metacity-private.so.3:meta_screen_unset_cm_selection
 libdeepin-metacity-private.so.3:meta_screen_unshow_desktop
+libdeepin-metacity-private.so.3:meta_screen_update_corner
 libdeepin-metacity-private.so.3:meta_screen_update_cursor
 libdeepin-metacity-private.so.3:meta_screen_update_showing_desktop_hint
 libdeepin-metacity-private.so.3:meta_screen_update_workspace_layout
