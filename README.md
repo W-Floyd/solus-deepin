@@ -22,6 +22,8 @@ Initially put together over a week or so, since worked on off and on for months,
 
 ***
 
+*2018-03-24.2* - Got my build script set up, should now help insulate me from accidentally inheriting deps that are not in my lists. Will in due course rebuild all packages to validate my run/build_dep files. For now though, I've updated everything! 
+
 *2018-03-24.1* - Gone back through all my packages, spent way too long fighting `treefrog-framework`, but have no un-commited files or changes now. Will start upgrading more things in the morning...  
 Some things of note:
 * If I don't include a rundep that the arch repos do, it's because I can't see why I need it. I will slowly try to add these back in as I determine why I need them
