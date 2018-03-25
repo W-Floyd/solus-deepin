@@ -1,8 +1,8 @@
 name       : deepin-menu
-version    : 3.3.0
-release    : 5
+version    : 3.3.1
+release    : 6
 source     :
-    - https://github.com/linuxdeepin/deepin-menu/archive/3.3.0.tar.gz : 7973923c7fc284dd825c4463cf050d0e2ad2c869d74702616e04ac10fb1aaa54
+    - https://github.com/linuxdeepin/deepin-menu/archive/3.3.1.tar.gz : 4b9013563d5196ea8017edf1a5b0939422a78f2e992c0aa838ce3f9728534f54
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin Menu is the unified menu service for Deepin Desktop Environment.
