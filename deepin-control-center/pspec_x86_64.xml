@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Control panel of the Deepin Desktop Environment.</Summary>
         <Description xml:lang="en">Control panel of the Deepin Desktop Environment.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Control panel of the Deepin Desktop Environment.</Summary>
         <Description xml:lang="en">Control panel of the Deepin Desktop Environment.
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/dde-control-center/plugins/libnotify.so</Path>
@@ -148,8 +148,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2018-03-24</Date>
+        <Update release="8">
+            <Date>2018-03-25</Date>
             <Version>4.4.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

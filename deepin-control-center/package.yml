@@ -1,10 +1,10 @@
 name       : deepin-control-center
 version    : 4.4.1
-release    : 7
+release    : 8
 source     :
     - https://github.com/linuxdeepin/dde-control-center/archive/4.4.1.tar.gz : 7bc98c52b1c1b49210c1a1a1d011d87cd6133732f432c4c84e7b780607199853
 license    : GPL-3.0
-component  : desktop
+component  : desktop.deepin.core
 summary    : Control panel of the Deepin Desktop Environment.
 description: |
     Control panel of the Deepin Desktop Environment.
@@ -28,7 +28,7 @@ rundeps    :
 setup      : |
     mkdir build
     pushd build
-    %qmake ..
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
     popd
 build      : |
     pushd build
