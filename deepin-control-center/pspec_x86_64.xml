@@ -144,13 +144,12 @@
             <Path fileType="data">/usr/share/dde-control-center/translations/dialogs_zh_CN.qm</Path>
             <Path fileType="data">/usr/share/dde-control-center/translations/dialogs_zh_HK.qm</Path>
             <Path fileType="data">/usr/share/dde-control-center/translations/dialogs_zh_TW.qm</Path>
-            <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.controlcenter.addomain.policy</Path>
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-03-25</Date>
-            <Version>4.4.1</Version>
+        <Update release="9">
+            <Date>2018-03-26</Date>
+            <Version>4.4.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
