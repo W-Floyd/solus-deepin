@@ -1,6 +1,6 @@
 name       : deepin-image-viewer
 version    : 1.2.18
-release    : 4
+release    : 5
 source     :
     - https://github.com/linuxdeepin/deepin-image-viewer/archive/1.2.18.tar.gz : 7da90ad963da66dd448116f993ca28a5476fa7b33700804b61a2b21cc69ea6ce
 license    : GPL-3.0
@@ -20,6 +20,7 @@ builddeps  :
     - pkgconfig(xext)
     - qt5-tools-devel
 rundeps    :
+    - deepin-qt5dxcb-plugin
     - freeimage-devel
 setup      : |
     mkdir build
