@@ -51,6 +51,7 @@ deepin-session-ui gsettings-qt
 deepin-session-ui liblightdm-qt5
 deepin-system-monitor dtkwidget
 deepin-system-monitor dtkwm
+deepin-voice-recorder dtkwidget
 deepin-wallpapers deepin-api
 deepin-wm deepin-clutter
 deepin-wm deepin-clutter-gtk-devel

@@ -47,6 +47,7 @@ deepin-system-monitor deepin-qt5dxcb-plugin
 deepin-system-monitor dtkwidget
 deepin-system-monitor dtkwm
 deepin-terminal deepin-menu
+deepin-voice-recorder dtkwidget
 deepin-wm deepin-clutter-gtk
 deepin-wm deepin-mutter
 deepin-wm-switcher deepin-daemon
