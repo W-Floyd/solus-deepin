@@ -36,6 +36,8 @@ deepin-notifications dtkwidget
 deepin-picker dtkwidget
 deepin-qt5integration deepin-file-manager
 deepin-qt5integration libqtxdg
+deepin-screen-recorder dtkwidget
+deepin-screen-recorder dtkwm
 deepin-screenshot dtkwidget
 deepin-screenshot dtkwm
 deepin-session-ui deepin-daemon
