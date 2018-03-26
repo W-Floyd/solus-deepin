@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop.desktop.core</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Starter of deepin desktop environment</Summary>
         <Description xml:lang="en">Launches Deepin Desktop Envrionment components and invoking user&apos;s custom applications which compliant with xdg autostart specification.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Starter of deepin desktop environment</Summary>
         <Description xml:lang="en">Launches Deepin Desktop Envrionment components and invoking user&apos;s custom applications which compliant with xdg autostart specification.
 </Description>
-        <PartOf>desktop.desktop.core</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/sbin</Path>
@@ -27,8 +27,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2018-03-23</Date>
+        <Update release="6">
+            <Date>2018-03-26</Date>
             <Version>3.1.26</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

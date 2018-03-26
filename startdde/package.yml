@@ -1,11 +1,11 @@
 name       : startdde
 version    : 3.1.26
-release    : 5
+release    : 6
 source     :
     - https://github.com/linuxdeepin/startdde/archive/3.1.26.tar.gz : 5a8d65b09b6e94956c36c0869ffd2550daa1ced1833fd7b0aff18e656b2aa8ad
 networking : yes
 license    : GPL-3.0
-component  : desktop.desktop.core
+component  : desktop.deepin.core
 summary    : Starter of deepin desktop environment
 description: |
     Launches Deepin Desktop Envrionment components and invoking user's custom applications which compliant with xdg autostart specification.
