@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop.deepin-core</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Deepin window manager monitoring and auto-switching service.</Summary>
         <Description xml:lang="en">Deepin window manager monitoring and auto-switching service.
 It is capable of monitoring the health of the 3D WM and falling back to 2D if bad things happened, and detecting platform capability and choose 2D/3D WM accordingly.
@@ -19,14 +19,14 @@ It is capable of monitoring the health of the 3D WM and falling back to 2D if ba
         <Description xml:lang="en">Deepin window manager monitoring and auto-switching service.
 It is capable of monitoring the health of the 3D WM and falling back to 2D if bad things happened, and detecting platform capability and choose 2D/3D WM accordingly.
 </Description>
-        <PartOf>desktop.deepin-core</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-03-23</Date>
+        <Update release="5">
+            <Date>2018-03-26</Date>
             <Version>1.1.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
