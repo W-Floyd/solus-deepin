@@ -29,8 +29,11 @@ deepin-file-manager dtkcore
 deepin-file-manager dtkwidget
 deepin-file-manager treefrog-framework
 deepin-gettext-tools perl-config-tiny
+deepin-image-viewer deepin-qt5dxcb-plugin
+deepin-image-viewer dtkwidget
 deepin-image-viewer freeimage-devel
 deepin-menu dtkwidget
+deepin-music deepin-qt5dxcb-plugin
 deepin-music dtkwidget
 deepin-mutter deepin-desktop-schemas
 deepin-notifications dtkwidget
@@ -57,6 +60,7 @@ deepin-wm-switcher deepin-wm
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
+freeimage-devel freeimage
 freeimage-devel libjxr
 libmongoc libbson
 startdde deepin-control-center
