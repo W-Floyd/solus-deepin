@@ -40,6 +40,8 @@ deepin-polkit-agent dtkwidget
 deepin-qt5dxcb-plugin qt5-xcb-private-headers
 deepin-qt5integration dtkwidget
 deepin-qt5integration libqtxdg
+deepin-screenshot dtkwidget
+deepin-screenshot dtkwm
 deepin-session-ui deepin-gettext-tools
 deepin-session-ui deepin-qt-dbus-factory
 deepin-session-ui dtkwidget

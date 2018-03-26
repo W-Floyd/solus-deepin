@@ -1,0 +1,33 @@
+name       : deepin-screenshot
+version    : 4.0.11
+release    : 1
+source     :
+    - https://github.com/linuxdeepin/deepin-screenshot/archive/4.0.11.tar.gz : 7f6ef047e1f02736dc6ff3c6c6782f013a059741f893ade155545c23253bbf8b
+license    : GPL-3.0
+component  : desktop.deepin
+summary    : Advanced tool to make and edit screenshots
+description: |
+    Deepin screenshot is an advanced tool to make screenshots on Linux desktop environment. It has a user-friendly UI which eases cropping and saving of screenshot.
+builddeps  :
+    - pkgconfig(dtkwidget)
+    - pkgconfig(dtkwm)
+    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(x11)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-util)
+    - pkgconfig(xext)
+    - pkgconfig(xtst)
+    - qt5-tools-devel
+setup      : |
+    mkdir build
+    pushd build
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+    popd
+build      : |
+    pushd build
+    %make
+    popd
+install    : |
+    pushd build
+    %make_install INSTALL_ROOT=$installdir
+    popd
