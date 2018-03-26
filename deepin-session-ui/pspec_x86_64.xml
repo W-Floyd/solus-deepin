@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Deepin desktop-environment - Session UI module</Summary>
         <Description xml:lang="en">Deepin desktop-environment - Session UI module
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">Deepin desktop-environment - Session UI module</Summary>
         <Description xml:lang="en">Deepin desktop-environment - Session UI module
 </Description>
-        <PartOf>desktop</PartOf>
+        <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-lowpower</Path>
@@ -102,9 +102,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-03-25</Date>
-            <Version>4.3.2</Version>
+        <Update release="9">
+            <Date>2018-03-26</Date>
+            <Version>4.3.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
