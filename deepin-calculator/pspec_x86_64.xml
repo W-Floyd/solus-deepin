@@ -6,7 +6,7 @@
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
-        <PartOf>deepin.desktop</PartOf>
+        <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">An easy to use calculator for ordinary users.</Summary>
         <Description xml:lang="en">Deepin calculator is an easy to use calculator for ordinary users.
 </Description>
@@ -17,7 +17,7 @@
         <Summary xml:lang="en">An easy to use calculator for ordinary users.</Summary>
         <Description xml:lang="en">Deepin calculator is an easy to use calculator for ordinary users.
 </Description>
-        <PartOf>deepin.desktop</PartOf>
+        <PartOf>desktop.deepin</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/deepin-calculator.desktop</Path>
@@ -47,8 +47,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2018-03-25</Date>
+        <Update release="4">
+            <Date>2018-03-26</Date>
             <Version>1.0.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
