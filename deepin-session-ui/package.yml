@@ -12,8 +12,8 @@ builddeps  :
     - deepin-gettext-tools
     - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkwidget)
-    - pkgconfig(gsettings-qt)
     - pkgconfig(gl)
+    - pkgconfig(gsettings-qt)
     - pkgconfig(liblightdm-qt5-3)
     - pkgconfig(Qt5Svg)
     - pkgconfig(Qt5X11Extras)

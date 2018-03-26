@@ -10,8 +10,8 @@ summary    : Automatically storing of automatically generated Qt DBus code used 
 description: |
     Automatically storing of automatically generated Qt DBus code used by Deepin.
 builddeps  :
-    - qt5-tools-devel
     - pkgconfig(glu)
+    - qt5-tools-devel
 setup      : |
     mkdir build
     pushd build

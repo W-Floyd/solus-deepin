@@ -9,11 +9,11 @@ summary    : Offscreen image blurring tool
 description: |
     Offscreen image blurring tool
 builddeps  :
-    - pkgconfig(gdk-pixbuf-2.0)
-    - pkgconfig(libdrm)
-    - pkgconfig(gbm)
     - pkgconfig(egl)
+    - pkgconfig(gbm)
+    - pkgconfig(gdk-pixbuf-2.0)
     - pkgconfig(glesv2)
+    - pkgconfig(libdrm)
 setup      : |
     %cmake .
 build      : |

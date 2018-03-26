@@ -12,8 +12,8 @@ builddeps  :
     - pkgconfig(dtkcore)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
-    - pkgconfig(xcb)
     - pkgconfig(xcb-util)
+    - pkgconfig(xcb)
     - pkgconfig(xext)
     - qt5-tools-devel
 setup      : |

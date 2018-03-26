@@ -11,8 +11,8 @@ summary    : Clutter GTK+ API, build for Deepin
 description: |
     Clutter GTK+ API, build for Deepin
 builddeps  :
-    - pkgconfig(gtk+-3.0)
     - deepin-clutter-devel
+    - pkgconfig(gtk+-3.0)
 setup      : |
     %configure --disable-static \
                --enable-introspection

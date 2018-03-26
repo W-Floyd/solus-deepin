@@ -9,8 +9,8 @@ summary    : Deepin Polkit Agent
 description: |
     Deepin Polkit Agent
 builddeps  :
-    - pkgconfig(dtkwidget)
     - pkgconfig(dframeworkdbus)
+    - pkgconfig(dtkwidget)
     - pkgconfig(glu)
     - pkgconfig(polkit-qt5-1)
     - qt5-tools-devel

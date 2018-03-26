@@ -14,8 +14,8 @@ builddeps  :
     - pkgconfig(dtkwm)
     - pkgconfig(libprocps)
     - pkgconfig(Qt5X11Extras)
-    - pkgconfig(xcb)
     - pkgconfig(xcb-util)
+    - pkgconfig(xcb)
     - pkgconfig(xext)
     - pkgconfig(xtst)
     - qt5-tools-devel

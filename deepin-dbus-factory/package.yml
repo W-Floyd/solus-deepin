@@ -9,8 +9,8 @@ summary    : GO DBus factory for Deepin
 description: |
     GO DBus factory for Deepin
 builddeps  :
-    - jq
     - deepin-dbus-generator
+    - jq
 build      : |
     %make
 install    : |

@@ -18,8 +18,8 @@ builddeps  :
     - pkgconfig(xcb)
     - pkgconfig(xdmcp)
     - pkgconfig(yelp-xsl)
-    - yelp-tools
     - yelp-devel
+    - yelp-tools
 rundep     :
     - lightdm
     - qt5-base

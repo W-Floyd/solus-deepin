@@ -14,8 +14,8 @@ builddeps  :
     - pkgconfig(gsettings-qt)
     - pkgconfig(Qt5Svg)
     - pkgconfig(Qt5X11Extras)
-    - pkgconfig(xcb)
     - pkgconfig(xcb-ewmh)
+    - pkgconfig(xcb)
     - qt5-tools-devel
 setup      : |
     mkdir build

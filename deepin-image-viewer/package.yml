@@ -14,8 +14,8 @@ builddeps  :
     - pkgconfig(gl)
     - pkgconfig(libexif)
     - pkgconfig(libraw)
-    - pkgconfig(Qt5X11Extras)
     - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
     - pkgconfig(xext)
     - qt5-tools-devel
