@@ -31,6 +31,7 @@ deepin-file-manager treefrog-framework
 deepin-gettext-tools perl-config-tiny
 deepin-image-viewer freeimage-devel
 deepin-menu dtkwidget
+deepin-music dtkwidget
 deepin-mutter deepin-desktop-schemas
 deepin-notifications dtkwidget
 deepin-picker dtkwidget

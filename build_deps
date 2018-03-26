@@ -32,6 +32,7 @@ deepin-launcher gsettings-qt
 deepin-menu deepin-qt-dbus-factory
 deepin-menu dtkwidget
 deepin-menu qt5-xcb-private-headers
+deepin-music dtkwidget
 deepin-mutter deepin-clutter
 deepin-notifications dtkwidget
 deepin-picker dtkwidget
