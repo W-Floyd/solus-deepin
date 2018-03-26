@@ -102,7 +102,7 @@ else
     
 fi
 
-chown "${real_user}:${real_user}" ./*
+chown "${real_user}:${real_user}" -R .
 
 }
 
