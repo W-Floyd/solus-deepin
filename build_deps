@@ -50,6 +50,7 @@ deepin-session-ui deepin-qt-dbus-factory
 deepin-session-ui dtkwidget
 deepin-session-ui gsettings-qt
 deepin-session-ui liblightdm-qt5
+deepin-shortcut-viewer dtkwidget
 deepin-system-monitor dtkwidget
 deepin-system-monitor dtkwm
 deepin-voice-recorder dtkwidget

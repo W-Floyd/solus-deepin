@@ -2,10 +2,10 @@
 
 ## I'm a dragon, hear me roar!
 
-### It *IS* broken, and will remain so.
+### It is *probably* broken, and could remain so.
 
 This is an exercise in packaging Deepin.
-It is not ready - nor intended - for actual use, and it *will not* go into the Solus repos.
+It is not ready - nor intended - for production use, and it *will not* go into the Solus repos.
 
 ***
 
@@ -14,18 +14,41 @@ Pretty much working as expected.
 
 ### TODO
 
-* ensure all reasonable desktop apps may run without interfering with another DE (file-manager possible exempt).  
-  * a secondary goal is to validate core packages and strip un-needed rundeps (and add those that are required). This one is hard though, we'll see.
+**Apps that run on an otherwise stock Solus (Budgie) install**
+
+- [x] Calculator
+- [x] Calendar (though it's pretty much useless)
+- [x] File Manager
+- [x] Image Viewer
+- [ ] Movie (still need to build)
+- [x] Music
+- [ ] Picker (may not be possible?)
+- [ ] Screen Recorder (may not be possible?)
+- [x] Screenshot
+- [x] System Monitor
+- [x] Terminal
+- [x] Voice Recorder
+
+***
+
+* validate core packages and strip un-needed rundeps (and add those that are required). This one is hard though, we'll see.
 * check if `deepin-music` is using vendored libraries and transition off of them if possible.  
 * check on how to make sure `setcap cap_kill,cap_net_raw,cap_dac_read_search,cap_sys_ptrace+ep /usr/bin/deepin-system-monitor` is run so that network speed monitoring may be achieved.
+* validate touchpad swipe shortcuts (specifically, 4/5 fingered ones, which my current machine does not support), see if I need to drop the Arch patch to `deepin-daemon` (it seems to be a decision to disable 3 finger tapping being intercepted, leaving it open for, say, following links, or pasting, the former being something I use often)
 
 ### Updates
+
+*2018-03-26.2* - Did a full rebuild with my scripts, ironed out the last of the run/build_dep file issues. Also sorted out which apps run solo (and made sure they had the right rundeps), and *started* on a bit of making sure lower level components actually have the rundeps they need (`deepin-daemon` so far has been tested a little)
+
+***
 
 *2018-03-26.1* - Things are going to slow down now, reasons being:
 * I've gotten the main desktop done, it's mainly peripheral apps now. If updates come out, I'll try to make sure I upgrade and all that.  
 * I'm going to be busy (getting a job), I won't have a ton of time to dump into this. Make no promises, tell no lies, aye?
+* Internet isn't real good for me where I'm at now, it'll be a few months before that might change for the long run.
 
-I am running this desktop fully at the moment, so I am testing it through use, but it also means I might not catch corner-case features that I don't know about.
+I am running this desktop fully at the moment, so I *am* testing it through use, but it also means I might not catch corner-case features that I don't know about.
+This project is for me after all, I only feel motivated about what's important to me.
 
 ***
 
