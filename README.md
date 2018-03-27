@@ -35,6 +35,9 @@ Pretty much working as expected.
 * check if `deepin-music` is using vendored libraries and transition off of them if possible.  
 * check on how to make sure `setcap cap_kill,cap_net_raw,cap_dac_read_search,cap_sys_ptrace+ep /usr/bin/deepin-system-monitor` is run so that network speed monitoring may be achieved.
 * validate touchpad swipe shortcuts (specifically, 4/5 fingered ones, which my current machine does not support), see if I need to drop the Arch patch to `deepin-daemon` (it seems to be a decision to disable 3 finger tapping being intercepted, leaving it open for, say, following links, or pasting, the former being something I use often)
+* investigate why first login (at least in VM) has a white bg, as you have to fish for a button.
+* check if I can plumb in the control center to link to the Solus SC for updating, and if not, disable to section entirely.
+* see if I can force disable the disablement of `deepin-mutter`, temporarily, for the sake of VM testing?
 
 ### Updates
 
