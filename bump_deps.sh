@@ -5,11 +5,11 @@ uuniq () {
 }
 
 __list_rundeps () {
-sort < 'run_deps' | uniq | grep -E " ${1}$" | sed -e 's#-devel$##' -e 's#-devel ##'
+sort < 'run_deps' | sed -e 's#-devel$##' -e 's#-devel ##' | uniq | grep -E " ${1}$"
 }
 
 __list_builddeps () {
-sort < 'build_deps' | uniq | grep -E " ${1}$" | sed -e 's#-devel$##' -e 's#-devel ##'
+sort < 'build_deps' | sed -e 's#-devel$##' -e 's#-devel ##' | uniq | grep -E " ${1}$"
 }
 
 __recurse () {
