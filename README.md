@@ -31,15 +31,38 @@ Pretty much working as expected.
 
 ***
 
+#### `deepin-daemon`
+
+Need to look into packaging:
+* Miracast/Miracle Cast  
+* `imwheel`
+
+Add as rundep:
+* `rfkill` (used with Bluetooth)
+
+Look into:
+* missing files from `/usr/share/deepin-default-settings`
+
+#### `startdde`
+
+Look into:
+* `startmanager.go:90: open /usr/lib/UIAppSched.hooks/launched: no such file or directory`
+
+#### Misc.
+
 * validate core packages and strip un-needed rundeps (and add those that are required). This one is hard though, we'll see.
 * check if `deepin-music` is using vendored libraries and transition off of them if possible.  
 * check on how to make sure `setcap cap_kill,cap_net_raw,cap_dac_read_search,cap_sys_ptrace+ep /usr/bin/deepin-system-monitor` is run so that network speed monitoring may be achieved.
 * validate touchpad swipe shortcuts (specifically, 4/5 fingered ones, which my current machine does not support), see if I need to drop the Arch patch to `deepin-daemon` (it seems to be a decision to disable 3 finger tapping being intercepted, leaving it open for, say, following links, or pasting, the former being something I use often)
 * investigate why first login (at least in VM) has a white bg, as you have to fish for a button.
-* check if I can plumb in the control center to link to the Solus SC for updating, and if not, disable to section entirely.
+* check if I can plumb in the control center to link to the Solus SC for updating, and if not, disable the section entirely.
 * see if I can force disable the disablement of `deepin-mutter`, temporarily, for the sake of VM testing?
 
 ### Updates
+
+*2018-04-03.1* - Got a few updates done (was busy over the weekend, and it wasn't urgent, so...), things should be up to date again. I find a few random application crashes now and again, need to determine if it's to do with my building of the DE (probably not), the DE itself (maybe), or the apps in particular (more likely).
+
+***
 
 *2018-03-26.2* - Did a full rebuild with my scripts, ironed out the last of the run/build_dep file issues. Also sorted out which apps run solo (and made sure they had the right rundeps), and *started* on a bit of making sure lower level components actually have the rundeps they need (`deepin-daemon` so far has been tested a little)
 
