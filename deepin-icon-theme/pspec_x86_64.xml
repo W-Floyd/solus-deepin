@@ -1000,7 +1000,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-screen-recorder.svg</Path>
@@ -1054,7 +1053,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-screen-recorder.svg</Path>
@@ -1109,7 +1107,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-screen-recorder.svg</Path>
@@ -1163,7 +1160,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-screen-recorder.svg</Path>
@@ -1217,7 +1213,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-screen-recorder.svg</Path>
@@ -1449,7 +1444,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deepin-screen-recorder.svg</Path>
@@ -1827,7 +1821,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-screen-recorder.svg</Path>
@@ -1880,7 +1873,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-note.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-picker.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-printer-assistant.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-remote-assistance.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-repair-tools.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-screen-recorder.svg</Path>
@@ -5812,9 +5804,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2018-03-27</Date>
-            <Version>15.12.54</Version>
+        <Update release="6">
+            <Date>2018-04-03</Date>
+            <Version>15.12.55</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
