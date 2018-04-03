@@ -34,8 +34,8 @@ Pretty much working as expected.
 #### `deepin-daemon`
 
 Need to look into packaging:
-* Miracast/Miracle Cast  
-* `imwheel`
+* Miracast/Miracle Cast -  [Tarball](https://github.com/linuxdeepin/miraclecast/archive/1.0.8.tar.gz)
+* `imwheel` - [Tarball](https://sourceforge.net/projects/imwheel/files/imwheel-source/1.0.0pre12/imwheel-1.0.0pre12.tar.gz/download)
 
 Add as rundep:
 * `rfkill` (used with Bluetooth)
