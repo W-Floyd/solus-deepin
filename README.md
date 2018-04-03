@@ -57,6 +57,7 @@ Look into:
 * investigate why first login (at least in VM) has a white bg, as you have to fish for a button.
 * check if I can plumb in the control center to link to the Solus SC for updating, and if not, disable the section entirely.
 * see if I can force disable the disablement of `deepin-mutter`, temporarily, for the sake of VM testing?
+* ``dde-dock` often crashes when changing USB devices, need to investigate.
 
 ### Updates
 
