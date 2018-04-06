@@ -20,7 +20,7 @@ Pretty much working as expected.
 - [x] Calendar (though it's pretty much useless)
 - [x] File Manager
 - [x] Image Viewer
-- [ ] Movie (still need to build)
+- [ ] Movie (need to test on bare metal - I suspect a VM lacks the correct acceleration)
 - [x] Music
 - [ ] Picker (may not be possible?)
 - [ ] Screen Recorder (may not be possible?)
@@ -60,6 +60,10 @@ Look into:
 * ``dde-dock` often crashes when changing USB devices, need to investigate.
 
 ### Updates
+
+*2018-04-05.1* - Got Deepin Movie (Reborn) packaged up, I really like it. Tried it in a VM, it doesn't work solo at this point. I suspect it's something to do with not having acceleration available. Will test on bare metal soon(ish?).
+
+***
 
 *2018-04-03.1* - Got a few updates done (was busy over the weekend, and it wasn't urgent, so...), things should be up to date again. I find a few random application crashes now and again, need to determine if it's to do with my building of the DE (probably not), the DE itself (maybe), or the apps in particular (more likely).
 
