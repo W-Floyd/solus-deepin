@@ -57,11 +57,17 @@ Look into:
 * investigate why first login (at least in VM) has a white bg, as you have to fish for a button.
 * check if I can plumb in the control center to link to the Solus SC for updating, and if not, disable the section entirely.
 * see if I can force disable the disablement of `deepin-mutter`, temporarily, for the sake of VM testing?
-* ``dde-dock` often crashes when changing USB devices, need to investigate.
+* `dde-dock` often crashes when changing USB devices, need to investigate.
+* `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
 
 ### Updates
 
-*2018-04-05.1* - Got Deepin Movie (Reborn) packaged up, I really like it. Tried it in a VM, it doesn't work solo at this point. I suspect it's something to do with not having acceleration available. Will test on bare metal soon(ish?).
+*2018-04-05.1* - Got Deepin Movie (Reborn) packaged up, I really like it (for the most part, see further). Tried it in a VM, it doesn't work solo at this point. I suspect it's something to do with not having acceleration available. Will test on bare metal soon(ish?).
+
+Some points against it though:
+
+* it does not support letterboxing when in windowed mode (meaning no split screen viewing, unless your content happens to be a vertical format)
+* it does not support any cropping modes, so no trimming off baked letterboxes
 
 ***
 
