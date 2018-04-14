@@ -1,8 +1,8 @@
 name       : deepin-file-manager
-version    : 4.4.8.3
-release    : 11
+version    : 4.4.8.5
+release    : 12
 source     :
-    - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.8.3.tar.gz : bd61b2699292524dffac40622a9ce5858b2ce5dc22a0c0befc25409b0b6ab14f
+    - https://github.com/linuxdeepin/dde-file-manager/archive/4.4.8.5.tar.gz : 2ea7f870a2b306b92eb86cfc3d99256136dbde1afee7a05eb6311ae1ef1e192d
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    :

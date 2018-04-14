@@ -354,7 +354,7 @@ libdde-file-manager.so.1:_ZN11PathManager15loadSystemPathsEv
 libdde-file-manager.so.1:_ZN11PathManager18getSystemCachePathEv
 libdde-file-manager.so.1:_ZN11PathManager21getSystemPathIconNameE7QString
 libdde-file-manager.so.1:_ZN11PathManager24getSystemPathDisplayNameE7QString
-libdde-file-manager.so.1:_ZN11PathManager27getSystemPathIconNameByPathERK7QString
+libdde-file-manager.so.1:_ZN11PathManager27getSystemPathIconNameByPathE7QString
 libdde-file-manager.so.1:_ZN11PathManager30getSystemPathDisplayNameByPathE7QString
 libdde-file-manager.so.1:_ZN11PathManager6mkPathERK7QString
 libdde-file-manager.so.1:_ZN11PathManager9initPathsEv
@@ -968,6 +968,7 @@ libdde-file-manager.so.1:_ZN13ShareFileInfoD0Ev
 libdde-file-manager.so.1:_ZN13ShareFileInfoD1Ev
 libdde-file-manager.so.1:_ZN13ShareFileInfoD2Ev
 libdde-file-manager.so.1:_ZN13TrashFileInfo12makeAbsoluteEv
+libdde-file-manager.so.1:_ZN13TrashFileInfo16setColumnCompactEb
 libdde-file-manager.so.1:_ZN13TrashFileInfoC1ERK4DUrl
 libdde-file-manager.so.1:_ZN13TrashFileInfoC2ERK4DUrl
 libdde-file-manager.so.1:_ZN13UDiskListener10mountAddedE28QExplicitlySharedDataPointerI15UDiskDeviceInfoE
@@ -1218,6 +1219,7 @@ libdde-file-manager.so.1:_ZN14PropertyDialog6raisedEv
 libdde-file-manager.so.1:_ZN14PropertyDialog9hideEventEP10QHideEvent
 libdde-file-manager.so.1:_ZN14PropertyDialogC1ERK8DFMEvent4DUrlP7QWidget
 libdde-file-manager.so.1:_ZN14PropertyDialogC2ERK8DFMEvent4DUrlP7QWidget
+libdde-file-manager.so.1:_ZN14SearchFileInfo16setColumnCompactEb
 libdde-file-manager.so.1:_ZN14SearchFileInfoC1ERK4DUrl
 libdde-file-manager.so.1:_ZN14SearchFileInfoC2ERK4DUrl
 libdde-file-manager.so.1:_ZN14ShareControler11qt_metacallEN11QMetaObject4CallEiPPv
@@ -1442,6 +1444,7 @@ libdde-file-manager.so.1:_ZN16ComputerViewItem20updateIconPixelWidthEv
 libdde-file-manager.so.1:_ZN16ComputerViewItem21mouseDoubleClickEventEP11QMouseEvent
 libdde-file-manager.so.1:_ZN16ComputerViewItem5eventEP6QEvent
 libdde-file-manager.so.1:_ZN16ComputerViewItem7getIconEi
+libdde-file-manager.so.1:_ZN16ComputerViewItem7openUrlEv
 libdde-file-manager.so.1:_ZN16ComputerViewItem7setInfoERK28QExplicitlySharedDataPointerI17DAbstractFileInfoE
 libdde-file-manager.so.1:_ZN16ComputerViewItem7setNameERK7QString
 libdde-file-manager.so.1:_ZN16ComputerViewItem8windowIdEv
@@ -1544,14 +1547,15 @@ libdde-file-manager.so.1:_ZN16DFileSystemModel14setEnabledSortEb
 libdde-file-manager.so.1:_ZN16DFileSystemModel14setNameFiltersERK11QStringList
 libdde-file-manager.so.1:_ZN16DFileSystemModel14updateChildrenE5QListI28QExplicitlySharedDataPointerI17DAbstractFileInfoEE
 libdde-file-manager.so.1:_ZN16DFileSystemModel16onJobAddChildrenERK28QExplicitlySharedDataPointerI17DAbstractFileInfoE
+libdde-file-manager.so.1:_ZN16DFileSystemModel16setColumnCompactEb
 libdde-file-manager.so.1:_ZN16DFileSystemModel17newFileByInternalERK4DUrl
 libdde-file-manager.so.1:_ZN16DFileSystemModel17toggleHiddenFilesERK4DUrl
 libdde-file-manager.so.1:_ZN16DFileSystemModel18emitAllDataChangedEv
 libdde-file-manager.so.1:_ZN16DFileSystemModel18enabledSortChangedEb
 libdde-file-manager.so.1:_ZN16DFileSystemModel18requestSelectFilesERK5QListI4DUrlE
 libdde-file-manager.so.1:_ZN16DFileSystemModel19selectAndRenameFileERK4DUrl
+libdde-file-manager.so.1:_ZN16DFileSystemModel19setColumnActiveRoleEii
 libdde-file-manager.so.1:_ZN16DFileSystemModel25updateChildrenOnNewThreadE5QListI28QExplicitlySharedDataPointerI17DAbstractFileInfoEE
-libdde-file-manager.so.1:_ZN16DFileSystemModel27cacheUserColumnCurrentRolesEii
 libdde-file-manager.so.1:_ZN16DFileSystemModel4sortEiN2Qt9SortOrderE
 libdde-file-manager.so.1:_ZN16DFileSystemModel4sortEv
 libdde-file-manager.so.1:_ZN16DFileSystemModel5clearEv
@@ -1795,6 +1799,7 @@ libdde-file-manager.so.1:_ZN16dde_file_manager17DFileIconProviderD0Ev
 libdde-file-manager.so.1:_ZN16dde_file_manager17DFileIconProviderD1Ev
 libdde-file-manager.so.1:_ZN16dde_file_manager17DFileIconProviderD2Ev
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog10childEventEP11QChildEvent
+libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog10closeEventEP11QCloseEvent
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog11eventFilterEP7QObjectP6QEvent
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog11qt_metacastEPKc
@@ -1806,9 +1811,9 @@ libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog15setEntryUrlLi
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog17mouseReleaseEventEP11QMouseEvent
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog17updatePreviewListERK5QListI4DUrlE
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog22playCurrentPreviewFileEv
+libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog4doneEi
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog6initUIEv
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog8nextPageEv
-libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog9hideEventEP10QHideEvent
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialog9showEventEP10QShowEvent
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialogC1ERK5QListI4DUrlEP7QWidget
 libdde-file-manager.so.1:_ZN16dde_file_manager17FilePreviewDialogC2ERK5QListI4DUrlEP7QWidget
@@ -1919,6 +1924,7 @@ libdde-file-manager.so.1:_ZN17DAbstractFileInfo11getFileInfoERK4DUrl
 libdde-file-manager.so.1:_ZN17DAbstractFileInfo12makeAbsoluteEv
 libdde-file-manager.so.1:_ZN17DAbstractFileInfo12makeToActiveEv
 libdde-file-manager.so.1:_ZN17DAbstractFileInfo14makeToInactiveEv
+libdde-file-manager.so.1:_ZN17DAbstractFileInfo16setColumnCompactEb
 libdde-file-manager.so.1:_ZN17DAbstractFileInfo6setUrlERK4DUrl
 libdde-file-manager.so.1:_ZN17DAbstractFileInfo7refreshEv
 libdde-file-manager.so.1:_ZN17DAbstractFileInfo8setProxyERK28QExplicitlySharedDataPointerIS_E
@@ -3238,7 +3244,6 @@ libdde-file-manager.so.1:_ZN9DFileView12initDelegateEv
 libdde-file-manager.so.1:_ZN9DFileView12rowsInsertedERK11QModelIndexii
 libdde-file-manager.so.1:_ZN9DFileView12setSelectionERK5QRect6QFlagsIN19QItemSelectionModel13SelectionFlagEE
 libdde-file-manager.so.1:_ZN9DFileView12setSortRolesERKiRKN2Qt9SortOrderE
-libdde-file-manager.so.1:_ZN9DFileView12sortByColumnEi
 libdde-file-manager.so.1:_ZN9DFileView13dragMoveEventEP14QDragMoveEvent
 libdde-file-manager.so.1:_ZN9DFileView13keyPressEventEP9QKeyEvent
 libdde-file-manager.so.1:_ZN9DFileView13loadViewStateERK4DUrl
@@ -3838,11 +3843,12 @@ libdde-file-manager.so.1:_ZNK16DFileSystemModel12roleToColumnEi
 libdde-file-manager.so.1:_ZNK16DFileSystemModel13getUrlByIndexERK11QModelIndex
 libdde-file-manager.so.1:_ZNK16DFileSystemModel14parentFileInfoERK11QModelIndex
 libdde-file-manager.so.1:_ZNK16DFileSystemModel14parentFileInfoERK4DUrl
+libdde-file-manager.so.1:_ZNK16DFileSystemModel15columnIsCompactEv
+libdde-file-manager.so.1:_ZNK16DFileSystemModel16columnActiveRoleEi
 libdde-file-manager.so.1:_ZNK16DFileSystemModel16columnNameByRoleEiRK11QModelIndex
 libdde-file-manager.so.1:_ZNK16DFileSystemModel17columnWidthByRoleEi
 libdde-file-manager.so.1:_ZNK16DFileSystemModel20supportedDragActionsEv
 libdde-file-manager.so.1:_ZNK16DFileSystemModel20supportedDropActionsEv
-libdde-file-manager.so.1:_ZNK16DFileSystemModel24getUserColumnCurrentRoleEi
 libdde-file-manager.so.1:_ZNK16DFileSystemModel27columnDefaultVisibleForRoleEiRK11QModelIndex
 libdde-file-manager.so.1:_ZNK16DFileSystemModel4dataERK11QModelIndexi
 libdde-file-manager.so.1:_ZNK16DFileSystemModel4sortERK28QExplicitlySharedDataPointerI17DAbstractFileInfoER5QListIS2_E
@@ -3990,6 +3996,7 @@ libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14fileSharedNameEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14isAncestorsUrlERK4DUrlP5QListIS0_E
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14menuActionListENS_8MenuTypeE
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo14userColumnDataEi
+libdde-file-manager.so.1:_ZNK17DAbstractFileInfo15columnIsCompactEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo15fileDisplayNameEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo15genericIconNameEv
 libdde-file-manager.so.1:_ZNK17DAbstractFileInfo15sizeDisplayNameEv
@@ -4058,6 +4065,8 @@ libdde-file-manager.so.1:_ZNK17DFMFileShareEvnet10allowGuestEv
 libdde-file-manager.so.1:_ZNK17DFMFileShareEvnet10isWritableEv
 libdde-file-manager.so.1:_ZNK17DFMFileShareEvnet4nameEv
 libdde-file-manager.so.1:_ZNK17DFMPlaformManager10metaObjectEv
+libdde-file-manager.so.1:_ZNK17DFMPlaformManager13isCompactListEv
+libdde-file-manager.so.1:_ZNK17DFMPlaformManager17isAutoCompactListEv
 libdde-file-manager.so.1:_ZNK17DFileDialogHandle10acceptModeEv
 libdde-file-manager.so.1:_ZNK17DFileDialogHandle10metaObjectEv
 libdde-file-manager.so.1:_ZNK17DFileDialogHandle10testOptionEN11QFileDialog6OptionE
@@ -4092,7 +4101,7 @@ libdde-file-manager.so.1:_ZNK17DIconItemDelegate8sizeHintERK20QStyleOptionViewIt
 libdde-file-manager.so.1:_ZNK17DListItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex
 libdde-file-manager.so.1:_ZNK17DListItemDelegate13setEditorDataEP7QWidgetRK11QModelIndex
 libdde-file-manager.so.1:_ZNK17DListItemDelegate14paintGeomertysERK20QStyleOptionViewItemRK11QModelIndex
-libdde-file-manager.so.1:_ZNK17DListItemDelegate17drawNotStringDataERK20QStyleOptionViewItemiRK5QRectRK8QVariantbP8QPainterRK11QModelIndex
+libdde-file-manager.so.1:_ZNK17DListItemDelegate17drawNotStringDataERK20QStyleOptionViewItemiRK5QRectRK8QVariantbP8QPainterRKi
 libdde-file-manager.so.1:_ZNK17DListItemDelegate20updateEditorGeometryEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex
 libdde-file-manager.so.1:_ZNK17DListItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex
 libdde-file-manager.so.1:_ZNK17DListItemDelegate8sizeHintERK20QStyleOptionViewItemRK11QModelIndex
