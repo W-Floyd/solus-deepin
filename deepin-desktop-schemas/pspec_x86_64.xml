@@ -37,6 +37,8 @@
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.keyboard.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.launcher.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.mouse.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.notification.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.osd.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.peripherals.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.power.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.sound-effect.gschema.xml</Path>
@@ -93,9 +95,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2018-04-04</Date>
-            <Version>3.2.9</Version>
+        <Update release="6">
+            <Date>2018-04-14</Date>
+            <Version>3.2.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
