@@ -36,6 +36,7 @@ deepin-movie dtkwidget
 deepin-music dtkwidget
 deepin-mutter deepin-clutter
 deepin-notifications dtkwidget
+deepin-notifications gsettings-qt
 deepin-picker dtkwidget
 deepin-polkit-agent deepin-qt-dbus-factory
 deepin-polkit-agent dtkwidget

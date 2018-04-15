@@ -1,8 +1,8 @@
 name       : deepin-notifications
-version    : 3.2.2
-release    : 6
+version    : 3.2.2.1
+release    : 7
 source     :
-    - https://github.com/linuxdeepin/deepin-notifications/archive/3.2.2.tar.gz : ea552ae359c7abe776ab622c52b4a82b416fe0c405c137d3b13ddbcee5be4a34
+    - https://github.com/linuxdeepin/deepin-notifications/archive/3.2.2.1.tar.gz : faa9f1a02d2b406b4ec0318b3a6a21cf060563d0d7b668c6d3a07b43971e466d
 license    : GPL-3.0
 component  : desktop
 summary    : An implementation of Gnome Desktop Notifications Specification
@@ -11,6 +11,7 @@ description: |
 builddeps  :
     - pkgconfig(dtkwidget)
     - pkgconfig(glu)
+    - pkgconfig(gsettings-qt)
     - pkgconfig(Qt5Svg)
     - qt5-tools-devel
 setup      : |
