@@ -7,6 +7,8 @@
 This is an exercise in packaging Deepin.
 It is not ready - nor intended - for production use, and it *will not* go into the Solus repos.
 
+If you do try this, running it on your production machine is a terrible idea - it'll probably bork a number of things.
+
 ***
 
 A collection of packages meant for getting Deepin running on Solus.
@@ -43,6 +45,11 @@ Add as rundep:
 Look into:
 * missing files from `/usr/share/deepin-default-settings`
 
+#### `deepin-file-manager`
+
+Need to investigate:
+* cannot mount MTP Android device (can only test with Samsung Galaxy S5 currently, but that works under GNOME)
+
 #### `startdde`
 
 Look into:
@@ -61,6 +68,8 @@ Look into:
 * `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
 
 ### Updates
+
+*2018-04-15.1* - Just a few updates, nothing big as far as I can tell. `deepin-image-viewer` stopped building with the latest update to 1.2.19, so I need to sort that out. 
 
 *2018-04-05.1* - Got Deepin Movie (Reborn) packaged up, I really like it (for the most part, see further). Tried it in a VM, it doesn't work solo at this point. I suspect it's something to do with not having acceleration available. Will test on bare metal soon(ish?).
 
