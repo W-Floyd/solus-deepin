@@ -2,11 +2,13 @@
 
 set -e
 
+source 'functions.sh'
+
 __uninstall () {
 remove=()
 while read -r __package; do
     remove+=("${__package}")
-done < <(tsort run_deps)
+done < <(tsort 'run_deps')
 sudo eopkg rmf "${remove[@]}"
 }
 
@@ -15,12 +17,8 @@ if [ "${1}" = '-u' ]; then
     exit
 fi
 
-uuniq () {
-    awk '!x[$0]++'
-}
-
 __recurse () {
-    local __deps="$(sort < 'run_deps' | uniq | grep -E "^${1} ")"
+    local __deps="$(__list_run_deps "${1}")"
     if ! [ -z "${__deps}" ]; then
         while read -r __line; do
             local __parent="${__line/ *}"
