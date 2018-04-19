@@ -29,6 +29,8 @@ sed 's#\[.*##' < "${__tmpfile}" | uniq -d | while read -r __line; do
     echo "    ${__line}[run_build];" >> "${__tmpfile2}"
 done
 
+sed -e '/^$/d' -i "${__tmpfile2}"
+
 {
 
 echo 'digraph {
