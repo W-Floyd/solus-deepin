@@ -49,7 +49,7 @@ __setup () {
 echo 'Cleaning cache.'
 rm -f /var/lib/solbuild/local/*.eopkg
 
-__list_build_deps "${1}" | sed 's/.* //'  | while read -r __package; do
+__list_build_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
     if __check_built "${1}"; then
         echo "Package '${__package}' already built."
@@ -57,7 +57,7 @@ __list_build_deps "${1}" | sed 's/.* //'  | while read -r __package; do
         __build "${__package}" || exit 1
     fi
     
-    __list_run_deps "${__package}" | sed 's/.* //'  | while read -r __package_; do
+    __list_run_deps "${__package}" | sed 's/.* //' | while read -r __package_; do
         
         __build "${__package_}" || exit 1
         
@@ -65,7 +65,7 @@ __list_build_deps "${1}" | sed 's/.* //'  | while read -r __package; do
     
 done || exit 1
 
-__list_build_deps | sed 's/.* //'  "${1}" | while read -r __package; do
+__list_build_deps "${1}" | sed 's/.* //' | while read -r __package; do
 
     __copy_to_cache "${__package}"
 
