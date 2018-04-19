@@ -1,8 +1,8 @@
 name       : deepin-api
-version    : 3.1.22
+version    : 3.1.23
 release    : 5
 source     :
-    - https://github.com/linuxdeepin/dde-api/archive/3.1.22.tar.gz : c7355da4238957f95322c06e4104c52f2a18c908b17d7c22625b98bb6127859f
+    - git|https://cr.deepin.io/dde/dde-api.git : 3.1.23
 extract    : no
 networking : yes
 license    : GPL-3.0
@@ -30,11 +30,7 @@ builddeps  :
 setup      : |
     mkdir {bin,pkg,src}
     mkdir -p src/github.com/linuxdeepin/
-    tar xf $sources/$version.tar.gz -C src/github.com/linuxdeepin/
-    mv src/github.com/linuxdeepin/dde-api-$version src/github.com/linuxdeepin/dde-api
-    pushd src/github.com/linuxdeepin/dde-api
-    popd
-    mkdir -p src/pkg.deepin.io
+    cp -r $sources/dde-api.git/ src/github.com/linuxdeepin/dde-api
 build      : |
     export GOPATH=$workdir/:/usr/share/gocode
     go get gopkg.in/alecthomas/kingpin.v2
