@@ -1,6 +1,6 @@
 name       : deepin-api
 version    : 3.1.23
-release    : 5
+release    : 6
 source     :
     - git|https://cr.deepin.io/dde/dde-api.git : 3.1.23
 extract    : no
@@ -29,19 +29,19 @@ builddeps  :
     - pkgconfig(poppler-glib)
 setup      : |
     mkdir {bin,pkg,src}
-    mkdir -p src/github.com/linuxdeepin/
-    cp -r $sources/dde-api.git/ src/github.com/linuxdeepin/dde-api
+    mkdir -p src/pkg.deepin.io/dde
+    cp -r $sources/dde-api.git $workdir/src/pkg.deepin.io/dde/api
 build      : |
     export GOPATH=$workdir/:/usr/share/gocode
     go get gopkg.in/alecthomas/kingpin.v2
     go get github.com/nfnt/resize
     go get github.com/cryptix/wav
-    pushd src/github.com/linuxdeepin/dde-api
+    pushd src/pkg.deepin.io/dde/api
     make build-dep
     %make
     popd
 install    : |
     export GOPATH=$workdir/:/usr/share/gocode
-    pushd src/github.com/linuxdeepin/dde-api
+    pushd src/pkg.deepin.io/dde/api
     %make_install libdir=/lib64
     popd
