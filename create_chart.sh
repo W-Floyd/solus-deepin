@@ -25,8 +25,8 @@ build' | sort > "${__tmpfile}"
 cp "${__tmpfile}" "${__tmpfile2}"
 
 sed 's#\[.*##' < "${__tmpfile}" | uniq -d | while read -r __line; do
-    sed -e "s#^${__line}\[.*##" -i "${__tmpfile2}"
-    echo "${__line}[run_build];" >> "${__tmpfile2}"
+    sed -e "s#^    ${__line}\[.*##" -i "${__tmpfile2}"
+    echo "    ${__line}[run_build];" >> "${__tmpfile2}"
 done
 
 {
