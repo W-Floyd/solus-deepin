@@ -1,8 +1,8 @@
 name       : deepin-notifications
 version    : 3.2.2.1
-release    : 7
+release    : 8
 source     :
-    - https://github.com/linuxdeepin/deepin-notifications/archive/3.2.2.1.tar.gz : faa9f1a02d2b406b4ec0318b3a6a21cf060563d0d7b668c6d3a07b43971e466d
+    - git|https://cr.deepin.io/deepin-notifications.git : 3.2.2.1
 license    : GPL-3.0
 component  : desktop
 summary    : An implementation of Gnome Desktop Notifications Specification
