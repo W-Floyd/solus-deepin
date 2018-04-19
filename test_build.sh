@@ -18,13 +18,7 @@ else
     real_user=$(whoami)
 fi
 
-__list_rundeps () {
-grep -E "^${1} " 'run_deps' | sed -e 's#-devel$##' -e 's#-devel ##' -e 's/.* //'
-}
-
-__list_builddeps () {
-grep -E "^${1} " 'build_deps' | sed -e 's#-devel$##' -e 's#-devel ##' -e 's/.* //'
-}
+source 'functions.sh'
 
 __check_built () {
     if [ -z "$(find "./${1}/" -iname '*.eopkg')" ]; then
@@ -41,7 +35,7 @@ cd ../
 }
 
 __recurse_copy_rundeps () {
-__list_rundeps "${1}" | while read -r __package; do
+__list_run_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
     __copy_to_cache "${__package}"
     
@@ -55,7 +49,7 @@ __setup () {
 echo 'Cleaning cache.'
 rm -f /var/lib/solbuild/local/*.eopkg
 
-__list_builddeps "${1}" | while read -r __package; do
+__list_build_deps "${1}" | sed 's/.* //'  | while read -r __package; do
     
     if __check_built "${1}"; then
         echo "Package '${__package}' already built."
@@ -63,7 +57,7 @@ __list_builddeps "${1}" | while read -r __package; do
         __build "${__package}" || exit 1
     fi
     
-    __list_rundeps "${__package}" | while read -r __package_; do
+    __list_run_deps "${__package}" | sed 's/.* //'  | while read -r __package_; do
         
         __build "${__package_}" || exit 1
         
@@ -71,7 +65,7 @@ __list_builddeps "${1}" | while read -r __package; do
     
 done || exit 1
 
-__list_builddeps "${1}" | while read -r __package; do
+__list_build_deps | sed 's/.* //'  "${1}" | while read -r __package; do
 
     __copy_to_cache "${__package}"
 

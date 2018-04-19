@@ -1,25 +1,15 @@
 #!/bin/bash
 
-uuniq () {
-    awk '!x[$0]++'
-}
-
-__list_rundeps () {
-sort < 'run_deps' | sed -e 's#-devel$##' -e 's#-devel ##' | uniq | grep -E " ${1}$"
-}
-
-__list_builddeps () {
-sort < 'build_deps' | sed -e 's#-devel$##' -e 's#-devel ##' | uniq | grep -E " ${1}$"
-}
+source 'functions.sh'
 
 __recurse () {
-__list_rundeps "${1}" | while read -r __line; do
+__list_run_deps_rev "${1}" | while read -r __line; do
     local __dependant="${__line/ *}"
     local __dependancy="${__line/* }"
     
     __recurse "${__dependant}"
     
-    __list_builddeps "${__dependant}" | while read -r __line; do
+    __list_build_deps_rev "${__dependant}" | while read -r __line; do
         local __dependant="${__line/ *}"
         local __dependancy="${__line/* }"
         
@@ -27,7 +17,7 @@ __list_rundeps "${1}" | while read -r __line; do
         echo "${__line}"
     done
 done
-__list_builddeps "${1}" | while read -r __line; do
+__list_build_deps_rev "${1}" | while read -r __line; do
     local __dependant="${__line/ *}"
     local __dependancy="${__line/* }"
     
