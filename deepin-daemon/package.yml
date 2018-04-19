@@ -1,8 +1,8 @@
 name       : deepin-daemon
-version    : 3.2.13
-release    : 9
+version    : 3.2.13.2
+release    : 10
 source     :
-    - https://github.com/linuxdeepin/dde-daemon/archive/3.2.13.tar.gz : b346ef2da9e0377d45ee693059ded2afad0d8c3305d975e79a90c9d90979dd79
+    - git|https://cr.deepin.io/dde/dde-daemon.git : 3.2.13.2
 networking : yes
 license    : GPL-3.0
 component  : desktop.deepin.core
