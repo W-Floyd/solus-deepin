@@ -1,8 +1,8 @@
 name       : deepin-cogl
 version    : 1.22.5
-release    : 2
+release    : 3
 source     :
-    - https://github.com/linuxdeepin/deepin-cogl/archive/1.22.5.tar.gz : fb86a54084e45cd80b9785ab6a1457ff50005467e215221d037bd1bf81485d98
+    - git|https://cr.deepin.io/deepin-cogl.git : 1.22.5
 license    : GPL-2.0
 component  : desktop.deepin.core
 conflicts  :
