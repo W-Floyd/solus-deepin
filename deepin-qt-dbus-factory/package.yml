@@ -1,8 +1,8 @@
 name       : deepin-qt-dbus-factory
 version    : 1.0.1
-release    : 5
+release    : 6
 source     :
-    - https://github.com/linuxdeepin/dde-qt-dbus-factory/archive/1.0.1.tar.gz : c283127b14f6dd8750e26be4c90a31b94bd6b1648537547d9ada724ecca732ce
+    - git|https://cr.deepin.io/dde/dde-qt-dbus-factory.git : 1.0.1
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Automatically storing of automatically generated Qt DBus code used by
