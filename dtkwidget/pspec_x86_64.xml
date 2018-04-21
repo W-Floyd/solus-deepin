@@ -7,15 +7,15 @@
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>desktop.deepin.core</PartOf>
-        <Summary xml:lang="en">Base devlopment tool of all C++/Qt Developer work on Deepin.</Summary>
-        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+        <Summary xml:lang="en">Base development tool of all C++/Qt Developer work on Deepin.</Summary>
+        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base development tool of all C++/Qt Developer work on Deepin.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>dtkwidget</Name>
-        <Summary xml:lang="en">Base devlopment tool of all C++/Qt Developer work on Deepin.</Summary>
-        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+        <Summary xml:lang="en">Base development tool of all C++/Qt Developer work on Deepin.</Summary>
+        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base development tool of all C++/Qt Developer work on Deepin.
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
@@ -28,11 +28,11 @@
     <Package>
         <Name>dtkwidget-devel</Name>
         <Summary xml:lang="en">Development files for dtkwidget</Summary>
-        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+        <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base development tool of all C++/Qt Developer work on Deepin.
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="11">dtkwidget</Dependency>
+            <Dependency release="12">dtkwidget</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -42,8 +42,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2018-04-04</Date>
+        <Update release="12">
+            <Date>2018-04-21</Date>
             <Version>2.0.7.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

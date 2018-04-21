@@ -1,13 +1,13 @@
 name       : dtkwidget
 version    : 2.0.7.2
-release    : 11
+release    : 12
 source     :
-    - https://github.com/linuxdeepin/dtkwidget/archive/2.0.7.2.tar.gz : cd7e6e6cb55cfc435375300420e4814c9b4ac1e4d120d190a4c73d8d7068d48a
+    - git|https://cr.deepin.io/dtkwidget.git : 2.0.7.2
 license    : GPL-3.0
 component  : desktop.deepin.core
-summary    : Base devlopment tool of all C++/Qt Developer work on Deepin.
+summary    : Base development tool of all C++/Qt Developer work on Deepin.
 description: |
-    Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer work on Deepin.
+    Deepin Tool Kit (Dtk) is the base development tool of all C++/Qt Developer work on Deepin.
 builddeps  :
     - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkcore)
