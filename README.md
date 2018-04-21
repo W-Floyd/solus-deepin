@@ -64,12 +64,18 @@ Look into:
 * investigate why first login (at least in VM) has a white bg, as you have to fish for a button.
 * check if I can plumb in the control center to link to the Solus SC for updating, and if not, disable the section entirely.
 * see if I can force disable the disablement of `deepin-mutter`, temporarily, for the sake of VM testing?
-* `dde-dock` often crashes when changing USB devices, need to investigate.
+* `dde-dock` (actually, almost eveything Deepin related) often crashes when changing USB devices, need to investigate. Specifically, mouse and keyboard (HDD is okay).
 * `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
 
 ### Updates
 
+*2018-04-20.1* - Been working through packages, switching from GitHub sources to use upstream git sources (the GH mirrors seem to be frozen at the moment, since about a week ago). This has the added benefit to me of reducing download overhead when I next upgrade packages, as the majority of the source is going to remain the same. A few updates are being picked up along the way.
+
+***
+
 *2018-04-15.1* - Just a few updates, nothing big as far as I can tell. `deepin-image-viewer` stopped building with the latest update to 1.2.19, so I need to sort that out. 
+
+***
 
 *2018-04-05.1* - Got Deepin Movie (Reborn) packaged up, I really like it (for the most part, see further). Tried it in a VM, it doesn't work solo at this point. I suspect it's something to do with not having acceleration available. Will test on bare metal soon(ish?).
 
