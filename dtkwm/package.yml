@@ -1,8 +1,8 @@
 name       : dtkwm
 version    : 2.0.7
-release    : 4
+release    : 5
 source     :
-    - https://github.com/linuxdeepin/dtkwm/archive/2.0.7.tar.gz : 3bf42a5ee25c9d78494a7abb78a9743d0c15b2cee9577118751725d544c937ec
+    - git|https://cr.deepin.io/dtkwm.git : 2.0.7
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin Tool Kit Wm.
