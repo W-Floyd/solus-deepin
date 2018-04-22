@@ -45,6 +45,11 @@ Add as rundep:
 Look into:
 * missing files from `/usr/share/deepin-default-settings`
 
+#### `deepin-dock`
+
+Need to investigate:
+* using a different icon theme does not work (leaves a filler icon instead)
+
 #### `deepin-file-manager`
 
 Need to investigate:
