@@ -1,8 +1,8 @@
 name       : deepin-system-monitor
 version    : 1.4.3
-release    : 5
+release    : 6
 source     :
-    - https://github.com/linuxdeepin/deepin-system-monitor/archive/1.4.3.tar.gz : 35c68d6d99cb8504c26f0d6eef3a6510d0dcd4cce3a41c5e0f820fa99404ba55
+    - git|https://cr.deepin.io/deepin-system-monitor.git : 1.4.3
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : A more user-friendly system monitor.
