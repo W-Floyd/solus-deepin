@@ -1,6 +1,6 @@
 name       : deepin-api
 version    : 3.1.23
-release    : 6
+release    : 7
 source     :
     - git|https://cr.deepin.io/dde/dde-api.git : 3.1.23
 extract    : no
