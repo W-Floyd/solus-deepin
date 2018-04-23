@@ -37,13 +37,32 @@ Pretty much working as expected.
 
 Need to look into packaging:
 * Miracast/Miracle Cast -  [Tarball](https://github.com/linuxdeepin/miraclecast/archive/1.0.8.tar.gz)
-* `imwheel` - [Tarball](https://sourceforge.net/projects/imwheel/files/imwheel-source/1.0.0pre12/imwheel-1.0.0pre12.tar.gz/download)
+
+Currently stuck with:
+```
+/home/build/YPKG/root/deepin-miraclecast/build/miraclecast-1.0.8/res/dispctl.vala:807.2-807.18: error: 1 missing arguments for `void GLib.Application.set_default (GLib.Application?)'
+	app.set_default();
+	^^^^^^^^^^^^^^^^^
+Compilation failed: 1 error(s), 2 warning(s)
+```
+
+Will try with upstream `miraclecast` and hopefully it'll work.
 
 Add as rundep:
+* `imwheel` (used for mouse wheel settings)
 * `rfkill` (used with Bluetooth)
 
 Look into:
-* missing files from `/usr/share/deepin-default-settings`
+* missing files from `/usr/share/deepin-default-settings`, see `deepin-default-settings`.
+
+#### `deepin-desktop`
+
+Known tasks:
+* Rundeps are mixed up - startdde is probably what wants many of these, desktop is just one of them. This falls under the general mucking out of rundeps that needs to go on.
+
+#### `deepin-default-settings`
+
+Need to package ([Link](https://github.com/linuxdeepin/default-settings)), but be selective - there's a bunch of stuff in there that we *don't* need, or want. Will need a bit of poking, as such.
 
 #### `deepin-dock`
 
@@ -54,6 +73,9 @@ Need to investigate:
 
 Need to investigate:
 * cannot mount MTP Android device (can only test with Samsung Galaxy S5 currently, but that works under GNOME)
+
+Known tasks:
+* `/usr/bin/dde-xdg-user-dirs-update` is not executable. Need to see why and possibly remedy that.
 
 #### `startdde`
 
