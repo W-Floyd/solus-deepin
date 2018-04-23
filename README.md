@@ -74,6 +74,10 @@ Look into:
 
 ### Updates
 
+*2018-04-22.1* - I *would* be working on things, but the SSL cert on the Deepin [dev site](https://cr.deepin.io/) is expired, so building is a no-go until that's resolved.
+
+***
+
 *2018-04-20.1* - Been working through packages, switching from GitHub sources to use upstream git sources (the GH mirrors seem to be frozen at the moment, since about a week ago). This has the added benefit to me of reducing download overhead when I next upgrade packages, as the majority of the source is going to remain the same. A few updates are being picked up along the way.
 
 ***
