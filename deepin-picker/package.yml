@@ -1,8 +1,8 @@
 name       : deepin-picker
 version    : 1.6.2
-release    : 3
+release    : 4
 source     :
-    - https://github.com/linuxdeepin/deepin-picker/archive/1.6.2.tar.gz : ef3cad26ff421f0d1f3f587e1dc824b1521c0467911f9d975c0ea6b268f984c8
+    - git|https://cr.deepin.io/deepin-picker.git : 1.6.2
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : Simplest color picker.
