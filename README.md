@@ -96,6 +96,10 @@ Look into:
 
 ### Updates
 
+*2018-04-24.1* - Doing the final spree of moving over to upstream git, worked out what's wrong with `deepin-image-viewer` (`freeimage` needed to rebuild, upstream had changed between the two).
+
+***
+
 *2018-04-22.1* - I *would* be working on things, but the SSL cert on the Deepin [dev site](https://cr.deepin.io/) is expired, so building is a no-go until that's resolved.
 
 ***
