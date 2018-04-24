@@ -4,12 +4,16 @@
 # As such, if a package has been modified, be sure to remove all of its eopkg
 # files before continuing with builds.
 
-# Also, since this runs as root to avoid permission questions when unattended,
-# make sure you have your packager information in your root dir.
+# Also, since this runs as root by default to avoid permission questions when
+# unattended, make sure you have your packager information in your root dir.
 
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root" 
-   exit 1
+if [ "${1}" = '--no-root' ]; then
+    shift
+else
+    if [[ $EUID -ne 0 ]]; then
+       echo "This script must be run as root" 
+       exit 1
+    fi
 fi
 
 if [ $SUDO_USER ]; then
