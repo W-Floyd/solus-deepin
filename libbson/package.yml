@@ -1,6 +1,6 @@
 name       : libbson
 version    : 1.9.4
-release    : 6
+release    : 7
 source     :
     - https://github.com/mongodb/libbson/archive/1.9.4.tar.gz : 6b1bbd52dcc688e005c8784cb5637f2f16b34a825f251a6b57597edea3cea2a7
 license    : Apache-2.0

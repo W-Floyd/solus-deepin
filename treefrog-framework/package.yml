@@ -1,6 +1,6 @@
 name       : treefrog-framework
 version    : 1.21.0
-release    : 5
+release    : 6
 source     :
     - https://github.com/treefrogframework/treefrog-framework/archive/v1.21.0.tar.gz : 85fb8bb4271fc482959f9d0f46eb28b6abe8453d378341a99774a43d1f7c87c9
 license    : BSD

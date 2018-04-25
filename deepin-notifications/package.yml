@@ -1,6 +1,6 @@
 name       : deepin-notifications
 version    : 3.2.2.1
-release    : 9
+release    : 10
 source     :
     - git|https://cr.deepin.io/deepin-notifications.git : 3.2.2.1
 license    : GPL-3.0

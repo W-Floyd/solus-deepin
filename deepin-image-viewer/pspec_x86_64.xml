@@ -125,8 +125,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="6">
-            <Date>2018-04-24</Date>
+        <Update release="7">
+            <Date>2018-04-25</Date>
             <Version>1.2.19</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

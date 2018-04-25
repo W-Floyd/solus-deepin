@@ -382,6 +382,7 @@ libcogl.so.20:cogl_euler_init_from_matrix
 libcogl.so.20:cogl_feature_flags_get_type
 libcogl.so.20:cogl_features_available
 libcogl.so.20:cogl_fence_closure_get_user_data
+libcogl.so.20:cogl_filter_return_get_type
 libcogl.so.20:cogl_fixed_atan
 libcogl.so.20:cogl_fixed_atan2
 libcogl.so.20:cogl_fixed_cos

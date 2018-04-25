@@ -1,6 +1,6 @@
 name       : deepin-mutter
 version    : 3.20.29
-release    : 5
+release    : 6
 source     :
     - git|https://cr.deepin.io/deepin-mutter.git : 3.20.29
 license    : GPL-3.0

@@ -1,6 +1,6 @@
 name       : deepin-terminal
 version    : 2.9.2
-release    : 7
+release    : 8
 source     :
     - https://github.com/linuxdeepin/deepin-terminal/archive/2.9.2.tar.gz : 0869789d9a235929ebaf1e16e81c4e34076df0712ade7b4530797a19c9ce241a
 license    : GPL-3.0

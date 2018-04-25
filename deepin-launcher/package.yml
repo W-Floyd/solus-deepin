@@ -1,6 +1,6 @@
 name       : deepin-launcher
 version    : 4.3.2.2
-release    : 7
+release    : 8
 source     :
     - git|https://cr.deepin.io/dde/dde-launcher.git : 4.3.2.2
 license    : GPL-3.0
