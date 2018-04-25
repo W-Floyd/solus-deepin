@@ -10,17 +10,70 @@
 # libqcef libqcef
 # Qt5Xdg libqtxdg
 
+source 'functions.sh'
+
+__recurse () {
+
+{
+
+__list_build_deps "${1}"
+
+} | while read -r __line; do
+
+    __parent="${__line/ *}"
+    __child="${__line/* }"
+    echo "    \"${__parent}\" -> \"${__child}\"[build];" | sed 's/-devel"/"/g'
+
+    __recurse "${__child}"
+
+done
+
+{
+
+__list_run_deps "${1}"
+
+} | while read -r __line; do
+
+    __parent="${__line/ *}"
+    __child="${__line/* }"
+    echo "    \"${__parent}\" -> \"${__child}\"[run];" | sed 's/-devel"/"/g'
+
+    __recurse "${__child}"
+
+done
+
+git diff-index --name-only HEAD -- | grep -E "^${1}/" -q && echo "    ${1}[modified]"
+
+}
+
 __tmpfile="$(mktemp)"
 __tmpfile2="$(mktemp)"
+{
+if [ "${#}" = '0' ]; then
+    while read -r __type; do
+        while read -r __line; do
+            __parent="${__line/ *}"
+            __child="${__line/* }"
+            echo "    \"${__parent}\" -> \"${__child}\"[${__type}];" | sed 's/-devel"/"/g'
+        done < "${__type}_deps"
+    done <<< 'run
+build'
+    git diff-index --name-only HEAD -- | grep '/' | sed 's#/.*##' | sort | uniq | sed 's/\(.*\)/    "\1"[modified];/'
+else
 
-while read -r __type; do
-    while read -r __line; do
-        __parent="${__line/ *}"
-        __child="${__line/* }"
-        echo "    \"${__parent}\" -> \"${__child}\"[${__type}];" | sed 's/-devel"/"/g'
-    done < "${__type}_deps"
-done <<< 'run
-build' | sort > "${__tmpfile}"
+    until [ "${#}" = '0' ]; do
+
+        __recurse "${1}"
+
+        echo "    \"${1}\"[fillcolor="seashell2"]"
+
+        shift
+
+    done
+
+fi
+
+}| sort > "${__tmpfile}"
 
 cp "${__tmpfile}" "${__tmpfile2}"
 
