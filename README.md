@@ -22,7 +22,7 @@ Pretty much working as expected.
 - [x] Calendar (though it's pretty much useless)
 - [x] File Manager
 - [x] Image Viewer
-- [ ] Movie (need to test on bare metal - I suspect a VM lacks the correct acceleration)
+- [x] Movie (VM lacks the correct acceleration I believe, works fine bare metal)
 - [x] Music
 - [ ] Picker (may not be possible?)
 - [ ] Screen Recorder (may not be possible?)
