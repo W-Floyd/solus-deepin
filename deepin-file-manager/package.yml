@@ -33,7 +33,7 @@ builddeps  :
     - qt5-tools-devel
 rundeps    :
     - avfs
-    - deepin-qt5dxcb-plugin
+    - deepin-qt5integration
     - treefrog-framework
     - ^deepin-desktop :
         - deepin-control-center
