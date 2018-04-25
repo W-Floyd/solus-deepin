@@ -1,6 +1,6 @@
 name       : deepin-movie
 version    : 3.2.3
-release    : 3
+release    : 4
 source     :
     - git|https://cr.deepin.io/deepin-movie-reborn.git : 3.2.3
 license    : GPL-3.0
@@ -31,6 +31,8 @@ builddeps  :
     - pkgconfig(xcb-ewmh)
     - pkgconfig(xcb-proto)
     - pkgconfig(xtst)
+rundeps    : |
+    - deepin-qt5dxcb-plugin
 setup      : |
     mkdir build
     pushd build
