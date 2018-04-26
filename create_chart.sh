@@ -42,7 +42,7 @@ __list_run_deps "${1}"
 
 done
 
-git diff-index --name-only HEAD -- | grep -E "^${1}/" -q && echo "    ${1}[modified]"
+git diff-index --name-only HEAD -- | grep -E "^${1}/" -q && echo "    \"${1}\"[modified]"
 
 }
 
