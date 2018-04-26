@@ -106,6 +106,10 @@ chown "${real_user}:${real_user}" -R .
 
 rm -f /var/lib/solbuild/local/*.eopkg
 
+for __input in "${@}"; do
+    rm ${__input}/*.eopkg
+done
+
 until [ "${#}" = '0' ]; do
 
     __build "${1}" || exit 1
