@@ -42,7 +42,7 @@ __list_run_deps "${1}"
 
 done
 
-git diff-index --name-only HEAD -- | grep -E "^${1}/" -q && echo "    \"${1}\"[modified]"
+git diff-index --name-only HEAD -- | grep -E "^${1}/" -q && echo "    \"${1}\"[modified];"
 
 }
 
@@ -65,7 +65,7 @@ else
 
         __recurse "${1}"
 
-        echo "    \"${1}\"[fillcolor="seashell2"]"
+        echo "    \"${1}\"[select];"
 
         shift
 
@@ -77,9 +77,14 @@ fi
 
 cp "${__tmpfile}" "${__tmpfile2}"
 
-sed 's#\[.*##' < "${__tmpfile}" | uniq -d | while read -r __line; do
+grep ' -> ' < "${__tmpfile}" | sed 's#\[.*##' | uniq -d | while read -r __line; do
     sed -e "s#^    ${__line}\[.*##" -i "${__tmpfile2}"
     echo "    ${__line}[run_build];" >> "${__tmpfile2}"
+done
+
+grep -v ' -> ' < "${__tmpfile}" | sed 's#\[.*##' | uniq -d | while read -r __line; do
+    sed -e "s#^    ${__line}\[.*##" -i "${__tmpfile2}"
+    echo "    ${__line}[select_modified];" >> "${__tmpfile2}"
 done
 
 sed -e '/^$/d' -i "${__tmpfile2}"
@@ -108,6 +113,8 @@ sed -e 's/\[run\]/[color=blue]/' \
 -e 's/\[run_build\]/\[color="red:blue"\]/' \
 -e 's/\[modified\]/\[fillcolor=orange\]/' \
 -e 's/\[new\]/\[fillcolor=limegreen\]/' \
--e 's/\[error\]/\[fillcolor=tomato\]/' graph.dot | neato -Ln5 -Tgtk
+-e 's/\[error\]/\[fillcolor=tomato\]/' \
+-e 's/\[select\]/\[fillcolor=seashell2\]/' \
+-e 's/\[select_modified\]/\[fillcolor=darkorange2\]/' graph.dot | neato -Ln5 -Tgtk
 
 exit
