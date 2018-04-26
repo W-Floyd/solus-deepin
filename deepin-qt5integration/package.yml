@@ -1,6 +1,6 @@
 name       : deepin-qt5integration
 version    : 0.2.10
-release    : 9
+release    : 10
 source     :
     - git|https://cr.deepin.io/qt5integration.git : 0.2.10
 license    : GPL-3.0
