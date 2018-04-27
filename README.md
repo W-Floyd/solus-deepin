@@ -64,10 +64,10 @@ Known tasks:
 
 Need to package ([Link](https://github.com/linuxdeepin/default-settings)), but be selective - there's a bunch of stuff in there that we *don't* need, or want. Will need a bit of poking, as such.
 
-#### `deepin-dock`
+#### `deepin-dock` / `deepin-launcher`
 
 Need to investigate:
-* using a different icon theme does not work (leaves a filler icon instead)
+* using a different icon theme does not work (leaves a filler icon instead) when HIDPI is working.
 
 #### `deepin-file-manager`
 
@@ -98,6 +98,12 @@ Look into:
 * `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
 
 ### Updates
+
+*2018-04-26.1* - Okay, almost all on upstream git now (just wallpapers left iirc), but things are iffy. I believe that having rebuilt packages, they rely on Solus updates that are not yet safe to apply (specifically, `lightdm` is borked as far as I can tell). So, installing `gdm` was enough as a stopgap measure for my Deepin machine to keep it limping along, but it also uninstalled some stuff...
+
+But, of course, `cr.deepin.io` would go down as I try to do rebuilds, wouldn't it...
+
+***
 
 *2018-04-24.1* - Doing the final spree of moving over to upstream git, worked out what's wrong with `deepin-image-viewer` (`freeimage` needed to rebuild, upstream had changed between the two).
 
