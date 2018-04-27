@@ -1,6 +1,6 @@
 name       : deepin-file-manager
 version    : 4.4.8.5
-release    : 14
+release    : 15
 source     :
     - git|https://cr.deepin.io/dde/dde-file-manager.git : 4.4.8.5
 license    : GPL-3.0
