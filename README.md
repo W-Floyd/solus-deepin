@@ -99,6 +99,10 @@ Look into:
 
 ### Updates
 
+*2018-04-26.2* - Got my rebuilds done (at last - I'm on a throttled connection). Not a lot happening on my end until I can test with updates from Solus, once those come out.
+
+***
+
 *2018-04-26.1* - Okay, almost all on upstream git now (just wallpapers left iirc), but things are iffy. I believe that having rebuilt packages, they rely on Solus updates that are not yet safe to apply (specifically, `lightdm` is borked as far as I can tell). So, installing `gdm` was enough as a stopgap measure for my Deepin machine to keep it limping along, but it also uninstalled some stuff...
 
 But, of course, `cr.deepin.io` would go down as I try to do rebuilds, wouldn't it...
