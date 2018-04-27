@@ -99,6 +99,10 @@ Look into:
 
 ### Updates
 
+*2018-04-26.2* - I went ahead and am running the current build now. User icons are gone (?). For now, fudging things by removing lightdm and replacing with gdm. I would remove the dependancy between `liblightdm-qt5` and `lightdm`, but that wouldn't be correct, and this is just a short term measure anyway.
+
+***
+
 *2018-04-26.2* - Got my rebuilds done (at last - I'm on a throttled connection). Not a lot happening on my end until I can test with updates from Solus, once those come out.
 
 ***
