@@ -1,6 +1,6 @@
 name       : deepin-image-viewer
 version    : 1.2.19
-release    : 7
+release    : 8
 source     :
     - git|https://cr.deepin.io/deepin-image-viewer.git : 1.2.19
 license    : GPL-3.0
