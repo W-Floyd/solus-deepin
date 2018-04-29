@@ -80,6 +80,10 @@ Need to investigate:
 Known tasks:
 * `/usr/bin/dde-xdg-user-dirs-update` is not executable. Need to see why and possibly remedy that.
 
+#### `deepin-movie`
+
+Seeking on FTP shared files does not work (tested SMB, works fine)
+
 #### `startdde`
 
 Look into:
@@ -98,6 +102,10 @@ Look into:
 * `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
 
 ### Updates
+
+*2018-04-29.1* - I'm almost mad, I wish I'd found this sooner - [an official dependancy graph](https://salsa.debian.org/pkg-deepin-team/progress-tracker/blob/master/depgraph/pkg-deepin-dep.svg) from Deepin. Once I have good internet, I'll go through all packages, cut deps *wayyyy* back, and re-add them as shown.
+
+***
 
 *2018-04-26.2* - I went ahead and am running the current build now. User icons are gone (?). For now, fudging things by removing lightdm and replacing with gdm. I would remove the dependancy between `liblightdm-qt5` and `lightdm`, but that wouldn't be correct, and this is just a short term measure anyway.
 
