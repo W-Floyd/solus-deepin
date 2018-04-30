@@ -31,7 +31,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="9">libmongoc</Dependency>
+            <Dependency release="10">libmongoc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -41,9 +41,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-04-25</Date>
-            <Version>1.9.4</Version>
+        <Update release="10">
+            <Date>2018-04-30</Date>
+            <Version>1.9.5</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
