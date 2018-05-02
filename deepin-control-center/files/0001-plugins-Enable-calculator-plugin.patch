@@ -1,0 +1,24 @@
+From e1169ff462aae6d25f530d521dcb2bd479cbe2dc Mon Sep 17 00:00:00 2001
+From: William Floyd <william.png2000@gmail.com>
+Date: Tue, 1 May 2018 19:42:01 -0400
+Subject: [PATCH] plugins: Enable calculator plugin.
+
+---
+ plugins/plugins.pro | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/plugins/plugins.pro b/plugins/plugins.pro
+index bd534027..060c810f 100644
+--- a/plugins/plugins.pro
++++ b/plugins/plugins.pro
+@@ -1,6 +1,6 @@
+ TEMPLATE = subdirs
+ 
+-SUBDIRS = navigation
++SUBDIRS = navigation calculator
+ 
+ !isEqual(DCC_DISABLE_PLUGIN_WEATHER, YES) {
+     SUBDIRS += weather
+-- 
+2.16.3
+
