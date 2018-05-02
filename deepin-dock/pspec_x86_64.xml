@@ -95,15 +95,15 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="10">deepin-dock</Dependency>
+            <Dependency release="11">deepin-dock</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
         </Files>
     </Package>
     <History>
-        <Update release="10">
-            <Date>2018-04-27</Date>
+        <Update release="11">
+            <Date>2018-05-02</Date>
             <Version>4.6.3.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
