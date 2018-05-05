@@ -1,6 +1,6 @@
 name       : deepin-dbus-factory
 version    : 3.1.15
-release    : 8
+release    : 9
 source     :
     - git|https://cr.deepin.io/dbus-factory.git : 3.1.15
 license    : GPL-3.0
