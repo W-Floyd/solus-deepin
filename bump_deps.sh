@@ -1,5 +1,24 @@
 #!/bin/bash
 
+if [ "${1}" = '--self' ]; then
+    shift
+    until [ "${#}" = '0' ]; do
+        __package="${1}"
+        echo -n "${__package}"
+        cd "${__package}"
+        if [ -z "$(git diff . | grep -E '^[+|-]' | sed 's/^.//' | grep -E '^release')" ]; then
+            make bump &> /dev/null
+            echo
+        else
+            echo ', already bumped.'
+        fi
+        rm -f *.eopkg
+        cd ../
+        shift
+    done 
+    exit
+fi
+
 source 'functions.sh'
 
 __recurse () {
