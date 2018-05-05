@@ -30,7 +30,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="8">libbson</Dependency>
+            <Dependency release="9">libbson</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -40,8 +40,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-04-30</Date>
+        <Update release="9">
+            <Date>2018-05-05</Date>
             <Version>1.9.5</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
