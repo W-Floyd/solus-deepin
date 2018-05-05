@@ -8,6 +8,7 @@ libQt5Widgets.so.5
 libQt5X11Extras.so.5
 libX11.so.6
 libXext.so.6
+libXi.so.6
 libc.so.6
 libcairo.so.2
 libdframeworkdbus.so.2

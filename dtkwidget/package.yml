@@ -1,8 +1,8 @@
 name       : dtkwidget
-version    : 2.0.7.3
-release    : 15
+version    : 2.0.8
+release    : 16
 source     :
-    - git|https://cr.deepin.io/dtkwidget.git : 2.0.7.3
+    - git|https://cr.deepin.io/dtkwidget.git : 2.0.8
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Base development tool of all C++/Qt Developer work on Deepin.
@@ -21,8 +21,10 @@ builddeps  :
     - pkgconfig(x11)
     - pkgconfig(xcb-util)
     - pkgconfig(xext)
+    - pkgconfig(xi)
     - qt5-tools-devel
 setup      : |
+    %patch -p1 < $pkgfiles/fix-build.patch
     mkdir build
     pushd build
     %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
