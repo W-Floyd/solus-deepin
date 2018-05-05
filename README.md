@@ -84,6 +84,10 @@ Known tasks:
 
 Seeking on FTP shared files does not work (tested SMB, works fine)
 
+#### `deepin-qt5config`
+
+[What is it?](https://cr.deepin.io/#/admin/projects/deepin-qt5config)
+
 #### `startdde`
 
 Look into:
