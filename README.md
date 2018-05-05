@@ -82,7 +82,7 @@ Known tasks:
 
 #### `deepin-movie`
 
-Seeking on FTP shared files does not work (tested SMB, works fine)
+~~Seeking on FTP shared files does not work (tested SMB, works fine)~~ - This happens with GNOME MPV under GNOME, so I don't think it's anything to do with `depein-movie` after all.
 
 #### `deepin-qt5config`
 
