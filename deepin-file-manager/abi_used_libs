@@ -4,12 +4,14 @@ libQt5DBus.so.5
 libQt5Gui.so.5
 libQt5Multimedia.so.5
 libQt5Network.so.5
+libQt5Sql.so.5
 libQt5Svg.so.5
 libQt5Widgets.so.5
 libQt5X11Extras.so.5
 libX11.so.6
 libc.so.6
 libdframeworkdbus.so.2
+libdmr.so.0.1
 libdtkcore.so.2
 libdtkwidget.so.2
 libffmpegthumbnailer.so.4

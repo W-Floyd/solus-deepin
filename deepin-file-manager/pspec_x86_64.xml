@@ -20,6 +20,7 @@
             <Path fileType="config">/etc/dbus-1/system.d/com.deepin.filemanager.daemon.conf</Path>
             <Path fileType="config">/etc/xdg/autostart/dde-file-manager-dialog-autostart.desktop</Path>
             <Path fileType="config">/etc/xdg/autostart/dde-file-manager-xdg-autostart.desktop</Path>
+            <Path fileType="data">/lib/systemd/system/dde-anythingmonitor.service</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libdde-disk-mount-plugin.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libdde-trash-plugin.so</Path>
@@ -27,6 +28,7 @@
             <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-music-preview-plugin.so</Path>
             <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-pdf-preview-plugin.so</Path>
             <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-text-preview-plugin.so</Path>
+            <Path fileType="library">/usr/lib64/dde-file-manager/plugins/previews/libdde-video-preview-plugin.so</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
             <Path fileType="data">/usr/share/applications/dde-computer.desktop</Path>
             <Path fileType="data">/usr/share/applications/dde-file-manager.desktop</Path>
@@ -54,6 +56,7 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ar.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ast.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_bg.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_bn.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ca.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_cs.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_da.qm</Path>
@@ -76,7 +79,9 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ru.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sk.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sl.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sr.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_tr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ug.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_uk.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_zh_CN.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_zh_TW.qm</Path>
@@ -85,6 +90,7 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ar.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ast.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_bg.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_bn.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ca.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_cs.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_da.qm</Path>
@@ -109,6 +115,7 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_sl.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_sr.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_tr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ug.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_uk.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_zh_CN.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_zh_TW.qm</Path>
@@ -234,6 +241,7 @@
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ar.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ast.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_bg.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_bn.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ca.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_cs.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_da.qm</Path>
@@ -267,7 +275,7 @@
         <Summary xml:lang="en">Deepin Desktop</Summary>
         <Description xml:lang="en">Deepin Desktop</Description>
         <RuntimeDependencies>
-            <Dependency release="15">deepin-file-manager</Dependency>
+            <Dependency release="16">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/dde-desktop</Path>
@@ -281,7 +289,7 @@
         <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.</Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="15">deepin-file-manager</Dependency>
+            <Dependency release="16">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -290,9 +298,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="15">
-            <Date>2018-04-27</Date>
-            <Version>4.4.8.5</Version>
+        <Update release="16">
+            <Date>2018-05-05</Date>
+            <Version>4.5.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

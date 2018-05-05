@@ -1,8 +1,8 @@
 name       : deepin-file-manager
-version    : 4.4.8.5
-release    : 15
+version    : 4.5.0
+release    : 16
 source     :
-    - git|https://cr.deepin.io/dde/dde-file-manager.git : 4.4.8.5
+    - git|https://cr.deepin.io/dde/dde-file-manager.git : 4.5.0
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    :
@@ -14,6 +14,7 @@ description:
       file property and other file management functions.
     - ^deepin-desktop : Deepin Desktop
 builddeps  :
+    - deepin-anything-devel
     - deepin-dock-devel
     - deepin-gettext-tools
     - pkgconfig(dframeworkdbus)
@@ -21,6 +22,7 @@ builddeps  :
     - pkgconfig(gsettings-qt)
     - pkgconfig(gtk+-2.0)
     - pkgconfig(libffmpegthumbnailer)
+    - pkgconfig(libdmr)
     - pkgconfig(libsecret-1)
     - pkgconfig(polkit-qt5-1)
     - pkgconfig(poppler-cpp)
