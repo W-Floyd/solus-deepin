@@ -88,6 +88,31 @@ Seeking on FTP shared files does not work (tested SMB, works fine)
 
 [What is it?](https://cr.deepin.io/#/admin/projects/deepin-qt5config)
 
+#### `deepin-qt5dxcb-plugin`
+
+Upgrade to `1.1.8.5`, but for now, it fails to build with:
+```
+../../platformplugin/dplatformwindowhelper.cpp: In member function ‘virtual bool deepin_platform_plugin::DPlatformWindowHelper::eventFilter(QObject*, QEvent*)’:
+../../platformplugin/dplatformwindowhelper.cpp:597:86: error: invalid user-defined conversion from ‘Qt::WindowStates {aka QFlags<Qt::WindowState>}’ to ‘Qt::WindowState’ [-fpermissive]
+             Qt::WindowState old_state = qt_window_private(m_nativeWindow->window())->windowState;
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /usr/include/QtCore/qglobal.h:1177:0,
+                 from /usr/include/QtCore/QtGlobal:1,
+                 from ../../platformplugin/dplatformwindowhelper.h:21,
+                 from ../../platformplugin/dplatformwindowhelper.cpp:18:
+/usr/include/QtCore/qflags.h:137:29: note: candidate is: constexpr QFlags<T>::operator QFlags<T>::Int() const [with Enum = Qt::WindowState; QFlags<T>::Int = unsigned int] <near match>
+     Q_DECL_CONSTEXPR inline operator Int() const Q_DECL_NOTHROW { return i; }
+                             ^~~~~~~~
+/usr/include/QtCore/qflags.h:137:29: note:   no known conversion from ‘QFlags<Qt::WindowState>::Int {aka unsigned int}’ to ‘Qt::WindowState’
+../../platformplugin/dplatformwindowhelper.cpp:617:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             e->p -= m_frameWindow->contentOffsetHint();
+             ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../platformplugin/dplatformwindowhelper.cpp:619:9: note: here
+         case QEvent::DragLeave:
+         ^~~~
+make[1]: *** [Makefile.qt5platform-plugin:658: dplatformwindowhelper.o] Error 1
+```
+
 #### `startdde`
 
 Look into:
