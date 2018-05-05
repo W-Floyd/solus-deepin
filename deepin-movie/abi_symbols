@@ -74,7 +74,9 @@ libdmr.so.0.1:_ZN3dmr12PlayerEngine16notifyScreenshotERK6QImagex
 libdmr.so.0.1:_ZN3dmr12PlayerEngine16playingMovieInfoEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine16setVideoRotationEi
 libdmr.so.0.1:_ZN3dmr12PlayerEngine16videoSizeChangedEv
+libdmr.so.0.1:_ZN3dmr12PlayerEngine18getBackendPropertyERK7QString
 libdmr.so.0.1:_ZN3dmr12PlayerEngine18loadOnlineSubtitleERK4QUrl
+libdmr.so.0.1:_ZN3dmr12PlayerEngine18setBackendPropertyERK7QStringRK8QVariant
 libdmr.so.0.1:_ZN3dmr12PlayerEngine18subCodepageChangedEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine19stopBurstScreenshotEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine20savePlaybackPositionEv
