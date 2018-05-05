@@ -107,6 +107,10 @@ Look into:
 
 ### Updates
 
+*2018-05-04.1* - Updates are being a bitch... We'll see. Would be a lot easier with better internet, which *might* happen soonish.
+
+***
+
 *2018-04-29.1* - I'm almost mad, I wish I'd found this sooner - [an official dependancy graph](https://salsa.debian.org/pkg-deepin-team/progress-tracker/blob/master/depgraph/pkg-deepin-dep.svg) from Deepin. Once I have good internet, I'll go through all packages, cut deps *wayyyy* back, and re-add them as shown.
 
 ***
