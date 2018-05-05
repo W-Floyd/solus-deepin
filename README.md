@@ -132,6 +132,10 @@ Look into:
 
 ### Updates
 
+*2018-05-05.1* - Found a fix in master for `dtkwidget`, but the latest version of `deepin-qt5dxcb-plugin` is still borked. Taking a while, but I'm working on rebuilds (and updating my install of Solus), then we'll try for a reboot and see what happens.
+
+***
+
 *2018-05-04.1* - Updates are being a bitch... We'll see. Would be a lot easier with better internet, which *might* happen soonish.
 
 ***
