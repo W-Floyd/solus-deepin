@@ -1,0 +1,14 @@
+name       : deepin-anything
+version    : 0.0.1
+release    : 1
+source     :
+    - git|https://cr.deepin.io/deepin-anything.git : 0.0.1
+license    : GPL-3.0
+component  : desktop.deepin
+summary    : Something like everything, but nothing is really like anything...
+description: |
+    Something like everything, but nothing is really like anything...
+build      : |
+    %make
+install    : |
+    %make_install
