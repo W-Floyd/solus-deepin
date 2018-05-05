@@ -33,17 +33,30 @@ __check_built () {
 
 __copy_to_cache () {
 echo "Copying '${1}' to cache."
-cd "${1}"
-cp *.eopkg /var/lib/solbuild/local/
-cd ../
+if __check_built "${1}"; then
+    cd "${1}"
+    cp *.eopkg /var/lib/solbuild/local/
+    cd ../
+else
+    echo "Package '${1}' not built!"
+    exit 1
+fi
 }
 
 __recurse_copy_rundeps () {
 __list_run_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
-    __copy_to_cache "${__package}"
+    __copy_to_cache "${__package}" || exit 1
     
-    __recurse_copy_rundeps "${__package}"
+    __recurse_copy_rundeps "${__package}" || exit 1
+    
+done
+}
+
+__recurse_build_rundeps () {
+__list_run_deps "${1}" | sed 's/.* //' | while read -r __package; do
+    
+    __build "${__package}"
     
 done
 }
@@ -52,6 +65,8 @@ __setup () {
 
 echo 'Cleaning cache.'
 rm -f /var/lib/solbuild/local/*.eopkg
+
+__recurse_build_rundeps "${1}"
 
 __list_build_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
@@ -71,9 +86,9 @@ done || exit 1
 
 __list_build_deps "${1}" | sed 's/.* //' | while read -r __package; do
 
-    __copy_to_cache "${__package}"
+    __copy_to_cache "${__package}" || exit 1
 
-    __recurse_copy_rundeps "${__package}"
+    __recurse_copy_rundeps "${__package}" || exit 1
     
 done || exit 1
 
@@ -95,14 +110,13 @@ else
     
     __sub_exit () {
         echo "Building '${1}' failed, exiting."
-        exit 1
     }
     
     {
     if [ -z "${__build_deps}" ]; then
-        make || __sub_exit "${1}"
+        make || { __sub_exit "${1}"; exit 1; }
     else
-        make local || __sub_exit "${1}"
+        make local || { __sub_exit "${1}"; exit 1; }
     fi
     }
     
