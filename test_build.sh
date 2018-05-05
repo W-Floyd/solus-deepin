@@ -89,11 +89,21 @@ else
     
     echo "Building package '${1}'"
     
+    __build_deps="$(__list_build_deps "${1}")"
+    
     cd "${1}"
     
-    make local || {
+    __sub_exit () {
         echo "Building '${1}' failed, exiting."
         exit 1
+    }
+    
+    {
+    if [ -z "${__build_deps}" ]; then
+        make || __sub_exit "${1}"
+    else
+        make local || __sub_exit "${1}"
+    fi
     }
     
     cd ../
