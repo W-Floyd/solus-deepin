@@ -95,7 +95,7 @@ echo 'digraph {
     overlap=false
     center=true
     splines=true
-    sep="0.1"
+    sep="0.05"
     node [style=filled, shape=record, color="black" fillcolor="none" ]
 '
 
