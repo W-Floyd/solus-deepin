@@ -148,8 +148,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2018-05-02</Date>
+        <Update release="17">
+            <Date>2018-05-06</Date>
             <Version>4.4.4.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
