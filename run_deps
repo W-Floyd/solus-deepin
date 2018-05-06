@@ -40,6 +40,7 @@ deepin-movie dtkwidget
 deepin-music deepin-qt5integration
 deepin-music dtkwidget
 deepin-mutter deepin-desktop-schemas
+deepin-mutter deepin-clutter
 deepin-notifications dtkwidget
 deepin-notifications gsettings-qt
 deepin-picker dtkwidget
