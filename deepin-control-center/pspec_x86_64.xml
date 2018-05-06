@@ -147,7 +147,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="17">
+        <Update release="18">
             <Date>2018-05-06</Date>
             <Version>4.4.4.1</Version>
             <Comment>Packaging update</Comment>
