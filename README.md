@@ -132,6 +132,10 @@ Look into:
 
 ### Updates
 
+*2018-05-06.1* - Well, I upgraded packages, reinstalled my Deepin packages. So far, so good... Woot?
+
+***
+
 *2018-05-05.3* - Finally updated and rebuilt all my packages, now to upgrade my system, and then I'll try for a reboot. All of that can wait for tomorrow.
 
 ***
