@@ -132,6 +132,10 @@ Look into:
 
 ### Updates
 
+*2018-05-05.3* - Finally updated and rebuilt all my packages, now to upgrade my system, and then I'll try for a reboot. All of that can wait for tomorrow.
+
+***
+
 *2018-05-05.2* - Things are nearly done in this round of upgrades. Would have been a lot quicker if I had better internet... Oh well.
 
 As explaination, I'm without any fixed line internet, have to use mobile for now. I get 2GB/month, with about 15KB/s unlimited thereafter. Well, you can see why it takes a while. Hopefully, I'll be getting internet shared across from neighbors soon enough.
