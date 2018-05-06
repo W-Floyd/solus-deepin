@@ -20,7 +20,6 @@
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/dde-control-center/plugins/libcalculator.so</Path>
             <Path fileType="library">/usr/lib/dde-control-center/plugins/libnotify.so</Path>
             <Path fileType="library">/usr/lib/dde-control-center/plugins/libweather.so</Path>
             <Path fileType="library">/usr/lib/dde-control-center/plugins/libwtf.so</Path>

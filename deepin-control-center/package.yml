@@ -1,6 +1,6 @@
 name       : deepin-control-center
 version    : 4.4.4.1
-release    : 17
+release    : 18
 source     :
     - git|https://cr.deepin.io/dde/dde-control-center : 4.4.4.1
 license    : GPL-3.0
@@ -26,7 +26,6 @@ rundeps    :
     - deepin-qt5integration
     - proxychains-ng
 setup      : |
-    %apply_patches
     mkdir build
     pushd build
     %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir% DISABLE_SYS_UPDATE=YES
