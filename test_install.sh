@@ -18,7 +18,7 @@ if [ "${1}" = '-u' ]; then
 fi
 
 __recurse () {
-    local __deps="$(__list_run_deps "${1}")"
+    local __deps="$(__list_run_deps --true "${1}")"
     if ! [ -z "${__deps}" ]; then
         while read -r __line; do
             local __parent="${__line/ *}"
@@ -76,6 +76,14 @@ fi
 
 __uninstall
 
-__install "${@}"
+if [ "${1}" = '--file' ]; then
+    while read -r __line; do
+        __packages+=("${__line}")
+    done < 'install_list'
+    echo ${__packages[@]}
+    __install ${__packages[@]}
+else
+    __install "${@}"
+fi
 
 exit
