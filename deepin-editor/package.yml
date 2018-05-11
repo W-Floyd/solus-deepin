@@ -1,0 +1,45 @@
+name       : deepin-editor
+version    : 0.0.2
+release    : 1
+source     :
+    - git|https://cr.deepin.io/deepin-editor.git : 0.0.2
+license    : GPL-3.0
+component  : desktop.deepin
+summary    : Deepin Editor.
+description: |
+    Deepin Editor: simple editor for deepin.
+builddeps  :
+    - kcodecs-devel 
+    - pkgconfig(dtkwidget)
+    - pkgconfig(dtkwm)
+    - pkgconfig(polkit-qt5-1)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-util)
+    - qt5-tools-devel
+    - syntax-highlighting-devel
+setup      : |
+    mkdir daemon/build
+    pushd daemon/build
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+    popd
+    
+    mkdir editor/build
+    pushd editor/build
+    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+    popd
+build      : |
+    pushd daemon/build
+    %make
+    popd
+    
+    pushd editor/build
+    %make
+    popd
+install    : |
+    pushd daemon/build
+    %make_install INSTALL_ROOT=$installdir
+    popd
+    
+    pushd editor/build
+    %make_install INSTALL_ROOT=$installdir
+    popd

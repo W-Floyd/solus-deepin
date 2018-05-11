@@ -22,6 +22,8 @@ deepin-dbus-generator deepin-go-lib
 deepin-dock deepin-qt-dbus-factory
 deepin-dock dtkwidget
 deepin-dock gsettings-qt
+deepin-editor dtkwidget
+deepin-editor dtkwm
 deepin-file-manager deepin-anything
 deepin-file-manager deepin-dock-devel
 deepin-file-manager deepin-gettext-tools
