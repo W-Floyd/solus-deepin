@@ -24,11 +24,25 @@ fi
 
 source 'functions.sh'
 
+__tmp_dir="$(mktemp -d)"
+
+__mark_checked () {
+touch "${__tmp_dir}/${1}"
+}
+
 __check_built () {
     if [ -z "$(find "./${1}/" -iname '*.eopkg')" ]; then
         return 1
     fi
+    __mark_checked "${1}"
     return 0
+}
+
+__check_checked () {
+    if [ -e "${__tmp_dir}/${1}" ]; then
+        return 0
+    fi
+    return 1
 }
 
 __copy_to_cache () {
@@ -53,11 +67,27 @@ __list_run_deps "${1}" | sed 's/.* //' | while read -r __package; do
 done
 }
 
-__recurse_build_rundeps () {
+__recurse_build_rundeps_sub () {
 __list_run_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
-    __build "${__package}"
+    echo "${__package}"
     
+    __recurse_build_rundeps_sub "${__package}"
+    
+done
+}
+
+__recurse_build_rundeps () {
+__recurse_build_rundeps_sub "${1}" | while read -r __package; do
+    if ! __check_checked "${__package}"; then
+        
+        if __check_built "${__package}"; then
+            echo "Package '${__package}' already built."
+        else
+            __build "${__package}" || exit 1
+        fi
+        
+    fi || exit 1
 done
 }
 
@@ -70,15 +100,27 @@ __recurse_build_rundeps "${1}"
 
 __list_build_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
-    if __check_built "${1}"; then
-        echo "Package '${__package}' already built."
-    else
-        __build "${__package}" || exit 1
-    fi
+    if ! __check_checked "${__package}"; then
+    
+        if __check_built "${__package}"; then
+            echo "Package '${__package}' already built."
+        else
+            __build "${__package}" || exit 1
+        fi
+    
+    fi || exit 1
     
     __list_run_deps "${__package}" | sed 's/.* //' | while read -r __package_; do
         
-        __build "${__package_}" || exit 1
+        if ! __check_checked "${__package_}"; then
+            
+            if __check_built "${__package_}"; then
+                echo "Package '${__package_}' already built."
+            else
+                __build "${__package_}" || exit 1
+            fi
+            
+        fi || exit 1
         
     done
     
@@ -122,7 +164,7 @@ else
     
     cd ../
     
-fi
+fi || exit 1
 
 chown "${real_user}:${real_user}" -R .
 
@@ -141,5 +183,7 @@ until [ "${#}" = '0' ]; do
     shift
     
 done || exit 1
+
+rm -r "${__tmp_dir}"
 
 exit
