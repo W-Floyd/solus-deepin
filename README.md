@@ -132,6 +132,12 @@ Look into:
 
 ### Updates
 
+*2018-06-11.1* - Upstream put out a point release for `deepin-qt5dxcb-plugin`, so that builds now.
+A couple other package updates as well.
+For now, unless there's an ABI or other file change, I'll hold off rebuilding (unless I see things are broken, or it's a non-ABI dependant situation, such as `deepin-gir-generator`, etc.).
+
+***
+
 *2018-05-06.1* - Well, I upgraded packages, reinstalled my Deepin packages. So far, so good... Woot?
 
 ***
