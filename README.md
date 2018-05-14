@@ -31,7 +31,7 @@ If you do try this, running it on your production machine is a terrible idea - i
 ***
 
 To package:
-* https://cr.deepin.io/#/admin/projects/go-dbus-factory
+* https://cr.deepin.io/#/admin/projects/go-dbus-factory - Needed for `deepin-daemon`
 
 ***
 
