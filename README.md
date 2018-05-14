@@ -106,6 +106,11 @@ Look into:
 
 ### Updates
 
+*2018-05-13.2* - As I suspected, there are a ton more updates that are rolling out, so I'm going to let the church settle before I touch this (I don't want to break my own desktop, after all).
+Overall, I'm way more impressed with how quickly updates are done with Deepin compared to Gnome...
+
+***
+
 *2018-05-13.1* - A slew of updates are out there, but... Don't have the time to do the upgrades on my slow internet right now.
 Maybe later.
 I have them ready to build though.
