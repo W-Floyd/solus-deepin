@@ -30,6 +30,11 @@ If you do try this, running it on your production machine is a terrible idea - i
 
 ***
 
+To package:
+* https://cr.deepin.io/#/admin/projects/go-dbus-factory
+
+***
+
 #### `deepin-daemon`
 
 Need to look into packaging:
@@ -101,7 +106,13 @@ Look into:
 
 ### Updates
 
-*2018-06-11.1* - Upstream put out a point release for `deepin-qt5dxcb-plugin`, so that builds now.
+*2018-05-13.1* - A slew of updates are out there, but... Don't have the time to do the upgrades on my slow internet right now.
+Maybe later.
+I have them ready to build though.
+
+***
+
+*2018-05-11.1* - Upstream put out a point release for `deepin-qt5dxcb-plugin`, so that builds now.
 A couple other package updates as well.
 For now, unless there's an ABI or other file change, I'll hold off rebuilding (unless I see things are broken, or it's a non-ABI dependant situation, such as `deepin-gir-generator`, etc.).
 
