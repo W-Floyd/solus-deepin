@@ -83,6 +83,11 @@ Need to investigate:
 Known tasks:
 * `/usr/bin/dde-xdg-user-dirs-update` is not executable. Need to see why and possibly remedy that (as it's a script, it may be run via bash, instead of directly).
 
+#### `deepin-image-viewer`
+
+It breaks Krita (amongst other things, probably).
+This has been known to upstream for some time.
+
 #### `deepin-qt5config`
 
 [What is it?](https://cr.deepin.io/#/admin/projects/deepin-qt5config)
