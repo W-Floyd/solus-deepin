@@ -30,14 +30,12 @@ If you do try this, running it on your production machine is a terrible idea - i
 
 ***
 
+#### `deepin-daemon`
+
 To package:
 * https://cr.deepin.io/#/admin/projects/go-dbus-factory - Needed for `deepin-daemon`
 
-***
-
-#### `deepin-daemon`
-
-Need to look into packaging:
+Look into packaging:
 * Miracast/Miracle Cast -  [Tarball](https://github.com/linuxdeepin/miraclecast/archive/1.0.8.tar.gz)
 
 Currently stuck with:
@@ -91,6 +89,7 @@ This has been known to upstream for some time.
 #### `deepin-qt5config`
 
 [What is it?](https://cr.deepin.io/#/admin/projects/deepin-qt5config)
+Do I need it?
 
 #### `startdde`
 
@@ -104,7 +103,6 @@ Look into:
 * check on how to make sure `setcap cap_kill,cap_net_raw,cap_dac_read_search,cap_sys_ptrace+ep /usr/bin/deepin-system-monitor` is run so that network speed monitoring may be achieved.
 * validate touchpad swipe shortcuts (specifically, 4/5 fingered ones, which my current machine does not support), see if I need to drop the Arch patch to `deepin-daemon` (it seems to be a decision to disable 3 finger tapping being intercepted, leaving it open for, say, following links, or pasting, the former being something I use often)
 * investigate why first login (at least in VM) has a white bg, as you have to fish for a button.
-* check if I can plumb in the control center to link to the Solus SC for updating, and if not, disable the section entirely.
 * see if I can force disable the disablement of `deepin-mutter`, temporarily, for the sake of VM testing?
 * `dde-dock` (actually, almost eveything Deepin related) often crashes when changing USB devices, need to investigate. Specifically, mouse and keyboard (HDD is okay).
 * `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
