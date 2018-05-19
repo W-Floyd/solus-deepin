@@ -109,6 +109,7 @@ libdeepin-metacity-private.so.3:deepin_message_hub_drag_end
 libdeepin-metacity-private.so.3:deepin_message_hub_get
 libdeepin-metacity-private.so.3:deepin_message_hub_get_screen_scale
 libdeepin-metacity-private.so.3:deepin_message_hub_get_type
+libdeepin-metacity-private.so.3:deepin_message_hub_register_to_session
 libdeepin-metacity-private.so.3:deepin_message_hub_screen_corner_entered
 libdeepin-metacity-private.so.3:deepin_message_hub_screen_corner_leaved
 libdeepin-metacity-private.so.3:deepin_message_hub_unable_to_operate
