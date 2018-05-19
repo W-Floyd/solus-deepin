@@ -1,6 +1,6 @@
 name       : libmongoc
 version    : 1.9.5
-release    : 11
+release    : 12
 source     :
     - https://github.com/mongodb/mongo-c-driver/archive/1.9.5.tar.gz : 5bd897c0e6a8788f30fc02f4e38d0a319f8bb8536ae291c5d76ec2a537a8b30b
 license    : Apache-2.0
