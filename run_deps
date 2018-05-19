@@ -69,8 +69,8 @@ deepin-wm-switcher deepin-wm
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
+freeimage libjxr
 freeimage-devel freeimage
-freeimage-devel libjxr
 libmongoc libbson
 startdde deepin-control-center
 startdde deepin-daemon

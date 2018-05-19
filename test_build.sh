@@ -27,11 +27,11 @@ source 'functions.sh'
 __tmp_dir="$(mktemp -d)"
 
 __mark_checked () {
-touch "${__tmp_dir}/${1}"
+touch "${__tmp_dir}/$(sed 's/-devel$//' <<< "${1}")"
 }
 
 __check_built () {
-    if [ -z "$(find "./${1}/" -iname '*.eopkg')" ]; then
+    if [ -z "$(find "./$(sed 's/-devel$//' <<< "${1}")/" -iname '*.eopkg')" ]; then
         return 1
     fi
     __mark_checked "${1}"
@@ -39,7 +39,7 @@ __check_built () {
 }
 
 __check_checked () {
-    if [ -e "${__tmp_dir}/${1}" ]; then
+    if [ -e "${__tmp_dir}/$(sed 's/-devel$//' <<< "${1}")" ]; then
         return 0
     fi
     return 1
@@ -58,7 +58,7 @@ fi
 }
 
 __recurse_copy_rundeps () {
-__list_run_deps "${1}" | sed 's/.* //' | while read -r __package; do
+__list_run_deps --true "${1}" | sed 's/.* //' | while read -r __package; do
     
     __copy_to_cache "${__package}" || exit 1
     
@@ -68,7 +68,7 @@ done
 }
 
 __recurse_build_rundeps_sub () {
-__list_run_deps "${1}" | sed 's/.* //' | while read -r __package; do
+__list_run_deps --true "${1}" | sed 's/.* //' | while read -r __package; do
     
     echo "${__package}"
     
@@ -110,7 +110,7 @@ __list_build_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
     fi || exit 1
     
-    __list_run_deps "${__package}" | sed 's/.* //' | while read -r __package_; do
+    __list_run_deps --true "${__package}" | sed 's/.* //' | while read -r __package_; do
         
         if ! __check_checked "${__package_}"; then
             
