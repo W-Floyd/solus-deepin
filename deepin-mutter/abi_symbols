@@ -79,6 +79,7 @@ libdeepin-mutter.so.0:meta_blurred_background_actor_get_type
 libdeepin-mutter.so.0:meta_blurred_background_actor_new
 libdeepin-mutter.so.0:meta_blurred_background_actor_set_background
 libdeepin-mutter.so.0:meta_blurred_background_actor_set_blur_mask
+libdeepin-mutter.so.0:meta_blurred_background_actor_set_enabled
 libdeepin-mutter.so.0:meta_blurred_background_actor_set_radius
 libdeepin-mutter.so.0:meta_blurred_background_actor_set_rounds
 libdeepin-mutter.so.0:meta_border_get_allows_directions
@@ -111,6 +112,7 @@ libdeepin-mutter.so.0:meta_compositor_switch_workspace
 libdeepin-mutter.so.0:meta_compositor_sync_stack
 libdeepin-mutter.so.0:meta_compositor_sync_updates_frozen
 libdeepin-mutter.so.0:meta_compositor_sync_window_geometry
+libdeepin-mutter.so.0:meta_compositor_tile_window
 libdeepin-mutter.so.0:meta_compositor_unmanage
 libdeepin-mutter.so.0:meta_compositor_window_blur_changed
 libdeepin-mutter.so.0:meta_compositor_window_opacity_changed
@@ -555,6 +557,7 @@ libdeepin-mutter.so.0:meta_plugin_map_completed
 libdeepin-mutter.so.0:meta_plugin_minimize_completed
 libdeepin-mutter.so.0:meta_plugin_size_change_completed
 libdeepin-mutter.so.0:meta_plugin_switch_workspace_completed
+libdeepin-mutter.so.0:meta_plugin_tile_completed
 libdeepin-mutter.so.0:meta_plugin_unminimize_completed
 libdeepin-mutter.so.0:meta_pointer_confinement_wayland_get_type
 libdeepin-mutter.so.0:meta_pointer_confinement_wayland_new
@@ -716,12 +719,14 @@ libdeepin-mutter.so.0:meta_screen_get_primary_monitor
 libdeepin-mutter.so.0:meta_screen_get_screen_number
 libdeepin-mutter.so.0:meta_screen_get_size
 libdeepin-mutter.so.0:meta_screen_get_startup_sequences
+libdeepin-mutter.so.0:meta_screen_get_tiled_window_for_monitor
 libdeepin-mutter.so.0:meta_screen_get_type
 libdeepin-mutter.so.0:meta_screen_get_workspace_by_index
 libdeepin-mutter.so.0:meta_screen_get_workspaces
 libdeepin-mutter.so.0:meta_screen_get_xroot
 libdeepin-mutter.so.0:meta_screen_grab_keys
 libdeepin-mutter.so.0:meta_screen_handle_xevent
+libdeepin-mutter.so.0:meta_screen_has_tiled_window_for_monitor
 libdeepin-mutter.so.0:meta_screen_hide_tile_preview
 libdeepin-mutter.so.0:meta_screen_init_workspaces
 libdeepin-mutter.so.0:meta_screen_leave_corner
@@ -1100,6 +1105,7 @@ libdeepin-mutter.so.0:meta_window_actor_size_change
 libdeepin-mutter.so.0:meta_window_actor_sync_actor_geometry
 libdeepin-mutter.so.0:meta_window_actor_sync_updates_frozen
 libdeepin-mutter.so.0:meta_window_actor_sync_visibility
+libdeepin-mutter.so.0:meta_window_actor_tile
 libdeepin-mutter.so.0:meta_window_actor_update_blur_background
 libdeepin-mutter.so.0:meta_window_actor_update_blur_region
 libdeepin-mutter.so.0:meta_window_actor_update_opacity
@@ -1121,6 +1127,7 @@ libdeepin-mutter.so.0:meta_window_check_alive
 libdeepin-mutter.so.0:meta_window_client_rect_to_frame_rect
 libdeepin-mutter.so.0:meta_window_client_type_get_type
 libdeepin-mutter.so.0:meta_window_compute_group
+libdeepin-mutter.so.0:meta_window_compute_tile_counterpart
 libdeepin-mutter.so.0:meta_window_compute_tile_match
 libdeepin-mutter.so.0:meta_window_constrain
 libdeepin-mutter.so.0:meta_window_current_workspace_changed
@@ -1143,6 +1150,7 @@ libdeepin-mutter.so.0:meta_window_get_client_area_rect
 libdeepin-mutter.so.0:meta_window_get_client_machine
 libdeepin-mutter.so.0:meta_window_get_compositor_private
 libdeepin-mutter.so.0:meta_window_get_current_tile_area
+libdeepin-mutter.so.0:meta_window_get_current_tile_area_constrianted
 libdeepin-mutter.so.0:meta_window_get_current_tile_monitor_number
 libdeepin-mutter.so.0:meta_window_get_description
 libdeepin-mutter.so.0:meta_window_get_display
@@ -1171,7 +1179,9 @@ libdeepin-mutter.so.0:meta_window_get_screen
 libdeepin-mutter.so.0:meta_window_get_session_geometry
 libdeepin-mutter.so.0:meta_window_get_stable_sequence
 libdeepin-mutter.so.0:meta_window_get_startup_id
+libdeepin-mutter.so.0:meta_window_get_tile_counterpart
 libdeepin-mutter.so.0:meta_window_get_tile_match
+libdeepin-mutter.so.0:meta_window_get_tile_mode
 libdeepin-mutter.so.0:meta_window_get_title
 libdeepin-mutter.so.0:meta_window_get_titlebar_rect
 libdeepin-mutter.so.0:meta_window_get_transient_for
