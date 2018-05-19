@@ -1,8 +1,8 @@
 name       : deepin-terminal
-version    : 2.9.2
-release    : 9
+version    : 3.0.0
+release    : 10
 source     :
-    - https://github.com/linuxdeepin/deepin-terminal/archive/2.9.2.tar.gz : 0869789d9a235929ebaf1e16e81c4e34076df0712ade7b4530797a19c9ce241a
+    - git|https://cr.deepin.io/deepin-terminal.git : 3.0.0
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : This is default terminal emulation application for Deepin.
@@ -24,8 +24,7 @@ rundeps    :
     - deepin-menu
     - expect
 setup      : |
-    %patch -p1 < $pkgfiles/glib.patch
-    sed -i 's|return __FILE__;|return "/usr/share/deepin-terminal/project_path.c";|' project_path.c
+    %patch -p1 < $pkgfiles/0001-CMakeLists-Remove-specific-Glib-version.patch
     mkdir build
     pushd build
     %cmake ..
