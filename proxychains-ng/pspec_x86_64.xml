@@ -29,15 +29,15 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">proxychains-ng</Dependency>
+            <Dependency release="5">proxychains-ng</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib64/lib*.so</Path>
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-05-05</Date>
+        <Update release="5">
+            <Date>2018-05-19</Date>
             <Version>4.12</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
