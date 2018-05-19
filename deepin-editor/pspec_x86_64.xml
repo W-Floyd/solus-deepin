@@ -1,168 +1,36 @@
 <PISI>
     <Source>
-        <Name>deepin-movie</Name>
+        <Name>deepin-editor</Name>
         <Packager>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>desktop.deepin</PartOf>
-        <Summary xml:lang="en">Deepin Movie Player.</Summary>
-        <Description xml:lang="en">Deepin Movie provides an intuitive easy to use operation interface and rich complete shortcuts. You can complete all play operations by keyboard, which will make you thoroughly get rid of the constraint of mouse click. Video files in various formats can be played through Deepin Movie, and you can use the streaming function to easily enjoy online video resources.
+        <Summary xml:lang="en">Deepin Editor.</Summary>
+        <Description xml:lang="en">Deepin Editor: simple editor for deepin.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>deepin-movie</Name>
-        <Summary xml:lang="en">Deepin Movie Player.</Summary>
-        <Description xml:lang="en">Deepin Movie provides an intuitive easy to use operation interface and rich complete shortcuts. You can complete all play operations by keyboard, which will make you thoroughly get rid of the constraint of mouse click. Video files in various formats can be played through Deepin Movie, and you can use the streaming function to easily enjoy online video resources.
+        <Name>deepin-editor</Name>
+        <Summary xml:lang="en">Deepin Editor.</Summary>
+        <Description xml:lang="en">Deepin Editor: simple editor for deepin.
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="data">/usr/share/applications/deepin-movie.desktop</Path>
-            <Path fileType="data">/usr/share/deepin-movie</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/deepin-movie.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_basicfuncton.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_basicfuncton_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_basicoperation.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_basicoperation_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_guide.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_guide_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_maininterface.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_maininterface_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_optionsetting.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_optionsetting_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_overview.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_overview_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_playlistsetting.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_playlistsetting_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_playmodesetting.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/common/icon_playmodesetting_small.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Backspace.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Ctrl.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Down.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Enter.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Esc.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/F2.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/F3.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Left.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/M.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/O.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/PageDown.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/PageUp.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/QM.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/R.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Right.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Shift.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Space.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/Up.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/attention.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/close.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/fullscreen.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/launcher-24.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/main_menu.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/maximize.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/mini.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/minimize.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/movie-24.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/next.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/notes.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/pause.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/play.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/playlist.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/previous.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/tips.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/icon/volume.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/index.md</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/about.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/basic.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/clear.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/close_all.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/delete.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/display.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/frame.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/help.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/info.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/interface.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/main_interface.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/play_mode.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/playlist.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/screenshot.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/settings.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/shortcuts.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/sound.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/subtitle.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/subtitle_settings.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/theme.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/en_US/png/window.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/Ctrl.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/Left.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/QM.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/R.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/Right.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/Shift.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/attention.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/audio-volume-high-normal.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/close.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/fullscreen-normal.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/icon_close.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/icon_menu.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/launcher_icon.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/list-normal.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/max.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/menu.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/mix.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/movie-24.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/next-normal.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/notes.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/pause-normal.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/play-normal.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/previous-normal.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/icon/tips.svg</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/index.md</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/about.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/clear.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/delete.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/file.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/help.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/homeinterface.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/info.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/mode.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/move.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/open.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/picture.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/playmovie.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/setting1.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/setting2.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/setting3.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/shortcut.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/sound.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/subtitle.png</Path>
-            <Path fileType="data">/usr/share/dman/deepin-movie/zh_CN/png/windows.png</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-movie.svg</Path>
-        </Files>
-    </Package>
-    <Package>
-        <Name>deepin-movie-devel</Name>
-        <Summary xml:lang="en">Development files for deepin-movie</Summary>
-        <Description xml:lang="en">Deepin Movie provides an intuitive easy to use operation interface and rich complete shortcuts. You can complete all play operations by keyboard, which will make you thoroughly get rid of the constraint of mouse click. Video files in various formats can be played through Deepin Movie, and you can use the streaming function to easily enjoy online video resources.
-</Description>
-        <PartOf>programming.devel</PartOf>
-        <RuntimeDependencies>
-            <Dependency release="7">deepin-movie</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="data">/usr/share/applications/deepin-editor.desktop</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.editor.daemon.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.editor.conf</Path>
+            <Path fileType="data">/usr/share/deepin-editor</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.editor.policy</Path>
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2018-05-05</Date>
-            <Version>3.2.5</Version>
+        <Update release="1">
+            <Date>2018-05-19</Date>
+            <Version>0.0.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
