@@ -398,6 +398,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/dde-pulse.c</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/dde-pulse.h</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/info_test.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/mainloop_callbacks.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/meter.c</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/meter.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/misc.go</Path>
@@ -474,9 +475,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-05-05</Date>
-            <Version>1.2.7</Version>
+        <Update release="9">
+            <Date>2018-05-19</Date>
+            <Version>1.2.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
