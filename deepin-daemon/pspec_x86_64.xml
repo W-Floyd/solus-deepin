@@ -19,8 +19,12 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
+            <Path fileType="config">/etc/pam.d/deepin-auth</Path>
+            <Path fileType="config">/etc/pam.d/deepin-auth-keyboard</Path>
             <Path fileType="data">/lib/systemd/system/deepin-accounts-daemon.service</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/backlight_helper</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-authority</Path>
+            <Path fileType="library">/usr/lib/deepin-daemon/dde-authority-pam</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-greeter-setter</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-lockservice</Path>
             <Path fileType="library">/usr/lib/deepin-daemon/dde-session-daemon</Path>
@@ -57,6 +61,7 @@
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.daemon.Launcher.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Accounts.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Apps.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Authority.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Daemon.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Gesture.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.daemon.Greeter.service</Path>
@@ -68,6 +73,7 @@
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.system.Power.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Accounts.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Apps.conf</Path>
+            <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Authority.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Daemon.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Gesture.conf</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.daemon.Greeter.conf</Path>
@@ -117,9 +123,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2018-05-06</Date>
-            <Version>3.2.13.4</Version>
+        <Update release="15">
+            <Date>2018-05-19</Date>
+            <Version>3.2.15</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

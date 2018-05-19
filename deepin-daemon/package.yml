@@ -1,8 +1,8 @@
 name       : deepin-daemon
-version    : 3.2.13.4
-release    : 14
+version    : 3.2.15
+release    : 15
 source     :
-    - git|https://cr.deepin.io/dde/dde-daemon.git : 3.2.13.4
+    - git|https://cr.deepin.io/dde/dde-daemon.git : 3.2.15
 networking : yes
 license    : GPL-3.0
 component  : desktop.deepin.core
@@ -14,6 +14,7 @@ builddeps  :
     - deepin-dbus-factory
     - deepin-gettext-tools
     - deepin-gir-generator
+    - deepin-go-dbus-factory
     - deepin-go-lib
     - git
     - golang
