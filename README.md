@@ -109,6 +109,11 @@ Look into:
 
 ### Updates
 
+*2018-05-19.2* - Okay, all rebuilt, will test updates now.
+Wish me luck...
+
+***
+
 *2018-05-19.1* - All quiet on the update front, and I'm somewhere with good internet right now, so I'm pushing to get things whipped into shape.
 Fingers crossed, none of the changes require too much to sort out.
 
