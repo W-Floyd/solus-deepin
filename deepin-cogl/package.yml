@@ -1,6 +1,6 @@
 name       : deepin-cogl
 version    : 1.22.5
-release    : 5
+release    : 6
 source     :
     - git|https://cr.deepin.io/deepin-cogl.git : 1.22.5
 license    : GPL-2.0
