@@ -102,7 +102,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="17">
+        <Update release="18">
             <Date>2018-05-19</Date>
             <Version>4.3.7.3</Version>
             <Comment>Packaging update</Comment>

@@ -1,6 +1,6 @@
 name       : deepin-session-ui
 version    : 4.3.7.3
-release    : 17
+release    : 18
 source     :
     - git|https://cr.deepin.io/dde/dde-session-ui.git : 4.3.7.3
 license    : GPL-3.0
@@ -23,15 +23,8 @@ builddeps  :
 rundeps    :
     - deepin-daemon
 setup      : |
-    mkdir build
-    pushd build
-    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
-    popd
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
-    pushd build
     %make
-    popd
 install    : |
-    pushd build
     %make_install INSTALL_ROOT=$installdir
-    popd
