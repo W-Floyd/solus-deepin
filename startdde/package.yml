@@ -1,8 +1,8 @@
 name       : startdde
-version    : 3.1.28
-release    : 13
+version    : 3.1.29
+release    : 14
 source     :
-    - git|https://cr.deepin.io/dde/startdde.git : 3.1.28
+    - git|https://cr.deepin.io/dde/startdde.git : 3.1.29
 networking : yes
 license    : GPL-3.0
 component  : desktop.deepin.core
