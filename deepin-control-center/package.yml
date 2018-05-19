@@ -1,8 +1,8 @@
 name       : deepin-control-center
-version    : 4.4.4.1
-release    : 18
+version    : 4.4.4.2
+release    : 19
 source     :
-    - git|https://cr.deepin.io/dde/dde-control-center : 4.4.4.1
+    - git|https://cr.deepin.io/dde/dde-control-center : 4.4.4.2
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Control panel of the Deepin Desktop Environment.
