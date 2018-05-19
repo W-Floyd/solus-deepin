@@ -15,6 +15,7 @@ deepin-daemon deepin-api
 deepin-daemon deepin-dbus-factory
 deepin-daemon deepin-gettext-tools
 deepin-daemon deepin-gir-generator
+deepin-daemon deepin-go-dbus-factory
 deepin-daemon deepin-go-lib
 deepin-dbus-factory deepin-dbus-generator
 deepin-dbus-generator deepin-go-lib
@@ -26,6 +27,7 @@ deepin-file-manager deepin-dock-devel
 deepin-file-manager deepin-gettext-tools
 deepin-file-manager deepin-movie
 deepin-file-manager dtkwidget
+deepin-go-dbus-factory deepin-go-lib
 deepin-image-viewer dtkwidget
 deepin-image-viewer freeimage
 deepin-launcher deepin-qt-dbus-factory
