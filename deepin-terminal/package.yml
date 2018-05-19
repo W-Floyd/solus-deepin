@@ -1,6 +1,6 @@
 name       : deepin-terminal
 version    : 3.0.0
-release    : 10
+release    : 11
 source     :
     - git|https://cr.deepin.io/deepin-terminal.git : 3.0.0
 license    : GPL-3.0
@@ -19,15 +19,17 @@ builddeps  :
     - pkgconfig(librsvg-2.0)
     - pkgconfig(libsecret-1)
     - pkgconfig(libwnck-3.0)
+    - pkgconfig(vte-2.91)
     - vala
 rundeps    :
     - deepin-menu
     - expect
 setup      : |
+    %patch -p1 < $pkgfiles/remove-vendor.patch
     %patch -p1 < $pkgfiles/0001-CMakeLists-Remove-specific-Glib-version.patch
     mkdir build
     pushd build
-    %cmake ..
+    %cmake .. -DTEST_BUILD=OFF
     popd
 build      : |
     pushd build
