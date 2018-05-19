@@ -250,6 +250,8 @@ libdtkcore.so.2:_ZN3Dtk4Core7DObjectC2ERNS0_14DObjectPrivateEPS1_
 libdtkcore.so.2:_ZN3Dtk4Core7DObjectD0Ev
 libdtkcore.so.2:_ZN3Dtk4Core7DObjectD1Ev
 libdtkcore.so.2:_ZN3Dtk4Core7DObjectD2Ev
+libdtkcore.so.2:_ZN3Dtk4Core8DPathBufC1ERK7QString
+libdtkcore.so.2:_ZN3Dtk4Core8DPathBufC2ERK7QString
 libdtkcore.so.2:_ZN3Dtk4Core9DSettings10setBackendEPNS0_16DSettingsBackendE
 libdtkcore.so.2:_ZN3Dtk4Core9DSettings11qt_metacallEN11QMetaObject4CallEiPPv
 libdtkcore.so.2:_ZN3Dtk4Core9DSettings11qt_metacastEPKc
