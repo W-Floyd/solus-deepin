@@ -32,9 +32,6 @@ If you do try this, running it on your production machine is a terrible idea - i
 
 #### `deepin-daemon`
 
-To package:
-* https://cr.deepin.io/#/admin/projects/go-dbus-factory - Needed for `deepin-daemon`
-
 Look into packaging:
 * Miracast/Miracle Cast -  [Tarball](https://github.com/linuxdeepin/miraclecast/archive/1.0.8.tar.gz)
 
@@ -108,6 +105,10 @@ Look into:
 * `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
 
 ### Updates
+
+*2018-05-19.3* - Only issue so far was with Deepin Terminal, which Arch had a patch for (thanks!) - all good now.
+
+***
 
 *2018-05-19.2* - Okay, all rebuilt, will test updates now.
 Wish me luck...
