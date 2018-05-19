@@ -1,6 +1,6 @@
 name       : deepin-music
 version    : 3.1.8.3
-release    : 8
+release    : 9
 source     :
     - git|https://cr.deepin.io/deepin-music.git : 3.1.8.3
 license    : GPL-3.0
@@ -26,15 +26,8 @@ builddeps  :
 rundeps    :
     - deepin-qt5integration
 setup      : |
-    mkdir build
-    pushd build
-    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
-    popd
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
-    pushd build
     %make
-    popd
 install    : |
-    pushd build
     %make_install INSTALL_ROOT=$installdir
-    popd
