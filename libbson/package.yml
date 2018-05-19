@@ -1,6 +1,6 @@
 name       : libbson
 version    : 1.9.5
-release    : 9
+release    : 10
 source     :
     - https://github.com/mongodb/libbson/archive/1.9.5.tar.gz : af1aa8a00a47cf66717f2467f63cbe72401f53b4acd1af1fc2136ede4482c89a
 license    : Apache-2.0
