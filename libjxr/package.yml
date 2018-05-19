@@ -1,6 +1,6 @@
 name       : libjxr
 version    : 0.2.0
-release    : 3
+release    : 4
 source     :
     - https://github.com/glencoesoftware/jxrlib/archive/v0.2.0.tar.gz : 5bc79bd563b22149bd9bdb9f4b42c1ced10c94f90c782cac9712f270cbbf10ef
 license    : BSD-2-Clause
