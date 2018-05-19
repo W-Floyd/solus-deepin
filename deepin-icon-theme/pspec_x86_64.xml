@@ -978,6 +978,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/128/crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/128/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-appstore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-boot-maker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/128/deepin-calculator.svg</Path>
@@ -1031,6 +1032,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/16/crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/16/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-appstore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-boot-maker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/16/deepin-calculator.svg</Path>
@@ -1085,6 +1087,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/24/crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/24/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-appstore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-boot-maker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-calculator.svg</Path>
@@ -1138,6 +1141,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/256/crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/256/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-appstore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-boot-maker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/256/deepin-calculator.svg</Path>
@@ -1191,6 +1195,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/32/crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/32/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-appstore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-boot-maker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-calculator.svg</Path>
@@ -1414,6 +1419,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dbschema.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/ddnet.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deadbeef.svg</Path>
@@ -1799,6 +1805,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/64/crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/64/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-appstore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-boot-maker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/64/deepin-calculator.svg</Path>
@@ -1851,6 +1858,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/96/crossover.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/dde-file-manager.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/96/dde-introduction.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-appstore.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-boot-maker.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/96/deepin-calculator.svg</Path>
@@ -2017,6 +2025,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/128/media-dvd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/128/media-flash.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/128/media-optical.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/128/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/128/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/16/android-phone-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/16/computer.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/16/disk-harddisk-symbolic.svg</Path>
@@ -2024,6 +2034,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/16/iphone-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/16/media-optical-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/16/network-server-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/16/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/16/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/22/android-device.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/22/camera.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/22/computer.svg</Path>
@@ -2071,6 +2083,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/24/media-dvd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/24/media-flash.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/24/media-optical.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/24/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/24/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/256/android-device.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/256/camera.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/256/computer.svg</Path>
@@ -2094,6 +2108,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/256/media-dvd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/256/media-flash.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/256/media-optical.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/256/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/256/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/32/android-device.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/32/camera.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/32/computer.svg</Path>
@@ -2117,6 +2133,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/32/media-dvd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/32/media-flash.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/32/media-optical.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/32/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/32/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/48/android-device.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/48/camera.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/48/computer.svg</Path>
@@ -2140,6 +2158,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/48/media-dvd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/48/media-flash.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/48/media-optical.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/48/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/48/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/64/android-device.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/64/camera.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/64/computer.svg</Path>
@@ -2163,6 +2183,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/64/media-dvd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/64/media-flash.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/64/media-optical.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/64/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/64/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/96/android-device.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/96/camera.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/96/computer.svg</Path>
@@ -2186,6 +2208,8 @@
             <Path fileType="data">/usr/share/icons/deepin/devices/96/media-dvd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/96/media-flash.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/devices/96/media-optical.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/96/phone-apple-iphone.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/devices/96/phone.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/emblems/24/emblem-encrypted-locked.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/emblems/24/emblem-locked.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/emblems/24/emblem-nowrite.svg</Path>
@@ -5804,9 +5828,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-05-05</Date>
-            <Version>15.12.56</Version>
+        <Update release="10">
+            <Date>2018-05-19</Date>
+            <Version>15.12.57</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
