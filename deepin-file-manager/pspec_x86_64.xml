@@ -61,6 +61,7 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_cs.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_da.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_de.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_el.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_es.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_es_419.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_fr.qm</Path>
@@ -95,6 +96,7 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_cs.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_da.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_de.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_el.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es_419.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_fr.qm</Path>
@@ -246,6 +248,7 @@
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_cs.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_da.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_de.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_el.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_es.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_es_419.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_fr.qm</Path>
@@ -275,7 +278,7 @@
         <Summary xml:lang="en">Deepin Desktop</Summary>
         <Description xml:lang="en">Deepin Desktop</Description>
         <RuntimeDependencies>
-            <Dependency release="16">deepin-file-manager</Dependency>
+            <Dependency release="17">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/dde-desktop</Path>
@@ -289,7 +292,7 @@
         <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.</Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="16">deepin-file-manager</Dependency>
+            <Dependency release="17">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -298,9 +301,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2018-05-05</Date>
-            <Version>4.5.0</Version>
+        <Update release="17">
+            <Date>2018-05-19</Date>
+            <Version>4.5.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
