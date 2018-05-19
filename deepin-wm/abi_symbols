@@ -6,9 +6,11 @@ libdeepin-wm.so.0:gala_activatable_component_open
 libdeepin-wm.so.0:gala_load_priority_get_type
 libdeepin-wm.so.0:gala_modal_proxy_allow_all_keybindings
 libdeepin-wm.so.0:gala_modal_proxy_construct
+libdeepin-wm.so.0:gala_modal_proxy_get_grabbed
 libdeepin-wm.so.0:gala_modal_proxy_get_keybinding_filter
 libdeepin-wm.so.0:gala_modal_proxy_get_type
 libdeepin-wm.so.0:gala_modal_proxy_new
+libdeepin-wm.so.0:gala_modal_proxy_set_grabbed
 libdeepin-wm.so.0:gala_modal_proxy_set_keybinding_filter
 libdeepin-wm.so.0:gala_param_spec_utils
 libdeepin-wm.so.0:gala_plugin_construct
