@@ -1,0 +1,24 @@
+name       : deepin-go-dbus-factory
+version    : 0.0.3
+release    : 1
+source     :
+    - git|https://cr.deepin.io/go-dbus-factory.git : 0.0.3
+license    : GPL-3.0
+component  : desktop.deepin.core
+summary    : GO DBus factory for Deepin
+description: |
+    GO DBus factory for Deepin
+builddeps  :
+    - deepin-go-lib
+    - golang
+setup      : |
+    mkdir {bin,pkg,src}
+    mkdir -p src/github.com/linuxdeepin
+    cp -r $sources/go-dbus-factory.git $workdir/src/github.com/linuxdeepin/go-dbus-factory
+build      : |
+    export GOPATH=$workdir/:/usr/share/gocode
+    %make -B
+    ./gen.sh
+install    : |
+    install -dm755 %installroot%/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory
+    cp -a com.* org.* net.* object_manager %installroot%/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/
