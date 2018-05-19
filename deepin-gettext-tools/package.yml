@@ -1,6 +1,6 @@
 name       : deepin-gettext-tools
 version    : 1.0.8
-release    : 5
+release    : 6
 source     :
     - git|https://cr.deepin.io/deepin-gettext-tools.git : 1.0.8
 license    : GPL-3.0
