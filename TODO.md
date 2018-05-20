@@ -4,6 +4,7 @@
 
 - [x] Calculator
 - [x] Calendar (though it's pretty much useless)
+- [ ] Editor (Need to test)
 - [x] File Manager
 - [x] Image Viewer
 - [x] Movie (VM lacks the correct acceleration I believe, works fine bare metal)
