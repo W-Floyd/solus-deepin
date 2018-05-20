@@ -1,6 +1,6 @@
 name       : deepin-menu
 version    : 3.3.3
-release    : 13
+release    : 14
 source     :
     - git|https://cr.deepin.io/deepin-menu.git : 3.3.3
 license    : GPL-3.0
@@ -17,18 +17,11 @@ builddeps  :
     - pkgconfig(xcb)
     - qt5-tools-devel
 setup      : |
-    mkdir build
-    pushd build
-    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
-    popd
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
-    pushd build
     %make
-    popd
 install    : |
-    pushd build
     %make_install INSTALL_ROOT=$installdir
-    popd
     install -dm 755 "${installdir}/usr/share/dbus-1/services/"
     install -dm 755 "${installdir}/etc/xdg/autostart/"
     install -m 644 data/*.service "${installdir}/usr/share/dbus-1/services/"
