@@ -13,15 +13,8 @@ builddeps  :
     - pkgconfig(gl)
     - qt5-tools-devel
 setup      : |
-    mkdir build
-    pushd build
-    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
-    popd
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
-    pushd build
     %make
-    popd
 install    : |
-    pushd build
     %make_install INSTALL_ROOT=$installdir
-    popd
