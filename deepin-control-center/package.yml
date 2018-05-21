@@ -26,15 +26,8 @@ rundeps    :
     - deepin-qt5integration
     - proxychains-ng
 setup      : |
-    mkdir build
-    pushd build
-    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir% DISABLE_SYS_UPDATE=YES
-    popd
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir% DISABLE_SYS_UPDATE=YES
 build      : |
-    pushd build
     %make
-    popd
 install    : |
-    pushd build
     %make_install INSTALL_ROOT=$installdir
-    popd
