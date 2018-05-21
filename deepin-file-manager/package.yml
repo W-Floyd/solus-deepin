@@ -50,15 +50,8 @@ patterns   :
         - /usr/share/dbus-1/services/com.deepin.dde.desktop.service
         - /usr/share/dde-desktop/*
 setup      : |
-    mkdir build
-    pushd build
-    %qmake .. PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
-    popd
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
-    pushd build
     %make
-    popd
 install    : |
-    pushd build
     %make_install INSTALL_ROOT=$installdir
-    popd
