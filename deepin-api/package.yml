@@ -1,6 +1,6 @@
 name       : deepin-api
 version    : 3.1.25
-release    : 11
+release    : 12
 source     :
     - git|https://cr.deepin.io/dde/dde-api.git : 3.1.25
 extract    : no
@@ -36,6 +36,7 @@ build      : |
     go get gopkg.in/alecthomas/kingpin.v2
     go get github.com/nfnt/resize
     go get github.com/cryptix/wav
+    go get golang.org/x/net/context
     pushd src/pkg.deepin.io/dde/api
     make build-dep
     %make
