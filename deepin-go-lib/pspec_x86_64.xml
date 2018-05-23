@@ -150,6 +150,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/MAINTAINERS</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/README.markdown</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/auth.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/auth_anonymous.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/auth_external.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/auth_sha1.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/call.go</Path>
@@ -157,6 +158,8 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/conn_darwin.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/conn_other.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/conn_test.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/conn_unix.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/conn_windows.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/dbus.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/decoder.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/default_handler.go</Path>
@@ -175,6 +178,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/introspect/introspectable.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/message.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/object.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/object_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/prop/prop.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/proto_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/server_interfaces.go</Path>
@@ -475,9 +479,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-05-19</Date>
-            <Version>1.2.9</Version>
+        <Update release="10">
+            <Date>2018-05-23</Date>
+            <Version>1.2.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
