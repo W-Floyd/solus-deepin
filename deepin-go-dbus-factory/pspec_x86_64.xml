@@ -247,8 +247,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-05-19</Date>
+        <Update release="2">
+            <Date>2018-05-23</Date>
             <Version>0.0.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
