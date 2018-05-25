@@ -1,6 +1,6 @@
 name       : deepin-go-lib
 version    : 1.2.10
-release    : 10
+release    : 11
 source     :
     - git|https://cr.deepin.io/go-lib.git : 1.2.10
 license    : GPL-3.0
