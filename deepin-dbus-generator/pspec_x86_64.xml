@@ -23,8 +23,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-05-23</Date>
+        <Update release="9">
+            <Date>2018-05-24</Date>
             <Version>0.6.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
