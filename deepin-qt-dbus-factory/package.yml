@@ -1,6 +1,6 @@
 name       : deepin-qt-dbus-factory
 version    : 1.0.2
-release    : 10
+release    : 11
 source     :
     - git|https://cr.deepin.io/dde/dde-qt-dbus-factory.git : 1.0.2
 license    : GPL-3.0
