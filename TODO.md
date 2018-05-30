@@ -20,8 +20,7 @@
 
 #### `deepin-daemon`
 
-Look into packaging:
-* Miracast/Miracle Cast -  [Tarball](https://github.com/linuxdeepin/miraclecast/archive/1.0.8.tar.gz)
+Look into packaging Miracast/Miracle Cast - [Tarball](https://github.com/linuxdeepin/miraclecast/archive/1.0.8.tar.gz)
 
 Currently stuck with:
 ```
@@ -39,6 +38,7 @@ Add as rundep:
 
 Look into:
 * missing files from `/usr/share/deepin-default-settings`, see `deepin-default-settings`.
+* `deepin-polkit-agent-ext-gnomekeyring` [git source](https://cr.deepin.io/admin/projects/dpa-ext-gnomekeyring)
 
 #### `deepin-desktop`
 
