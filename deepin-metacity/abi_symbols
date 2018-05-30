@@ -75,6 +75,7 @@ libdeepin-metacity-private.so.3:deepin_dbus_wm_complete_switch_application
 libdeepin-metacity-private.so.3:deepin_dbus_wm_complete_switch_to_workspace
 libdeepin-metacity-private.so.3:deepin_dbus_wm_complete_tile_active_window
 libdeepin-metacity-private.so.3:deepin_dbus_wm_complete_toggle_debug
+libdeepin-metacity-private.so.3:deepin_dbus_wm_emit_startup_ready
 libdeepin-metacity-private.so.3:deepin_dbus_wm_emit_workspace_added
 libdeepin-metacity-private.so.3:deepin_dbus_wm_emit_workspace_removed
 libdeepin-metacity-private.so.3:deepin_dbus_wm_emit_workspace_switched
@@ -112,6 +113,7 @@ libdeepin-metacity-private.so.3:deepin_message_hub_get_type
 libdeepin-metacity-private.so.3:deepin_message_hub_register_to_session
 libdeepin-metacity-private.so.3:deepin_message_hub_screen_corner_entered
 libdeepin-metacity-private.so.3:deepin_message_hub_screen_corner_leaved
+libdeepin-metacity-private.so.3:deepin_message_hub_startup_ready
 libdeepin-metacity-private.so.3:deepin_message_hub_unable_to_operate
 libdeepin-metacity-private.so.3:deepin_message_hub_window_about_to_change_workspace
 libdeepin-metacity-private.so.3:deepin_message_hub_window_above_state_changed
