@@ -71,7 +71,6 @@ dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
 dtkwm dtkcore
 freeimage libjxr
-libmongoc libbson
 startdde deepin-api
 startdde deepin-dbus-factory
 startdde deepin-gir-generator

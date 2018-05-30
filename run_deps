@@ -71,7 +71,6 @@ dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
 freeimage libjxr
 freeimage-devel freeimage
-libmongoc libbson
 startdde deepin-control-center
 startdde deepin-daemon
 startdde deepin-desktop
