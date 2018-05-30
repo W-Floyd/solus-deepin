@@ -1,5 +1,12 @@
 ### Updates
 
+*2018-05-30.1* - Updates are out there.
+Last time, I tried updating things, builds failed, but I think I'm getting there now.
+Once I have better internet, I'll be able to do things proper.
+And yes, better internet is in the works at least...
+
+***
+
 *2018-05-19.3* - Only issue so far was with Deepin Terminal, which Arch had a patch for (thanks!) - all good now.
 
 ***
