@@ -45,11 +45,6 @@ Look into:
 Known tasks:
 * Rundeps are mixed up - startdde is probably what wants many of these, desktop is just one of them. This falls under the general mucking out of rundeps that needs to go on.
 
-#### `deepin-default-settings`
-
-Need to package ([Link](https://github.com/linuxdeepin/default-settings)), but be selective - there's a bunch of stuff in there that we *don't* need, or want.
-Will need a bit of poking, as such.
-
 #### `deepin-dock` / `deepin-launcher`
 
 Need to investigate:
