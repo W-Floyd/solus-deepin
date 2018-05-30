@@ -11,5 +11,5 @@ libdtkcore.so.2
 libdtkwidget.so.2
 libdtkwm.so.2
 libgcc_s.so.1
-libprocps.so.6
+libprocps.so.7
 libstdc++.so.6
