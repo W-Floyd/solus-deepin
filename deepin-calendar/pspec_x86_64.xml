@@ -35,6 +35,7 @@
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_de.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_el.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_en_AU.qm</Path>
+            <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_en_GB.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_eo.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_es.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_es_419.qm</Path>
@@ -51,6 +52,7 @@
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_id.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_it.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_ja.qm</Path>
+            <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_kn_IN.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_ko.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_ku_IQ.qm</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar_lt.qm</Path>
@@ -80,9 +82,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-05-21</Date>
-            <Version>1.2.2</Version>
+        <Update release="10">
+            <Date>2018-05-30</Date>
+            <Version>1.2.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
