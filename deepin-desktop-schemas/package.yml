@@ -1,8 +1,8 @@
 name       : deepin-desktop-schemas
-version    : 3.2.12
-release    : 13
+version    : 3.2.13
+release    : 14
 source     :
-    - git|https://cr.deepin.io/deepin-desktop-schemas.git : 3.2.12
+    - git|https://cr.deepin.io/deepin-desktop-schemas.git : 3.2.13
 license    : GPL-3.0
 component  : desktop
 summary    : GSettings Deepin desktop-wide schemas
