@@ -1,8 +1,8 @@
 name       : deepin-daemon
-version    : 3.2.15
-release    : 15
+version    : 3.2.17
+release    : 16
 source     :
-    - git|https://cr.deepin.io/dde/dde-daemon.git : 3.2.15
+    - git|https://cr.deepin.io/dde/dde-daemon.git : 3.2.17
 networking : yes
 license    : GPL-3.0
 component  : desktop.deepin.core
@@ -61,6 +61,7 @@ setup      : |
     go get github.com/nfnt/resize
     go get golang.org/x/image/bmp
     go get golang.org/x/image/tiff
+    go get golang.org/x/net/context
     go get golang.org/x/text/encoding/charmap
     go get gopkg.in/alecthomas/kingpin.v2
 build      : |
