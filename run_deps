@@ -25,8 +25,8 @@ deepin-desktop deepin-terminal
 deepin-desktop deepin-wallpapers
 deepin-desktop dtkwidget
 deepin-file-manager avfs
-deepin-file-manager deepin-qt5integration
 deepin-file-manager deepin-movie
+deepin-file-manager deepin-qt5integration
 deepin-file-manager dtkcore
 deepin-file-manager dtkwidget
 deepin-file-manager treefrog-framework
@@ -39,8 +39,8 @@ deepin-movie deepin-qt5integration
 deepin-movie dtkwidget
 deepin-music deepin-qt5integration
 deepin-music dtkwidget
-deepin-mutter deepin-desktop-schemas
 deepin-mutter deepin-clutter
+deepin-mutter deepin-desktop-schemas
 deepin-notifications dtkwidget
 deepin-notifications gsettings-qt
 deepin-picker dtkwidget
@@ -59,8 +59,8 @@ deepin-system-monitor deepin-qt5integration
 deepin-system-monitor dtkwidget
 deepin-system-monitor dtkwm
 deepin-terminal deepin-menu
-deepin-voice-recorder dtkwidget
 deepin-voice-recorder deepin-qt5integration
+deepin-voice-recorder dtkwidget
 deepin-wm deepin-clutter-gtk
 deepin-wm deepin-mutter
 deepin-wm-switcher deepin-daemon
@@ -69,8 +69,8 @@ deepin-wm-switcher deepin-wm
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
-freeimage libjxr
 freeimage-devel freeimage
+freeimage libjxr
 startdde deepin-control-center
 startdde deepin-daemon
 startdde deepin-desktop
