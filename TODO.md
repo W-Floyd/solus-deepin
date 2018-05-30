@@ -74,7 +74,7 @@ This has been known to upstream for some time.
 #### `deepin-qt5config`
 
 [What is it?](https://cr.deepin.io/#/admin/projects/deepin-qt5config)
-Do I need it?
+Do I need it? Probably, right?
 
 #### `startdde`
 
