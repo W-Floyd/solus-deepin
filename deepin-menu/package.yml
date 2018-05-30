@@ -1,8 +1,8 @@
 name       : deepin-menu
-version    : 3.3.5
-release    : 15
+version    : 3.3.6
+release    : 16
 source     :
-    - git|https://cr.deepin.io/deepin-menu.git : 3.3.5
+    - git|https://cr.deepin.io/deepin-menu.git : 3.3.6
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin Menu is the unified menu service for Deepin Desktop Environment.
