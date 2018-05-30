@@ -40,37 +40,37 @@
             <Path fileType="data">/usr/share/wallpapers/deepin/Scenery_in_Plateau_by_Arto_Marttinen.jpg</Path>
             <Path fileType="data">/usr/share/wallpapers/deepin/Sea_of_Clouds_over_Mountains_by_Anton_Repponen.jpg</Path>
             <Path fileType="data">/usr/share/wallpapers/deepin/Sunrise_by_Alexandre_Godreau.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/06d6a3ca0cef6f8e7fff1d1d49897a1b.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/158f768a397a335492958d8158b31211.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/17a67296878e572fd64b5579cd34daa6.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/2a058fb6211142aa3fc7d38ceceb6672.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/422250fb69a0447454ed044ba365a9e0.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/492792759f3867aa9097152936b86667.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/5da24bf856782bf24fc3c4207b2a5534.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/69b74797ded4fd4de5c98ea20a86c153.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/8117f51d2c8ae1376e00b41810bfb52f.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/835fd2dfc824c5f630add7b3de7ce29a.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/94bf52ca30004fda84c0a15912d77f67.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/b37a911edfe0b38135445f616516cbe3.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/baba119f8becbf361cb94d29f1da60b3.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/bb6724f2bf7007f6095ed9deeb2a12c0.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/be25a9327e8b5ae02c33fbde9586525b.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/c6caa42c909c071d836f8ad69a822a3d.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/c85efb9df57e04a9aa704f2c29f8517c.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/d277236db074f90790134a558eb4362f.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/d721665d8932a86cf2cb043f305328e4.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/d8ec2eedc5868251ec82c619072dbfb4.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/da44525d8fa4c5103fc30618e9eadf3f.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/e939720d871de1687bb4f0240b0394ec.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/e97b76e97d731700adc4f7fa39f53f4e.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/f218b7bc76044ed957008e8040f98843.jpg</Path>
-            <Path fileType="data">/var/cache/image-blur/f2f7e95df72489378d28c3941f786f3c.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/06a603f05e30b4cfcf2a70694f062330.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/0d8a55949e48056b8cb1baf0b04ac2a2.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/1ade24ced556329f4af905c8adf4d0bd.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/212728c29727414ac3fb974757109a24.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/3265a93f8b78ccf06d82e3ab7e5bea23.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/3a32e5b21982619c26b84b26cf550c4f.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/46bf8c305bb5e3c7af9d26b5356baf4b.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/4ddb5bdb593dcab9f907853916f856ff.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/5a699892833c3a595760ba7e00eb056e.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/6275ccae0513a0fe61079d045be6cc4b.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/71d68f2ac762023ecaea864de2dd9490.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/78f0aaf2bd9fcb0a484d519fffaef3d4.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/8421eebb3e37d07678c41002b1ec89f3.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/87a7810cf4d14cfae69e3d89fb42179a.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/8a72ea8c487812fee42693db55d47b14.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/9ec059b3eec52474af9e1f81fe42e5a0.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/b0987cf0c936a18e0f020366cddb63ee.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/b0b7cab0b915ef1fe721ce77c8c6fe2b.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/b1c3c1b179ac98b0ea0c997e528fc3ce.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/b2a94422d2c4a887573b92f49fc0a72d.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/d8646d82971337e0275ca93e3b355e81.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/dc713f6de1ea5aa8671f2f785a4b40b8.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/dfe5408cd0170fa2215c828ce88441b5.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/f1b59d03d44b2c3babaa7769b3f905b3.jpg</Path>
+            <Path fileType="data">/var/cache/image-blur/fc2f111f10a4321162ae3cfbdf1f6486.jpg</Path>
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2018-05-19</Date>
-            <Version>1.7.2</Version>
+        <Update release="8">
+            <Date>2018-05-30</Date>
+            <Version>1.7.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
