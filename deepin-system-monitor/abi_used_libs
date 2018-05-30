@@ -11,7 +11,7 @@ libdtkwm.so.2
 libgcc_s.so.1
 libm.so.6
 libpcap.so.1
-libprocps.so.6
+libprocps.so.7
 libpthread.so.0
 libstdc++.so.6
 libxcb.so.1
