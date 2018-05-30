@@ -16,6 +16,7 @@ deepin-control-center geoip
 deepin-control-center proxychains-ng
 deepin-daemon deepin-desktop-schemas
 deepin-daemon deepin-notifications
+deepin-default-settings deepin-introduction
 deepin-desktop deepin-control-center
 deepin-desktop deepin-dock
 deepin-desktop deepin-file-manager

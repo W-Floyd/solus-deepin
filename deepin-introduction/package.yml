@@ -1,0 +1,21 @@
+name       : deepin-introduction
+version    : 1.0.0
+release    : 1
+source     :
+    - git|https://cr.deepin.io/dde/dde-introduction.git : 1.0.0
+license    : GPL-3.0
+component  : desktop.deepin.core
+summary    : Introduction for deepin
+description: |
+    Deepin initialization setup tool
+builddeps  :
+    - pkgconfig(dframeworkdbus)
+    - pkgconfig(dtkwidget)
+    - pkgconfig(Qt5Multimedia)
+    - qt5-tools-devels
+setup      : |
+    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+build      : |
+    %make
+install    : |
+    %make_install INSTALL_ROOT=$installdir
