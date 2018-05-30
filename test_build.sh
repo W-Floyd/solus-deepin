@@ -72,7 +72,7 @@ __list_run_deps --true "${1}" | sed 's/.* //' | while read -r __package; do
     
     echo "${__package}"
     
-    __recurse_build_rundeps_sub "${__package}"
+    __recurse_build_rundeps_sub "${__package}" || exit 1
     
 done
 }
@@ -96,7 +96,7 @@ __setup () {
 echo 'Cleaning cache.'
 rm -f /var/lib/solbuild/local/*.eopkg
 
-__recurse_build_rundeps "${1}"
+__recurse_build_rundeps "${1}" || exit 1
 
 __list_build_deps "${1}" | sed 's/.* //' | while read -r __package; do
     
