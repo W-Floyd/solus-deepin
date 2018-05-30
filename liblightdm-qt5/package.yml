@@ -1,6 +1,6 @@
 name       : liblightdm-qt5
 version    : 1.24.0
-release    : 5
+release    : 6
 source     :
     - https://launchpad.net/lightdm/1.24/1.24.0/+download/lightdm-1.24.0.tar.xz : cd509b74382bcf382c6e3e4b54ac30ba804022fec968d6993d134552ea1a43a2
 license    : LGPL-3.0
