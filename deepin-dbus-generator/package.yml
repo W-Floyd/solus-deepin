@@ -1,6 +1,6 @@
 name       : deepin-dbus-generator
 version    : 0.6.6
-release    : 9
+release    : 10
 source     :
     - git|https://cr.deepin.io/go-dbus-generator.git : 0.6.6
 license    : GPL-3.0
