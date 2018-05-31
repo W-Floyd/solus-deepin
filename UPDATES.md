@@ -1,5 +1,10 @@
 ### Updates
 
+*2018-05-30.3* - All rebuilt, seems okay thus far.
+Nice to see things are moving forward.
+
+***
+
 *2018-05-30.2* - The moral of the story - git tags can be changed...
 So was getting build errors because a tag had been quickly reassigned to a fixed commit, but I had the old tag, so solbuild doesn't think it needs to check anything.
 
