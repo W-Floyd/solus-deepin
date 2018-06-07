@@ -25,7 +25,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="17">
+        <Update release="18">
             <Date>2018-06-07</Date>
             <Version>3.3.3</Version>
             <Comment>Packaging update</Comment>
