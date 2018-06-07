@@ -45,17 +45,20 @@ __list_build_deps_rev "${1}" | while read -r __line; do
 done
 }
 
-__recurse "${1}" | sort | uniq | tsort | tac | sed '1d' | while read -r __package; do
-    echo -n "${__package}"
-    cd "${__package}"
-    if [ -z "$(git diff . | grep -E '^[+|-]' | sed 's/^.//' | grep -E '^release')" ]; then
-        make bump &> /dev/null
-        echo
-    else
-        echo ', already bumped.'
-    fi
-    rm -f *.eopkg
-    cd ../
+until [ "${#}" = '0' ]; do
+    __recurse "${1}" | sort | uniq | tsort | tac | sed '1d' | while read -r __package; do
+        echo -n "${__package}"
+        cd "${__package}"
+        if [ -z "$(git diff . | grep -E '^[+|-]' | sed 's/^.//' | grep -E '^release')" ]; then
+            make bump &> /dev/null
+            echo
+        else
+            echo ', already bumped.'
+        fi
+        rm -f *.eopkg
+        cd ../
+    done
+    shift
 done
 
 exit
