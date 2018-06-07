@@ -1,8 +1,8 @@
 name       : deepin-go-lib
-version    : 1.2.10
-release    : 12
+version    : 1.2.11
+release    : 13
 source     :
-    - git|https://cr.deepin.io/go-lib.git : 1.2.10
+    - git|https://cr.deepin.io/go-lib.git : 1.2.11
 license    : GPL-3.0
 component  : programming.library
 summary    : A library containing many useful go routines for things such as glib,
