@@ -1,5 +1,10 @@
 ### Updates
 
+*2018-06-07.1* - So, after all this time, I've finally gotten internet shared across... Just in time to leave for a month, starting tomorrow.
+Should hopefully have internet to work with while away though.
+
+***
+
 *2018-05-30.3* - All rebuilt, seems okay thus far.
 Nice to see things are moving forward.
 
