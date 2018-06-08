@@ -1,6 +1,6 @@
 name       : deepin-icon-theme
 version    : 15.12.57
-release    : 11
+release    : 12
 source     :
     - git|https://cr.deepin.io/deepin-icon-theme.git : 15.12.57
 license    : GPL-3.0
