@@ -1,5 +1,10 @@
 ### Updates
 
+*2018-06-07.2* - Trying to rebuild/upgrade, but `deepin-daemon` is now broken due to other upstream upgrades (previous good builds now fail).
+We'll see... I will be busy for the next few days at least.
+
+***
+
 *2018-06-07.1* - So, after all this time, I've finally gotten internet shared across... Just in time to leave for a month, starting tomorrow.
 Should hopefully have internet to work with while away though.
 
