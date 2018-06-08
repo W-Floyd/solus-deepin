@@ -1,5 +1,9 @@
 ### Updates
 
+*2018-06-07.3* - Calling it quits for today, I need to pack and go to bed. 
+
+***
+
 *2018-06-07.2* - Trying to rebuild/upgrade, but `deepin-daemon` is now broken due to other upstream upgrades (previous good builds now fail).
 We'll see... I will be busy for the next few days at least.
 
