@@ -1,6 +1,6 @@
 name       : deepin-shortcut-viewer
 version    : 1.3.5
-release    : 10
+release    : 11
 source     :
     - git|https://cr.deepin.io/deepin-shortcut-viewer.git : 1.3.5
 license    : GPL-3.0
