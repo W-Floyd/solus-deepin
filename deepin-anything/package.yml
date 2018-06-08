@@ -1,6 +1,6 @@
 name       : deepin-anything
 version    : 0.0.1
-release    : 3
+release    : 4
 source     :
     - git|https://cr.deepin.io/deepin-anything.git : 0.0.1
 license    : GPL-3.0
