@@ -1,6 +1,6 @@
 name       : deepin-wm
 version    : 1.9.27
-release    : 11
+release    : 12
 source     :
     - git|https://cr.deepin.io/deepin-wm.git : 1.9.27
 license    : GPL-3.0
