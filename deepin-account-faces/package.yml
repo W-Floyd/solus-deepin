@@ -1,6 +1,6 @@
 name       : deepin-account-faces
 version    : 1.0.10
-release    : 7
+release    : 8
 source     :
     - git|https://cr.deepin.io/dde/dde-account-faces.git : 1.0.10
 license    : GPL-3.0
