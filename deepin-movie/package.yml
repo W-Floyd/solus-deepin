@@ -1,6 +1,6 @@
 name       : deepin-movie
 version    : 3.2.5
-release    : 9
+release    : 10
 source     :
     - git|https://cr.deepin.io/deepin-movie-reborn.git : 3.2.5
 license    : GPL-3.0
