@@ -285,6 +285,7 @@ libtreefrog.so.1:_ZN11TSmtpMailer5writeERK10QByteArray
 libtreefrog.so.1:_ZN11TSmtpMailer7cmdAuthEv
 libtreefrog.so.1:_ZN11TSmtpMailer7cmdDataERK10QByteArray
 libtreefrog.so.1:_ZN11TSmtpMailer7cmdEhloEv
+libtreefrog.so.1:_ZN11TSmtpMailer7cmdHeloEv
 libtreefrog.so.1:_ZN11TSmtpMailer7cmdMailERK10QByteArray
 libtreefrog.so.1:_ZN11TSmtpMailer7cmdQuitEv
 libtreefrog.so.1:_ZN11TSmtpMailer7cmdRcptERK5QListI10QByteArrayE
