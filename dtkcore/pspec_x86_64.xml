@@ -22,7 +22,9 @@
             <Path fileType="library">/usr/lib/dtk2/dtk-license.py</Path>
             <Path fileType="library">/usr/lib/dtk2/dtk-settings</Path>
             <Path fileType="library">/usr/lib/dtk2/dtk-translate.py</Path>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/libdtkcore.so.2</Path>
+            <Path fileType="library">/usr/lib64/libdtkcore.so.2.0</Path>
+            <Path fileType="library">/usr/lib64/libdtkcore.so.2.0.8</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_build.prf</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_cmake.prf</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_lib.prf</Path>
@@ -38,18 +40,67 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="14">dtkcore</Dependency>
+            <Dependency release="15">dtkcore</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib64/cmake/</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/AbstractAppender.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/AbstractStringAppender.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/ConsoleAppender.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/CuteLogger_global.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DBaseFileWatcher</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DDBusSender</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DFileSystemWatcher</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DFileWatcher</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DFileWatcherManager</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DLog</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DObject</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DObjectPrivate</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DPathBuf</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DPinyin</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DSettings</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DSettingsGroup</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DSettingsOption</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DSingleton</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DStandardPaths</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DUtil</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/DtkCore</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/FileAppender.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/LogManager.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/Logger.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/OutputDebugAppender.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/RollingFileAppender.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dabstractunitformatter.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dbasefilewatcher.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/ddbussender.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/ddisksizeformatter.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dfilesystemwatcher.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dfilewatcher.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dfilewatchermanager.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dobject.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dobject_p.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dpathbuf.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dpinyin.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dsettings.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dsettingsbackend.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dsettingsgroup.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dsettingsoption.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dsingleton.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dstandardpaths.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dtimeunitformatter.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dtkcore_config.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dtkcore_global.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/dutil.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/gsettingsbackend.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/qsettingbackend.h</Path>
+            <Path fileType="library">/usr/lib64/cmake/Dtk/DtkConfig.cmake</Path>
+            <Path fileType="library">/usr/lib64/cmake/DtkCore/DtkCoreConfig.cmake</Path>
+            <Path fileType="library">/usr/lib64/libdtkcore.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/dtkcore.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2018-06-07</Date>
+        <Update release="15">
+            <Date>2018-06-20</Date>
             <Version>2.0.8.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
