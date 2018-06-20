@@ -20,13 +20,13 @@
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="config">/etc/xdg/autostart/deepin-menu.desktop</Path>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-menu</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.menu.service</Path>
         </Files>
     </Package>
     <History>
-        <Update release="19">
-            <Date>2018-06-14</Date>
+        <Update release="20">
+            <Date>2018-06-20</Date>
             <Version>3.3.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
