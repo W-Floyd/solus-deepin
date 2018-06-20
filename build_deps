@@ -31,7 +31,6 @@ deepin-file-manager deepin-movie
 deepin-file-manager dtkwidget
 deepin-go-dbus-factory deepin-go-lib
 deepin-image-viewer dtkwidget
-deepin-image-viewer freeimage
 deepin-introduction deepin-qt-dbus-factory
 deepin-introduction dtkwidget
 deepin-launcher deepin-qt-dbus-factory
@@ -72,7 +71,6 @@ dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
 dtkwm dtkcore
-freeimage libjxr
 startdde deepin-api
 startdde deepin-dbus-factory
 startdde deepin-gir-generator

@@ -34,7 +34,6 @@ deepin-file-manager treefrog-framework
 deepin-gettext-tools perl-config-tiny
 deepin-image-viewer deepin-qt5integration
 deepin-image-viewer dtkwidget
-deepin-image-viewer freeimage-devel
 deepin-menu dtkwidget
 deepin-movie deepin-qt5integration
 deepin-movie dtkwidget
@@ -70,8 +69,6 @@ deepin-wm-switcher deepin-wm
 dtkcore gsettings-qt
 dtkwidget deepin-qt-dbus-factory
 dtkwidget dtkcore
-freeimage-devel freeimage
-freeimage libjxr
 startdde deepin-control-center
 startdde deepin-daemon
 startdde deepin-desktop
