@@ -22,12 +22,31 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbbackingstore.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbclipboard.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbconnection.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbcursor.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbdrag.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbexport.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbimage.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbintegration.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbkeyboard.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbmime.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbnativeinterface.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbobject.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbscreen.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbsessionmanager.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbsystemtraytracker.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbvulkaninstance.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbvulkanwindow.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbwindow.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbwmsupport.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbxsettings.h</Path>
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2018-06-07</Date>
+        <Update release="8">
+            <Date>2018-06-20</Date>
             <Version>5.10.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
