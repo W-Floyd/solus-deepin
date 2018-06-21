@@ -20,7 +20,7 @@
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="config">/etc/dde-dock/indicator/keybord_layout.json</Path>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/dde-dock</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libdatetime.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libkeyboard-layout.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libnetwork.so</Path>
@@ -97,15 +97,17 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="17">deepin-dock</Dependency>
+            <Dependency release="18">deepin-dock</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="header">/usr/include/dde-dock/constants.h</Path>
+            <Path fileType="header">/usr/include/dde-dock/pluginproxyinterface.h</Path>
+            <Path fileType="header">/usr/include/dde-dock/pluginsiteminterface.h</Path>
         </Files>
     </Package>
     <History>
-        <Update release="17">
-            <Date>2018-06-08</Date>
+        <Update release="18">
+            <Date>2018-06-21</Date>
             <Version>4.6.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
