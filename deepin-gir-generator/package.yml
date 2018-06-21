@@ -1,6 +1,6 @@
 name       : deepin-gir-generator
 version    : 1.0.3
-release    : 11
+release    : 12
 source     :
     - git|https://cr.deepin.io/go-gir-generator : 1.0.3
 license    : GPL-3.0

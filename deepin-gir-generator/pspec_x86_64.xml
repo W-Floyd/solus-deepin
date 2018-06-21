@@ -19,7 +19,7 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/gir-generator</Path>
             <Path fileType="data">/usr/share/gocode/src/gir/gio-2.0/config.json</Path>
             <Path fileType="data">/usr/share/gocode/src/gir/gio-2.0/gdk_workaround.go</Path>
             <Path fileType="data">/usr/share/gocode/src/gir/gio-2.0/gio.gen.c</Path>
@@ -56,8 +56,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2018-06-07</Date>
+        <Update release="12">
+            <Date>2018-06-21</Date>
             <Version>1.0.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
