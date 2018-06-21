@@ -48,7 +48,6 @@ libbson-1.0.so.0:bson_as_canonical_extended_json
 libbson-1.0.so.0:bson_as_json
 libbson-1.0.so.0:bson_as_relaxed_extended_json
 libbson-1.0.so.0:bson_ascii_strtoll
-libbson-1.0.so.0:bson_b64_initialize_rmap
 libbson-1.0.so.0:bson_b64_ntop
 libbson-1.0.so.0:bson_b64_pton
 libbson-1.0.so.0:bson_bcon_magic
@@ -534,7 +533,6 @@ libmongoc-1.0.so.0:_mongoc_write_result_merge
 libmongoc-1.0.so.0:_mongoc_write_result_merge_arrays
 libmongoc-1.0.so.0:assemble_query
 libmongoc-1.0.so.0:assemble_query_result_cleanup
-libmongoc-1.0.so.0:bson_b64_initialize_rmap
 libmongoc-1.0.so.0:bson_b64_ntop
 libmongoc-1.0.so.0:bson_b64_pton
 libmongoc-1.0.so.0:mongoc_apm_callbacks_destroy
