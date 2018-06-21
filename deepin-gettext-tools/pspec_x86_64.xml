@@ -19,14 +19,17 @@
 </Description>
         <PartOf>programming.tools</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-desktop-ts-convert</Path>
+            <Path fileType="executable">/usr/bin/deepin-generate-mo</Path>
+            <Path fileType="executable">/usr/bin/deepin-policy-ts-convert</Path>
+            <Path fileType="executable">/usr/bin/deepin-update-pot</Path>
             <Path fileType="library">/usr/lib/deepin-gettext-tools/generate_mo.py</Path>
             <Path fileType="library">/usr/lib/deepin-gettext-tools/update_pot.py</Path>
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-06-07</Date>
+        <Update release="10">
+            <Date>2018-06-21</Date>
             <Version>1.0.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
