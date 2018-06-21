@@ -20,7 +20,7 @@
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
             <Path fileType="data">/lib64/systemd/system/deepin-shutdown-sound.service</Path>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/dde-open</Path>
             <Path fileType="library">/usr/lib64/deepin-api/cursor-helper</Path>
             <Path fileType="library">/usr/lib64/deepin-api/deepin-shutdown-sound</Path>
             <Path fileType="library">/usr/lib64/deepin-api/device</Path>
@@ -165,8 +165,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2018-06-07</Date>
+        <Update release="17">
+            <Date>2018-06-21</Date>
             <Version>3.1.26</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
