@@ -19,12 +19,12 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/dbus-generator</Path>
         </Files>
     </Package>
     <History>
-        <Update release="12">
-            <Date>2018-06-07</Date>
+        <Update release="13">
+            <Date>2018-06-21</Date>
             <Version>0.6.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
