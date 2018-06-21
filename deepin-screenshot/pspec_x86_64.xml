@@ -19,10 +19,64 @@
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-screenshot</Path>
             <Path fileType="data">/usr/share/applications/deepin-screenshot.desktop</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.Screenshot.service</Path>
-            <Path fileType="data">/usr/share/deepin-screenshot</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_af.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_am_ET.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ar.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ast.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_az.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_bg.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_bn.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ca.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_cs.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_da.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_de.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_el.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_en_AU.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_eo.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_es.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_es_419.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_fa.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_fi.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_fil.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_fr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_he.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_hi_IN.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_hr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_hu.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_hy.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_id.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_it.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ja.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ko.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ku_IQ.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_lt.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ml.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_mn.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ms.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_nb.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_nl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_pam.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_pl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_pt.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ro.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ru.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_sk.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_sl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_sr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_sv.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_ta.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_tr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_uk.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_vi.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_zh_HK.qm</Path>
+            <Path fileType="data">/usr/share/deepin-screenshot/translations/deepin-screenshot_zh_TW.qm</Path>
             <Path fileType="data">/usr/share/dman/deepin-screenshot/common/deepin-screenshot.svg</Path>
             <Path fileType="data">/usr/share/dman/deepin-screenshot/common/icon_adjustscreenshot.svg</Path>
             <Path fileType="data">/usr/share/dman/deepin-screenshot/common/icon_adjustscreenshot_small.svg</Path>
@@ -177,8 +231,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="10">
-            <Date>2018-06-14</Date>
+        <Update release="11">
+            <Date>2018-06-21</Date>
             <Version>4.0.16</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

@@ -1,6 +1,6 @@
 name       : deepin-screenshot
 version    : 4.0.16
-release    : 10
+release    : 11
 source     :
     - git|https://cr.deepin.io/deepin-screenshot.git : 4.0.16
 license    : GPL-3.0
