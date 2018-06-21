@@ -1,14 +1,15 @@
 name       : deepin-notifications
-version    : 3.3.3
-release    : 18
+version    : 3.3.4
+release    : 19
 source     :
-    - git|https://cr.deepin.io/deepin-notifications.git : 3.3.3
+    - git|https://cr.deepin.io/deepin-notifications.git : 3.3.4
 license    : GPL-3.0
 component  : desktop
 summary    : An implementation of Gnome Desktop Notifications Specification
 description: |
     An implementation of Gnome Desktop Notifications Specification
 builddeps  :
+    - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkwidget)
     - pkgconfig(glu)
     - pkgconfig(gsettings-qt)
