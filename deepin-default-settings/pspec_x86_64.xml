@@ -19,12 +19,12 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/dde-first-run</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2018-06-08</Date>
+        <Update release="4">
+            <Date>2018-06-21</Date>
             <Version>2018.5.31</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
