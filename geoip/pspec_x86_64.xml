@@ -19,9 +19,12 @@
 </Description>
         <PartOf>network.util</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin/geoiplookup</Path>
+            <Path fileType="executable">/usr/bin/geoiplookup6</Path>
+            <Path fileType="library">/usr/lib64/libGeoIP.so.1</Path>
+            <Path fileType="library">/usr/lib64/libGeoIP.so.1.6.12</Path>
+            <Path fileType="man">/usr/share/man/man1/geoiplookup.1</Path>
+            <Path fileType="man">/usr/share/man/man1/geoiplookup6.1</Path>
         </Files>
     </Package>
     <Package>
@@ -31,18 +34,19 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="8">geoip</Dependency>
+            <Dependency release="9">geoip</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib64/lib*.a</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/GeoIP.h</Path>
+            <Path fileType="header">/usr/include/GeoIPCity.h</Path>
+            <Path fileType="library">/usr/lib64/libGeoIP.a</Path>
+            <Path fileType="library">/usr/lib64/libGeoIP.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/geoip.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-06-08</Date>
+        <Update release="9">
+            <Date>2018-06-21</Date>
             <Version>1.6.12</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
