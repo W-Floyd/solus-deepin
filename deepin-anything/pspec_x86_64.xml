@@ -19,7 +19,9 @@
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib/libanything.so.1</Path>
+            <Path fileType="library">/usr/lib/libanything.so.1.0</Path>
+            <Path fileType="library">/usr/lib/libanything.so.1.0.0</Path>
             <Path fileType="library">/usr/lib/modules-load.d/anything.conf</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/Makefile</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/arg_extractor.c</Path>
@@ -40,16 +42,24 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">deepin-anything</Dependency>
+            <Dependency release="5">deepin-anything</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
+            <Path fileType="header">/usr/include/deepin-anything/fs_buf.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/index/composite_str.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/index/index.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/index/index_allfile.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/index/index_allmem.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/index/index_base.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/index/index_utils.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/utils.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything/walkdir.h</Path>
+            <Path fileType="library">/usr/lib/libanything.so</Path>
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-06-08</Date>
+        <Update release="5">
+            <Date>2018-06-21</Date>
             <Version>0.0.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
