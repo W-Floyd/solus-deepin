@@ -19,7 +19,9 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/libdtkwm.so.2</Path>
+            <Path fileType="library">/usr/lib64/libdtkwm.so.2.0</Path>
+            <Path fileType="library">/usr/lib64/libdtkwm.so.2.0.8</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/modules/qt_lib_dtkwm.pri</Path>
         </Files>
     </Package>
@@ -30,18 +32,21 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="10">dtkwm</Dependency>
+            <Dependency release="11">dtkwm</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib64/cmake/</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DCore</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DWm/dscreenwindowsutil.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DWm/dtkwm_global.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.8/DWm/dwindowmanager.h</Path>
+            <Path fileType="library">/usr/lib64/cmake/DtkWm/DtkWmConfig.cmake</Path>
+            <Path fileType="library">/usr/lib64/libdtkwm.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/dtkwm.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="10">
-            <Date>2018-06-08</Date>
+        <Update release="11">
+            <Date>2018-06-21</Date>
             <Version>2.0.8.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
