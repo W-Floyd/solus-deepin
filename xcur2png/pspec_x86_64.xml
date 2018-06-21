@@ -19,13 +19,13 @@
 </Description>
         <PartOf>multimedia.graphics</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin/xcur2png</Path>
+            <Path fileType="man">/usr/share/man/man1/xcur2png.1</Path>
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-06-07</Date>
+        <Update release="9">
+            <Date>2018-06-21</Date>
             <Version>0.7.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
