@@ -19,10 +19,10 @@
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-screen-recorder</Path>
             <Path fileType="data">/usr/share/applications/deepin-screen-recorder.desktop</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.ScreenRecorder.service</Path>
-            <Path fileType="data">/usr/share/deepin-screen-recorder</Path>
+            <Path fileType="data">/usr/share/deepin-screen-recorder/translations/deepin-screen-recorder_zh_CN.qm</Path>
             <Path fileType="data">/usr/share/dman/deepin-screen-recorder/common/deepin-screen-recorder.svg</Path>
             <Path fileType="data">/usr/share/dman/deepin-screen-recorder/common/icon_commoncoperat.svg</Path>
             <Path fileType="data">/usr/share/dman/deepin-screen-recorder/common/icon_commoncoperat_small.svg</Path>
@@ -52,8 +52,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-06-08</Date>
+        <Update release="9">
+            <Date>2018-06-21</Date>
             <Version>2.7.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

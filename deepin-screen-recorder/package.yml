@@ -1,6 +1,6 @@
 name       : deepin-screen-recorder
 version    : 2.7.4
-release    : 8
+release    : 9
 source     :
     - git|https://cr.deepin.io/deepin-screen-recorder.git : 2.7.4
 license    : GPL-3.0
