@@ -19,17 +19,18 @@
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-editor</Path>
+            <Path fileType="executable">/usr/bin/deepin-editor-daemon</Path>
             <Path fileType="data">/usr/share/applications/deepin-editor.desktop</Path>
             <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.editor.daemon.service</Path>
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.editor.conf</Path>
-            <Path fileType="data">/usr/share/deepin-editor</Path>
+            <Path fileType="data">/usr/share/deepin-editor/words.db</Path>
             <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.editor.policy</Path>
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2018-06-08</Date>
+        <Update release="3">
+            <Date>2018-06-21</Date>
             <Version>0.0.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
