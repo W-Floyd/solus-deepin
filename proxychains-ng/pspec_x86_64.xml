@@ -19,7 +19,7 @@
 </Description>
         <PartOf>network.util</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/proxychains4</Path>
         </Files>
     </Package>
     <Package>
@@ -29,15 +29,15 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="7">proxychains-ng</Dependency>
+            <Dependency release="8">proxychains-ng</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="library">/usr/lib64/libproxychains4.so</Path>
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2018-06-08</Date>
+        <Update release="8">
+            <Date>2018-06-21</Date>
             <Version>4.12</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
