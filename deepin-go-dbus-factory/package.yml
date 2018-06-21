@@ -1,6 +1,6 @@
 name       : deepin-go-dbus-factory
 version    : 0.0.3
-release    : 6
+release    : 7
 source     :
     - git|https://cr.deepin.io/go-dbus-factory.git : 0.0.3
 networking : yes
