@@ -19,7 +19,7 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/dde-introduction</Path>
             <Path fileType="library">/usr/lib/dde-introduction/15.6demo_en-US.mp4</Path>
             <Path fileType="library">/usr/lib/dde-introduction/15.6demo_en-US@2x.mp4</Path>
             <Path fileType="library">/usr/lib/dde-introduction/15.6demo_zh-CN.mp4</Path>
@@ -86,8 +86,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2018-06-08</Date>
+        <Update release="3">
+            <Date>2018-06-21</Date>
             <Version>1.0.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
