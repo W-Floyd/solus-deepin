@@ -19,16 +19,36 @@
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-picker</Path>
             <Path fileType="data">/usr/share/applications/deepin-picker.desktop</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.Picker.service</Path>
-            <Path fileType="data">/usr/share/deepin-picker</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_ar.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_ast.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_cs.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_de.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_en_US.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_es.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_es_419.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_fr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_he.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_hr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_id.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_it.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_lt.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_ru.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_sk.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_sl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_tr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_uk.qm</Path>
+            <Path fileType="data">/usr/share/deepin-picker/translations/deepin-picker_zh_CN.qm</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/deepin-picker.svg</Path>
         </Files>
     </Package>
     <History>
-        <Update release="10">
-            <Date>2018-06-08</Date>
+        <Update release="11">
+            <Date>2018-06-21</Date>
             <Version>1.6.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
