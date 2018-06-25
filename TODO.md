@@ -54,6 +54,7 @@ Need to investigate:
 
 Look into packaging:
 * [dde-file-manager-integration](https://cr.deepin.io/admin/projects/dde/dde-file-manager-integration)
+* dde-file-dialog-gtk
 
 Need to investigate:
 * cannot mount MTP Android device (can only test with Samsung Galaxy S5 currently, but that works under GNOME)
