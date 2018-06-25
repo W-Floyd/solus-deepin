@@ -29,16 +29,16 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="8">proxychains-ng</Dependency>
+            <Dependency release="9">proxychains-ng</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib64/libproxychains4.so</Path>
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-06-21</Date>
-            <Version>4.12</Version>
+        <Update release="9">
+            <Date>2018-06-25</Date>
+            <Version>4.13</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
