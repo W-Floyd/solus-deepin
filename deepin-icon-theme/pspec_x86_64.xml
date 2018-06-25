@@ -1420,7 +1420,6 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-calendar.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-file-manager.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/dde-introduction.svg</Path>
-            <Path fileType="data">/usr/share/icons/deepin/apps/48/dde.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/ddnet.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/deadbeef.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/48/debreate.svg</Path>
@@ -5828,9 +5827,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="13">
-            <Date>2018-06-21</Date>
-            <Version>15.12.57</Version>
+        <Update release="14">
+            <Date>2018-06-25</Date>
+            <Version>15.12.58</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
