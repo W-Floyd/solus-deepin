@@ -41,13 +41,14 @@
             <Path fileType="header">/usr/include/qtxcb-private/qxcbvulkanwindow.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbwindow.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbwmsupport.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbxkbcommon.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbxsettings.h</Path>
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-06-20</Date>
-            <Version>5.10.0</Version>
+        <Update release="9">
+            <Date>2018-07-01</Date>
+            <Version>5.11.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
