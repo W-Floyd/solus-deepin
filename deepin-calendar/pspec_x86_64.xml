@@ -19,7 +19,7 @@
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/dde-calendar</Path>
             <Path fileType="data">/usr/share/applications/dde-calendar.desktop</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.Calendar.service</Path>
             <Path fileType="data">/usr/share/dde-calendar/translations/dde-calendar.qm</Path>
@@ -82,8 +82,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2018-06-08</Date>
+        <Update release="12">
+            <Date>2018-07-01</Date>
             <Version>1.2.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
