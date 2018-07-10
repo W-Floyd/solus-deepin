@@ -69,7 +69,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="22">dtkwidget</Dependency>
+            <Dependency release="23">dtkwidget</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdtk-2.0.8/DCore</Path>
@@ -226,8 +226,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="22">
-            <Date>2018-06-20</Date>
+        <Update release="23">
+            <Date>2018-07-10</Date>
             <Version>2.0.8.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
