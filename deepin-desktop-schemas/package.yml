@@ -1,6 +1,6 @@
 name       : deepin-desktop-schemas
 version    : 3.2.14
-release    : 17
+release    : 18
 source     :
     - git|https://cr.deepin.io/deepin-desktop-schemas.git : 3.2.14
 license    : GPL-3.0
