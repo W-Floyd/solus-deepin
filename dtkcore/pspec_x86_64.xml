@@ -40,7 +40,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="15">dtkcore</Dependency>
+            <Dependency release="16">dtkcore</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdtk-2.0.8/DCore/AbstractAppender.h</Path>
@@ -99,8 +99,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="15">
-            <Date>2018-06-20</Date>
+        <Update release="16">
+            <Date>2018-07-10</Date>
             <Version>2.0.8.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
