@@ -1,6 +1,6 @@
 name       : libmongoc
 version    : 1.11.0
-release    : 18
+release    : 19
 source     :
     - git|https://github.com/mongodb/mongo-c-driver.git : 1.11.0
 license    : Apache-2.0
