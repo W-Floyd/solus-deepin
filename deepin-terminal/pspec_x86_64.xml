@@ -420,8 +420,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2018-06-20</Date>
+        <Update release="15">
+            <Date>2018-07-13</Date>
             <Version>3.0.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
