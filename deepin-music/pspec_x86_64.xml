@@ -19,15 +19,87 @@
 </Description>
         <PartOf>desktop.deepin</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-music</Path>
             <Path fileType="library">/usr/lib/deepin-music/plugins/libnetease-meta-search.so</Path>
             <Path fileType="library">/usr/lib/deepin-music/plugins/libnetease-meta-search.so.1</Path>
             <Path fileType="library">/usr/lib/deepin-music/plugins/libnetease-meta-search.so.1.0</Path>
             <Path fileType="library">/usr/lib/deepin-music/plugins/libnetease-meta-search.so.1.0.0</Path>
-            <Path fileType="library">/usr/lib/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib/libdbusextended-qt5.so.1</Path>
+            <Path fileType="library">/usr/lib/libdbusextended-qt5.so.1.0</Path>
+            <Path fileType="library">/usr/lib/libdbusextended-qt5.so.1.0.0</Path>
+            <Path fileType="library">/usr/lib/libdmusic.so.1</Path>
+            <Path fileType="library">/usr/lib/libdmusic.so.1.0</Path>
+            <Path fileType="library">/usr/lib/libdmusic.so.1.0.0</Path>
+            <Path fileType="library">/usr/lib/libmpris-qt5.so.1</Path>
+            <Path fileType="library">/usr/lib/libmpris-qt5.so.1.0</Path>
+            <Path fileType="library">/usr/lib/libmpris-qt5.so.1.0.0</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/mpris-qt5.prf</Path>
             <Path fileType="data">/usr/share/applications/deepin-music.desktop</Path>
-            <Path fileType="data">/usr/share/deepin-music</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_af.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_am.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_am_ET.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ar.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ast.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_az.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_bg.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_bn.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ca.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_cs.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_da.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_de.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_de_DE.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_el.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_el_GR.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_en_AU.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_eo.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_es.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_es_419.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_es_AR.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_es_CL.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_es_ES.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_fa.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_fi.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_fil.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_fr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_he.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_hi_IN.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_hr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_hu.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_hy.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_id.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_id_ID.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_it.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ja.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ko.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ku_IQ.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_lt.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ml.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_mn.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ms.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_nb.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_nl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_pam.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_pl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_pl_PL.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_pt.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_pt_PT.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ro.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ru.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sk.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sv.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ta.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_tr.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ug.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_uk.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_vi.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_zh_HK.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_zh_TW.qm</Path>
             <Path fileType="data">/usr/share/dman/deepin-music/common/deepin-music.svg</Path>
             <Path fileType="data">/usr/share/dman/deepin-music/common/icon_commoncoperat.svg</Path>
             <Path fileType="data">/usr/share/dman/deepin-music/common/icon_commoncoperat_small.svg</Path>
@@ -113,17 +185,33 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="11">deepin-music</Dependency>
+            <Dependency release="12">deepin-music</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/DBusExtended/DBusExtended</Path>
+            <Path fileType="header">/usr/include/DBusExtended/DBusExtendedAbstractInterface</Path>
+            <Path fileType="header">/usr/include/DBusExtended/dbusextended.h</Path>
+            <Path fileType="header">/usr/include/DBusExtended/dbusextendedabstractinterface.h</Path>
+            <Path fileType="header">/usr/include/MprisQt/Mpris</Path>
+            <Path fileType="header">/usr/include/MprisQt/MprisController</Path>
+            <Path fileType="header">/usr/include/MprisQt/MprisManager</Path>
+            <Path fileType="header">/usr/include/MprisQt/MprisPlayer</Path>
+            <Path fileType="header">/usr/include/MprisQt/MprisQt</Path>
+            <Path fileType="header">/usr/include/MprisQt/mpris.h</Path>
+            <Path fileType="header">/usr/include/MprisQt/mpriscontroller.h</Path>
+            <Path fileType="header">/usr/include/MprisQt/mprismanager.h</Path>
+            <Path fileType="header">/usr/include/MprisQt/mprisplayer.h</Path>
+            <Path fileType="header">/usr/include/MprisQt/mprisqt.h</Path>
+            <Path fileType="library">/usr/lib/libdbusextended-qt5.so</Path>
+            <Path fileType="library">/usr/lib/libdmusic.so</Path>
+            <Path fileType="library">/usr/lib/libmpris-qt5.so</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/dbusextended-qt5.pc</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/mpris-qt5.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2018-06-08</Date>
+        <Update release="12">
+            <Date>2018-07-13</Date>
             <Version>3.1.8.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
