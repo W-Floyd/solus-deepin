@@ -1,6 +1,6 @@
 name       : avfs
 version    : 1.0.5
-release    : 8
+release    : 9
 source     :
     - https://sourceforge.net/projects/avf/files/avfs/1.0.5/avfs-1.0.5.tar.bz2/download : e5ce6b1f4193c37148b1b8a021f4f3d05e88f725cf11b16b95a58e8fdae50176
 license    : GPL-2.0
