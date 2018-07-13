@@ -1,6 +1,6 @@
 name       : deepin-calendar
 version    : 1.2.3
-release    : 12
+release    : 13
 source     :
     - git|https://cr.deepin.io/dde/dde-calendar : 1.2.3
 license    : GPL-3.0
