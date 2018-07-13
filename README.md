@@ -2,7 +2,7 @@
 
 ## I'm a dragon, hear me roar!
 
-### It is *probably* broken (to varying degrees), and could remain so.
+### It is *probably* broken, and could remain so forever.
 
 This is an exercise in packaging Deepin.
 It is not ready - nor intended - for production use, and it *will not* go into the Solus repos (upstream Solus won't take it, I won't submit it and take on that responsibility).
