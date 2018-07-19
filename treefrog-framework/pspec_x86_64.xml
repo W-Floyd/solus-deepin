@@ -31,7 +31,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="16">treefrog-framework</Dependency>
+            <Dependency release="17">treefrog-framework</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/treefrog/TAbstractController</Path>
@@ -243,8 +243,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2018-07-13</Date>
+        <Update release="17">
+            <Date>2018-07-19</Date>
             <Version>1.22.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
