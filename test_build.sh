@@ -7,13 +7,28 @@
 # Also, since this runs as root by default to avoid permission questions when
 # unattended, make sure you have your packager information in your root dir.
 
-if [ "${1}" = '--no-root' ]; then
-    shift
-else
-    if [[ $EUID -ne 0 ]]; then
-       echo "This script must be run as root" 
-       exit 1
+__no_root='0'
+
+__delete_self='1'
+
+while [[ "${1}" == '--'* ]]; do
+
+    if [ "${1}" = '--no-root' ]; then
+        __no_root='1'
+    elif [ "${1}" = '--no-delete' ]; then
+        __delete_self='0'
+    else
+        echo "Unrecognized option '${1}'"
+        exit 1
     fi
+    
+    shift
+
+done || exit 1
+    
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
 fi
 
 if [ $SUDO_USER ]; then
@@ -172,9 +187,11 @@ chown "${real_user}:${real_user}" -R .
 
 rm -f /var/lib/solbuild/local/*.eopkg
 
-for __input in "${@}"; do
-    rm ${__input}/*.eopkg
-done
+if [ "${__delete_self}" = '1' ]; then
+    for __input in "${@}"; do
+        rm ${__input}/*.eopkg
+    done
+fi
 
 until [ "${#}" = '0' ]; do
 
