@@ -2,7 +2,7 @@ name       : deepin-account-faces
 version    : 1.0.10
 release    : 10
 source     :
-    - git|https://cr.deepin.io/dde/dde-account-faces.git : 1.0.10
+    - git|https://github.com/linuxdeepin/dde-account-faces.git : 1.0.10
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Account faces for Linux Deepin
