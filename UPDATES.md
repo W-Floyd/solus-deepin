@@ -1,5 +1,13 @@
 ### Updates
 
+*2018-07-20.1* - Well, as you can guess, I didn't get `deepin-daemon` working.
+Might have a lead, we'll see.
+Been busy with... life, I guess.
+Anyway, a fresh round of upstream updates, hoping they'll fix my issues and get building again.
+As is, I've not been running Deepin as my main desktop for over a month.
+
+***
+
 *2018-07-01.1* - Finished the gig out of state, back home until this afternoon.
 Finally realized why `deepin-qt5dxcb-plugin` wasn't building, it was `qt5-xcb-private-headers` being out of date.
 `deepin-daemon` on the other hand still seems to be failing, but I have a sneaking suspicion it's something similar.
