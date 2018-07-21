@@ -12,7 +12,23 @@
 
 source 'functions.sh'
 
+touch 'checklist'
+
+__check_done () {
+
+    grep -x "${1}" -q < 'checklist' || return 1
+    
+    return 0
+
+}
+
 __recurse () {
+
+if __check_done "${1}"; then
+    return
+fi
+
+echo "${1}" >> 'checklist'
 
 {
 
@@ -62,10 +78,22 @@ build'
 else
 
     until [ "${#}" = '0' ]; do
+    
+        if [ "${1}" = '-m' ]; then
+        
+            git diff-index --name-only HEAD -- | grep '/' | sed 's#/.*##' | sort | uniq | while read -r __package; do
+            
+                __recurse "${__package}"
+                
+            done
+            
+        else
 
-        __recurse "${1}"
+            __recurse "${1}"
 
-        echo "    \"${1}\"[select];"
+            echo "    \"${1}\"[select];"
+            
+        fi
 
         shift
 
@@ -105,7 +133,7 @@ echo '}'
 
 } > graph.dot
 
-rm "${__tmpfile}" "${__tmpfile2}"
+rm "${__tmpfile}" "${__tmpfile2}" 'checklist'
 
 sed -e 's/\[run\]/[color=blue]/' \
 -e 's/\[done\]/\[fillcolor=darkolivegreen1\]/' \
