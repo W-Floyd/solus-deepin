@@ -7,7 +7,7 @@ deepin-cogl                 https://cr.deepin.io/deepin-cogl.git                
 deepin-control-center       https://cr.deepin.io/dde/dde-control-center         https://github.com/linuxdeepin/dde-control-center.git
 deepin-daemon               https://cr.deepin.io/dde/dde-daemon.git             https://github.com/linuxdeepin/dde-daemon.git
 deepin-dbus-factory         https://cr.deepin.io/dbus-factory.git               https://github.com/linuxdeepin/dbus-factory.git
-deepin-dbus-generator       https://cr.deepin.io/go-dbus-generator.git          https://github.com/linuxdeepin/go-dbus-factory.git
+deepin-dbus-generator       https://cr.deepin.io/go-dbus-generator.git          https://github.com/linuxdeepin/go-dbus-generator.git
 deepin-default-settings     https://cr.deepin.io/default-settings.git           https://github.com/linuxdeepin/default-settings.git
 deepin-desktop-base         https://cr.deepin.io/deepin-desktop-base.git        https://github.com/linuxdeepin/deepin-desktop-base.git
 deepin-desktop-schemas      https://cr.deepin.io/deepin-desktop-schemas.git     https://github.com/linuxdeepin/deepin-desktop-schemas.git
