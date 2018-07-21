@@ -20,33 +20,33 @@
         <PartOf>desktop.theme</PartOf>
         <Files>
             <Path fileType="data">/usr/share/sounds/deepin/index.theme</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/audio-volume-change.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/camera-shutter.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/complete-copy.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/complete-print.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/desktop-login.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/desktop-logout.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/device-added.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/device-removed.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error-critical.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error-serious.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/message.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-plug.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-unplug-battery-low.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-unplug.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/screen-capture-complete.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/screen-capture.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/suspend-resume.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/system-shutdown.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/trash-empty.ogg</Path>
-            <Path fileType="data">/usr/share/sounds/deepin/stereo/x-deepin-app-sent-to-desktop.ogg</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/audio-volume-change.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/camera-shutter.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/complete-copy.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/complete-print.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/desktop-login.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/desktop-logout.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/device-added.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/device-removed.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error-critical.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error-serious.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/dialog-error.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/message.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-plug.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-unplug-battery-low.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/power-unplug.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/screen-capture-complete.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/screen-capture.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/suspend-resume.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/system-shutdown.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/trash-empty.wav</Path>
+            <Path fileType="data">/usr/share/sounds/deepin/stereo/x-deepin-app-sent-to-desktop.wav</Path>
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-07-13</Date>
-            <Version>15.10.2</Version>
+        <Update release="10">
+            <Date>2018-07-21</Date>
+            <Version>15.10.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
