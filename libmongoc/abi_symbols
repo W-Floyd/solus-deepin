@@ -1,5 +1,8 @@
 libbson-1.0.so.0:_bson_iso8601_date_format
 libbson-1.0.so.0:_bson_iso8601_date_parse
+libbson-1.0.so.0:_bson_md5_append
+libbson-1.0.so.0:_bson_md5_finish
+libbson-1.0.so.0:_bson_md5_init
 libbson-1.0.so.0:_bson_timegm
 libbson-1.0.so.0:_dec128_istreq
 libbson-1.0.so.0:_dec128_tolower
@@ -225,6 +228,9 @@ libbson-1.0.so.0:jsonsl_util_unescape_ex
 libmongoc-1.0.so.0:EVP_MD_CTX_free
 libmongoc-1.0.so.0:EVP_MD_CTX_new
 libmongoc-1.0.so.0:_append_array_from_command
+libmongoc-1.0.so.0:_bson_md5_append
+libmongoc-1.0.so.0:_bson_md5_finish
+libmongoc-1.0.so.0:_bson_md5_init
 libmongoc-1.0.so.0:_change_stream_init
 libmongoc-1.0.so.0:_empty_error
 libmongoc-1.0.so.0:_get_first_existing
@@ -717,6 +723,7 @@ libmongoc-1.0.so.0:mongoc_client_session_get_cluster_time
 libmongoc-1.0.so.0:mongoc_client_session_get_lsid
 libmongoc-1.0.so.0:mongoc_client_session_get_operation_time
 libmongoc-1.0.so.0:mongoc_client_session_get_opts
+libmongoc-1.0.so.0:mongoc_client_session_in_transaction
 libmongoc-1.0.so.0:mongoc_client_session_start_transaction
 libmongoc-1.0.so.0:mongoc_client_set_apm_callbacks
 libmongoc-1.0.so.0:mongoc_client_set_appname
