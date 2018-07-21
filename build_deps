@@ -1,6 +1,7 @@
 deepin-api deepin-dbus-factory
 deepin-api deepin-gettext-tools
 deepin-api deepin-gir-generator
+deepin-api deepin-go-dbus-factory
 deepin-api deepin-go-lib
 deepin-calculator dtkwidget
 deepin-calendar deepin-gettext-tools
