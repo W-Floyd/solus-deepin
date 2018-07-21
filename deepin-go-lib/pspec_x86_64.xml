@@ -144,7 +144,6 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus/variant_lexer.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus/variant_parser.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus/variant_test.go</Path>
-            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/.travis.yml</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/CONTRIBUTING.md</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/LICENSE</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/MAINTAINERS</Path>
@@ -387,9 +386,6 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pam/transaction.c</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pinyin/datas.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pinyin/pinyin.go</Path>
-            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/polkit/policykit1/dbus-authority.go</Path>
-            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/polkit/policykit1/init.go</Path>
-            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/polkit/polkit.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/procfs/procfs.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/procfs/procfs_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/profile/profile.go</Path>
@@ -479,9 +475,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2018-07-13</Date>
-            <Version>1.2.11</Version>
+        <Update release="18">
+            <Date>2018-07-21</Date>
+            <Version>1.2.14</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
