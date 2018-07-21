@@ -2,7 +2,7 @@ name       : deepin-metacity
 version    : 3.22.19
 release    : 10
 source     :
-    - git|https://cr.deepin.io/deepin-metacity.git : 3.22.19
+    - git|https://github.com/linuxdeepin/deepin-metacity.git : 3.22.19
 license    : GPL-2.0
 component  : desktop.deepin.core
 summary    : 2D window manager for Deepin
