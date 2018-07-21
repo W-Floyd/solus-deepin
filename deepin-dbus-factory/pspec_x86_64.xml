@@ -297,7 +297,7 @@
     </Package>
     <History>
         <Update release="20">
-            <Date>2018-07-20</Date>
+            <Date>2018-07-21</Date>
             <Version>3.1.17</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
