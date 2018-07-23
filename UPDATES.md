@@ -1,5 +1,10 @@
 ### Updates
 
+*2018-07-23.2* - Everything finally build correctly!
+Will try installing on bare metal again after... well over a month.
+
+***
+
 *2018-07-23.1* - Another day, another update.
 `deepin-daemon` is building again, I think an upgrade fixed it.
 Hopefully moving back to a functioning build.
