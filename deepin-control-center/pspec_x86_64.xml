@@ -19,7 +19,7 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/dde-control-center</Path>
             <Path fileType="library">/usr/lib/dde-control-center/plugins/libnotify.so</Path>
             <Path fileType="library">/usr/lib/dde-control-center/plugins/libweather.so</Path>
             <Path fileType="library">/usr/lib/dde-control-center/plugins/libwtf.so</Path>
@@ -148,9 +148,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="21">
-            <Date>2018-05-31</Date>
-            <Version>4.5.3</Version>
+        <Update release="22">
+            <Date>2018-07-23</Date>
+            <Version>4.6.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
