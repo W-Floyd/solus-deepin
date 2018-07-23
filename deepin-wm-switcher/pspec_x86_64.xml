@@ -21,12 +21,12 @@ It is capable of monitoring the health of the 3D WM and falling back to 2D if ba
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/deepin-wm-switcher</Path>
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-05-30</Date>
+        <Update release="10">
+            <Date>2018-07-23</Date>
             <Version>1.1.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
