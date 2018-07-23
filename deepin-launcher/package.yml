@@ -1,8 +1,8 @@
 name       : deepin-launcher
-version    : 4.3.4
-release    : 14
+version    : 4.4.1
+release    : 15
 source     :
-    - git|https://cr.deepin.io/dde/dde-launcher.git : 4.3.4
+    - git|https://github.com/linuxdeepin/dde-launcher.git : 4.4.1
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Launcher for the Deepin Desktop Environment.
@@ -18,8 +18,8 @@ builddeps  :
     - pkgconfig(xcb)
     - qt5-tools-devel
 setup      : |
-    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+    %cmake_ninja -DWITHOUT_UNINSTALL_APP=1
 build      : |
-    %make
+    %ninja_build
 install    : |
-    %make_install INSTALL_ROOT=$installdir
+    INSTALL_ROOT=$installdir %ninja_install
