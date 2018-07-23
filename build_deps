@@ -78,5 +78,6 @@ dtkwm dtkcore
 startdde deepin-api
 startdde deepin-dbus-factory
 startdde deepin-gir-generator
+startdde deepin-go-dbus-factory
 startdde deepin-go-lib
 treefrog-framework libmongoc
