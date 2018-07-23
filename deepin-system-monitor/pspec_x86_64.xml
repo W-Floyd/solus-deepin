@@ -100,8 +100,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="13">
-            <Date>2018-07-13</Date>
+        <Update release="14">
+            <Date>2018-07-23</Date>
             <Version>1.4.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
