@@ -1,10 +1,17 @@
 ### Updates
 
+*2018-07-23.1* - Another day, another update.
+`deepin-daemon` is building again, I think an upgrade fixed it.
+Hopefully moving back to a functioning build.
+
+***
+
 *2018-07-20.1* - Well, as you can guess, I didn't get `deepin-daemon` working.
 Might have a lead, we'll see.
 Been busy with... life, I guess.
 Anyway, a fresh round of upstream updates, hoping they'll fix my issues and get building again.
 As is, I've not been running Deepin as my main desktop for over a month.
+Also, `cr.deepin.io` is down, so that's stopping me right now.
 
 ***
 
