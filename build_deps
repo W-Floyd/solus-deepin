@@ -8,6 +8,7 @@ deepin-calendar deepin-gettext-tools
 deepin-calendar dtkwidget
 deepin-clutter deepin-cogl
 deepin-clutter-gtk deepin-clutter
+deepin-control-center deepin-network-utils
 deepin-control-center deepin-qt-dbus-factory
 deepin-control-center dtkwidget
 deepin-control-center geoip
@@ -43,6 +44,7 @@ deepin-menu qt5-xcb-private-headers
 deepin-movie dtkwidget
 deepin-music dtkwidget
 deepin-mutter deepin-clutter
+deepin-network-utils deepin-qt-dbus-factory-devel
 deepin-notifications dtkwidget
 deepin-notifications gsettings-qt
 deepin-picker dtkwidget
