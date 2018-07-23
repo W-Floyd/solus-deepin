@@ -1,6 +1,6 @@
 name       : deepin-session-ui
 version    : 4.4.7
-release    : 22
+release    : 23
 source     :
     - git|https://github.com/linuxdeepin/dde-session-ui.git : 4.4.7
 license    : GPL-3.0
@@ -28,3 +28,5 @@ build      : |
     %make
 install    : |
     %make_install INSTALL_ROOT=$installdir
+    rm $installdir/usr/share/dbus-1/services/com.deepin.dde.Notification.service
+    rm $installdir/usr/share/dbus-1/services/com.deepin.dde.freedesktop.Notification.service
