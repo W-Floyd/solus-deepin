@@ -8,6 +8,7 @@ libX11.so.6
 libXext.so.6
 libXtst.so.6
 libc.so.6
+libdde-network-utils.so.1
 libdframeworkdbus.so.2
 libdtkcore.so.2
 libdtkwidget.so.2
