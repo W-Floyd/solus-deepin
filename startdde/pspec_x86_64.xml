@@ -19,17 +19,19 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin/startdde</Path>
+            <Path fileType="executable">/usr/sbin/deepin-fix-xauthority-perm</Path>
+            <Path fileType="executable">/usr/sbin/deepin-session</Path>
             <Path fileType="data">/usr/share/lightdm/lightdm.conf.d/60-deepin.conf</Path>
-            <Path fileType="data">/usr/share/startdde</Path>
+            <Path fileType="data">/usr/share/startdde/auto_launch.json</Path>
+            <Path fileType="data">/usr/share/startdde/memchecker.json</Path>
             <Path fileType="data">/usr/share/xsessions/deepin.desktop</Path>
         </Files>
     </Package>
     <History>
-        <Update release="15">
-            <Date>2018-05-30</Date>
-            <Version>3.1.31</Version>
+        <Update release="16">
+            <Date>2018-07-23</Date>
+            <Version>3.1.34</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
