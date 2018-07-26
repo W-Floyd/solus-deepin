@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Important - If any eopkg files are found, they are assumed to be correct.
-# As such, if a package has been modified, be sure to remove all of its eopkg
+# As such, if a subpackage has been modified, be sure to remove all of its eopkg
 # files before continuing with builds.
 
 # Also, since this runs as root by default to avoid permission questions when
@@ -106,10 +106,14 @@ __recurse_build_rundeps_sub "${1}" | while read -r __package; do
 done
 }
 
+__quite_remove_eopkg () {
+rm -f "${1}/"*.eopkg &> /dev/null
+}
+
 __setup () {
 
 echo 'Cleaning cache.'
-rm -f /var/lib/solbuild/local/*.eopkg
+__quite_remove_eopkg /var/lib/solbuild/local
 
 __recurse_build_rundeps "${1}" || exit 1
 
@@ -185,11 +189,11 @@ chown "${real_user}:${real_user}" -R .
 
 }
 
-rm -f /var/lib/solbuild/local/*.eopkg
+__quite_remove_eopkg /var/lib/solbuild/local
 
 if [ "${__delete_self}" = '1' ]; then
     for __input in "${@}"; do
-        rm ${__input}/*.eopkg
+        __quite_remove_eopkg "${__input}"
     done
 fi
 
