@@ -1,8 +1,8 @@
 name       : dtkwidget
-version    : 2.0.9
-release    : 24
+version    : 2.0.9.1
+release    : 25
 source     :
-    - git|https://github.com/linuxdeepin/dtkwidget.git : 2.0.9
+    - git|https://github.com/linuxdeepin/dtkwidget.git : 2.0.9.1
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Base development tool of all C++/Qt Developer work on Deepin.
