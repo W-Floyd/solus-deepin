@@ -1,13 +1,15 @@
 name       : deepin-anything
-version    : 0.0.1
-release    : 6
+version    : 0.0.2
+release    : 7
 source     :
-    - git|https://github.com/linuxdeepin/deepin-anything.git : 0.0.1
+    - git|https://github.com/linuxdeepin/deepin-anything.git : 0.0.2
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : Something like everything, but nothing is really like anything...
 description: |
     Something like everything, but nothing is really like anything...
+builddeps  :
+    - qt5-tools-devel
 build      : |
     %make
 install    : |
