@@ -1,6 +1,6 @@
 name       : deepin-menu
 version    : 3.3.10
-release    : 23
+release    : 24
 source     :
     - git|https://github.com/linuxdeepin/deepin-menu.git : 3.3.10
 license    : GPL-3.0
