@@ -1,8 +1,8 @@
 name       : deepin-introduction
-version    : 1.0.0
-release    : 6
+version    : 1.0.4
+release    : 7
 source     :
-    - git|https://github.com/linuxdeepin/dde-introduction.git : 1.0.0
+    - git|https://github.com/linuxdeepin/dde-introduction.git : 1.0.4
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Introduction for deepin
@@ -10,6 +10,8 @@ description: |
     Deepin initialization setup tool
 builddeps  :
     - pkgconfig(dframeworkdbus)
+    - pkgconfig(libdmr)
+    - pkgconfig(libffmpegthumbnailer)
     - pkgconfig(dtkwidget)
     - pkgconfig(Qt5Multimedia)
     - qt5-tools-devel

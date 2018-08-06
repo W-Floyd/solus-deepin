@@ -5,6 +5,7 @@ libQt5Multimedia.so.5
 libQt5Widgets.so.5
 libc.so.6
 libdframeworkdbus.so.2
+libdmr.so.0.1
 libdtkcore.so.2
 libdtkwidget.so.2
 libgcc_s.so.1
