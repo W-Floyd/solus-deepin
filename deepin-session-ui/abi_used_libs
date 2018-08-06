@@ -10,6 +10,7 @@ libX11.so.6
 libXcursor.so.1
 libXfixes.so.3
 libXi.so.6
+libXrandr.so.2
 libc.so.6
 libdframeworkdbus.so.2
 libdtkcore.so.2
@@ -22,3 +23,4 @@ libgsettings-qt.so.1
 liblightdm-qt5-3.so.0
 libstdc++.so.6
 libsystemd.so.0
+libxcb-ewmh.so.2

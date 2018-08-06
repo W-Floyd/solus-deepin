@@ -1,8 +1,8 @@
 name       : deepin-session-ui
-version    : 4.4.7
-release    : 23
+version    : 4.4.8
+release    : 24
 source     :
-    - git|https://github.com/linuxdeepin/dde-session-ui.git : 4.4.7
+    - git|https://github.com/linuxdeepin/dde-session-ui.git : 4.4.8
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin desktop-environment - Session UI module
@@ -17,7 +17,9 @@ builddeps  :
     - pkgconfig(liblightdm-qt5-3)
     - pkgconfig(Qt5Svg)
     - pkgconfig(Qt5X11Extras)
+    - pkgconfig(xcb-ewmh)
     - pkgconfig(xcursor)
+    - pkgconfig(xrandr)
     - pkgconfig(xtst)
     - qt5-tools-devel
 rundeps    :
