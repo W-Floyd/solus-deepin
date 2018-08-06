@@ -14,8 +14,7 @@ builddeps  :
     - deepin-clutter-devel
     - pkgconfig(gtk+-3.0)
 setup      : |
-    %configure --disable-static \
-               --enable-introspection
+    %configure --disable-static --enable-introspection
 build      : |
     %make
 install    : |
