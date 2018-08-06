@@ -34,6 +34,7 @@ deepin-file-manager deepin-movie
 deepin-file-manager dtkwidget
 deepin-go-dbus-factory deepin-go-lib
 deepin-image-viewer dtkwidget
+deepin-introduction deepin-movie-devel
 deepin-introduction deepin-qt-dbus-factory
 deepin-introduction dtkwidget
 deepin-launcher deepin-qt-dbus-factory

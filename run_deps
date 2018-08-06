@@ -35,6 +35,7 @@ deepin-file-manager treefrog-framework
 deepin-gettext-tools perl-config-tiny
 deepin-image-viewer deepin-qt5integration
 deepin-image-viewer dtkwidget
+deepin-introduction deepin-movie
 deepin-menu dtkwidget
 deepin-movie deepin-qt5integration
 deepin-movie dtkwidget
