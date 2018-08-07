@@ -1119,6 +1119,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-toggle-desktop.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/deepin-voice-recorder.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/evince.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/24/fcitx-kbd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/firefox-3.0.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/firefox-3.5.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/24/firefox-4.0.svg</Path>
@@ -1227,6 +1228,7 @@
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-toggle-desktop.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/deepin-voice-recorder.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/evince.svg</Path>
+            <Path fileType="data">/usr/share/icons/deepin/apps/32/fcitx-kbd.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/firefox-3.0.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/firefox-3.5.svg</Path>
             <Path fileType="data">/usr/share/icons/deepin/apps/32/firefox-4.0.svg</Path>
@@ -5827,9 +5829,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="15">
-            <Date>2018-08-06</Date>
-            <Version>15.12.58</Version>
+        <Update release="16">
+            <Date>2018-08-07</Date>
+            <Version>15.12.59</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
