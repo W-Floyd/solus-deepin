@@ -1,8 +1,8 @@
 name       : deepin-file-manager
-version    : 4.6.2
-release    : 24
+version    : 4.6.3
+release    : 25
 source     :
-    - git|https://github.com/linuxdeepin/dde-file-manager.git : 4.6.2
+    - git|https://github.com/linuxdeepin/dde-file-manager.git : 4.6.3
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    :
@@ -52,7 +52,6 @@ patterns   :
         - /usr/share/dbus-1/services/com.deepin.dde.desktop.service
         - /usr/share/dde-desktop/*
 setup      : |
-    %patch -p1 < $pkgfiles/fix-build.diff
     %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
     %make
