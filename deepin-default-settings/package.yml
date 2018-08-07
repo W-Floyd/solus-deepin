@@ -1,8 +1,8 @@
 name       : deepin-default-settings
-version    : 2018.8.2
-release    : 7
+version    : 2018.8.4
+release    : 8
 source     :
-    - git|https://github.com/linuxdeepin/default-settings.git : 2018.8.2
+    - git|https://github.com/linuxdeepin/default-settings.git : 2018.8.4
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin default settings
