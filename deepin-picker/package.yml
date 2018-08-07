@@ -1,6 +1,6 @@
 name       : deepin-picker
 version    : 1.6.3
-release    : 14
+release    : 15
 source     :
     - git|https://github.com/linuxdeepin/deepin-picker.git : 1.6.3
 license    : GPL-3.0
