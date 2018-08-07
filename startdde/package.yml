@@ -1,6 +1,6 @@
 name       : startdde
 version    : 3.1.35
-release    : 17
+release    : 18
 source     :
     - git|https://github.com/linuxdeepin/startdde.git : 3.1.35
 networking : yes
@@ -38,6 +38,8 @@ rundeps    :
     - deepin-wm-switcher
 setup      : |
     export GOPATH="${workdir}/:/usr/share/gocode"
+    mkdir -p "${workdir}/src/pkg.deepin.io/dde/"
+    ln -s "${workdir}/" "${workdir}/src/pkg.deepin.io/dde/startdde"
     go get github.com/cryptix/wav
     go get github.com/BurntSushi/xgb
     go get github.com/BurntSushi/xgbutil
