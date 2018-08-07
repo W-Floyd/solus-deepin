@@ -1,8 +1,8 @@
 name       : deepin-qt5dxcb-plugin
-version    : 1.1.10
-release    : 17
+version    : 1.1.11
+release    : 18
 source     :
-    - git|https://github.com/linuxdeepin/qt5dxcb-plugin.git : 1.1.10
+    - git|https://github.com/linuxdeepin/qt5dxcb-plugin.git : 1.1.11
 license    : GPL-3.0
 component  : desktop.qt
 summary    : Qt platform plugins for DDE
