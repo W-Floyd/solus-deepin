@@ -161,13 +161,15 @@
             <Path fileType="data">/usr/share/icons/hicolor/96x96/actions/media-autorun-open-folder.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/media-autorun-nop.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/media-autorun-open-folder.svg</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.api.device.unblock-bluetooth-devices.policy</Path>
             <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.api.locale-helper.policy</Path>
+            <Path fileType="data">/var/lib/polkit-1/localauthority/10-vendor.d/com.deepin.api.device.pkla</Path>
         </Files>
     </Package>
     <History>
-        <Update release="22">
-            <Date>2018-08-06</Date>
-            <Version>3.1.27</Version>
+        <Update release="23">
+            <Date>2018-08-07</Date>
+            <Version>3.1.28</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
