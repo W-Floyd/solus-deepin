@@ -27,6 +27,7 @@ deepin-desktop deepin-wallpapers
 deepin-desktop dtkwidget
 deepin-dock deepin-network-utils
 deepin-file-manager avfs
+deepin-file-manager deepin-anything
 deepin-file-manager deepin-movie
 deepin-file-manager deepin-qt5integration
 deepin-file-manager dtkcore
