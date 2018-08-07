@@ -1,5 +1,10 @@
 ### Updates
 
+*2018-08-07.1* - Plenty of updates, more testing being done, things seem to be building okay again for now.
+Will probably have less time for this soon, going to University middle of this month.
+
+***
+
 *2018-07-23.2* - Everything finally build correctly!
 Will try installing on bare metal again after... well over a month.
 
