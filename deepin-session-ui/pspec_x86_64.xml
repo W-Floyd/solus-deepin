@@ -107,9 +107,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="25">
+        <Update release="26">
             <Date>2018-08-07</Date>
-            <Version>4.4.8</Version>
+            <Version>4.4.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
