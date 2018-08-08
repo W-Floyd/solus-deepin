@@ -4921,6 +4921,7 @@ libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice6mDRaidEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice6ptTypeEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice7idLabelEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice7idUsageEv
+libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice7isValidEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice8hintAutoEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice8hintNameEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager14DFMBlockDevice8readOnlyEv
