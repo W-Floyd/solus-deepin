@@ -1,5 +1,10 @@
 ### Updates
 
+*2018-08-03.1* - More updates, more testing being done, same as usual.
+Preparing to head off to University, so time for this isn't guaranteed (like it ever was...)
+
+***
+
 *2018-08-07.1* - Plenty of updates, more testing being done, things seem to be building okay again for now.
 Will probably have less time for this soon, going to University middle of this month.
 
