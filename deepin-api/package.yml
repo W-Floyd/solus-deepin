@@ -1,8 +1,8 @@
 name       : deepin-api
-version    : 3.1.28
-release    : 23
+version    : 3.1.29
+release    : 24
 source     :
-    - git|https://github.com/linuxdeepin/dde-api.git : 3.1.28
+    - git|https://github.com/linuxdeepin/dde-api.git : 3.1.29
 extract    : no
 networking : yes
 license    : GPL-3.0
