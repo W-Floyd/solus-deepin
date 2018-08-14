@@ -1,6 +1,6 @@
 name       : deepin-daemon
 version    : 3.2.24
-release    : 21
+release    : 22
 source     :
     - git|https://github.com/linuxdeepin/dde-daemon.git : 3.2.24
 networking : yes
