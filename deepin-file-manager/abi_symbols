@@ -177,6 +177,12 @@ libdde-file-manager.so.1:_ZN11DDragWidgetC2EP7QObject
 libdde-file-manager.so.1:_ZN11DDragWidgetD0Ev
 libdde-file-manager.so.1:_ZN11DDragWidgetD1Ev
 libdde-file-manager.so.1:_ZN11DDragWidgetD2Ev
+libdde-file-manager.so.1:_ZN11DFMSplitter11qt_metacallEN11QMetaObject4CallEiPPv
+libdde-file-manager.so.1:_ZN11DFMSplitter11qt_metacastEPKc
+libdde-file-manager.so.1:_ZN11DFMSplitter12createHandleEv
+libdde-file-manager.so.1:_ZN11DFMSplitter12moveSplitterEii
+libdde-file-manager.so.1:_ZN11DFMSplitterC1EN2Qt11OrientationEP7QWidget
+libdde-file-manager.so.1:_ZN11DFMSplitterC2EN2Qt11OrientationEP7QWidget
 libdde-file-manager.so.1:_ZN11DFileDialog10closeEventEP11QCloseEvent
 libdde-file-manager.so.1:_ZN11DFileDialog10selectFileERK7QString
 libdde-file-manager.so.1:_ZN11DFileDialog10setOptionsE6QFlagsIN11QFileDialog6OptionEE
@@ -199,6 +205,7 @@ libdde-file-manager.so.1:_ZN11DFileDialog15setHideOnAcceptEb
 libdde-file-manager.so.1:_ZN11DFileDialog16selectNameFilterERK7QString
 libdde-file-manager.so.1:_ZN11DFileDialog17currentUrlChangedEv
 libdde-file-manager.so.1:_ZN11DFileDialog18endAddCustomWidgetEv
+libdde-file-manager.so.1:_ZN11DFileDialog18handleEnterPressedEv
 libdde-file-manager.so.1:_ZN11DFileDialog19addDisableUrlSchemeERK7QString
 libdde-file-manager.so.1:_ZN11DFileDialog19setCurrentInputNameERK7QString
 libdde-file-manager.so.1:_ZN11DFileDialog20beginAddCustomWidgetEv
@@ -1111,6 +1118,7 @@ libdde-file-manager.so.1:_ZN14TabCloseButton7hoveredEi
 libdde-file-manager.so.1:_ZN14TabCloseButton9unHoveredEi
 libdde-file-manager.so.1:_ZN14TabCloseButtonC1EP13QGraphicsItem
 libdde-file-manager.so.1:_ZN14TabCloseButtonC2EP13QGraphicsItem
+libdde-file-manager.so.1:_ZN15BookMarkManager10checkExistERK4DUrl
 libdde-file-manager.so.1:_ZN15BookMarkManager11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN15BookMarkManager11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN15BookMarkManager12onFileEditedERK7QStringS2_RK8QVariant
@@ -1178,10 +1186,6 @@ libdde-file-manager.so.1:_ZN15DMoveableWidgetC2EP7QWidget
 libdde-file-manager.so.1:_ZN15DMoveableWidgetD0Ev
 libdde-file-manager.so.1:_ZN15DMoveableWidgetD1Ev
 libdde-file-manager.so.1:_ZN15DMoveableWidgetD2Ev
-libdde-file-manager.so.1:_ZN15DSplitterHandle15mousePressEventEP11QMouseEvent
-libdde-file-manager.so.1:_ZN15DSplitterHandle17mouseReleaseEventEP11QMouseEvent
-libdde-file-manager.so.1:_ZN15DSplitterHandleC1EN2Qt11OrientationEP9QSplitter
-libdde-file-manager.so.1:_ZN15DSplitterHandleC2EN2Qt11OrientationEP9QSplitter
 libdde-file-manager.so.1:_ZN15DesktopFileInfo18getDesktopFileInfoERK4DUrl
 libdde-file-manager.so.1:_ZN15DesktopFileInfo19trashDesktopFileUrlEv
 libdde-file-manager.so.1:_ZN15DesktopFileInfo22computerDesktopFileUrlEv
@@ -1211,6 +1215,7 @@ libdde-file-manager.so.1:_ZN15GvfsMountClient11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN15GvfsMountClient12new_mount_opEv
 libdde-file-manager.so.1:_ZN15GvfsMountClient13mount_done_cbEP8_GObjectP13_GAsyncResultPv
 libdde-file-manager.so.1:_ZN15GvfsMountClient15ask_password_cbEP16_GMountOperationPKcS3_S3_17GAskPasswordFlags
+libdde-file-manager.so.1:_ZN15GvfsMountClient15ask_question_cbEP16_GMountOperationPKcPPc
 libdde-file-manager.so.1:_ZN15GvfsMountClient5mountEP6_GFile
 libdde-file-manager.so.1:_ZN15GvfsMountClientC1EP7QObject
 libdde-file-manager.so.1:_ZN15GvfsMountClientC2EP7QObject
@@ -2517,6 +2522,12 @@ libdde-file-manager.so.1:_ZN17DAbstractFileInfoD2Ev
 libdde-file-manager.so.1:_ZN17DFMFileShareEvnet8fromJsonERK11QJsonObject
 libdde-file-manager.so.1:_ZN17DFMFileShareEvnetC1EPK7QObjectRK4DUrlRK7QStringbb
 libdde-file-manager.so.1:_ZN17DFMFileShareEvnetC2EPK7QObjectRK4DUrlRK7QStringbb
+libdde-file-manager.so.1:_ZN17DFMSplitterHandle10enterEventEP6QEvent
+libdde-file-manager.so.1:_ZN17DFMSplitterHandle10leaveEventEP6QEvent
+libdde-file-manager.so.1:_ZN17DFMSplitterHandle11qt_metacallEN11QMetaObject4CallEiPPv
+libdde-file-manager.so.1:_ZN17DFMSplitterHandle11qt_metacastEPKc
+libdde-file-manager.so.1:_ZN17DFMSplitterHandleC1EN2Qt11OrientationEP9QSplitter
+libdde-file-manager.so.1:_ZN17DFMSplitterHandleC2EN2Qt11OrientationEP9QSplitter
 libdde-file-manager.so.1:_ZN17DFMTouchFileEvent8fromJsonERK11QJsonObject
 libdde-file-manager.so.1:_ZN17DFMTouchFileEventC1EPK7QObjectRK4DUrl
 libdde-file-manager.so.1:_ZN17DFMTouchFileEventC2EPK7QObjectRK4DUrl
@@ -3854,6 +3865,7 @@ libdde-file-manager.so.1:_ZN8DTagEdit11processTagsEv
 libdde-file-manager.so.1:_ZN8DTagEdit11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN8DTagEdit11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN8DTagEdit13keyPressEventEP9QKeyEvent
+libdde-file-manager.so.1:_ZN8DTagEdit14mouseMoveEventEP11QMouseEvent
 libdde-file-manager.so.1:_ZN8DTagEdit16initializeLayoutEv
 libdde-file-manager.so.1:_ZN8DTagEdit16setDefaultCrumbsERK11QStringList
 libdde-file-manager.so.1:_ZN8DTagEdit17initializeConnectEv
@@ -4230,6 +4242,7 @@ libdde-file-manager.so.1:_ZNK10TagManager21getColorByDisplayNameERK7QString
 libdde-file-manager.so.1:_ZNK10TagManager22getTagNameThroughColorERK6QColor
 libdde-file-manager.so.1:_ZNK11DDetailView10metaObjectEv
 libdde-file-manager.so.1:_ZNK11DDragWidget10metaObjectEv
+libdde-file-manager.so.1:_ZNK11DFMSplitter10metaObjectEv
 libdde-file-manager.so.1:_ZNK11DFileDialog10acceptModeEv
 libdde-file-manager.so.1:_ZNK11DFileDialog10metaObjectEv
 libdde-file-manager.so.1:_ZNK11DFileDialog10testOptionEN11QFileDialog6OptionE
@@ -5189,6 +5202,7 @@ libdde-file-manager.so.1:_ZNK17DAbstractFileInfo9parentUrlEv
 libdde-file-manager.so.1:_ZNK17DFMFileShareEvnet10allowGuestEv
 libdde-file-manager.so.1:_ZNK17DFMFileShareEvnet10isWritableEv
 libdde-file-manager.so.1:_ZNK17DFMFileShareEvnet4nameEv
+libdde-file-manager.so.1:_ZNK17DFMSplitterHandle10metaObjectEv
 libdde-file-manager.so.1:_ZNK17DFileDialogHandle10acceptModeEv
 libdde-file-manager.so.1:_ZNK17DFileDialogHandle10metaObjectEv
 libdde-file-manager.so.1:_ZNK17DFileDialogHandle10testOptionEN11QFileDialog6OptionE
