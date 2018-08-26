@@ -1,6 +1,6 @@
 name       : deepin-editor
 version    : 0.0.5
-release    : 7
+release    : 8
 source     :
     - git|https://github.com/linuxdeepin/deepin-editor.git : 0.0.5
 license    : GPL-3.0

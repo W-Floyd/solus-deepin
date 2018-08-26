@@ -1,6 +1,6 @@
 name       : proxychains-ng
 version    : 4.13
-release    : 10
+release    : 11
 source     :
     - git|https://github.com/rofl0r/proxychains-ng.git : v4.13
 license    : GPL-2.0

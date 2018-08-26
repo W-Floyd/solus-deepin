@@ -32,7 +32,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="15">deepin-polkit-agent</Dependency>
+            <Dependency release="16">deepin-polkit-agent</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dpa/agent-extension-proxy.h</Path>
@@ -40,8 +40,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="15">
-            <Date>2018-08-07</Date>
+        <Update release="16">
+            <Date>2018-08-25</Date>
             <Version>0.2.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

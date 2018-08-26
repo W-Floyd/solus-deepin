@@ -1,6 +1,6 @@
 name       : gsettings-qt
 version    : 0.1.20170824
-release    : 10
+release    : 11
 source     :
     - https://launchpad.net/ubuntu/+archive/primary/+files/gsettings-qt_0.1+17.10.20170824.orig.tar.gz : f2fb6243adb3d41ad7ec50ed32c89bcbc0b8227e0af53b62765faed78ad0f0b8
 license    : LGPL

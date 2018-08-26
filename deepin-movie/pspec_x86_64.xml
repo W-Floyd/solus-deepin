@@ -207,7 +207,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="15">deepin-movie</Dependency>
+            <Dependency release="16">deepin-movie</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdmr/compositing_manager.h</Path>
@@ -224,8 +224,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="15">
-            <Date>2018-08-07</Date>
+        <Update release="16">
+            <Date>2018-08-25</Date>
             <Version>3.2.5</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

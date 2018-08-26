@@ -1,6 +1,6 @@
 name       : deepin-introduction
 version    : 1.0.6
-release    : 10
+release    : 11
 source     :
     - git|https://github.com/linuxdeepin/dde-introduction.git : 1.0.6
 license    : GPL-3.0

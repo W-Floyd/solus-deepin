@@ -1,6 +1,6 @@
 name       : deepin-terminal
 version    : 3.0.3
-release    : 17
+release    : 18
 source     :
     - git|https://github.com/linuxdeepin/deepin-terminal.git : 3.0.3
 license    : GPL-3.0

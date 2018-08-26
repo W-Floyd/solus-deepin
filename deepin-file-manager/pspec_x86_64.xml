@@ -175,7 +175,7 @@
         <Summary xml:lang="en">Deepin Desktop</Summary>
         <Description xml:lang="en">Deepin Desktop</Description>
         <RuntimeDependencies>
-            <Dependency release="28">deepin-file-manager</Dependency>
+            <Dependency release="29">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/dde-desktop</Path>
@@ -223,7 +223,7 @@
         <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.</Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="28">deepin-file-manager</Dependency>
+            <Dependency release="29">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-file-manager/dabstractfilecontroller.h</Path>
@@ -305,8 +305,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="28">
-            <Date>2018-08-13</Date>
+        <Update release="29">
+            <Date>2018-08-25</Date>
             <Version>4.6.5</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

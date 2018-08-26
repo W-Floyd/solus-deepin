@@ -1,6 +1,6 @@
 name       : deepin-gtk-theme
 version    : 17.10.8
-release    : 12
+release    : 13
 source     :
     - git|https://github.com/linuxdeepin/deepin-gtk-theme.git : 17.10.8
 license    : GPL-3.0
