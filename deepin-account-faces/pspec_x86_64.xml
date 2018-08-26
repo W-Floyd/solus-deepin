@@ -55,8 +55,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2018-08-24</Date>
+        <Update release="12">
+            <Date>2018-08-26</Date>
             <Version>1.0.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

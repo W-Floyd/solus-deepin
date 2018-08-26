@@ -1,6 +1,6 @@
 name       : deepin-network-utils
 version    : 0.0.4
-release    : 3
+release    : 4
 source     :
     - git|https://github.com/linuxdeepin/dde-network-utils.git : 0.0.4
 license    : GPL-3.0

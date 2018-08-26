@@ -1,6 +1,6 @@
 name       : deepin-metacity
 version    : 3.22.20
-release    : 12
+release    : 13
 source     :
     - git|https://github.com/linuxdeepin/deepin-metacity.git : 3.22.20
 license    : GPL-2.0

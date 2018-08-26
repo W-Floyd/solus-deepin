@@ -1,6 +1,6 @@
 name       : deepin-screen-recorder
 version    : 2.7.5
-release    : 14
+release    : 15
 source     :
     - git|https://github.com/linuxdeepin/deepin-screen-recorder.git : 2.7.5
 license    : GPL-3.0

@@ -48,7 +48,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="9">deepin-anything</Dependency>
+            <Dependency release="10">deepin-anything</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/deepin-anything-server/dasdefine.h</Path>
@@ -72,8 +72,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="9">
-            <Date>2018-08-24</Date>
+        <Update release="10">
+            <Date>2018-08-26</Date>
             <Version>0.0.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

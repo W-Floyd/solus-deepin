@@ -1,6 +1,6 @@
 name       : geoip
 version    : 1.6.12
-release    : 11
+release    : 12
 source     :
     - https://github.com/maxmind/geoip-api-c/archive/v1.6.12.tar.gz : 99b119f8e21e94f1dfd6d49fbeed29a70df1544896e76cd456f25e397b07d476
 license    : GPL-2.1

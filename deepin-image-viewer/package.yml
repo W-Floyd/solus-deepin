@@ -1,6 +1,6 @@
 name       : deepin-image-viewer
 version    : 1.2.23
-release    : 17
+release    : 18
 source     :
     - git|https://github.com/linuxdeepin/deepin-image-viewer.git : 1.2.23
 license    : GPL-3.0
