@@ -97,7 +97,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="28">deepin-dock</Dependency>
+            <Dependency release="29">deepin-dock</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-dock/constants.h</Path>
@@ -106,9 +106,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="28">
-            <Date>2018-08-26</Date>
-            <Version>4.7.2</Version>
+        <Update release="29">
+            <Date>2018-09-02</Date>
+            <Version>4.7.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
