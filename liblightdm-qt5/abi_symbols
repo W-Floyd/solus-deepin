@@ -99,6 +99,7 @@ liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter18defaultSessionHintEv
 liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter19hasGuestAccountHintEv
 liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter19showManualLoginHintEv
 liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter19showRemoteLoginHintEv
+liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter20autologinSessionHintEv
 liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter20autologinTimeoutHintEv
 liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter4motdEv
 liblightdm-qt5-3.so.0:_ZNK8QLightDM7Greeter4osIdEv

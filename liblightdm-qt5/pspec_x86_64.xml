@@ -1,11 +1,13 @@
 <PISI>
     <Source>
         <Name>liblightdm-qt5</Name>
+        <Homepage>https://github.com/CanonicalLtd/lightdm</Homepage>
         <Packager>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>LGPL-3.0</License>
+        <License>LGPL-3.0-or-later</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.lightdm</PartOf>
         <Summary xml:lang="en">LightDM Qt client library.</Summary>
         <Description xml:lang="en">LightDM Qt client library.
@@ -22,6 +24,10 @@
             <Path fileType="library">/usr/lib64/liblightdm-qt5-3.so.0</Path>
             <Path fileType="library">/usr/lib64/liblightdm-qt5-3.so.0.0.0</Path>
         </Files>
+        <Conflicts>
+            <Package>gdm</Package>
+            <Package>sddm</Package>
+        </Conflicts>
     </Package>
     <Package>
         <Name>liblightdm-qt5-devel</Name>
@@ -30,7 +36,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="11">liblightdm-qt5</Dependency>
+            <Dependency release="25">liblightdm-qt5</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/lightdm-qt5-3/QLightDM/Greeter</Path>
@@ -46,9 +52,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2018-08-26</Date>
-            <Version>1.24.0</Version>
+        <Update release="25">
+            <Date>2018-09-03</Date>
+            <Version>1.26.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
