@@ -1,6 +1,6 @@
 name       : deepin-mutter
 version    : 3.20.34
-release    : 18
+release    : 19
 source     :
     - git|https://github.com/linuxdeepin/deepin-mutter.git : 3.20.34
 license    : GPL-3.0
