@@ -1,11 +1,12 @@
 name       : avfs
 version    : 1.0.6
-release    : 12
+release    : 13
 source     :
     - https://sourceforge.net/projects/avf/files/avfs/1.0.6/avfs-1.0.6.tar.bz2/download : 4c1a3a776a01ce7a5b74d66c955269162304edd8c18489fb2186ef728f4be3c3
 license    : GPL-2.0
 component  : system.utils
-summary    : AVFS enables all programs to access archived, compressed, or remote files transparently.
+summary    : AVFS enables all programs to access archived, compressed, or remote files
+    transparently.
 description: |
     AVFS is a system which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
 rundeps    :
