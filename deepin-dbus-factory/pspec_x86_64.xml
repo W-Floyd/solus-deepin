@@ -296,8 +296,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="25">
-            <Date>2018-09-02</Date>
+        <Update release="26">
+            <Date>2018-10-06</Date>
             <Version>3.1.17</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
