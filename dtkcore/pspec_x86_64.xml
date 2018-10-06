@@ -22,6 +22,7 @@
             <Path fileType="library">/usr/lib/dtk2/dtk-license.py</Path>
             <Path fileType="library">/usr/lib/dtk2/dtk-settings</Path>
             <Path fileType="library">/usr/lib/dtk2/dtk-translate.py</Path>
+            <Path fileType="library">/usr/lib64/libdtk-2.0.9/DCore/bin/deepin-os-release</Path>
             <Path fileType="library">/usr/lib64/libdtkcore.so.2</Path>
             <Path fileType="library">/usr/lib64/libdtkcore.so.2.0</Path>
             <Path fileType="library">/usr/lib64/libdtkcore.so.2.0.9</Path>
@@ -29,6 +30,7 @@
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_cmake.prf</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_lib.prf</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_module.prf</Path>
+            <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_qmake.prf</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/features/dtk_translation.prf</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/modules/qt_lib_dtkcore.pri</Path>
         </Files>
@@ -40,7 +42,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="19">dtkcore</Dependency>
+            <Dependency release="20">dtkcore</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/AbstractAppender.h</Path>
@@ -62,6 +64,7 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/DSettingsOption</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/DSingleton</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/DStandardPaths</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/DSysInfo</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/DUtil</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/DtkCore</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/FileAppender.h</Path>
@@ -86,6 +89,7 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/dsettingsoption.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/dsingleton.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/dstandardpaths.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/dsysinfo.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/dtimeunitformatter.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/dtkcore_config.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/dtkcore_global.h</Path>
@@ -93,15 +97,16 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/gsettingsbackend.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore/qsettingbackend.h</Path>
             <Path fileType="library">/usr/lib64/cmake/Dtk/DtkConfig.cmake</Path>
+            <Path fileType="library">/usr/lib64/cmake/DtkCMake/DtkCMakeConfig.cmake</Path>
             <Path fileType="library">/usr/lib64/cmake/DtkCore/DtkCoreConfig.cmake</Path>
             <Path fileType="library">/usr/lib64/libdtkcore.so</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/dtkcore.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="19">
-            <Date>2018-08-26</Date>
-            <Version>2.0.9</Version>
+        <Update release="20">
+            <Date>2018-10-06</Date>
+            <Version>2.0.9.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
