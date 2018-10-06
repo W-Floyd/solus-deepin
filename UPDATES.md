@@ -1,5 +1,10 @@
 ### Updates
 
+*2018-10-06.1* - University is super busy, I am really not able to put much time into this, which is fine - I knew that'd happen.
+Happened to have a free Friday night that I wanted to space out, so some upgrades are being pushed through.
+
+***
+
 *2018-08-03.1* - More updates, more testing being done, same as usual.
 Preparing to head off to University, so time for this isn't guaranteed (like it ever was...)
 
