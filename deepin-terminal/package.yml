@@ -1,8 +1,8 @@
 name       : deepin-terminal
-version    : 3.0.3
-release    : 19
+version    : 3.0.6
+release    : 20
 source     :
-    - git|https://github.com/linuxdeepin/deepin-terminal.git : 3.0.3
+    - git|https://github.com/linuxdeepin/deepin-terminal.git : 3.0.6
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : This is default terminal emulation application for Deepin.
