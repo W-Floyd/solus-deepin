@@ -1,6 +1,6 @@
 name       : deepin-sound-theme
 version    : 15.10.3
-release    : 12
+release    : 13
 source     :
     - git|https://github.com/linuxdeepin/deepin-sound-theme.git : 15.10.3
 license    : GPL-3.0
