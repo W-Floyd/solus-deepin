@@ -1339,8 +1339,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2018-08-26</Date>
+        <Update release="15">
+            <Date>2018-10-06</Date>
             <Version>17.10.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
