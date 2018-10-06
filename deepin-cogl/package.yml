@@ -1,6 +1,6 @@
 name       : deepin-cogl
 version    : 1.22.5
-release    : 12
+release    : 13
 source     :
     - git|https://github.com/linuxdeepin/deepin-cogl.git : 1.22.5
 license    : GPL-2.0
@@ -16,6 +16,7 @@ builddeps  :
     - pkgconfig(gdk-pixbuf-2.0)
     - pkgconfig(gl)
     - pkgconfig(pangocairo)
+    - pkgconfig(wayland-client)
     - pkgconfig(x11)
     - pkgconfig(xcomposite)
     - pkgconfig(xdamage)
@@ -23,6 +24,7 @@ builddeps  :
     - pkgconfig(xfixes)
     - pkgconfig(xrandr)
 setup      : |
+    %apply_patches
     %autogen --disable-static \
              --enable-glib \
              --enable-cogl-pango \
