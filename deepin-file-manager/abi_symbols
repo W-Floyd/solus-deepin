@@ -17,11 +17,14 @@ libdde-file-manager.so.1:_Z15getMimeTypeName7QString
 libdde-file-manager.so.1:_Z15svgToHDPIPixmapRK7QString
 libdde-file-manager.so.1:_Z15svgToHDPIPixmapRK7QStringii
 libdde-file-manager.so.1:_Z16deleteFilePrefix7QString
+libdde-file-manager.so.1:_Z16getDialogManagerb
+libdde-file-manager.so.1:_Z16getUDiskListenerb
 libdde-file-manager.so.1:_Z16isDesktopAppFile7QString
 libdde-file-manager.so.1:_Z16qt_strip_filtersRK11QStringList
 libdde-file-manager.so.1:_Z17getThumbnailsPathv
 libdde-file-manager.so.1:_Z17isInDesktopFolder7QString
 libdde-file-manager.so.1:_Z18isRequestThumbnail7QString
+libdde-file-manager.so.1:_Z19getGvfsMountManagerb
 libdde-file-manager.so.1:_Z19getMimeTypeIconName7QString
 libdde-file-manager.so.1:_Z19qInitResources_datav
 libdde-file-manager.so.1:_Z19qInitResources_skinv
@@ -1110,7 +1113,6 @@ libdde-file-manager.so.1:_ZN15DFMUrlBaseEventC1EPK7QObjectRK4DUrl
 libdde-file-manager.so.1:_ZN15DFMUrlBaseEventC2EN8DFMEvent4TypeEPK7QObjectRK4DUrl
 libdde-file-manager.so.1:_ZN15DFMUrlBaseEventC2EPK7QObjectRK4DUrl
 libdde-file-manager.so.1:_ZN15DFileViewHelper10handleMenuEP5QMenu
-libdde-file-manager.so.1:_ZN15DFileViewHelper11mount_addedERK9QDiskInfo
 libdde-file-manager.so.1:_ZN15DFileViewHelper11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN15DFileViewHelper11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN15DFileViewHelper11triggerEditERK11QModelIndex
@@ -1670,6 +1672,8 @@ libdde-file-manager.so.1:_ZN16dde_file_manager12DFileHandlerD1Ev
 libdde-file-manager.so.1:_ZN16dde_file_manager12DFileHandlerD2Ev
 libdde-file-manager.so.1:_ZN16dde_file_manager12DStorageInfo12inSameDeviceE7QStringS1_6QFlagsINS0_8PathHintEE
 libdde-file-manager.so.1:_ZN16dde_file_manager12DStorageInfo12inSameDeviceERK4DUrlS3_6QFlagsINS0_8PathHintEE
+libdde-file-manager.so.1:_ZN16dde_file_manager12DStorageInfo13isLocalDeviceERK7QString
+libdde-file-manager.so.1:_ZN16dde_file_manager12DStorageInfo16isLowSpeedDeviceERK7QString
 libdde-file-manager.so.1:_ZN16dde_file_manager12DStorageInfo7refreshEv
 libdde-file-manager.so.1:_ZN16dde_file_manager12DStorageInfo7setPathERK7QString6QFlagsINS0_8PathHintEE
 libdde-file-manager.so.1:_ZN16dde_file_manager12DStorageInfoC1ERK4QDir6QFlagsINS0_8PathHintEE
@@ -2463,6 +2467,8 @@ libdde-file-manager.so.1:_ZN16dde_file_manager28DCompleterStyledItemDelegateC1EP
 libdde-file-manager.so.1:_ZN16dde_file_manager28DCompleterStyledItemDelegateC2EP7QObject
 libdde-file-manager.so.1:_ZN16dde_file_manager7UDisks213objectManagerEv
 libdde-file-manager.so.1:_ZN16dde_file_manager7UDisks218interfaceIsExistesERK7QStringS3_
+libdde-file-manager.so.1:_ZN16dde_file_manager7UDisks220supportedFilesystemsEv
+libdde-file-manager.so.1:_ZN16dde_file_manager7UDisks27versionEv
 libdde-file-manager.so.1:_ZN16dde_file_manager7fileJobEv
 libdde-file-manager.so.1:_ZN16dde_file_manager9CrumbData22setIconFromThemeConfigE7QStringS1_
 libdde-file-manager.so.1:_ZN16dde_file_manager9CrumbDataC1E4DUrl7QStringS2_S2_
@@ -2581,17 +2587,14 @@ libdde-file-manager.so.1:_ZN17FileSignalManager16requestRenameTagERK4DUrl
 libdde-file-manager.so.1:_ZN17FileSignalManager17currentUrlChangedERK15DFMUrlBaseEvent
 libdde-file-manager.so.1:_ZN17FileSignalManager17requestSelectFileERK19DFMUrlListBaseEvent
 libdde-file-manager.so.1:_ZN17FileSignalManager17trashStateChangedEv
-libdde-file-manager.so.1:_ZN17FileSignalManager18requestBookmarkAddERK7QStringRK15DFMUrlBaseEvent
 libdde-file-manager.so.1:_ZN17FileSignalManager18requestSearchCtrlFEy
 libdde-file-manager.so.1:_ZN17FileSignalManager18requestSearchCtrlLEy
 libdde-file-manager.so.1:_ZN17FileSignalManager19requestActiveWindowEv
-libdde-file-manager.so.1:_ZN17FileSignalManager19requestBookmarkMoveEiiRK8DFMEvent
 libdde-file-manager.so.1:_ZN17FileSignalManager19showDiskErrorDialogERK7QStringS2_
 libdde-file-manager.so.1:_ZN17FileSignalManager20conflictDialogShowedERK4QMapI7QStringS1_E
 libdde-file-manager.so.1:_ZN17FileSignalManager20requestFetchNetworksERK15DFMUrlBaseEvent
 libdde-file-manager.so.1:_ZN17FileSignalManager20requestFreshFileViewEy
 libdde-file-manager.so.1:_ZN17FileSignalManager20requestViewSelectAllEi
-libdde-file-manager.so.1:_ZN17FileSignalManager21requestBookmarkRemoveERK15DFMUrlBaseEvent
 libdde-file-manager.so.1:_ZN17FileSignalManager21requestBookmarkRenameERK8DFMEvent
 libdde-file-manager.so.1:_ZN17FileSignalManager21requestCacheSortStateEv
 libdde-file-manager.so.1:_ZN17FileSignalManager21requsetCacheLoginDataERK11QJsonObject
@@ -2920,6 +2923,7 @@ libdde-file-manager.so.1:_ZN19TrashPropertyDialogD2Ev
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher10fileClosedERK4DUrl
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher11fileDeletedERK4DUrl
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher11ghostSignalERK4DUrlMS_FvS2_ES2_
+libdde-file-manager.so.1:_ZN20DAbstractFileWatcher11ghostSignalERK4DUrlMS_FvS2_RKiES2_i
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher11ghostSignalERK4DUrlMS_FvS2_S2_ES2_S2_
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher11qt_metacastEPKc
@@ -2928,7 +2932,7 @@ libdde-file-manager.so.1:_ZN20DAbstractFileWatcher12fileModifiedERK4DUrl
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher12startWatcherEv
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher14restartWatcherEv
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher14subfileCreatedERK4DUrl
-libdde-file-manager.so.1:_ZN20DAbstractFileWatcher20fileAttributeChangedERK4DUrl
+libdde-file-manager.so.1:_ZN20DAbstractFileWatcher20fileAttributeChangedERK4DUrlRKi
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher24setEnabledSubfileWatcherERK4DUrlb
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcher9fileMovedERK4DUrlS2_
 libdde-file-manager.so.1:_ZN20DAbstractFileWatcherC1ER27DAbstractFileWatcherPrivateRK4DUrlP7QObject
@@ -3136,6 +3140,7 @@ libdde-file-manager.so.1:_ZN23DFileSystemModelPrivate15_q_onFileRenameERK4DUrlS2
 libdde-file-manager.so.1:_ZN23DFileSystemModelPrivate16_q_onFileCreatedERK4DUrl
 libdde-file-manager.so.1:_ZN23DFileSystemModelPrivate16_q_onFileDeletedERK4DUrl
 libdde-file-manager.so.1:_ZN23DFileSystemModelPrivate16_q_onFileUpdatedERK4DUrl
+libdde-file-manager.so.1:_ZN23DFileSystemModelPrivate16_q_onFileUpdatedERK4DUrlRKi
 libdde-file-manager.so.1:_ZN23DFileSystemModelPrivate19_q_processFileEventEv
 libdde-file-manager.so.1:_ZN23DFileSystemModelPrivateD1Ev
 libdde-file-manager.so.1:_ZN23DFileSystemModelPrivateD2Ev
@@ -3287,6 +3292,7 @@ libdde-file-manager.so.1:_ZN26TagManagerDaemonController8instanceEv
 libdde-file-manager.so.1:_ZN26TagManagerDaemonControllerC1EP7QObject
 libdde-file-manager.so.1:_ZN26TagManagerDaemonControllerC2EP7QObject
 libdde-file-manager.so.1:_ZN27DAbstractFileWatcherPrivate17handleGhostSignalERK4DUrlM20DAbstractFileWatcherFvS2_ES2_
+libdde-file-manager.so.1:_ZN27DAbstractFileWatcherPrivate17handleGhostSignalERK4DUrlM20DAbstractFileWatcherFvS2_RKiES2_i
 libdde-file-manager.so.1:_ZN27DAbstractFileWatcherPrivate17handleGhostSignalERK4DUrlM20DAbstractFileWatcherFvS2_S2_ES2_S2_
 libdde-file-manager.so.1:_ZN27DAbstractFileWatcherPrivateC1EP20DAbstractFileWatcher
 libdde-file-manager.so.1:_ZN27DAbstractFileWatcherPrivateC2EP20DAbstractFileWatcher
@@ -3894,7 +3900,6 @@ libdde-file-manager.so.1:_ZN9DFMGlobal15applicationNameEv
 libdde-file-manager.so.1:_ZN9DFMGlobal15initFileServiceEv
 libdde-file-manager.so.1:_ZN9DFMGlobal16keyCtrlIsPressedEv
 libdde-file-manager.so.1:_ZN9DFMGlobal16organizationNameEv
-libdde-file-manager.so.1:_ZN9DFMGlobal17autoMountAllDisksEv
 libdde-file-manager.so.1:_ZN9DFMGlobal17initAppcontrollerEv
 libdde-file-manager.so.1:_ZN9DFMGlobal17initDialogManagerEv
 libdde-file-manager.so.1:_ZN9DFMGlobal17initPluginManagerEv
@@ -4815,8 +4820,10 @@ libdde-file-manager.so.1:_ZNK16dde_file_manager12DFMCrumbItem3urlEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DFileHandler11errorStringEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo10bytesTotalEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo10isReadOnlyEv
+libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo13isLocalDeviceEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo14bytesAvailableEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo14fileSystemTypeEv
+libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo16isLowSpeedDeviceEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo6deviceEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo7isValidEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager12DStorageInfo8rootPathEv
@@ -5531,6 +5538,7 @@ libdde-file-manager.so.1:_ZNK9DFileInfo14canIteratorDirEv
 libdde-file-manager.so.1:_ZNK9DFileInfo14createIODeviceEv
 libdde-file-manager.so.1:_ZNK9DFileInfo14fileSharedNameEv
 libdde-file-manager.so.1:_ZNK9DFileInfo15fileDisplayNameEv
+libdde-file-manager.so.1:_ZNK9DFileInfo15sizeDisplayNameEv
 libdde-file-manager.so.1:_ZNK9DFileInfo16absoluteFilePathEv
 libdde-file-manager.so.1:_ZNK9DFileInfo16isWritableSharedEv
 libdde-file-manager.so.1:_ZNK9DFileInfo17symlinkTargetPathEv
