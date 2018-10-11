@@ -4671,6 +4671,7 @@ libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo7getTypeEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo8canEjectEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo8fileIconEii
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo8fileIconEv
+libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo8fileNameEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo9canRenameEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo9parentUrlEv
 libdde-file-manager.so.1:_ZNK16ComputerViewItem10deviceInfoEv
