@@ -1,11 +1,17 @@
 ### Updates
 
+*2018-11-13.1* - University is still super busy, but Christmas break should see some more work on this.
+I have a desktop now, so compiling isn't too much of a pain, I can just leave it going when I'm away.
+Still have the backlog of upgrades to clear out though.
+
+***
+
 *2018-10-06.1* - University is super busy, I am really not able to put much time into this, which is fine - I knew that'd happen.
 Happened to have a free Friday night that I wanted to space out, so some upgrades are being pushed through.
 
 ***
 
-*2018-08-03.1* - More updates, more testing being done, same as usual.
+*2018-08-13.1* - More updates, more testing being done, same as usual.
 Preparing to head off to University, so time for this isn't guaranteed (like it ever was...)
 
 ***
