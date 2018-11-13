@@ -258,6 +258,7 @@
             <Path fileType="localedata">/usr/share/locale/ru/LC_MESSAGES/deepin-terminal.mo</Path>
             <Path fileType="localedata">/usr/share/locale/sk/LC_MESSAGES/deepin-terminal.mo</Path>
             <Path fileType="localedata">/usr/share/locale/sl/LC_MESSAGES/deepin-terminal.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sq/LC_MESSAGES/deepin-terminal.mo</Path>
             <Path fileType="localedata">/usr/share/locale/sr/LC_MESSAGES/deepin-terminal.mo</Path>
             <Path fileType="localedata">/usr/share/locale/sv/LC_MESSAGES/deepin-terminal.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ta/LC_MESSAGES/deepin-terminal.mo</Path>
@@ -272,9 +273,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="21">
+        <Update release="22">
             <Date>2018-11-13</Date>
-            <Version>3.0.7</Version>
+            <Version>3.0.10.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
