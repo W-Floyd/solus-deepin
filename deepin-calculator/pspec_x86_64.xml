@@ -36,6 +36,7 @@
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_el.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_es.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_es_419.qm</Path>
+            <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_et.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_fa.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_fi.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_fr.qm</Path>
@@ -49,6 +50,7 @@
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_it.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_lt.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_ms.qm</Path>
+            <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_nb.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_nl.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_pl.qm</Path>
             <Path fileType="data">/usr/share/deepin-calculator/translations/deepin-calculator_pt.qm</Path>
@@ -68,9 +70,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="22">
+        <Update release="23">
             <Date>2018-11-13</Date>
-            <Version>1.0.6</Version>
+            <Version>1.0.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
