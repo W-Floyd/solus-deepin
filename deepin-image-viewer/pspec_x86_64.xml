@@ -113,6 +113,7 @@
             <Path fileType="data">/usr/share/deepin-image-viewer/translations/deepin-image-viewer_cs.qm</Path>
             <Path fileType="data">/usr/share/deepin-image-viewer/translations/deepin-image-viewer_da.qm</Path>
             <Path fileType="data">/usr/share/deepin-image-viewer/translations/deepin-image-viewer_de.qm</Path>
+            <Path fileType="data">/usr/share/deepin-image-viewer/translations/deepin-image-viewer_el.qm</Path>
             <Path fileType="data">/usr/share/deepin-image-viewer/translations/deepin-image-viewer_es.qm</Path>
             <Path fileType="data">/usr/share/deepin-image-viewer/translations/deepin-image-viewer_es_419.qm</Path>
             <Path fileType="data">/usr/share/deepin-image-viewer/translations/deepin-image-viewer_fr.qm</Path>
@@ -237,9 +238,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="19">
+        <Update release="20">
             <Date>2018-11-13</Date>
-            <Version>1.2.23</Version>
+            <Version>1.3.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
