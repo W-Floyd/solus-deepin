@@ -262,6 +262,7 @@ libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo11productTypeEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo12computerNameEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo12cpuModelNameEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo13deepinEditionEv
+libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo13deepinVersionEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo14productVersionEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo14systemDiskSizeEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo15deepinCopyrightEv
@@ -269,6 +270,7 @@ libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo15memoryTotalSizeEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo17productTypeStringEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo19operatingSystemNameEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo21deepinTypeDisplayNameERK7QLocale
+libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo5isDDEEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo8isDeepinEv
 libdtkcore.so.2:_ZN3Dtk4Core9DSettings10setBackendEPNS0_16DSettingsBackendE
 libdtkcore.so.2:_ZN3Dtk4Core9DSettings11qt_metacallEN11QMetaObject4CallEiPPv
