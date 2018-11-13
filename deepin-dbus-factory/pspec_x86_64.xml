@@ -296,7 +296,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="26">
+        <Update release="27">
             <Date>2018-11-13</Date>
             <Version>3.1.17</Version>
             <Comment>Packaging update</Comment>
