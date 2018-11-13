@@ -414,6 +414,8 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/sync.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/thread_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/pulse/wrap.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/shell/shell.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/shell/shell_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound/player.c</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound/player.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/sound/player.h</Path>
@@ -476,9 +478,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="24">
+        <Update release="25">
             <Date>2018-11-13</Date>
-            <Version>1.2.16.3</Version>
+            <Version>1.3.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
