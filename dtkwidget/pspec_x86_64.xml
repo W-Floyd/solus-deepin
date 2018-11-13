@@ -38,6 +38,7 @@
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_el.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_es.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_fi.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_fr.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_gl_ES.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_he.qm</Path>
@@ -48,6 +49,7 @@
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_ja.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_lt.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_ms.qm</Path>
+            <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_nb.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_nl.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_pl.qm</Path>
             <Path fileType="data">/usr/share/dtkwidget/translations/dtkwidget2_pt.qm</Path>
@@ -69,11 +71,12 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="29">dtkwidget</Dependency>
+            <Dependency release="30">dtkwidget</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DAboutDialog</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DAnchors</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DApplication</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DArrowButton</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DArrowLineExpand</Path>
@@ -112,13 +115,10 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DVideoWidget</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DWaterProgress</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DWidgetUtil</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DWindow</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DWindowGroupLeader</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DWindowManagerHelper</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/DtkWidgets</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/anchors.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/daboutdialog.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dabstractcomboboxdelegate.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dabstractdialog.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/danchors.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dapplication.h</Path>
@@ -129,13 +129,12 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dbaseexpand.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dbaseline.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dblureffectwidget.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dborderlesswidget.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dborderlesswindow.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dboxwidget.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dbuttonlist.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dcircleprogress.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dclipeffectwidget.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dcolorcombobox.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dcombobox.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dcomboboxmodel.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dconstants.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dcrumbedit.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/ddesktopservices.h</Path>
@@ -146,7 +145,6 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dfiledialog.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dfileiconprovider.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dflowlayout.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dfontcombobox.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dforeignwindow.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dgraphicsclipeffect.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dgraphicsgloweffect.h</Path>
@@ -183,7 +181,6 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dsettingsdialog.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dsettingswidgetfactory.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dshortcutedit.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dsimplecombobox.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dsimplelistitem.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dsimplelistview.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dslider.h</Path>
@@ -208,17 +205,13 @@
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dtrashmanager.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dvideowidget.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwaterprogress.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwidget.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwidgetutil.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindow.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindowclosebutton.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindowgroupleader.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindowmanagerhelper.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindowmaxbutton.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindowminbutton.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindowoptionbutton.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dwindowrestorebutton.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dx11widget.h</Path>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DWidget/dx11window.h</Path>
             <Path fileType="library">/usr/lib64/cmake/DtkWidget/DtkWidgetConfig.cmake</Path>
             <Path fileType="library">/usr/lib64/libdtkwidget.so</Path>
@@ -226,9 +219,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="29">
+        <Update release="30">
             <Date>2018-11-13</Date>
-            <Version>2.0.9.4</Version>
+            <Version>2.0.9.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
