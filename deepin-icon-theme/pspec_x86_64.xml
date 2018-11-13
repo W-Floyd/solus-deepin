@@ -5830,7 +5830,7 @@
     </Package>
     <History>
         <Update release="19">
-            <Date>2018-10-06</Date>
+            <Date>2018-11-13</Date>
             <Version>15.12.59</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

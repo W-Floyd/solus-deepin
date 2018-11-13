@@ -107,7 +107,7 @@
     </Package>
     <History>
         <Update release="31">
-            <Date>2018-10-12</Date>
+            <Date>2018-11-13</Date>
             <Version>4.7.3.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
