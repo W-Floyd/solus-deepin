@@ -21,8 +21,8 @@
         <Files>
             <Path fileType="executable">/usr/bin/dde-introduction</Path>
             <Path fileType="data">/usr/share/applications/dde-introduction.desktop</Path>
-            <Path fileType="data">/usr/share/dde-introduction/15.7_en_US.ass</Path>
-            <Path fileType="data">/usr/share/dde-introduction/15.7_zh_CN.ass</Path>
+            <Path fileType="data">/usr/share/dde-introduction/15.8_en_US.ass</Path>
+            <Path fileType="data">/usr/share/dde-introduction/15.8_zh_CN.ass</Path>
             <Path fileType="data">/usr/share/dde-introduction/demo.mp4</Path>
             <Path fileType="data">/usr/share/dde-introduction/translations/dde-introduction.qm</Path>
             <Path fileType="data">/usr/share/dde-introduction/translations/dde-introduction_af.qm</Path>
@@ -85,9 +85,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="13">
+        <Update release="14">
             <Date>2018-11-13</Date>
-            <Version>1.0.6</Version>
+            <Version>1.0.7</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
