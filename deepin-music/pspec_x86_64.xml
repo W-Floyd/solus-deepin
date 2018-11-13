@@ -90,6 +90,7 @@
             <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ru.qm</Path>
             <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sk.qm</Path>
             <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sl.qm</Path>
+            <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sq.qm</Path>
             <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sr.qm</Path>
             <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_sv.qm</Path>
             <Path fileType="data">/usr/share/deepin-music/translations/deepin-music_ta.qm</Path>
@@ -185,7 +186,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="19">deepin-music</Dependency>
+            <Dependency release="20">deepin-music</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/DBusExtended/DBusExtended</Path>
@@ -210,9 +211,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="19">
+        <Update release="20">
             <Date>2018-11-13</Date>
-            <Version>3.1.8.4</Version>
+            <Version>3.1.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
