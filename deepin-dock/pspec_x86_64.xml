@@ -23,10 +23,9 @@
             <Path fileType="executable">/usr/bin/dde-dock</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libdatetime.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libkeyboard-layout.so</Path>
-            <Path fileType="library">/usr/lib/dde-dock/plugins/libnetwork.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libshutdown.so</Path>
-            <Path fileType="library">/usr/lib/dde-dock/plugins/libsound.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libsystem-tray.so</Path>
+            <Path fileType="library">/usr/lib/dde-dock/plugins/libtrash.so</Path>
             <Path fileType="data">/usr/share/dbus-1/services/com.deepin.dde.Dock.service</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_af.qm</Path>
@@ -77,6 +76,7 @@
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_si.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_sk.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_sl.qm</Path>
+            <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_sq.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_sr.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_sv.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_ta.qm</Path>
@@ -97,18 +97,20 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="31">deepin-dock</Dependency>
+            <Dependency release="32">deepin-dock</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-dock/constants.h</Path>
             <Path fileType="header">/usr/include/dde-dock/pluginproxyinterface.h</Path>
             <Path fileType="header">/usr/include/dde-dock/pluginsiteminterface.h</Path>
+            <Path fileType="library">/usr/lib64/cmake/DdeDock/DdeDockConfig.cmake</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/dde-dock.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="31">
-            <Date>2018-11-13</Date>
-            <Version>4.7.3.4</Version>
+        <Update release="32">
+            <Date>2018-11-15</Date>
+            <Version>4.8.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

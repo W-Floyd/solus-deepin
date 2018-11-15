@@ -1,14 +1,15 @@
 name       : deepin-dock
-version    : 4.7.3.4
-release    : 31
+version    : 4.8.0
+release    : 32
 source     :
-    - git|https://github.com/linuxdeepin/dde-dock.git : 4.7.3.4
+    - git|https://github.com/linuxdeepin/dde-dock.git : 4.8.0
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Deepin Dock is the dock of Deepin Desktop Environment.
 description: |
     Deepin Dock is the dock of Deepin Desktop Environment.
 builddeps  :
+    - pkgconfig(dbusmenu-qt5)
     - pkgconfig(dde-network-utils)
     - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkwidget)
