@@ -9,6 +9,7 @@ libQt5Sql.so.5
 libQt5Svg.so.5
 libQt5Widgets.so.5
 libQt5X11Extras.so.5
+libQt5Xml.so.5
 libX11.so.6
 libanything.so.1.0.0
 libc.so.6

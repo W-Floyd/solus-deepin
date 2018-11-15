@@ -70,29 +70,40 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_da.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_de.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_el.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_en_AU.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_es.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_fi.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_fr.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_gl_ES.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_he.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_hr.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_hu.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_id.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_it.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ja.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ko.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_lt.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ml.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ms.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_nb.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_nl.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_pl.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_pt.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_pt_BR.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ro.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ru.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sk.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sl.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sr.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_sv.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_th.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_tr.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_ug.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_uk.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_vi.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_zh_CN.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_zh_HK.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager-app_zh_TW.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_am_ET.qm</Path>
@@ -105,6 +116,7 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_da.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_de.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_el.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_eo.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es_419.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_fr.qm</Path>
@@ -115,7 +127,9 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_it.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ja.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_lt.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ml.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_ms.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_nb.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_nl.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_pl.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_pt.qm</Path>
@@ -152,8 +166,11 @@
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_hu.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_id.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_it.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ja.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_lt.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ml.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ms.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_nb.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_nl.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_pl.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_pt.qm</Path>
@@ -163,6 +180,7 @@
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_sl.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_sr.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_tr.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_ug.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_uk.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_zh_CN.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_zh_TW.qm</Path>
@@ -173,7 +191,7 @@
         <Summary xml:lang="en">Deepin Desktop</Summary>
         <Description xml:lang="en">Deepin Desktop</Description>
         <RuntimeDependencies>
-            <Dependency release="33">deepin-file-manager</Dependency>
+            <Dependency release="34">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/dde-desktop</Path>
@@ -199,7 +217,9 @@
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_it.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ja.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_lt.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ml.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_ms.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_nb.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_nl.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_pl.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_pt.qm</Path>
@@ -221,7 +241,7 @@
         <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.</Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="33">deepin-file-manager</Dependency>
+            <Dependency release="34">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-file-manager/dabstractfilecontroller.h</Path>
@@ -303,9 +323,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="33">
-            <Date>2018-11-13</Date>
-            <Version>4.6.8.7</Version>
+        <Update release="34">
+            <Date>2018-11-15</Date>
+            <Version>4.7.1.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
