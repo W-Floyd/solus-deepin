@@ -1,8 +1,8 @@
 name       : deepin-gtk-theme
-version    : 17.10.8
-release    : 15
+version    : 17.10.10
+release    : 16
 source     :
-    - git|https://github.com/linuxdeepin/deepin-gtk-theme.git : 17.10.8
+    - git|https://github.com/linuxdeepin/deepin-gtk-theme.git : 17.10.10
 license    : GPL-3.0
 component  : desktop.theme
 summary    : Deepin GTK Theme.
