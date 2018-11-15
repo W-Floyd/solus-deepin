@@ -1,8 +1,8 @@
 name       : deepin-api
-version    : 3.1.30
-release    : 29
+version    : 3.7.0
+release    : 30
 source     :
-    - git|https://github.com/linuxdeepin/dde-api.git : 3.1.30
+    - git|https://github.com/linuxdeepin/dde-api.git : 3.7.0
 extract    : no
 networking : yes
 license    : GPL-3.0
@@ -38,6 +38,7 @@ build      : |
     go get github.com/nfnt/resize
     go get github.com/cryptix/wav
     go get golang.org/x/net/context
+    go get github.com/fogleman/gg
     pushd src/pkg.deepin.io/dde/api
     make build-dep
     %make
