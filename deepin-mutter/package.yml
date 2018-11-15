@@ -1,8 +1,8 @@
 name       : deepin-mutter
-version    : 3.20.34
-release    : 19
+version    : 3.20.35
+release    : 20
 source     :
-    - git|https://github.com/linuxdeepin/deepin-mutter.git : 3.20.34
+    - git|https://github.com/linuxdeepin/deepin-mutter.git : 3.20.35
 license    : GPL-3.0
 component  : desktop
 summary    : Base window manager for Deepin, fork of Gnome Mutter
