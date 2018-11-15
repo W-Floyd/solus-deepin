@@ -1,8 +1,8 @@
 name       : deepin-anything
-version    : 0.0.3
-release    : 11
+version    : 0.0.4
+release    : 12
 source     :
-    - git|https://github.com/linuxdeepin/deepin-anything.git : 0.0.3
+    - git|https://github.com/linuxdeepin/deepin-anything.git : 0.0.4
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : Something like everything, but nothing is really like anything...

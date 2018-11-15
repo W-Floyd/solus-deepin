@@ -29,6 +29,7 @@
             <Path fileType="library">/usr/lib/libdeepin-anything-server-lib.so.0.0</Path>
             <Path fileType="library">/usr/lib/libdeepin-anything-server-lib.so.0.0.1</Path>
             <Path fileType="library">/usr/lib/modules-load.d/anything.conf</Path>
+            <Path fileType="library">/usr/lib/sysusers.d/deepin-anything-server.conf</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/Makefile</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/arg_extractor.c</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/arg_extractor.h</Path>
@@ -48,7 +49,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="11">deepin-anything</Dependency>
+            <Dependency release="12">deepin-anything</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/deepin-anything-server/dasdefine.h</Path>
@@ -72,9 +73,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="11">
-            <Date>2018-11-13</Date>
-            <Version>0.0.3</Version>
+        <Update release="12">
+            <Date>2018-11-15</Date>
+            <Version>0.0.4</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
