@@ -1,19 +1,21 @@
 name       : deepin-control-center
-version    : 4.6.4.9
-release    : 32
+version    : 4.7.6
+release    : 33
 source     :
-    - git|https://github.com/linuxdeepin/dde-control-center.git : 4.6.4.9
+    - git|https://github.com/linuxdeepin/dde-control-center.git : 4.7.6
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Control panel of the Deepin Desktop Environment.
 description: |
     Control panel of the Deepin Desktop Environment.
 builddeps  :
+    - networkmanager-qt-devel
     - pkgconfig(dde-network-utils)
     - pkgconfig(dframeworkdbus)
     - pkgconfig(dtkwidget)
     - pkgconfig(geoip)
     - pkgconfig(gsettings-qt)
+    - pkgconfig(libnm)
     - pkgconfig(Qt5Svg)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(xcb)
