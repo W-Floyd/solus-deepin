@@ -1,8 +1,8 @@
 name       : deepin-screen-recorder
-version    : 2.7.6
-release    : 18
+version    : 2.7.7
+release    : 19
 source     :
-    - git|https://github.com/linuxdeepin/deepin-screen-recorder.git : 2.7.6
+    - git|https://github.com/linuxdeepin/deepin-screen-recorder.git : 2.7.7
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : Default screen recorder application for Deepin.
