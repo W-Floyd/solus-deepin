@@ -46,6 +46,7 @@
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.startdde.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.sysinfo.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.touchpad.gschema.xml</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.touchscreen.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.wacom.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.watchdog.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/com.deepin.dde.zone.gschema.xml</Path>
@@ -96,9 +97,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="26">
-            <Date>2018-11-15</Date>
-            <Version>3.4.0</Version>
+        <Update release="27">
+            <Date>2018-11-23</Date>
+            <Version>3.5.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
