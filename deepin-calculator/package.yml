@@ -1,8 +1,8 @@
 name       : deepin-calculator
-version    : 1.0.9
-release    : 24
+version    : 1.0.10
+release    : 25
 source     :
-    - git|https://github.com/linuxdeepin/deepin-calculator.git : 1.0.9
+    - git|https://github.com/linuxdeepin/deepin-calculator.git : 1.0.10
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : An easy to use calculator for ordinary users.
