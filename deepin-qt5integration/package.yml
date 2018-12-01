@@ -1,8 +1,8 @@
 name       : deepin-qt5integration
-version    : 0.3.6
-release    : 28
+version    : 0.3.7
+release    : 29
 source     :
-    - git|https://github.com/linuxdeepin/qt5integration.git : 0.3.6
+    - git|https://github.com/linuxdeepin/qt5integration.git : 0.3.7
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Qt platform theme integration plugins for DDE
