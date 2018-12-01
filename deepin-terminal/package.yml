@@ -1,8 +1,8 @@
 name       : deepin-terminal
-version    : 3.0.10.2
-release    : 22
+version    : 3.0.11
+release    : 23
 source     :
-    - git|https://github.com/linuxdeepin/deepin-terminal.git : 3.0.10.2
+    - git|https://github.com/linuxdeepin/deepin-terminal.git : 3.0.11
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : This is default terminal emulation application for Deepin.
@@ -28,7 +28,7 @@ setup      : |
     %patch -p1 < $pkgfiles/0001-CMakeLists-Remove-specific-Glib-version.patch
     mkdir build
     pushd build
-    %cmake .. -DTEST_BUILD=OFF
+    %cmake .. -DTEST_BUILD=OFF -DUSE_VENDOR_LIB=OFF
     popd
 build      : |
     pushd build
