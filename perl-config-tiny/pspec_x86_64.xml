@@ -19,14 +19,14 @@
 </Description>
         <PartOf>programming.perl</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/Config/Tiny.pm</Path>
-            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.26/x86_64-linux-thread-multi/auto/Config/Tiny/.packlist</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/Config/Tiny.pm</Path>
+            <Path fileType="library">/usr/lib64/perl5/vendor_perl/5.28/x86_64-linux-thread-multi/auto/Config/Tiny/.packlist</Path>
             <Path fileType="man">/usr/share/man/man3/Config::Tiny.3</Path>
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2018-11-13</Date>
+        <Update release="15">
+            <Date>2018-12-01</Date>
             <Version>2.23</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
