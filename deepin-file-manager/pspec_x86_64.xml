@@ -26,7 +26,7 @@
             <Path fileType="executable">/usr/bin/dde-xdg-user-dirs-update</Path>
             <Path fileType="executable">/usr/bin/usb-device-formatter</Path>
             <Path fileType="executable">/usr/bin/usb-device-formatter-pkexec</Path>
-            <Path fileType="library">/usr/lib/dde-dock/plugins/libdde-disk-mount-plugin.so</Path>
+            <Path fileType="library">/usr/lib/dde-dock/plugins/system-trays/libdde-disk-mount-plugin.so</Path>
             <Path fileType="library">/usr/lib/deepin-anything-server-lib/plugins/handlers/libdde-anythingmonitor.so</Path>
             <Path fileType="library">/usr/lib/deepin-anything-server-lib/plugins/handlers/libdde-quicksearch.so</Path>
             <Path fileType="library">/usr/lib/systemd/system/dde-filemanager-daemon.service</Path>
@@ -191,7 +191,7 @@
         <Summary xml:lang="en">Deepin Desktop</Summary>
         <Description xml:lang="en">Deepin Desktop</Description>
         <RuntimeDependencies>
-            <Dependency release="35">deepin-file-manager</Dependency>
+            <Dependency release="36">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/dde-desktop</Path>
@@ -241,7 +241,7 @@
         <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.</Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="35">deepin-file-manager</Dependency>
+            <Dependency release="36">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-file-manager/dabstractfilecontroller.h</Path>
@@ -323,9 +323,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="35">
-            <Date>2018-11-20</Date>
-            <Version>4.7.1.1</Version>
+        <Update release="36">
+            <Date>2018-12-05</Date>
+            <Version>4.7.1.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
