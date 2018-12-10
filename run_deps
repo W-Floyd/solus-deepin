@@ -77,7 +77,6 @@ startdde deepin-daemon
 startdde deepin-desktop
 startdde deepin-dock
 startdde deepin-gtk-theme
-startdde deepin-icon-theme
 startdde deepin-launcher
 startdde deepin-polkit-agent
 startdde deepin-session-ui

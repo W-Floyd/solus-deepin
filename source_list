@@ -18,7 +18,6 @@ deepin-gettext-tools        https://cr.deepin.io/deepin-gettext-tools.git       
 deepin-gir-generator        https://cr.deepin.io/go-gir-generator               https://github.com/linuxdeepin/go-gir-generator.git
 deepin-go-dbus-factory      https://cr.deepin.io/go-dbus-factory.git            https://github.com/linuxdeepin/go-dbus-factory.git
 deepin-go-lib               https://cr.deepin.io/go-lib.git                     https://github.com/linuxdeepin/go-lib.git
-deepin-icon-theme           https://cr.deepin.io/deepin-icon-theme.git          https://github.com/linuxdeepin/deepin-icon-theme.git
 deepin-image-viewer         https://cr.deepin.io/deepin-image-viewer.git        https://github.com/linuxdeepin/deepin-image-viewer.git
 deepin-introduction         https://cr.deepin.io/dde/dde-introduction.git       https://github.com/linuxdeepin/dde-introduction.git
 deepin-launcher             https://cr.deepin.io/dde/dde-launcher.git           https://github.com/linuxdeepin/dde-launcher.git
