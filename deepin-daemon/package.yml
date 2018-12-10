@@ -1,8 +1,8 @@
 name       : deepin-daemon
-version    : 3.7.0
-release    : 29
+version    : 3.11.0
+release    : 30
 source     :
-    - git|https://github.com/linuxdeepin/dde-daemon.git : 3.7.0
+    - git|https://github.com/linuxdeepin/dde-daemon.git : 3.11.0
 networking : yes
 license    : GPL-3.0
 component  : desktop.deepin.core
@@ -49,7 +49,7 @@ setup      : |
     # avoids redownloading.
     mkdir -p "${workdir}/src/pkg.deepin.io/dde/"
     ln -s "${workdir}/" "${workdir}/src/pkg.deepin.io/dde/daemon"
-    %patch -p1 < $pkgfiles/dde-daemon_3.2.3.patch
+    %patch -p1 < $pkgfiles/dde-daemon_3.8.0.patch
     go get github.com/axgle/mahonia
     go get github.com/BurntSushi/freetype-go/freetype/truetype
     go get github.com/BurntSushi/graphics-go/graphics
