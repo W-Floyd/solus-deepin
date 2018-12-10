@@ -19,6 +19,27 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/background.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_c.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_e.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_n.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_ne.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_nw.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_s.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_se.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_sw.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/select_w.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_c.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_e.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_n.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_ne.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_nw.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_s.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_se.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_sw.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/terminal_box_w.png</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/theme.txt</Path>
+            <Path fileType="data">/boot/grub/themes/deepin-fallback/unifont-regular-16.pf2</Path>
             <Path fileType="data">/lib64/systemd/system/deepin-shutdown-sound.service</Path>
             <Path fileType="executable">/usr/bin/dde-open</Path>
             <Path fileType="library">/usr/lib64/deepin-api/adjust-grub-theme</Path>
@@ -192,9 +213,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="33">
-            <Date>2018-12-01</Date>
-            <Version>3.10.0</Version>
+        <Update release="34">
+            <Date>2018-12-10</Date>
+            <Version>3.11.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
