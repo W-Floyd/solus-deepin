@@ -59,3 +59,41 @@ __list_packages () {
 lsdir | grep -v common | grep -v 'git' | grep -v '\.stfolder' | sed 's|^\./||'
 
 }
+
+################################################################################
+# __upgrade [package] [version]
+#
+# Commits an upgrade to a given package with a given version.
+#
+################################################################################
+
+__upgrade () {
+    __package="${1}"
+    __version="${2}"
+    git add "${__package}/"
+    git commit -m "${__package}: Upgrade to ${__version}"
+}
+
+################################################################################
+# __rebuild [package]
+#
+# Commits a rebuild to a given package.
+#
+################################################################################
+
+__rebuild () {
+    __package="${1}"
+    git add "${__package}/"
+    git commit -m "${__package}: Rebuild."
+}
+
+################################################################################
+# __list
+#
+# List all packages that have been built but changes are yet to be commited
+#
+################################################################################
+
+__list () {
+find . -iname '*.eopkg' | sed -e 's#^\./##' -e 's#/.*##' | sort | uniq | grep -Fxf <(git status --short | sed -e 's#^ M ##' -e 's#/.*##' | sort | uniq)
+}
