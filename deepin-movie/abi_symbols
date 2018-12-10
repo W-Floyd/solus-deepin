@@ -52,6 +52,7 @@ libdmr.so.0.1:_ZN3dmr12PlayerEngine12setDVDDeviceERK7QString
 libdmr.so.0.1:_ZN3dmr12PlayerEngine12setPlaySpeedEd
 libdmr.so.0.1:_ZN3dmr12PlayerEngine12stateChangedEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine13clearPlaylistEv
+libdmr.so.0.1:_ZN3dmr12PlayerEngine13previousFrameEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine13tracksChangedEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine13volumeChangedEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine14collectPlayDirERK4QDir
@@ -94,6 +95,7 @@ libdmr.so.0.1:_ZN3dmr12PlayerEngine4stopEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine5stateEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine6pausedEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngine8volumeUpEv
+libdmr.so.0.1:_ZN3dmr12PlayerEngine9nextFrameEv
 libdmr.so.0.1:_ZN3dmr12PlayerEngineC1EP7QWidget
 libdmr.so.0.1:_ZN3dmr12PlayerEngineC2EP7QWidget
 libdmr.so.0.1:_ZN3dmr12PlayerEngineD0Ev
@@ -132,6 +134,7 @@ libdmr.so.0.1:_ZN3dmr13PlaylistModel17hasPendingAppendsEv
 libdmr.so.0.1:_ZN3dmr13PlaylistModel18delayedAppendAsyncERK5QListI4QUrlE
 libdmr.so.0.1:_ZN3dmr13PlaylistModel19asyncAppendFinishedERK5QListINS_12PlayItemInfoEE
 libdmr.so.0.1:_ZN3dmr13PlaylistModel21onAsyncAppendFinishedEv
+libdmr.so.0.1:_ZN3dmr13PlaylistModel24handleAsyncAppendResultsER5QListINS_12PlayItemInfoEE
 libdmr.so.0.1:_ZN3dmr13PlaylistModel4stopEv
 libdmr.so.0.1:_ZN3dmr13PlaylistModel5clearEv
 libdmr.so.0.1:_ZN3dmr13PlaylistModel6appendERK4QUrl
@@ -246,6 +249,7 @@ libdmr.so.0.1:_ZN3dmr8MpvProxy12loadSubtitleERK9QFileInfo
 libdmr.so.0.1:_ZN3dmr8MpvProxy12seekAbsoluteEi
 libdmr.so.0.1:_ZN3dmr8MpvProxy12seekBackwardEi
 libdmr.so.0.1:_ZN3dmr8MpvProxy12setPlaySpeedEd
+libdmr.so.0.1:_ZN3dmr8MpvProxy13previousFrameEv
 libdmr.so.0.1:_ZN3dmr8MpvProxy14changePropertyERK7QStringRK8QVariant
 libdmr.so.0.1:_ZN3dmr8MpvProxy14has_mpv_eventsEv
 libdmr.so.0.1:_ZN3dmr8MpvProxy14selectSubtitleEi
@@ -275,6 +279,7 @@ libdmr.so.0.1:_ZN3dmr8MpvProxy4stopEv
 libdmr.so.0.1:_ZN3dmr8MpvProxy8mpv_initEv
 libdmr.so.0.1:_ZN3dmr8MpvProxy8setStateENS_7Backend9PlayStateE
 libdmr.so.0.1:_ZN3dmr8MpvProxy8volumeUpEv
+libdmr.so.0.1:_ZN3dmr8MpvProxy9nextFrameEv
 libdmr.so.0.1:_ZN3dmr8MpvProxy9showEventEP10QShowEvent
 libdmr.so.0.1:_ZN3dmr8MpvProxyC1EP7QWidget
 libdmr.so.0.1:_ZN3dmr8MpvProxyC2EP7QWidget
