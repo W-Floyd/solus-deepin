@@ -162,6 +162,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/conn_windows.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/dbus.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/decoder.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/decoder_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/default_handler.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/doc.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/encoder.go</Path>
@@ -170,6 +171,7 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/export.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/export_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/git_commit</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/go.mod</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/homedir.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/homedir_dynamic.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/homedir_static.go</Path>
@@ -188,6 +190,8 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/store_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/transport_darwin.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/transport_generic.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/transport_nonce_tcp.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/transport_nonce_tcp_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/transport_tcp.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/transport_tcp_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/dbus1/transport_unix.go</Path>
@@ -326,6 +330,14 @@
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/graphic/testdata/test-get_images/3.png</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/graphic/utils.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/gsettings/monitor.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/format_sniff.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/imgutil.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/imgutil_test.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/testdata/deepin-music.bmp</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/testdata/deepin-music.gif</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/testdata/deepin-music.jpg</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/testdata/deepin-music.png</Path>
+            <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/imgutil/testdata/deepin-music.tiff</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/initializer/initializer.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/initializer/initializer_test.go</Path>
             <Path fileType="data">/usr/share/gocode/src/pkg.deepin.io/lib/initializer/v2/initializer.go</Path>
@@ -478,9 +490,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="26">
-            <Date>2018-11-23</Date>
-            <Version>1.4.0</Version>
+        <Update release="27">
+            <Date>2018-12-10</Date>
+            <Version>1.6.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
