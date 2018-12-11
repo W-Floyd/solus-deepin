@@ -1,8 +1,8 @@
 name       : deepin-editor
-version    : 0.5
-release    : 10
+version    : 1.10
+release    : 11
 source     :
-    - git|https://github.com/linuxdeepin/deepin-editor.git : 0.5
+    - git|https://github.com/linuxdeepin/deepin-editor.git : 1.10
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : Deepin Editor.
@@ -11,8 +11,6 @@ description: |
 builddeps  :
     - kcodecs-devel
     - pkgconfig(dtkwidget)
-    - pkgconfig(dtkwm)
-    - pkgconfig(polkit-qt5-1)
     - pkgconfig(Qt5Svg)
     - pkgconfig(Qt5X11Extras)
     - pkgconfig(x11)
@@ -23,8 +21,8 @@ builddeps  :
     - qt5-tools-devel
     - syntax-highlighting-devel
 setup      : |
-    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+    %cmake_ninja
 build      : |
-    %make
+    %ninja_build
 install    : |
-    %make_install INSTALL_ROOT=$installdir
+    %ninja_install
