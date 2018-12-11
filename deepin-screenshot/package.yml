@@ -1,8 +1,8 @@
 name       : deepin-screenshot
-version    : 4.1.0
-release    : 20
+version    : 4.1.4
+release    : 21
 source     :
-    - git|https://github.com/linuxdeepin/deepin-screenshot.git : 4.1.0
+    - git|https://github.com/linuxdeepin/deepin-screenshot.git : 4.1.4
 license    : GPL-3.0
 component  : desktop.deepin
 summary    : Advanced tool to make and edit screenshots
@@ -17,10 +17,9 @@ builddeps  :
     - pkgconfig(xcb)
     - pkgconfig(xext)
     - pkgconfig(xtst)
-    - qt5-tools-devel
 setup      : |
-    %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
+    %cmake_ninja
 build      : |
-    %make
+    %ninja_build
 install    : |
-    %make_install INSTALL_ROOT=$installdir
+    %ninja_install
