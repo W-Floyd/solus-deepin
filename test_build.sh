@@ -63,7 +63,7 @@ __check_checked () {
 __copy_to_cache () {
 echo "Copying '${1}' to cache."
 if __check_built "${1}"; then
-    cd "${1}"
+    cd "$(sed 's/-devel$//' <<< "${1}")"
     cp *.eopkg /var/lib/solbuild/local/
     cd ../
 else
@@ -163,11 +163,11 @@ if __check_built "${1}"; then
     echo "Package '${1}' already built."
 else
     
-    echo "Building package '${1}'"
+    echo "Building package '$(sed 's/-devel$//' <<< "${1}")'"
     
     __build_deps="$(__list_build_deps "${1}")"
     
-    cd "${1}"
+    cd "$(sed 's/-devel$//' <<< "${1}")"
     
     __sub_exit () {
         echo "Building '${1}' failed, exiting."
