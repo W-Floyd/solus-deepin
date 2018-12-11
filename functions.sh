@@ -77,14 +77,14 @@ __upgrade () {
 ################################################################################
 # __rebuild [package]
 #
-# Commits a rebuild to a given package.
+# Commits a bump and rebuild to a given package.
 #
 ################################################################################
 
 __rebuild () {
     __package="${1}"
     git add "${__package}/"
-    git commit -m "${__package}: Rebuild."
+    git commit -m "${__package}: Bump and rebuild."
 }
 
 ################################################################################
