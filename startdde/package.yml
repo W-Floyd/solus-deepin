@@ -1,6 +1,6 @@
 name       : startdde
 version    : 3.6.0
-release    : 26
+release    : 27
 source     :
     - git|https://github.com/linuxdeepin/startdde.git : 3.6.0
 networking : yes
@@ -31,6 +31,7 @@ rundeps    :
     - deepin-dock
     - deepin-gtk-theme
     - deepin-icon-theme
+    - deepin-icon-theme-dark
     - deepin-icon-theme-sea
     - deepin-launcher
     - deepin-polkit-agent
