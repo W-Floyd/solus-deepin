@@ -1,8 +1,8 @@
 name       : deepin-wallpapers
-version    : 1.7.5
-release    : 25
+version    : 1.7.6
+release    : 26
 source     :
-    - git|https://github.com/linuxdeepin/deepin-wallpapers.git : 1.7.5
+    - git|https://github.com/linuxdeepin/deepin-wallpapers.git : 1.7.6
 license    : GPL-3.0
 component  : desktop
 summary    : Deepin Wallpapers
