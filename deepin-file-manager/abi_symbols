@@ -2227,6 +2227,8 @@ libdde-file-manager.so.1:_ZN16dde_file_manager18DFMSettingsPrivateC1EPNS_11DFMSe
 libdde-file-manager.so.1:_ZN16dde_file_manager18DFMSettingsPrivateC2EPNS_11DFMSettingsE
 libdde-file-manager.so.1:_ZN16dde_file_manager18DFMSideBarHomeItemC1Ev
 libdde-file-manager.so.1:_ZN16dde_file_manager18DFMSideBarHomeItemC2Ev
+libdde-file-manager.so.1:_ZN16dde_file_manager18DFMSideBarRootItemC1Ev
+libdde-file-manager.so.1:_ZN16dde_file_manager18DFMSideBarRootItemC2Ev
 libdde-file-manager.so.1:_ZN16dde_file_manager18DFileDevicePrivateC1EPNS_11DFileDeviceE
 libdde-file-manager.so.1:_ZN16dde_file_manager18DFileDevicePrivateC2EPNS_11DFileDeviceE
 libdde-file-manager.so.1:_ZN16dde_file_manager18DFileIODeviceProxy12readLineDataEPcx
@@ -4213,7 +4215,6 @@ libdde-file-manager.so.1:_ZN9FileUtils10runCommandERK7QStringRK11QStringList
 libdde-file-manager.so.1:_ZN9FileUtils10umountAVFSEv
 libdde-file-manager.so.1:_ZN9FileUtils12isFileExistsERK7QString
 libdde-file-manager.so.1:_ZN9FileUtils13getRealSuffixERK7QString
-libdde-file-manager.so.1:_ZN9FileUtils13openFileByAppERK7QStringS2_
 libdde-file-manager.so.1:_ZN9FileUtils13recurseFolderERK7QStringS2_P11QStringList
 libdde-file-manager.so.1:_ZN9FileUtils13removeRecurseERK7QStringS2_
 libdde-file-manager.so.1:_ZN9FileUtils13searchAppIconERK11DesktopFileRK5QIcon
@@ -4223,6 +4224,7 @@ libdde-file-manager.so.1:_ZN9FileUtils14getFileContentERK7QString
 libdde-file-manager.so.1:_ZN9FileUtils14isFileRunnableERK7QString
 libdde-file-manager.so.1:_ZN9FileUtils14launchAppByGioERK7QStringRK11QStringList
 libdde-file-manager.so.1:_ZN9FileUtils14newDocmentNameE7QStringRKS0_S2_
+libdde-file-manager.so.1:_ZN9FileUtils14openFilesByAppERK7QStringRK11QStringList
 libdde-file-manager.so.1:_ZN9FileUtils14searchMimeIconE7QStringRK5QIcon
 libdde-file-manager.so.1:_ZN9FileUtils15diskUsageStringExx
 libdde-file-manager.so.1:_ZN9FileUtils15getApplicationsEv
@@ -5234,6 +5236,7 @@ libdde-file-manager.so.1:_ZNK16dde_file_manager18DCompleterListView10metaObjectE
 libdde-file-manager.so.1:_ZNK16dde_file_manager18DFMEventDispatcher10metaObjectEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager18DFMEventDispatcher5stateEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager18DFMSideBarHomeItem25createStandardContextMenuEv
+libdde-file-manager.so.1:_ZNK16dde_file_manager18DFMSideBarRootItem25createStandardContextMenuEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager18DFileIODeviceProxy12bytesToWriteEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager18DFileIODeviceProxy12isSequentialEv
 libdde-file-manager.so.1:_ZNK16dde_file_manager18DFileIODeviceProxy14bytesAvailableEv
