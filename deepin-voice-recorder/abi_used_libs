@@ -2,7 +2,7 @@ libQt5Core.so.5
 libQt5Gui.so.5
 libQt5Multimedia.so.5
 libQt5Widgets.so.5
-libavformat.so.57
+libavformat.so.58
 libc.so.6
 libdtkcore.so.2
 libdtkwidget.so.2
