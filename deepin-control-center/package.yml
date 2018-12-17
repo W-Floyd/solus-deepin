@@ -1,6 +1,6 @@
 name       : deepin-control-center
 version    : 4.8.2
-release    : 36
+release    : 37
 source     :
     - git|https://github.com/linuxdeepin/dde-control-center.git : 4.8.2
 license    : GPL-3.0

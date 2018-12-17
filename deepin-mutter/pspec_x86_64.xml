@@ -138,7 +138,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="21">deepin-mutter</Dependency>
+            <Dependency release="22">deepin-mutter</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/deepin-mutter/meta/barrier.h</Path>
@@ -181,8 +181,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="21">
-            <Date>2018-12-11</Date>
+        <Update release="22">
+            <Date>2018-12-16</Date>
             <Version>3.20.36</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

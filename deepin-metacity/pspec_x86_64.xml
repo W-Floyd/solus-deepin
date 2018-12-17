@@ -264,7 +264,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="14">deepin-metacity</Dependency>
+            <Dependency release="15">deepin-metacity</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/deepin-metacity/metacity-private/boxes.h</Path>
@@ -279,8 +279,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2018-11-13</Date>
+        <Update release="15">
+            <Date>2018-12-16</Date>
             <Version>3.22.22</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

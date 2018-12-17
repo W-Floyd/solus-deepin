@@ -1,6 +1,6 @@
 name       : startdde
 version    : 3.6.0
-release    : 27
+release    : 28
 source     :
     - git|https://github.com/linuxdeepin/startdde.git : 3.6.0
 networking : yes

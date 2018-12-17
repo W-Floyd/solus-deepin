@@ -86,8 +86,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="16">
-            <Date>2018-12-10</Date>
+        <Update release="17">
+            <Date>2018-12-16</Date>
             <Version>1.0.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

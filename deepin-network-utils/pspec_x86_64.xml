@@ -86,7 +86,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="8">deepin-network-utils</Dependency>
+            <Dependency release="9">deepin-network-utils</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libddenetworkutils/NetworkDevice</Path>
@@ -104,8 +104,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-12-10</Date>
+        <Update release="9">
+            <Date>2018-12-16</Date>
             <Version>0.0.8.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

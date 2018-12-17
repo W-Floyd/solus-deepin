@@ -1,6 +1,6 @@
 name       : deepin-clutter
 version    : 1.26.2
-release    : 13
+release    : 14
 source     :
     - https://github.com/sonald/clutter/archive/1.26.2.tar.gz : 08cc169af09b89a4fb09c38fa5732d7995f73f865783882f2bf91423830d97ba
 license    : LGPL-2.1

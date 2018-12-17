@@ -1,6 +1,6 @@
 name       : deepin-music
 version    : 3.1.11
-release    : 23
+release    : 24
 source     :
     - git|https://github.com/linuxdeepin/deepin-music.git : 3.1.11
 license    : GPL-3.0

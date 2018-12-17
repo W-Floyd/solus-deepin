@@ -31,7 +31,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="13">gsettings-qt</Dependency>
+            <Dependency release="14">gsettings-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/QGSettings/QGSettings</Path>
@@ -41,8 +41,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="13">
-            <Date>2018-11-13</Date>
+        <Update release="14">
+            <Date>2018-12-16</Date>
             <Version>0.1.20170824</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

@@ -1,6 +1,6 @@
 name       : avfs
 version    : 1.0.6
-release    : 13
+release    : 14
 source     :
     - https://sourceforge.net/projects/avf/files/avfs/1.0.6/avfs-1.0.6.tar.bz2/download : 4c1a3a776a01ce7a5b74d66c955269162304edd8c18489fb2186ef728f4be3c3
 license    : GPL-2.0

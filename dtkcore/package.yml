@@ -1,6 +1,6 @@
 name       : dtkcore
 version    : 2.0.9.11
-release    : 24
+release    : 25
 source     :
     - git|https://github.com/linuxdeepin/dtkcore.git : 2.0.9.11
 license    : GPL-3.0

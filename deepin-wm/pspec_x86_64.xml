@@ -137,7 +137,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="24">deepin-wm</Dependency>
+            <Dependency release="25">deepin-wm</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/deepin-wm/deepin-wm.h</Path>
@@ -148,8 +148,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="24">
-            <Date>2018-12-12</Date>
+        <Update release="25">
+            <Date>2018-12-16</Date>
             <Version>1.9.34</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

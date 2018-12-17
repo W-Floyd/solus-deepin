@@ -1,6 +1,6 @@
 name       : deepin-system-monitor
 version    : 1.4.8
-release    : 24
+release    : 25
 source     :
     - git|https://github.com/linuxdeepin/deepin-system-monitor.git : 1.4.8
 license    : GPL-3.0

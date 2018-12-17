@@ -1,6 +1,6 @@
 name       : dtkwidget
 version    : 2.0.9.11
-release    : 33
+release    : 34
 source     :
     - git|https://github.com/linuxdeepin/dtkwidget.git : 2.0.9.11
 license    : GPL-3.0
