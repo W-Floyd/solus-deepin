@@ -1,8 +1,8 @@
 name       : deepin-introduction
-version    : 1.0.8
-release    : 17
+version    : 1.0.9
+release    : 18
 source     :
-    - git|https://github.com/linuxdeepin/dde-introduction.git : 1.0.8
+    - git|https://github.com/linuxdeepin/dde-introduction.git : 1.0.9
 license    : GPL-3.0
 component  : desktop.deepin.core
 summary    : Introduction for deepin
