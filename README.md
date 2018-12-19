@@ -13,7 +13,6 @@ If you do try this, running it on your production machine is a terrible idea - i
 
 ### Known issues
 
-* Deepin Editor forces Windows line endings.
 * Deepin File Manager does not mount MTP devices.
 * Deepin Image Viewer breaks Krita.
 
