@@ -16,6 +16,8 @@
 - [x] Terminal
 - [x] Voice Recorder
 
+
+
 ***
 
 #### `deepin-daemon`
@@ -50,6 +52,14 @@ Known tasks:
 Need to investigate:
 * using a different icon theme does not change immediately (possibly only when HIDPI is working?)
 
+#### `deepin-editor`
+
+Need to investigate:
+```
+No appenders assotiated with category org.kde.ksyntaxhighlighting
+[Error  ] <> Repository got deleted while a highlighter is still active!
+```
+
 #### `deepin-file-manager`
 
 Look into packaging:
@@ -66,6 +76,7 @@ Known tasks:
 
 It breaks Krita (amongst other things, probably).
 This has been known to upstream for some time.
+I also doesn't build right now, due to upstream Solus changes to Freeimage.
 
 #### `deepin-qt5config`
 
@@ -80,10 +91,7 @@ Look into:
 #### Misc.
 
 * validate core packages and strip un-needed rundeps (and add those that are required). This one is hard though, we'll see.
-* check if `deepin-music` is using vendored libraries and transition off of them if possible.  
+* check if `deepin-music` is using vendored libraries and transition off of them if possible.
 * check on how to make sure `setcap cap_kill,cap_net_raw,cap_dac_read_search,cap_sys_ptrace+ep /usr/bin/deepin-system-monitor` is run so that network speed monitoring may be achieved.
-* validate touchpad swipe shortcuts (specifically, 4/5 fingered ones, which my current machine does not support), see if I need to drop the Arch patch to `deepin-daemon` (it seems to be a decision to disable 3 finger tapping being intercepted, leaving it open for, say, following links, or pasting, the former being something I use often)
 * investigate why first login (at least in VM) has a white bg, as you have to fish for a button.
-* see if I can force disable the disablement of `deepin-mutter`, temporarily, for the sake of VM testing?
-* `dde-dock` (actually, almost eveything Deepin related) often crashes when changing USB devices, need to investigate. Specifically, mouse and keyboard (HDD is okay).
 * `deepin-movie` has 'volume down' when it should have 'Volume down', in keyboard shortcuts.
