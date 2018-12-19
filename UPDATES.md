@@ -1,5 +1,14 @@
 ### Updates
 
+*2018-12-18.1* - Break has been good, on top of updates right now.
+Finally got some housekeeping done and whipped package licenses into shape again, properly.
+Also added some stuff so builds by default don't rebuilt current packages.
+I still see the need to someday cull run/build deps and redo all of that stuff.
+Also, some of the things pulled in for the Golang bits have probably changed, need to cull.
+I also need to redo my scripts to be sane and unified - as is, I keep adding more of them with little purpose.
+
+***
+
 *2018-11-13.1* - University is still super busy, but Christmas break should see some more work on this.
 I have a desktop now, so compiling isn't too much of a pain, I can just leave it going when I'm away.
 Still have the backlog of upgrades to clear out though.
