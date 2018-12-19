@@ -1,22 +1,18 @@
 #!/bin/bash
 
-# Important - If any eopkg files are found, they are assumed to be correct.
-# As such, if a subpackage has been modified, be sure to remove all of its eopkg
-# files before continuing with builds.
-
-# Also, since this runs as root by default to avoid permission questions when
+# Since this runs as root by default to avoid permission questions when
 # unattended, make sure you have your packager information in your root dir.
 
 __no_root='0'
 
-__delete_self='1'
+__delete_force='0'
 
 while [[ "${1}" == '--'* ]]; do
 
     if [ "${1}" = '--no-root' ]; then
         __no_root='1'
-    elif [ "${1}" = '--no-delete' ]; then
-        __delete_self='0'
+    elif [ "${1}" = '--force-delete' ]; then
+        __delete_force='1'
     else
         echo "Unrecognized option '${1}'"
         exit 1
@@ -46,10 +42,21 @@ touch "${__tmp_dir}/$(sed 's/-devel$//' <<< "${1}")"
 }
 
 __check_built () {
+
+    __mark_checked "${1}"
+
     if [ -z "$(find "./$(sed 's/-devel$//' <<< "${1}")/" -iname '*.eopkg')" ]; then
         return 1
     fi
-    __mark_checked "${1}"
+
+    __current_build="$(find "./$(sed 's/-devel$//' <<< "${1}")/" -iname '*.eopkg' | sed 's#.*-\([0-9]*\)-1-x86_64\.eopkg$#\1#' | sort | uniq)"
+    __target_build="$(grep -Ex '^release    : .*' "${1}/package.yml" | sed 's/.* //')"
+
+    if ! [ "${__current_build}" = "${__target_build}" ]; then
+        __quiet_remove_eopkg "./$(sed 's/-devel$//' <<< "${1}")/"
+        return 1
+    fi
+
     return 0
 }
 
@@ -106,14 +113,14 @@ __recurse_build_rundeps_sub "${1}" | while read -r __package; do
 done
 }
 
-__quite_remove_eopkg () {
+__quiet_remove_eopkg () {
 rm -f "${1}/"*.eopkg &> /dev/null
 }
 
 __setup () {
 
 echo 'Cleaning cache.'
-__quite_remove_eopkg /var/lib/solbuild/local
+__quiet_remove_eopkg /var/lib/solbuild/local
 
 __recurse_build_rundeps "${1}" || exit 1
 
@@ -189,11 +196,11 @@ chown "${real_user}:${real_user}" -R .
 
 }
 
-__quite_remove_eopkg /var/lib/solbuild/local
+__quiet_remove_eopkg /var/lib/solbuild/local
 
-if [ "${__delete_self}" = '1' ]; then
+if [ "${__delete_force}" = '1' ]; then
     for __input in "${@}"; do
-        __quite_remove_eopkg "${__input}"
+        __quiet_remove_eopkg "${__input}"
     done
 fi
 
