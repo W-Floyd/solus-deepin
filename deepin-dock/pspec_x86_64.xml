@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Deepin Dock is the dock of Deepin Desktop Environment.</Summary>
         <Description xml:lang="en">Deepin Dock is the dock of Deepin Desktop Environment.
@@ -100,7 +100,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="38">deepin-dock</Dependency>
+            <Dependency release="39">deepin-dock</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-dock/constants.h</Path>
@@ -111,9 +111,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="38">
-            <Date>2018-12-16</Date>
-            <Version>4.8.4</Version>
+        <Update release="39">
+            <Date>2018-12-19</Date>
+            <Version>4.8.4.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
