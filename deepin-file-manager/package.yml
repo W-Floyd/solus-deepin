@@ -3,7 +3,7 @@ version    : 4.7.1.9
 release    : 39
 source     :
     - git|https://github.com/linuxdeepin/dde-file-manager.git : 4.7.1.9
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    :
     - Deepin File Manager is a file management tool developed for Deepin

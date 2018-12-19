@@ -3,7 +3,7 @@ version    : 2018.8.8
 release    : 13
 source     :
     - git|https://github.com/linuxdeepin/default-settings.git : 2018.8.8
-license    : GPL-3.0
+license    : LGPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin default settings
 description: |

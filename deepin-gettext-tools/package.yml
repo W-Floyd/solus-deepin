@@ -3,7 +3,7 @@ version    : 1.0.8
 release    : 15
 source     :
     - git|https://github.com/linuxdeepin/deepin-gettext-tools.git : 1.0.8
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : programming.tools
 summary    : Deepin Gettext Tools
 description: |

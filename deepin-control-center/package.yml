@@ -3,7 +3,7 @@ version    : 4.8.4
 release    : 39
 source     :
     - git|https://github.com/linuxdeepin/dde-control-center.git : 4.8.4
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Control panel of the Deepin Desktop Environment.
 description: |

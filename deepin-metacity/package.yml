@@ -3,7 +3,7 @@ version    : 3.22.22
 release    : 15
 source     :
     - git|https://github.com/linuxdeepin/deepin-metacity.git : 3.22.22
-license    : GPL-2.0
+license    : GPL-2.0-or-later
 component  : desktop.deepin.core
 summary    : 2D window manager for Deepin
 description: |

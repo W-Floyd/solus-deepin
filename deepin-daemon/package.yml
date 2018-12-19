@@ -4,7 +4,7 @@ release    : 33
 source     :
     - git|https://github.com/linuxdeepin/dde-daemon.git : 3.14.0
 networking : yes
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Daemon handling the DDE session settings
 description: |

@@ -3,7 +3,7 @@ version    : 1.0.10
 release    : 19
 source     :
     - git|https://github.com/linuxdeepin/dde-introduction.git : 1.0.10
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Introduction for deepin
 description: |

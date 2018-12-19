@@ -3,7 +3,7 @@ version    : 1.4.8
 release    : 25
 source     :
     - git|https://github.com/linuxdeepin/deepin-system-monitor.git : 1.4.8
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : A more user-friendly system monitor.
 description: |

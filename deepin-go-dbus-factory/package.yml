@@ -4,7 +4,7 @@ release    : 20
 source     :
     - git|https://github.com/linuxdeepin/go-dbus-factory.git : 0.2.0
 networking : yes
-license    : GPL-3.0
+license    : Undeclared
 component  : desktop.deepin.core
 summary    : GO DBus factory for Deepin
 description: |

@@ -3,7 +3,7 @@ version    : 1.2.6
 release    : 25
 source     :
     - git|https://github.com/linuxdeepin/dde-calendar.git : 1.2.6
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Calendar for Deepin Desktop Environment.
 description: |

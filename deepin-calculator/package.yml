@@ -3,7 +3,7 @@ version    : 1.0.10
 release    : 26
 source     :
     - git|https://github.com/linuxdeepin/deepin-calculator.git : 1.0.10
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : An easy to use calculator for ordinary users.
 description: |

@@ -3,7 +3,7 @@ version    : 0.0.8.1
 release    : 9
 source     :
     - git|https://github.com/linuxdeepin/dde-network-utils.git : 0.0.8.1
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin network utilities
 description: |

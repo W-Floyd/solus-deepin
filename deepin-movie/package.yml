@@ -3,7 +3,7 @@ version    : 3.2.17
 release    : 23
 source     :
     - git|https://github.com/linuxdeepin/deepin-movie-reborn.git : 3.2.17
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Deepin Movie Player.
 description: |

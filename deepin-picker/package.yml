@@ -3,7 +3,7 @@ version    : 1.6.4
 release    : 22
 source     :
     - git|https://github.com/linuxdeepin/deepin-picker.git : 1.6.4
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Simplest color picker.
 description: |

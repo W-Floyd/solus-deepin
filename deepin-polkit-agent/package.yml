@@ -3,7 +3,7 @@ version    : 0.2.1
 release    : 21
 source     :
     - git|https://github.com/linuxdeepin/dde-polkit-agent.git : 0.2.1
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop
 summary    : Deepin Polkit Agent
 description: |

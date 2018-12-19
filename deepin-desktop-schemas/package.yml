@@ -3,7 +3,7 @@ version    : 3.9.0
 release    : 32
 source     :
     - git|https://github.com/linuxdeepin/deepin-desktop-schemas.git : 3.9.0
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop
 summary    : GSettings Deepin desktop-wide schemas
 description: |

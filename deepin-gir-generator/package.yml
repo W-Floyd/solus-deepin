@@ -3,7 +3,7 @@ version    : 1.1.0
 release    : 19
 source     :
     - git|https://github.com/linuxdeepin/go-gir-generator.git : 1.1.0
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Static golang bindings for GObject.
 description: |

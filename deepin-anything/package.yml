@@ -3,7 +3,7 @@ version    : 0.0.4
 release    : 13
 source     :
     - git|https://github.com/linuxdeepin/deepin-anything.git : 0.0.4
-license    : GPL-3.0
+license    : GPL-2.0-or-later
 component  : desktop.deepin
 summary    : Something like everything, but nothing is really like anything...
 description: |

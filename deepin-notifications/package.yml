@@ -3,7 +3,7 @@ version    : 3.3.4
 release    : 29
 source     :
     - git|https://github.com/linuxdeepin/deepin-notifications.git : 3.3.4
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop
 summary    : An implementation of Gnome Desktop Notifications Specification
 description: |

@@ -3,7 +3,7 @@ version    : 3.1.17
 release    : 30
 source     :
     - git|https://github.com/linuxdeepin/dbus-factory.git : 3.1.17
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : GO DBus factory for Deepin
 description: |

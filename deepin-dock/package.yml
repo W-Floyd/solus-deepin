@@ -3,7 +3,7 @@ version    : 4.8.4
 release    : 38
 source     :
     - git|https://github.com/linuxdeepin/dde-dock.git : 4.8.4
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin Dock is the dock of Deepin Desktop Environment.
 description: |

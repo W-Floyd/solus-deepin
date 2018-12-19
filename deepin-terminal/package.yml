@@ -3,7 +3,7 @@ version    : 3.0.12
 release    : 25
 source     :
     - git|https://github.com/linuxdeepin/deepin-terminal.git : 3.0.12
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : This is default terminal emulation application for Deepin.
 description: |

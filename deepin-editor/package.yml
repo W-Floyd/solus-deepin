@@ -3,7 +3,7 @@ version    : 1.2.4
 release    : 15
 source     :
     - git|https://github.com/linuxdeepin/deepin-editor.git : 1.2.4
-license    : GPL-3.0
+license    : GPL-3.0-or-later # -or-later assumed from other projects
 component  : desktop.deepin
 summary    : Deepin Editor.
 description: |

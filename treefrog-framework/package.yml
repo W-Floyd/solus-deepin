@@ -3,7 +3,7 @@ version    : 1.22.0
 release    : 21
 source     :
     - git|https://github.com/treefrogframework/treefrog-framework.git : v1.22.0
-license    : BSD
+license    : BSD-3-Clause
 component  : programming.library
 summary    : High-speed C++ MVC Framework for Web Application
 description: |
