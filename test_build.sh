@@ -204,13 +204,29 @@ if [ "${__delete_force}" = '1' ]; then
     done
 fi
 
-until [ "${#}" = '0' ]; do
+if [ "${#}" = '0' ]; then
 
-    __build "${1}" || exit 1
-    
-    shift
-    
-done || exit 1
+    __list_packages | while read -r __package; do
+
+        if __check_built "${__package}"; then
+            echo "Package '${__package}' already built."
+        else
+            __build "${__package}" || exit 1
+        fi
+
+    done
+
+else
+
+    until [ "${#}" = '0' ]; do
+
+        __build "${1}" || exit 1
+        
+        shift
+        
+    done || exit 1
+
+fi
 
 rm -r "${__tmp_dir}"
 
