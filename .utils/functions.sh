@@ -1,6 +1,35 @@
+################################################################################
+#
+# ... | uuniq
+#
+# Like `sort | uniq`, except it keeps original ordering, keeping the first
+# instance of each line
+#
+# Example:
+#
+# > echo 'foo
+# > bar
+# > bar
+# > foo' | uuniq
+#
+# Gives:
+#
+# foo
+# bar
+#
+################################################################################
 uuniq () {
     awk '!x[$0]++'
 }
+
+################################################################################
+#
+# lsdir [/path/to/dir/]
+#
+# Much like `ls`, except only lists directories. Output is sorted. Input is
+# optional, if none is given, '.', the current directory, is used instead.
+#
+################################################################################
 
 lsdir () {
 if [ -z "${1}" ]; then
