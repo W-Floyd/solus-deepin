@@ -56,7 +56,7 @@ fi
 
 __list_packages () {
 
-lsdir | grep -v common | grep -v 'git' | grep -v '\.stfolder' | sed 's|^\./||'
+lsdir | sed 's|^\./||' | grep -vx common | grep -vx '.git' | grep -vx '.stfolder'
 
 }
 
