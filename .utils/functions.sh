@@ -89,6 +89,24 @@ lsdir | sed 's|^\./||' | grep -vx common | grep -vx '.git' | grep -vx '.stfolder
 
 }
 
+################################################################################
+#
+# ask "Question?" [Y|N]
+#
+# Asks a yes/no question, with an optional yes/no default. If yes, returns 0, if
+# no, returns 1.
+#
+# To be used in an `if` like so:
+# ```
+# if ask 'You want to do this?' Y; then
+#     echo 'You agreed'
+# else
+#     echo 'You disagreed'
+# fi
+# ```
+#
+################################################################################
+
 ask() {
     # https://gist.github.com/davejamesmiller/1965569
     local prompt default reply
