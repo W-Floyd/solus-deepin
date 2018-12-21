@@ -1,8 +1,8 @@
 name       : deepin-screenshot
-version    : 4.1.4
-release    : 22
+version    : 4.1.5
+release    : 23
 source     :
-    - git|https://github.com/linuxdeepin/deepin-screenshot.git : 4.1.4
+    - git|https://github.com/linuxdeepin/deepin-screenshot.git : 4.1.5
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Advanced tool to make and edit screenshots
