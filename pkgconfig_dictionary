@@ -1,0 +1,10 @@
+pkgconfig(dtkwidget) dtkwidget-devel
+pkgconfig(dframeworkdbus) deepin-qt-dbus-factory-devel
+pkgconfig(gsettings-qt) gsettings-qt-devel
+pkgconfig(dde-network-utils) deepin-network-utils-devel
+pkgconfig(dtkcore) dtkcore-devel
+pkgconfig(Qt5Xdg) libqtxdg-devel
+pkgconfig(libdmr) deepin-movie-devel
+pkgconfig(libmongoc-1.0) libmongoc-devel
+pkgconfig(liblightdm-qt5-3) liblightdm-qt5-devel
+pkgconfig(geoip) geoip

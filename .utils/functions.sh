@@ -39,53 +39,23 @@ lsdir() {
     fi
 }
 
-__list_deps_pre() {
-    sort < "${1}" | sed -e 's#-devel$##' -e 's#-devel ##' | uniq
-}
-
-__list_deps_true() {
-    sort < "${1}" | uniq
-}
-
-__list_run_deps() {
-    if [ "${1}" = '--true' ]; then
-        shift
-        __list_deps_true 'run_deps' | grep -E "^${1} "
-    else
-        __list_deps_pre 'run_deps' | grep -E "^${1} "
-    fi
-}
-
-__list_build_deps() {
-    if [ "${1}" = '--true' ]; then
-        shift
-        __list_deps_true 'build_deps' | grep -E "^${1} "
-    else
-        __list_deps_pre 'build_deps' | grep -E "^${1} "
-    fi
-}
-
-__list_run_deps_rev() {
-    if [ "${1}" = '--true' ]; then
-        shift
-        __list_deps_pre 'run_deps' | grep -E " ${1}$"
-    else
-        __list_deps_true 'run_deps' | grep -E " ${1}$"
-    fi
-}
-
-__list_build_deps_rev() {
-    if [ "${1}" = '--true' ]; then
-        shift
-        __list_deps_pre 'build_deps' | grep -E " ${1}$"
-    else
-        __list_deps_true 'build_deps' | grep -E " ${1}$"
-    fi
-}
+################################################################################
+#
+# __list_packages
+#
+# Lists all packages.
+#
+################################################################################
 
 __list_packages() {
 
-    lsdir | sed 's|^\./||' | grep -vx common | grep -vx '.git' | grep -vx '.stfolder'
+    lsdir | sed 's|^\./||' | grep -Fvx 'common
+.git
+.stfolder
+.bin
+.tmp
+.utils
+.vscode'
 
 }
 
@@ -180,4 +150,90 @@ __rebuild() {
 
 __list() {
     find . -iname '*.eopkg' | sed -e 's#^\./##' -e 's#/.*##' | sort | uniq | grep -Fxf <(git status --short | sed -e 's#^ M ##' -e 's#/.*##' | sort | uniq)
+}
+
+################################################################################
+# [...] | __yaml2json [options]
+#
+# Same as `yaml2json`, just that it wraps it up nicely to download a binary if
+# needed, and if not, use system
+#
+################################################################################
+
+__yaml2json() {
+    __bin_file='/usr/bin/yaml2json'
+    if ! [ -e "${__bin_file}" ]; then
+        __bin_file='.bin/yaml2json'
+        if ! [ -e "${__bin_file}" ]; then
+            wget 'https://github.com/bronze1man/yaml2json/releases/download/v1.3/yaml2json_linux_amd64' --output-document='.bin/yaml2json' || {
+                echo 'Failed to obtain yaml2json.'
+                exit 1
+            }
+            chmod +x "${__bin_file}"
+        fi
+    fi
+    cat | "${__bin_file}" ${@}
+}
+
+################################################################################
+# [...] | __jq [options]
+#
+# Same as `jq`, just that it wraps it up nicely to download a package if needed.
+#
+################################################################################
+
+__jq() {
+    if ! which jq &> /dev/null; then
+        echo "We need to install jq"
+        eopkg it jq || {
+            echo 'Failed to obtain jq.'
+            exit 1
+        }
+    fi
+    cat | jq ${@}
+}
+
+################################################################################
+#  __xmllint [options]
+#
+# Same as `__xmllint`, just that it wraps it up nicely to download a package if
+# needed.
+#
+################################################################################
+
+__xmllint() {
+    if ! which xmllint &> /dev/null; then
+        echo "We need to install xmllint"
+        eopkg it libxml2 || {
+            echo 'Failed to obtain libxml2.'
+            exit 1
+        }
+    fi
+    xmllint ${@}
+}
+
+################################################################################
+#
+# __hash_dir <dir>
+#
+# Creates a single hash for a directory.
+#
+################################################################################
+
+__hash_dir() {
+    find "${1}" -type f -print0 | sort -z | xargs -0 sha1sum | sha1sum
+}
+
+################################################################################
+#
+# __hash_state
+#
+# A single function to give a hash for the current state of the build.
+#
+################################################################################
+
+__hash_state() {
+    {
+        find './.tmp/' -type f -print0 | sort -z | xargs -0 sha1sum | sha1sum
+    }
 }
