@@ -10,7 +10,8 @@
 # > echo 'foo
 # > bar
 # > bar
-# > foo' | uuniq
+# > foo
+# > bar' | uuniq
 #
 # Gives:
 #
@@ -195,7 +196,7 @@ __hash_dir() {
 ################################################################################
 
 __hash_state() {
-    {
-        find './.tmp/' -type f -print0 | sort -z | xargs -0 sha1sum | sha1sum
-    }
+    
+        __hash_dir './.tmp/'
+    
 }
