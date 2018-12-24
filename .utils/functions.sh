@@ -115,44 +115,6 @@ ask() {
 }
 
 ################################################################################
-# __upgrade [package] [version]
-#
-# Commits an upgrade to a given package with a given version.
-#
-################################################################################
-
-__upgrade() {
-    __package="${1}"
-    __version="${2}"
-    git add "${__package}/"
-    git commit -m "${__package}: Upgrade to ${__version}"
-}
-
-################################################################################
-# __rebuild [package]
-#
-# Commits a bump and rebuild to a given package.
-#
-################################################################################
-
-__rebuild() {
-    __package="${1}"
-    git add "${__package}/"
-    git commit -m "${__package}: Bump and rebuild."
-}
-
-################################################################################
-# __list
-#
-# List all packages that have been built but changes are yet to be commited
-#
-################################################################################
-
-__list() {
-    find . -iname '*.eopkg' | sed -e 's#^\./##' -e 's#/.*##' | sort | uniq | grep -Fxf <(git status --short | sed -e 's#^ M ##' -e 's#/.*##' | sort | uniq)
-}
-
-################################################################################
 # [...] | __yaml2json [options]
 #
 # Same as `yaml2json`, just that it wraps it up nicely to download a binary if
