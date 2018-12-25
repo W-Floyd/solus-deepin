@@ -1,32 +1,5 @@
 ################################################################################
 #
-# __check_deps <package>
-#
-# Scans through package deps and checks statuses.
-#
-################################################################################
-
-__check_deps() {
-
-    {
-        __list_builddeps "${1}"
-        __list_rundeps "${1}"
-    } | sort | uniq | while read -r __package; do
-
-        if __check_failed "${__package}"; then
-            __mark_failed "${1}"
-        fi
-
-        __check_deps "${__package}"
-
-        __check_built "${__package}" || true
-
-    done
-
-}
-
-################################################################################
-#
 # __check_rundeps_built <package>
 #
 # Scans through package rundeps and checks if all of them are built, including
@@ -93,9 +66,9 @@ __check_ready_to_build() {
 
 ################################################################################
 #
-# __mark_checked <package>
+# __mark_built <package>
 #
-# Marks a package as being checked for being built
+# Marks a package as being built
 #
 ################################################################################
 
@@ -103,33 +76,31 @@ __mark_built() {
     if ! [ -d '.tmp/built/' ]; then
         mkdir '.tmp/built/'
     fi
-    touch ".tmp/built/$(sed 's/-devel$//' <<< "${1}")"
+    touch ".tmp/built/${1%-devel}"
 }
 
 ################################################################################
 #
-# __check_built <package>
+# __check_built_eopkg <package>
 #
-# Checks if a package is built, 0 on true, 1 on false.
+# Checks if a package is built, according to eopkg files, 0 on true, 1 on false.
 #
 ################################################################################
 
-__check_built() {
+__check_built_eopkg() {
 
-    __check_marked_built "${1}" && return 0
-
-    if [ -z "$(find "./$(sed 's/-devel$//' <<< "${1}")/" -iname '*.eopkg')" ]; then
+    if [ -z "$(find "./${1%-devel}/" -iname '*.eopkg')" ]; then
         return 1
     fi
 
-    __current_build="$(find "./$(sed 's/-devel$//' <<< "${1}")/" -iname '*.eopkg' | sed 's#.*-\([0-9]*\)-1-x86_64\.eopkg$#\1#' | sort | uniq)"
-    __target_build="$(grep -Ex '^release    : .*' "${1}/package.yml" | sed 's/.* //')"
+    __current_build="$(find "./${1%-devel}/" -iname '*.eopkg' | sed 's#.*-\([0-9]*\)-1-x86_64\.eopkg$#\1#' | sort | uniq)"
+    __target_build="$(grep -Ex '^release    : .*' "${1%-devel}/package.yml" | sed 's/.* //')"
 
     if ! [ "${__current_build}" = "${__target_build}" ]; then
         return 1
     fi
 
-    __mark_built
+    __mark_built "${1}"
 
     return 0
 }
@@ -147,7 +118,22 @@ __check_marked_built() {
         mkdir '.tmp/built/'
         return 1
     fi
-    if [ -e ".tmp/built/$(sed 's/-devel$//' <<< "${1}")" ]; then
+    if [ -e ".tmp/built/${1%-devel}" ]; then
+        return 0
+    fi
+    return 1
+}
+
+################################################################################
+#
+# __check_built <package>
+#
+# Checks if a package is built, 0 on true, 1 on false.
+#
+################################################################################
+
+__check_built() {
+    if __check_marked_built "${1}" || __check_built_eopkg "${1}"; then
         return 0
     fi
     return 1
@@ -165,7 +151,7 @@ __mark_failed() {
     if ! [ -d '.tmp/failed/' ]; then
         mkdir '.tmp/failed/'
     fi
-    touch ".tmp/failed/$(sed 's/-devel$//' <<< "${1}")"
+    touch ".tmp/failed/${1%-devel}"
 }
 
 ################################################################################
@@ -181,10 +167,104 @@ __check_failed() {
         mkdir '.tmp/failed/'
         return 1
     fi
-    if [ -e ".tmp/failed/$(sed 's/-devel$//' <<< "${1}")" ]; then
+    if [ -e ".tmp/failed/${1%-devel}" ]; then
         return 0
     fi
     return 1
+}
+
+################################################################################
+#
+# __mark_failed_chain_rundeps <package>
+#
+# Checks if a package has any rundeps marked as failed, cascading down.
+#
+################################################################################
+
+__mark_failed_chain_rundeps() {
+
+    __error='0'
+
+    if ! [ -d '.tmp/failed/' ]; then
+        mkdir '.tmp/failed/'
+    fi
+
+    if [ -e ".tmp/chainrun/${1%-devel}" ]; then
+        return "$(cat ".tmp/chainrun/${1%-devel}")"
+    fi
+
+    __check_failed "${1}" && __error='1'
+
+    if ! __check_built "${1}"; then
+        (__mark_failed_chain "${1}") || __error='1'
+    fi
+
+    while read -r __package; do
+
+        if ! [ -z "${__package}" ]; then
+
+            (__mark_failed_chain_rundeps "${__package}") || __error='1'
+
+        fi
+
+    done < <(__list_rundeps "${1}" | sed '/^$/d')
+
+    echo "${__error}" > ".tmp/chainrun/${1%-devel}"
+
+    if [ "${__error}" = '1' ]; then
+        return 1
+    fi
+
+}
+
+################################################################################
+#
+# __mark_failed_chain <package>
+#
+# Checks if a package has any builddeps marked as failed, or any builddeps
+# rundeps marked as failed
+#
+################################################################################
+
+__mark_failed_chain() {
+
+    __error='0'
+
+    if ! [ -d '.tmp/failed/' ]; then
+        mkdir '.tmp/failed/'
+    fi
+
+    if [ -e ".tmp/chainbuild/${1%-devel}" ]; then
+        return "$(cat ".tmp/chainbuild/${1%-devel}")"
+    fi
+
+    __check_failed "${1}" && __error='1'
+
+    while read -r __builddep; do
+
+        if ! [ -z "${__builddep}" ]; then
+
+            (__mark_failed_chain "${__builddep}") || __error='1'
+
+            (__mark_failed_chain_rundeps "${__builddep}") || __error='1'
+
+        fi
+
+    done < <(__list_builddeps "${1}" | sed '/^$/d')
+
+    echo "${__error}" > ".tmp/chainbuild/${1%-devel}"
+
+    if [ "${__error}" = '1' ]; then
+        __mark_failed "${1}"
+        return 1
+    fi
+
+    # TODO
+    # Check all builddeps, and builddeps of theirs (recurse this function)
+    # Also check all rundeps of builddeps, and rundeps of those rundeps
+    # If any rundeps of builddeps aren't built, recurse on those also.
+    # If any fail, the whole chain from there up does.
+
 }
 
 ################################################################################
@@ -198,7 +278,7 @@ __check_failed() {
 __check_building() {
     if ! [ -e './.tmp/building' ]; then
         return 1
-    elif [ "$(cat ./.tmp/building)" = "${1}" ]; then
+    elif [ "$(cat ./.tmp/building)" = "${1%-devel}" ]; then
         return 0
     fi
     return 1
@@ -213,9 +293,11 @@ __check_building() {
 ################################################################################
 
 __mark_displayed() {
-    touch ".tmp/displayed/${1}"
+    if ! [ -d '.tmp/displayed/' ]; then
+        mkdir '.tmp/displayed/'
+    fi
+    touch ".tmp/displayed/${1%-devel}"
 }
-
 
 ################################################################################
 #
@@ -226,7 +308,10 @@ __mark_displayed() {
 ################################################################################
 
 __check_displayed() {
-    if [ -e ".tmp/displayed/${1}" ]; then
+    if ! [ -d '.tmp/displayed/' ]; then
+        mkdir '.tmp/displayed/'
+        return 1
+    elif [ -e ".tmp/displayed/${1%-devel}" ]; then
         return 0
     fi
     return 1

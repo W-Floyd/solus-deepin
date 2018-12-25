@@ -19,7 +19,7 @@
 # bar
 #
 ################################################################################
-uuniq() {
+__uuniq() {
     awk '!x[$0]++'
 }
 
@@ -56,7 +56,10 @@ __list_packages() {
 .bin
 .tmp
 .utils
-.vscode'
+.vscode' | while read -r __line; do
+        echo "${__line}"
+        echo "${__line}-devel"
+    done
 
 }
 
@@ -124,6 +127,7 @@ ask() {
 ################################################################################
 
 __yaml2json() {
+
     __bin_file='/usr/bin/yaml2json'
     if ! [ -e "${__bin_file}" ]; then
         __bin_file='.bin/yaml2json'
@@ -146,6 +150,7 @@ __yaml2json() {
 ################################################################################
 
 __jq() {
+
     if ! which jq &> /dev/null; then
         echo "We need to install jq"
         eopkg it jq || {
@@ -196,7 +201,7 @@ __hash_dir() {
 ################################################################################
 
 __hash_state() {
-    
-        __hash_dir './.tmp/'
-    
+
+    __hash_dir './.tmp/'
+
 }

@@ -1,13 +1,13 @@
 ################################################################################
 #
-# [...] | __list_builddeps_raw
+# __list_builddeps_raw <package>
 #
 # Wraps `__yaml2json` and `__jq`, then spits out a raw list of builddeps.
 #
 ################################################################################
 
 __list_builddeps_raw() {
-    cat "./${1}/package.yml" | __yaml2json | __jq '.builddeps' | sed -e '1d' -e '$d' -e 's/^ *"//' -e 's/",\?$//'
+    __yaml2json < "./${1%-devel}/package.yml" | __jq '.builddeps' | sed -e '1d' -e '$d' -e 's/^ *"//' -e 's/",\?$//'
 }
 
 ################################################################################
@@ -42,15 +42,39 @@ __interpret_builddeps() {
 
 ################################################################################
 #
-# __list_builddeps <package>
+# __builddeps_store <package>
 #
 # Wraps `__list_builddeps_raw` and `__interpret_builddeps`, then spits out a
-# list of builddeps that come from our packages.
+# list of builddeps that come from our packages, storing them in a file to use
+# later.
+#
+################################################################################
+
+__builddeps_store() {
+    __list_builddeps_raw "${1}" | __interpret_builddeps | grep -Fxf <(__list_packages) > ".tmp/builddeps/${1}"
+}
+
+################################################################################
+#
+# __list_builddeps <package>
+#
+# Wraps `__builddeps_store` spits out a list of builddeps that come from our
+# packages.
 #
 ################################################################################
 
 __list_builddeps() {
-    __list_builddeps_raw "${1}" | __interpret_builddeps | sed 's/-devel$//' | grep -Fxf <(__list_packages)
+
+    if ! [ -d '.tmp/builddeps' ]; then
+        mkdir '.tmp/builddeps'
+    fi
+
+    if ! [ -e ".tmp/builddeps/${1}" ]; then
+        __builddeps_store "${1}"
+    fi
+
+    cat ".tmp/builddeps/${1}" | sed '/^$/d'
+
 }
 
 ################################################################################
@@ -62,7 +86,7 @@ __list_builddeps() {
 ################################################################################
 
 __list_rundeps_raw() {
-    cat "./${1}/package.yml" | __yaml2json | __jq '.rundeps' | sed -e '1d' -e '$d' -e 's/^ *"//' -e 's/",\?$//'
+    __yaml2json < "./${1%-devel}/package.yml" | __jq '.rundeps' | sed -e '1d' -e '$d' -e 's/^ *"//' -e 's/",\?$//'
 }
 
 ################################################################################
@@ -90,7 +114,7 @@ __list_rundeps_eopkg_raw() {
 
 ################################################################################
 #
-# __list_rundeps_eopkg_store <package>
+# __rundeps_store <package>
 #
 # Wraps `__list_rundeps_eopkg_raw`, then spits out a list of rundeps that come
 # from our packages for all .eopkg files for the given package, storing them in
@@ -98,14 +122,17 @@ __list_rundeps_eopkg_raw() {
 #
 ################################################################################
 
-__list_rundeps_eopkg_store() {
-
+__rundeps_store() {
     if [ -e ".rundeps/${1}" ]; then
         rm ".rundeps/${1}"
     fi
-    find "./$(sed 's/-devel$//' <<< "${1}")/" -iname '*.eopkg' | grep -E "^\./$(sed 's/-devel$//' <<< "${1}")/${1}-[^-]*-[0-9]*-1-x86_64.eopkg$" | while read -r __package_file; do
-        __list_rundeps_eopkg_raw "${__package_file}"
-    done | sort | uniq | grep -Fxf <(__list_packages) > ".rundeps/${1}"
+    touch ".rundeps/${1}"
+    {
+        find "./${1%-devel}/" -iname '*.eopkg' | grep -E "^\./${1%-devel}/${1}-[^-]*-[0-9]*-1-x86_64.eopkg$" | while read -r __package_file; do
+            __list_rundeps_eopkg_raw "${__package_file}"
+        done
+        __list_rundeps_raw "${1}"
+    } | sort | uniq | grep -Fxf <(__list_packages) | sed '/^$/d' > ".rundeps/${1}"
 
 }
 
@@ -113,15 +140,15 @@ __list_rundeps_eopkg_store() {
 #
 # __list_rundeps_eopkg <package>
 #
-# Wraps `__list_rundeps_eopkg_raw`, then spits out a list of rundeps that come
-# from our packages for all .eopkg files for the given package.
+# Wraps `__rundeps_store`, then spits out a list of rundeps that come from our
+# packages for all .eopkg files for the given package.
 #
 ################################################################################
 
 __list_rundeps_eopkg() {
 
     if ! [ -e ".rundeps/${1}" ]; then
-        __list_rundeps_eopkg_store "${1}"
+        __rundeps_store "${1}"
     fi
     cat ".rundeps/${1}"
 
@@ -138,28 +165,43 @@ __list_rundeps_eopkg() {
 
 __list_rundeps() {
     source '.utils/functions/build/check.sh'
+    {
     if __check_built "${1}"; then
         __list_rundeps_eopkg "${1}"
     else
-        __list_rundeps_raw "${1}" | sed 's/-devel$//' | grep -Fxf <(__list_packages)
+        __list_rundeps_raw "${1}" | grep -Fxf <(__list_packages)
     fi
+    } | sed '/^$/d'
 }
 
 ################################################################################
 #
-# __build <package>
+# __list_built
 #
-# Builds a given package.
+# Lists all the packages that are currently built, given an existing check of
+# packages.
 #
 ################################################################################
 
-__build() {
+__list_built() {
+    find '.tmp/built/' -type f | sed 's#.*/##'
+}
+
+################################################################################
+#
+# __build_package <package>
+#
+# Builds a given package specifically.
+#
+################################################################################
+
+__build_package() {
 
     __error='0'
 
     __build_deps="$(__list_builddeps "${1}")"
 
-    cd "$(sed 's/-devel$//' <<< "${1}")"
+    cd "${1%-devel}"
 
     if [ -z "${__build_deps}" ]; then
         make &> "../.tmp/log/${1}" || {
@@ -186,145 +228,89 @@ __build() {
 
 ################################################################################
 #
-# __build_sub_loop <package> <symbol>
+# __redraw <package> <run|build> <list|end>
 #
-# A sub function so that formatting may be done on output
+# Redraws the package tree, given a root package.
 #
 ################################################################################
 
-__build_sub_loop() {
+__redraw() {
+    
+    __package_real="${1}"
 
-    source '.utils/functions/color.sh'
-    source '.utils/functions/build/check.sh'
-    source '.utils/variables/build_symbols.sh'
+    __symbol_vertical="__symbol_${2}_vertical"
+    __symbol_end="__symbol_${2}_end"
+    __symbol_list="__symbol_${2}_list"
+    __symbol_horizontal="__symbol_${2}_horizontal"
+    __symbol_arrow="__symbol_${2}_arrow"
 
-    __package="${1}"
-    __outer_symbol="__symbol_${3}_${2}"
-    __outer_symbol="${!__outer_symbol}"
-
-    __symbol_horizontal="__symbol_${3}_horizontal"
-    __symbol_arrow="__symbol_${3}_arrow"
-    __symbol_vertical="__symbol_${3}_vertical"
-
+    __symbol_vertical="${!__symbol_vertical}"
+    __symbol_end="${!__symbol_end}"
+    __symbol_list="${!__symbol_list}"
     __symbol_horizontal="${!__symbol_horizontal}"
     __symbol_arrow="${!__symbol_arrow}"
-    __symbol_vertical="${!__symbol_vertical}"
 
-    echo -n "${!__outer_symbol}${!__symbol_horizontal}${!__symbol_arrow} "
+    __symbol_outer="__symbol_${3}"
+    __symbol_outer="${!__symbol_outer}"
 
-    if ! [ -d '.tmp/log/' ]; then
-        mkdir '.tmp/log/'
-    fi
+    __mark_displayed "${__package_real}"
 
-    if __check_ready_to_build "${__package}"; then
-        {
-            nohup '.utils/subutils/build/real_build.sh' "${__package}" &
-        } &> /dev/null
-
-    fi
-
-    __check_deps "${__package}"
-
-    if __check_failed "${__package}"; then
-        __color='red'
-    elif __check_built "${__package}"; then
+    if __check_built "${__package_real}"; then
+        __message='[BUILT]'
         __color='green'
-    elif __check_building "${__package}"; then
+    elif __check_building "${__package_real}"; then
+        __message='[BUILDING]'
         __color='yellow'
+    elif __check_failed "${__package_real}"; then
+        __message='[FAILED]'
+        __color='red'
     else
+        __message='[PENDING]'
         __color='blue'
     fi
 
-    echo "${__package}" | __color_pipe --bold "${__color}" | {
-        if __check_building "${__package}"; then
-            sed "s#\$#  $(echo '[BUILDING]' | __color_pipe --underline yellow)#"
-        #elif __check_built "${__package}"; then
-        #    sed "s#\$#  $(echo '[BUILT]' | __color_pipe --underline green)#"
-        #elif __check_failed "${__package}"; then
-        #    sed "s#\$#  $(echo '[FAILED]' | __color_pipe --underline red)#"
-        else
-            cat
-        fi
-    }
+    echo -n "${__symbol_outer}${__symbol_horizontal}${__symbol_arrow} "
 
-    __mark_displayed "${__package}"
+    echo "${__package_real}" | __color_pipe --bold "${__color}" | sed "s#\$#  $(echo "${__message}" | __color_pipe --underline "${__color}")#"
 
-    if ! __check_built "${__package}" || ! __check_rundeps_built "${__package}"; then
-
-        __list="$(__build_loop "${__package}")"
-        if ! [ -z "${__list}" ]; then
-            echo "${__list}" | sed "s/^/${!__symbol_vertical}   /"
-        fi
-
+    if [ "${3}" = 'list' ]; then
+        __symbol_child_outer="${__symbol_vertical}"
+    else
+        __symbol_child_outer=' '
     fi
 
-}
-
-################################################################################
-#
-# __build_loop <package>
-#
-# Iterates through and draws a tree of build steps
-#
-################################################################################
-
-__build_loop() {
-
-    source '.utils/variables/build_symbols.sh'
-
     __sub() {
-        while read -r __package; do
-
-            if ! __check_displayed "${__package}"; then
-                echo "${__package}"
-            fi
-
-        done <<< "${1}"
+        __var="$(
+            echo "${1}" | sed '/^$/d' | while read -r __item; do
+                if ! __check_displayed "${__item}"; then
+                    echo "${__item}"
+                    __mark_displayed "${__item}"
+                fi
+            done | sed '/^$/d'
+        )"
+        if ! [ -z "${__var}" ]; then
+            {
+                if [ "$(echo "${__var}" | wc -l)" = '1' ]; then
+                    echo "${__var}" | while read -r __item; do
+                        __redraw "${__item}" "${2}" end "${__symbol_child_outer}"
+                    done
+                else
+                    echo "${__var}" | sed '$d' | while read -r __item; do
+                        __redraw "${__item}" "${2}" list "${__symbol_child_outer}"
+                    done
+                    echo "${__var}" | sed '$!d' | while read -r __item; do
+                        __redraw "${__item}" "${2}" end "${__symbol_child_outer}"
+                    done
+                fi
+            } | sed "s/^/${__symbol_child_outer}   /"
+        fi
     }
 
-    __raw_list="$(__list_builddeps "${1}")"
+    __list="$(__list_builddeps "${__package_real}")"
 
-    __list="$(__sub "${__raw_list}")"
+    __list2="$(__list_rundeps "${__package_real}")"
 
-    echo "${__list}" | sed '/^$/d' | sed '$d' | while read -r __package; do
-
-        __build_sub_loop "${__package}" list build
-
-    done
-
-    echo "${__list}" | sed '/^$/d' | sed '$!d' | while read -r __package; do
-
-        __build_sub_loop "${__package}" end build
-
-    done
-
-    __raw_list="$(__list_rundeps "${1}")"
-
-    __list="$(__sub "${__raw_list}")"
-
-    echo "${__list}" | sed '/^$/d' | sed '$d' | while read -r __package; do
-        __build_sub_loop "${__package}" list run
-    done
-
-    echo "${__list}" | sed '/^$/d' | sed '$!d' | while read -r __package; do
-        __build_sub_loop "${__package}" end run
-    done
-}
-
-################################################################################
-#
-# __build_entry <package>
-#
-# Enters into a build loop.
-#
-################################################################################
-
-__build_entry() {
-
-    source '.utils/variables/build_symbols.sh'
-
-    echo "${1}" | while read -r __package; do
-        __build_sub_loop "${__package}" list build
-    done | sed -r 's/^.{4}//'
+    __sub "${__list}" build "${3}"
+    __sub "${__list2}" run "${3}"
 
 }

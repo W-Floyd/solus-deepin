@@ -2,50 +2,56 @@
 
 source '.utils/functions.sh'
 source '.utils/functions/build.sh'
+source '.utils/functions/build/state.sh'
+source '.utils/functions/build/tree.sh'
+source '.utils/functions/color.sh'
+source '.utils/functions/build/check.sh'
+source '.utils/variables/color.sh'
+source '.utils/variables/build_symbols.sh'
 
-mkdir -p '.rundeps'
-mkdir -p '.tmp/log'
-mkdir -p '.tmp/rundeps'
-mkdir -p '.tmp/displayed'
+mkdir -p '.tmp/log/'
+mkdir -p '.tmp/failed/'
+mkdir -p '.rundeps/'
 
-tput clear
+__check_state "${1}"
 
-__draw() {
-    echo "${1}" > '.tmp/output'
-    __build_entry "${1}" > '.tmp/output'
-    tput clear
-    tput cup 0 0
-    cat '.tmp/output'
-}
+#tput cup 0 0
+#tput clear
 
-__draw "${1}"
+mkdir -p '.tmp/chainrun/'
+mkdir -p '.tmp/chainbuild/'
 
-while true; do
+__mark_failed_chain "${1}"
+__mark_failed_chain_rundeps "${1}"
 
-    __old_hash="$(__hash_dir './.tmp/')"
-    __new_hash="${__old_hash}"
+rm -r '.tmp/chainrun/'
+rm -r '.tmp/chainbuild/'
 
-    __wait='0'
+__redraw "${1}" build end
 
-    while [ "${__wait}" -lt 5 ]; do
-        sleep 0.2s
-        __old_hash="${__new_hash}"
-        __new_hash="$(__hash_dir './.tmp/')"
-        if ! [ "${__old_hash}" = "${__new_hash}" ] || ! [ -e './.tmp/building' ]; then
-            break
-        fi
-        __wait=$((__wait + 1))
+__list="${1}"
+
+until [ -z "${__list}" ]; do
+    __list="$(
+        __tsort_prepare | sed -e 's/-devel / /' -e 's/-devel$//' | tsort | tac | grep -Fxv "$(__list_built)" | sed '/^$/d'
+    )"
+    echo "${__list}" | sed '/^$/d' | while read -r __package; do
+
+        rm .tmp/displayed/*
+        echo "${__package}" > '.tmp/building'
+        __redraw "${1}" build end > '.tmp/output'
+        tput clear
+        tput cup 0 0
+        cat '.tmp/output'
+        '.utils/subutils/build/real_build.sh' "${__package}"
+        rm '.tmp/building'
     done
 
-    rm .tmp/displayed/*
-
-    __draw "${1}"
-
-    if ! [ -e '.dont_quit' ]; then
-        break
-    else
-        rm '.dont_quit'
-    fi
 done
+
+__redraw "${1}" build end > '.tmp/output'
+tput clear
+tput cup 0 0
+cat '.tmp/output'
 
 exit

@@ -12,7 +12,7 @@ __recurse_copy_eopkg() {
 
     __list_builddeps "${1}" | while read -r __package; do
 
-        find "./${__package}/" -iname '*.eopkg' | while read -r __package_file; do
+        find "./${__package%-devel}/" -iname '*.eopkg' | while read -r __package_file; do
             cp "${__package_file}" /var/lib/solbuild/local/
         done
 
@@ -35,7 +35,7 @@ __recurse_copy_eopkg() {
 ################################################################################
 
 __recurse_copy_rundep_eopkg() {
-    find "./${1}/" -iname '*.eopkg' | while read -r __package_file; do
+    find "./${1%-devel}/" -iname '*.eopkg' | while read -r __package_file; do
         cp "${__package_file}" /var/lib/solbuild/local/
     done
 

@@ -18,7 +18,7 @@
 ################################################################################
 
 __color_pipe() {
-    source '.utils/variables/color.sh'
+
     __bold='0'
     __underline='0'
     __intense='0'
@@ -59,5 +59,4 @@ __color_pipe() {
     fi
 
     echo -e "${!__var}$(cat)${Color_Off}"
-
 }
