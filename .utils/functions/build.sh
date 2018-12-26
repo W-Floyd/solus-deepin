@@ -117,8 +117,7 @@ __list_rundeps_eopkg_raw() {
 # __rundeps_store <package>
 #
 # Wraps `__list_rundeps_eopkg_raw`, then spits out a list of rundeps that come
-# from our packages for all .eopkg files for the given package, storing them in
-# a file to use later.
+# from our packages, storing them in a file to use later.
 #
 ################################################################################
 
@@ -128,10 +127,14 @@ __rundeps_store() {
     fi
     touch ".rundeps/${1}"
     {
-        find "./${1%-devel}/" -iname '*.eopkg' | grep -E "^\./${1%-devel}/${1}-[^-]*-[0-9]*-1-x86_64.eopkg$" | while read -r __package_file; do
-            __list_rundeps_eopkg_raw "${__package_file}"
-        done
-        __list_rundeps_raw "${1}"
+        if ! __check_built; then
+            __list_rundeps_raw "${1}"
+        else
+            find "./${1%-devel}/" -iname '*.eopkg' | grep -E "^\./${1%-devel}/${1}-[^-]*-[0-9]*-1-x86_64.eopkg$" | while read -r __package_file; do
+                __list_rundeps_eopkg_raw "${__package_file}"
+            done
+        fi
+
     } | sort | uniq | grep -Fxf <(__list_packages) | sed '/^$/d' > ".rundeps/${1}"
 
 }
@@ -166,11 +169,11 @@ __list_rundeps_eopkg() {
 __list_rundeps() {
     source '.utils/functions/build/check.sh'
     {
-    if __check_built "${1}"; then
-        __list_rundeps_eopkg "${1}"
-    else
-        __list_rundeps_raw "${1}" | grep -Fxf <(__list_packages)
-    fi
+        if __check_built "${1}"; then
+            __list_rundeps_eopkg "${1}"
+        else
+            __list_rundeps_raw "${1}" | grep -Fxf <(__list_packages)
+        fi
     } | sed '/^$/d'
 }
 
@@ -235,7 +238,7 @@ __build_package() {
 ################################################################################
 
 __redraw() {
-    
+
     __package_real="${1}"
 
     __symbol_vertical="__symbol_${2}_vertical"
