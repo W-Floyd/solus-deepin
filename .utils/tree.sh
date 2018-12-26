@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source '.utils/functions.sh'
+source '.utils/functions/functions.sh'
 source '.utils/functions/build.sh'
 source '.utils/functions/build/state.sh'
 source '.utils/functions/build/tree.sh'
@@ -15,7 +15,5 @@ mkdir -p '.rundeps/'
 __check_state "${1}"
 
 __redraw "${1}" build end
-
-__recurse_copy_eopkg "${1}"
 
 exit

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source '.utils/functions.sh'
+source '.utils/functions/functions.sh'
 source '.utils/functions/build.sh'
 source '.utils/functions/build/state.sh'
 source '.utils/functions/build/tree.sh'
@@ -13,19 +13,32 @@ mkdir -p '.tmp/log/'
 mkdir -p '.tmp/failed/'
 mkdir -p '.rundeps/'
 
-__check_state "${1}"
+__inputs="$(
+    until [ "${#}" = '0' ]; do
+        echo "${1}"
+        shift
+    done
+)"
+
+while read -r __input; do
+    __check_state "${__input}"
+done <<< "${__inputs}"
 
 tput cup 0 0
 tput clear
 
 mkdir -p '.tmp/chainrun/'
 mkdir -p '.tmp/chainbuild/'
-__mark_failed_chain "${1}"
-__mark_failed_chain_rundeps "${1}"
+while read -r __input; do
+    __mark_failed_chain "${__input}"
+    __mark_failed_chain_rundeps "${__input}"
+done <<< "${__inputs}"
 rm -r '.tmp/chainrun/'
 rm -r '.tmp/chainbuild/'
 
-__redraw "${1}" build end
+while read -r __input; do
+    __redraw "${__input}" build end
+done <<< "${__inputs}"
 
 __list_func() {
     {
@@ -35,7 +48,11 @@ __list_func() {
     } | __uuniq | grep -Fxvf <(__list_built) | grep -Fxvf <(__list_failed) | sed '/^$/d'
 }
 
-__list="$(__list_func "${1}")"
+__list="$(
+    while read -r __input; do
+        __list_func "${__input}"
+    done <<< "${__inputs}"
+)"
 
 until [ -z "${__list}" ]; do
 
@@ -45,7 +62,9 @@ until [ -z "${__list}" ]; do
 
         rm .tmp/displayed/*
         echo "${__package}" > '.tmp/building'
-        __redraw "${1}" build end > '.tmp/output'
+        while read -r __input; do
+            __redraw "${__input}" build end
+        done <<< "${__inputs}" > '.tmp/output'
         tput clear
         tput cup 0 0
         cat '.tmp/output'
@@ -57,8 +76,10 @@ until [ -z "${__list}" ]; do
 
             mkdir -p '.tmp/chainrun/'
             mkdir -p '.tmp/chainbuild/'
-            __mark_failed_chain "${1}"
-            __mark_failed_chain_rundeps "${1}"
+            while read -r __input; do
+                __mark_failed_chain "${__input}"
+                __mark_failed_chain_rundeps "${__input}"
+            done <<< "${__inputs}"
             rm -r '.tmp/chainrun/'
             rm -r '.tmp/chainbuild/'
 
@@ -66,18 +87,26 @@ until [ -z "${__list}" ]; do
 
     done
 
-    __list="$(__list_func "${1}")"
+    __list="$(
+        while read -r __input; do
+            __list_func "${__input}"
+        done <<< "${__inputs}"
+    )"
 
 done
 
 rm .tmp/displayed/*
-__redraw "${1}" build end > '.tmp/output'
+while read -r __input; do
+    __redraw "${__input}" build end
+done <<< "${__inputs}" > '.tmp/output'
 tput clear
 tput cup 0 0
 cat '.tmp/output'
 
-if __check_failed "${1}" ; then
-    exit 1
-fi
+while read -r __input; do
+    if __check_failed "${__input}"; then
+        exit 1
+    fi
+done <<< "${__inputs}" > '.tmp/output'
 
 exit

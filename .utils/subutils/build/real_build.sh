@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source '.utils/functions.sh'
+source '.utils/functions/functions.sh'
 source '.utils/functions/build.sh'
 source '.utils/functions/build/check.sh'
 source '.utils/functions/build/copy.sh'
