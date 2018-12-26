@@ -16,9 +16,9 @@ __script="./.utils/${__action}.sh"
 
 if ! [ -e "${__script}" ]; then
 	echo "Action '${__action}' does not exist"
-    false
+    exit 1
 else
-	"${__script}" ${@} || false
+	"${__script}" ${@} || exit 1
 fi
 
 ################################################################################

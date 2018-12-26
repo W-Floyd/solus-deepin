@@ -22,6 +22,7 @@ if __check_built "${1}"; then
     __rundeps_store "${1}"
 else
     __mark_failed "${1}"
+    exit 1
 fi
 
 exit

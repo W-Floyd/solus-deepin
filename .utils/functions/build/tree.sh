@@ -1,12 +1,12 @@
 ################################################################################
 #
-# __tsort_prepare_builddeps
+# __tsort_prepare
 #
 # Takes all known builddeps and spits out a tsortable list of packages.
 #
 ################################################################################
 
-__tsort_prepare_builddeps() {
+__tsort_prepare() {
     find '.tmp/builddeps/' -type f | sed '/^$/d' | while read -r __file; do
         __package="${__file/*\//}"
         
@@ -23,18 +23,4 @@ __tsort_prepare_builddeps() {
 
         fi
     done
-}
-
-################################################################################
-#
-# __tsort_prepare
-#
-# Takes all known rdeps and spits out a tsortable list of packages.
-#
-################################################################################
-
-__tsort_prepare() {
-    {
-        __tsort_prepare_builddeps
-    } | sort | uniq
 }

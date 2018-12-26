@@ -16,4 +16,6 @@ __check_state "${1}"
 
 __redraw "${1}" build end
 
+__recurse_copy_eopkg "${1}"
+
 exit

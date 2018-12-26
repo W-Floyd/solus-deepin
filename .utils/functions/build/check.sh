@@ -93,7 +93,7 @@ __check_built_eopkg() {
         return 1
     fi
 
-    __current_build="$(find "./${1%-devel}/" -iname '*.eopkg' | sed 's#.*-\([0-9]*\)-1-x86_64\.eopkg$#\1#' | sort | uniq)"
+    __current_build="$(find "./${1%-devel}/" -iname '*.eopkg' | sort -n | sed '$!d' | sed 's#.*-\([0-9]*\)-1-x86_64\.eopkg$#\1#')"
     __target_build="$(grep -Ex '^release    : .*' "${1%-devel}/package.yml" | sed 's/.* //')"
 
     if ! [ "${__current_build}" = "${__target_build}" ]; then

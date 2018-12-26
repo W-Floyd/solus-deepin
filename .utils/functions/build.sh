@@ -126,17 +126,13 @@ __rundeps_store() {
         rm ".rundeps/${1}"
     fi
     touch ".rundeps/${1}"
-    {
-        if ! __check_built; then
-            __list_rundeps_raw "${1}"
-        else
-            find "./${1%-devel}/" -iname '*.eopkg' | grep -E "^\./${1%-devel}/${1}-[^-]*-[0-9]*-1-x86_64.eopkg$" | while read -r __package_file; do
-                __list_rundeps_eopkg_raw "${__package_file}"
-            done
-        fi
-
-    } | sort | uniq | grep -Fxf <(__list_packages) | sed '/^$/d' > ".rundeps/${1}"
-
+    if ! __check_built; then
+        __list_rundeps_raw "${1}" | sort | uniq | grep -Fxf <(__list_packages) | sed '/^$/d' > ".rundeps/${1}"
+    else
+        find "./${1%-devel}/" -iname '*.eopkg' | while read -r __package_file; do
+            __list_rundeps_eopkg_raw "${__package_file}" | sort | uniq | grep -Fxf <(__list_packages) | sed '/^$/d' > ".rundeps/$(sed -e 's#-[^-]*-[0-9]*-1-x86_64\.eopkg$##' -e 's#.*/##' <<< "${__package_file}")"
+        done
+    fi
 }
 
 ################################################################################
@@ -187,7 +183,20 @@ __list_rundeps() {
 ################################################################################
 
 __list_built() {
-    find '.tmp/built/' -type f | sed 's#.*/##'
+    find '.tmp/built/' -type f | sed 's#.*/##' | sed 's/-devel$//'
+}
+
+################################################################################
+#
+# __list_failed
+#
+# Lists all the packages that are currently failed, given an existing check of
+# packages.
+#
+################################################################################
+
+__list_failed() {
+    find '.tmp/failed/' -type f | sed 's#.*/##' | sed 's/-devel$//'
 }
 
 ################################################################################
@@ -258,12 +267,12 @@ __redraw() {
 
     __mark_displayed "${__package_real}"
 
-    if __check_built "${__package_real}"; then
-        __message='[BUILT]'
-        __color='green'
-    elif __check_building "${__package_real}"; then
+    if __check_building "${__package_real}"; then
         __message='[BUILDING]'
         __color='yellow'
+    elif __check_built "${__package_real}"; then
+        __message='[BUILT]'
+        __color='green'
     elif __check_failed "${__package_real}"; then
         __message='[FAILED]'
         __color='red'

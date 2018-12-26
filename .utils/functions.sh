@@ -56,7 +56,8 @@ __list_packages() {
 .bin
 .tmp
 .utils
-.vscode' | while read -r __line; do
+.vscode
+.rundeps' | while read -r __line; do
         echo "${__line}"
         echo "${__line}-devel"
     done
