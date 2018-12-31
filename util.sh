@@ -2,11 +2,14 @@
 
 ################################################################################
 
-if [ -d '.tmp/' ]; then
-    rm -r '.tmp/'
-fi
+source '.utils/functions/functions.sh'
 
-mkdir -p '.tmp/'
+################################################################################
+
+if [ "${1}" = '--piped' ]; then
+    __piped_input="$(cat)"
+    shift
+fi
 
 if [ -z "${1}" ]; then
     echo 'No action given'
@@ -22,7 +25,9 @@ if ! [ -e "${__script}" ]; then
     echo "Action '${__action}' does not exist"
     exit 1
 else
-    "${__script}" ${@} || exit 1
+
+    "${__script}" ${@} <<< "${__piped_input}" || exit 1
+
 fi
 
 ################################################################################

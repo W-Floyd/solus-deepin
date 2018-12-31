@@ -1,5 +1,19 @@
 ################################################################################
 #
+# [...] | __catecho
+#
+# cats input if available, but does not block for it.
+#
+################################################################################
+
+__catecho() {
+    if read -r -t 0; then
+        cat
+    fi
+}
+
+################################################################################
+#
 # ... | uuniq
 #
 # Like `sort | uniq`, except it keeps original ordering, keeping the first
@@ -57,7 +71,21 @@ __list_packages() {
 .tmp
 .utils
 .vscode
-.rundeps' | while read -r __line; do
+.rundeps'
+
+}
+
+################################################################################
+#
+# __list_packages_devel
+#
+# Lists all packages, along with -devel versions.
+#
+################################################################################
+
+__list_packages_devel() {
+
+    __list_packages | while read -r __line; do
         echo "${__line}"
         echo "${__line}-devel"
     done

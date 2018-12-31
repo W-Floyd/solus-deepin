@@ -51,7 +51,7 @@ __interpret_builddeps() {
 ################################################################################
 
 __builddeps_store() {
-    __list_builddeps_raw "${1}" | __interpret_builddeps | grep -Fxf <(__list_packages) > ".tmp/builddeps/${1}"
+    __list_builddeps_raw "${1}" | __interpret_builddeps | grep -Fxf <(__list_packages_devel) > ".tmp/builddeps/${1}"
 }
 
 ################################################################################
@@ -127,10 +127,10 @@ __rundeps_store() {
     fi
     touch ".rundeps/${1}"
     if ! __check_built; then
-        __list_rundeps_raw "${1}" | sort | uniq | grep -Fxf <(__list_packages) | sed '/^$/d' > ".rundeps/${1}"
+        __list_rundeps_raw "${1}" | sort | uniq | grep -Fxf <(__list_packages_devel) | sed '/^$/d' > ".rundeps/${1}"
     else
         find "./${1%-devel}/" -iname '*.eopkg' | while read -r __package_file; do
-            __list_rundeps_eopkg_raw "${__package_file}" | sort | uniq | grep -Fxf <(__list_packages) | sed '/^$/d' > ".rundeps/$(sed -e 's#-[^-]*-[0-9]*-1-x86_64\.eopkg$##' -e 's#.*/##' <<< "${__package_file}")"
+            __list_rundeps_eopkg_raw "${__package_file}" | sort | uniq | grep -Fxf <(__list_packages_devel) | sed '/^$/d' > ".rundeps/$(sed -e 's#-[^-]*-[0-9]*-1-x86_64\.eopkg$##' -e 's#.*/##' <<< "${__package_file}")"
         done
     fi
 }
@@ -168,7 +168,7 @@ __list_rundeps() {
         if __check_built "${1}"; then
             __list_rundeps_eopkg "${1}"
         else
-            __list_rundeps_raw "${1}" | grep -Fxf <(__list_packages)
+            __list_rundeps_raw "${1}" | grep -Fxf <(__list_packages_devel)
         fi
     } | sed '/^$/d'
 }
@@ -216,14 +216,14 @@ __build_package() {
     cd "${1%-devel}"
 
     if [ -z "${__build_deps}" ]; then
-        make &> "../.tmp/log/${1}" || {
+        make &> >(tee "../.tmp/log/${1}" | sed "s/^/$(__color_pipe --bold Color_Off <<< "${1}"): /" >> '../.tmp/livelog') || {
             pushd ../ &> /dev/null
             __mark_failed "${1}"
             popd &> /dev/null
             __error='1'
         }
     else
-        make local &> "../.tmp/log/${1}" || {
+        make local &> >(tee "../.tmp/log/${1}" | sed "s/^/$(__color_pipe --bold Color_Off <<< "${1}"): /" >> '../.tmp/livelog') || {
             pushd ../ &> /dev/null
             __mark_failed "${1}"
             popd &> /dev/null
