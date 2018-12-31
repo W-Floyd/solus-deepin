@@ -1,6 +1,6 @@
 name       : deepin-calculator
 version    : 1.0.10
-release    : 26
+release    : 27
 source     :
     - git|https://github.com/linuxdeepin/deepin-calculator.git : 1.0.10
 license    : GPL-3.0-or-later
