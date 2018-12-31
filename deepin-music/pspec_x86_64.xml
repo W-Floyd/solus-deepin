@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">Music player for the Deepin DE</Summary>
         <Description xml:lang="en">Deepin Music is an application developed by Deepin Technology Team which focused on local music playing. It brings all brand new UI design, extreme playing experience, and it has local music scanning and lyric sync functions, etc.
@@ -186,7 +186,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="24">deepin-music</Dependency>
+            <Dependency release="26">deepin-music</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/DBusExtended/DBusExtended</Path>
@@ -211,9 +211,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="24">
-            <Date>2018-12-16</Date>
-            <Version>3.1.11</Version>
+        <Update release="26">
+            <Date>2018-12-31</Date>
+            <Version>3.1.13</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

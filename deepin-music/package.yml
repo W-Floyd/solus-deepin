@@ -1,8 +1,8 @@
 name       : deepin-music
-version    : 3.1.11
-release    : 24
+version    : 3.1.13
+release    : 26
 source     :
-    - git|https://github.com/linuxdeepin/deepin-music.git : 3.1.11
+    - git|https://github.com/linuxdeepin/deepin-music.git : 3.1.13
 license    : GPL-3.0-or-later
 component  : desktop.deepin
 summary    : Music player for the Deepin DE
