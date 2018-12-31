@@ -1,25 +1,36 @@
-#!/bin/bash -e
+#!/bin/bash
+
+source 'functions.sh'
 
 ################################################################################
-
-if [ -d '.tmp/' ]; then
-	rm -r '.tmp/'
-fi
-
-
-mkdir -p '.tmp/'
 
 __action="${1}"
 shift
 
-__script="./.utils/${__action}.sh"
+case ${__action} in
 
-if ! [ -e "${__script}" ]; then
-	echo "Action '${__action}' does not exist"
-    exit 1
-else
-	"${__script}" ${@} || exit 1
-fi
+    git)
+        __subaction="${1}"
+        shift
+
+        case ${__subaction} in
+
+            upgrade)
+                __upgrade "${1}" "${2}"
+                ;;
+
+            rebuild)
+                __rebuild "${1}"
+                ;;
+
+        esac
+        ;;
+
+    list)
+        __list
+        ;;
+
+esac
 
 ################################################################################
 

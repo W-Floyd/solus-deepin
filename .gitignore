@@ -3,9 +3,3 @@
 /graph.dot
 *.tar.gz
 /solus-image-deepin
-/.bin/
-/.code-workspace
-/.dont_quit
-/.vscode/
-/.tmp/
-/.rundeps/
