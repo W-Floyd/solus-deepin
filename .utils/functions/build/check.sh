@@ -1,5 +1,23 @@
 ################################################################################
 #
+# __check_is_package <package>
+#
+# Checks if a given package is real.
+#
+################################################################################
+
+__check_is_package() {
+
+    if __list_packages_devel "${1}" | grep -qx "${1}"; then
+        return 0
+    fi
+
+    return 1
+
+}
+
+################################################################################
+#
 # __check_rundeps_built <package>
 #
 # Scans through package rundeps and checks if all of them are built, including

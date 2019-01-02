@@ -6,15 +6,10 @@ source '.utils/functions/build/check.sh'
 source '.utils/functions/functions.sh'
 source '.utils/functions/install.sh'
 
-#__uninstall
-
-set -x
-
-__list_rundeps_recurse deepin-desktop
-
-exit
+mkdir -p '.rundeps'
 
 if [ "${1}" = '--file' ]; then
+    __uninstall
     while read -r __line; do
         __packages+=("${__line}")
     done < 'install_list'

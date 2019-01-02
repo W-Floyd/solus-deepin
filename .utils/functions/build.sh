@@ -184,16 +184,17 @@ __list_rundeps() {
 ################################################################################
 
 __list_rundeps_recurse() {
+
+    {
+
     echo "${1}"
-    if __check_built_eopkg "${1}"; then
-        __list_rundeps_eopkg_raw "${1}" | while read -r __package; do
-            __list_rundeps_recurse "${__package}"
-        done
-    else
-        __list_rundeps "${1}" | while read -r __package; do
-            __list_rundeps_recurse "${__package}"
-        done
-    fi
+
+    __list_rundeps "${1}" | while read -r __package; do
+        __list_rundeps_recurse "${__package}"
+    done
+
+    } | __uuniq
+
 }
 
 ################################################################################

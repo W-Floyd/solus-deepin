@@ -48,9 +48,9 @@ __uuniq() {
 
 lsdir() {
     if [ -z "${1}" ]; then
-        find . -maxdepth 1 -mindepth 1 -type d | sort
+        find -L . -maxdepth 1 -mindepth 1 -type d | sort
     else
-        find "${1}" -maxdepth 1 -mindepth 1 -type d | sort
+        find -L "${1}" -maxdepth 1 -mindepth 1 -type d | sort
     fi
 }
 
