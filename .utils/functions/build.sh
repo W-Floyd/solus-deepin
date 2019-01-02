@@ -157,7 +157,8 @@ __list_rundeps_eopkg() {
 #
 # __list_rundeps <package>
 #
-# Wraps `__list_rundeps_raw` and spits out a list of rundeps that come from
+# Wraps `__list_rundeps_raw` and `__list_rundeps_eopkg` to spit out a list of
+# rundeps that come from
 # our packages.
 #
 ################################################################################
@@ -171,6 +172,28 @@ __list_rundeps() {
             __list_rundeps_raw "${1}" | grep -Fxf <(__list_packages_devel)
         fi
     } | sed '/^$/d'
+}
+
+################################################################################
+#
+# __list_rundeps_recurse <package>
+#
+# Wraps `__list_rundeps` and recursively finds all required rundeps for a given
+# package, spitting out a list including the given package.
+#
+################################################################################
+
+__list_rundeps_recurse() {
+    echo "${1}"
+    if __check_built_eopkg "${1}"; then
+        __list_rundeps_eopkg_raw "${1}" | while read -r __package; do
+            __list_rundeps_recurse "${__package}"
+        done
+    else
+        __list_rundeps "${1}" | while read -r __package; do
+            __list_rundeps_recurse "${__package}"
+        done
+    fi
 }
 
 ################################################################################

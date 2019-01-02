@@ -85,10 +85,7 @@ __list_packages() {
 
 __list_packages_devel() {
 
-    __list_packages | while read -r __line; do
-        echo "${__line}"
-        echo "${__line}-devel"
-    done
+    __list_packages | sed 's/\(.*\)/\1\n\1-devel/'
 
 }
 
