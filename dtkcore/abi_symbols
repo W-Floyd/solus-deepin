@@ -259,7 +259,9 @@ libdtkcore.so.2:_ZN3Dtk4Core7DObjectD0Ev
 libdtkcore.so.2:_ZN3Dtk4Core7DObjectD1Ev
 libdtkcore.so.2:_ZN3Dtk4Core7DObjectD2Ev
 libdtkcore.so.2:_ZN3Dtk4Core8DPathBufC1ERK7QString
+libdtkcore.so.2:_ZN3Dtk4Core8DPathBufC1Ev
 libdtkcore.so.2:_ZN3Dtk4Core8DPathBufC2ERK7QString
+libdtkcore.so.2:_ZN3Dtk4Core8DPathBufC2Ev
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo10deepinTypeEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo11productTypeEv
 libdtkcore.so.2:_ZN3Dtk4Core8DSysInfo12computerNameEv

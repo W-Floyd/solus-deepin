@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">An easy to use calculator for ordinary users.</Summary>
         <Description xml:lang="en">Deepin calculator is an easy to use calculator for ordinary users.
@@ -70,8 +70,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="26">
-            <Date>2018-12-16</Date>
+        <Update release="27">
+            <Date>2018-12-31</Date>
             <Version>1.0.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

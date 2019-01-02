@@ -1,8 +1,8 @@
 name       : deepin-wm
-version    : 1.9.34
-release    : 25
+version    : 1.9.35
+release    : 26
 source     :
-    - git|https://github.com/linuxdeepin/deepin-wm.git : 1.9.34
+    - git|https://github.com/linuxdeepin/deepin-wm.git : 1.9.35
 license    : GPL-3.0-or-later
 component  : desktop
 summary    : Deepin Window Manager

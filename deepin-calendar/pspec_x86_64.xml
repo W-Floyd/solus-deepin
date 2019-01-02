@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">Calendar for Deepin Desktop Environment.</Summary>
         <Description xml:lang="en">Deepin Calender is an easy calendar tool developed by Deepin Technology, main features current date, solar terms, lunar calendar and world holidays.
@@ -82,8 +82,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="25">
-            <Date>2018-12-16</Date>
+        <Update release="26">
+            <Date>2018-12-31</Date>
             <Version>1.2.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

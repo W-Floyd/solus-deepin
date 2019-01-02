@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Daemon handling the DDE session settings</Summary>
         <Description xml:lang="en">Daemon handling the DDE session settings
@@ -87,6 +87,7 @@
             <Path fileType="data">/usr/share/dbus-1/system.d/com.deepin.system.Power.conf</Path>
             <Path fileType="data">/usr/share/dde-daemon/dst_data</Path>
             <Path fileType="data">/usr/share/dde-daemon/gesture.json</Path>
+            <Path fileType="data">/usr/share/dde-daemon/gesture/conf.json</Path>
             <Path fileType="data">/usr/share/dde-daemon/gesture_builtin.md</Path>
             <Path fileType="data">/usr/share/dde-daemon/keybinding/system_actions.json</Path>
             <Path fileType="data">/usr/share/dde-daemon/lang/all_languages</Path>
@@ -192,9 +193,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="33">
-            <Date>2018-12-16</Date>
-            <Version>3.14.0</Version>
+        <Update release="34">
+            <Date>2018-12-31</Date>
+            <Version>3.16.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

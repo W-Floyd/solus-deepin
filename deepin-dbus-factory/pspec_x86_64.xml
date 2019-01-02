@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">GO DBus factory for Deepin</Summary>
         <Description xml:lang="en">GO DBus factory for Deepin
@@ -296,8 +296,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="30">
-            <Date>2018-12-16</Date>
+        <Update release="31">
+            <Date>2018-12-31</Date>
             <Version>3.1.17</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

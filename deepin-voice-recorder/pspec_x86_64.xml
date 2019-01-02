@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">Default voice recorder application for Deepin.</Summary>
         <Description xml:lang="en">Deepin Voice Recorder is a beautiful and easy to use voice recording application with simple design. No matter recording your singing, phone call or meeting conversation, you can finish all these tasks by Deepin Voice Recorder. It also supports visual recording, recording playback, recording list management and other functions.
@@ -73,8 +73,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="21">
-            <Date>2018-12-16</Date>
+        <Update release="22">
+            <Date>2018-12-31</Date>
             <Version>1.3.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

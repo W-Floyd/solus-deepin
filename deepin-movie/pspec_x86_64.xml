@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">Deepin Movie Player.</Summary>
         <Description xml:lang="en">Deepin Movie provides an intuitive easy to use operation interface and rich complete shortcuts. You can complete all play operations by keyboard, which will make you thoroughly get rid of the constraint of mouse click. Video files in various formats can be played through Deepin Movie, and you can use the streaming function to easily enjoy online video resources.
@@ -91,7 +91,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="23">deepin-movie</Dependency>
+            <Dependency release="24">deepin-movie</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdmr/compositing_manager.h</Path>
@@ -108,8 +108,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="23">
-            <Date>2018-12-16</Date>
+        <Update release="24">
+            <Date>2018-12-31</Date>
             <Version>3.2.17</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

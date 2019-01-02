@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin</PartOf>
         <Summary xml:lang="en">Default screen recorder application for Deepin.</Summary>
         <Description xml:lang="en">a screen recorder tool, it supports to save the recorded screens as gif or mp4 format. It can select the recorded window automatically or manually by selecting the area. Users just need to start and stop the recording process, and the file will auto save to the desktop.
@@ -52,8 +52,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="20">
-            <Date>2018-12-16</Date>
+        <Update release="21">
+            <Date>2018-12-31</Date>
             <Version>2.7.7</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

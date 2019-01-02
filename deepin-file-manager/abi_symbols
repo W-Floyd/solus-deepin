@@ -1428,7 +1428,6 @@ libdde-file-manager.so.1:_ZN16GvfsMountManager17qMountToqDiskinfoERK6QMount
 libdde-file-manager.so.1:_ZN16GvfsMountManager18drive_disconnectedERK6QDrive
 libdde-file-manager.so.1:_ZN16GvfsMountManager18getDriveUnixDeviceERK7QString
 libdde-file-manager.so.1:_ZN16GvfsMountManager18qVolumeToqDiskInfoERK7QVolume
-libdde-file-manager.so.1:_ZN16GvfsMountManager18setAutoMountSwitchEb
 libdde-file-manager.so.1:_ZN16GvfsMountManager19isDeviceCrypto_LUKSERK9QDiskInfo
 libdde-file-manager.so.1:_ZN16GvfsMountManager19monitor_mount_addedEP15_GVolumeMonitorP7_GMount
 libdde-file-manager.so.1:_ZN16GvfsMountManager20isIgnoreUnusedMountsERK6QMount
@@ -4198,11 +4197,11 @@ libdde-file-manager.so.1:_ZN9FileUtils17openExcutableFileERK7QStringi
 libdde-file-manager.so.1:_ZN9FileUtils17searchGenericIconERK7QStringRK5QIcon
 libdde-file-manager.so.1:_ZN9FileUtils18isExecutableScriptERK7QString
 libdde-file-manager.so.1:_ZN9FileUtils19getApplicationNamesEv
+libdde-file-manager.so.1:_ZN9FileUtils19getKernelParametersEv
 libdde-file-manager.so.1:_ZN9FileUtils19writeJsonObjectFileERK7QStringRK11QJsonObject
 libdde-file-manager.so.1:_ZN9FileUtils19writeJsonnArrayFileERK7QStringRK10QJsonArray
 libdde-file-manager.so.1:_ZN9FileUtils20getJsonArrayFromFileERK7QString
 libdde-file-manager.so.1:_ZN9FileUtils21getJsonObjectFromFileERK7QString
-libdde-file-manager.so.1:_ZN9FileUtils21setDefaultFileManagerEv
 libdde-file-manager.so.1:_ZN9FileUtils22getInternetShortcutUrlERK7QString
 libdde-file-manager.so.1:_ZN9FileUtils23openExcutableScriptFileERK7QStringi
 libdde-file-manager.so.1:_ZN9FileUtils24isFileWindowsUrlShortcutERK7QString
@@ -4871,7 +4870,6 @@ libdde-file-manager.so.1:_ZNK16FileBatchProcess10customTextERK5QListI4DUrlERK5QP
 libdde-file-manager.so.1:_ZNK16FileBatchProcess11replaceTextERK5QListI4DUrlERK5QPairI7QStringS6_E
 libdde-file-manager.so.1:_ZNK16FileBatchProcess7addTextERK5QListI4DUrlERK5QPairI7QStringN12DFileService12AddTextFlagsEE
 libdde-file-manager.so.1:_ZNK16GvfsMountManager10metaObjectEv
-libdde-file-manager.so.1:_ZNK16GvfsMountManager18getAutoMountSwitchEv
 libdde-file-manager.so.1:_ZNK16MimesAppsManager10metaObjectEv
 libdde-file-manager.so.1:_ZNK16RecentController10metaObjectEv
 libdde-file-manager.so.1:_ZNK16RecentController11deleteFilesERK14QSharedPointerI14DFMDeleteEventE

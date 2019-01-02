@@ -94,7 +94,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="33">deepin-launcher</Dependency>
+            <Dependency release="34">deepin-launcher</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-launcher/dbusdisplay.h</Path>
@@ -109,9 +109,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="33">
-            <Date>2018-12-19</Date>
-            <Version>4.5.9</Version>
+        <Update release="34">
+            <Date>2018-12-31</Date>
+            <Version>4.6.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
