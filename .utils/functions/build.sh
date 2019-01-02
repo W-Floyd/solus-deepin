@@ -240,14 +240,14 @@ __build_package() {
     cd "${1%-devel}"
 
     if [ -z "${__build_deps}" ]; then
-        make &> >(tee "../.tmp/log/${1}" | sed "s/^/$(__color_pipe --bold Color_Off <<< "${1}"): /" >> '../.tmp/livelog') || {
+        make &> >(tee "../.tmp/log/${1}" | sed "s/^/$(tput sgr0)${1}: /" | tee -a '../.tmp/livelog' &> /dev/null) || {
             pushd ../ &> /dev/null
             __mark_failed "${1}"
             popd &> /dev/null
             __error='1'
         }
     else
-        make local &> >(tee "../.tmp/log/${1}" | sed "s/^/$(__color_pipe --bold Color_Off <<< "${1}"): /" >> '../.tmp/livelog') || {
+        make local &> >(tee "../.tmp/log/${1}" | sed "s/^/$(tput sgr0)${1}: /" | tee -a '../.tmp/livelog' &> /dev/null) || {
             pushd ../ &> /dev/null
             __mark_failed "${1}"
             popd &> /dev/null

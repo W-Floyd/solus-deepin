@@ -158,8 +158,9 @@ __yaml2json() {
     if ! [ -e "${__bin_file}" ]; then
         __bin_file='.bin/yaml2json'
         if ! [ -e "${__bin_file}" ]; then
-            wget 'https://github.com/bronze1man/yaml2json/releases/download/v1.3/yaml2json_linux_amd64' --output-document='.bin/yaml2json' || {
-                echo 'Failed to obtain yaml2json.'
+            mkdir -p '.bin/'
+            wget -q 'https://github.com/bronze1man/yaml2json/releases/download/v1.3/yaml2json_linux_amd64' --output-document='.bin/yaml2json' || {
+                echo 'Failed to obtain yaml2json.' >&2
                 exit 1
             }
             chmod +x "${__bin_file}"
@@ -178,9 +179,9 @@ __yaml2json() {
 __jq() {
 
     if ! which jq &> /dev/null; then
-        echo "We need to install jq"
+        echo 'We need to install jq' >&2
         eopkg it jq || {
-            echo 'Failed to obtain jq.'
+            echo 'Failed to obtain jq.' >&2
             exit 1
         }
     fi
@@ -197,9 +198,9 @@ __jq() {
 
 __xmllint() {
     if ! which xmllint &> /dev/null; then
-        echo "We need to install xmllint"
+        echo 'We need to install xmllint' >&2
         eopkg it libxml2 || {
-            echo 'Failed to obtain libxml2.'
+            echo 'Failed to obtain libxml2.' >&2
             exit 1
         }
     fi
