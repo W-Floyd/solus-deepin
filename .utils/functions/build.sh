@@ -187,11 +187,11 @@ __list_rundeps_recurse() {
 
     {
 
-    echo "${1}"
+        echo "${1}"
 
-    __list_rundeps "${1}" | while read -r __package; do
-        __list_rundeps_recurse "${__package}"
-    done
+        __list_rundeps "${1}" | while read -r __package; do
+            __list_rundeps_recurse "${__package}"
+        done
 
     } | __uuniq
 
@@ -233,6 +233,8 @@ __list_failed() {
 
 __build_package() {
 
+    source '.utils/functions/abi.sh'
+
     __error='0'
 
     __build_deps="$(__list_builddeps "${1}")"
@@ -256,6 +258,8 @@ __build_package() {
     fi
 
     cd ../
+
+    __bump_abi_deps "${1}"
 
     if [ "${__error}" = '1' ]; then
         return 1

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export PS4='Line ${LINENO}: '
-
 source '.utils/functions/build.sh'
 source '.utils/functions/build/check.sh'
 source '.utils/functions/build/state.sh'
@@ -10,6 +8,9 @@ source '.utils/functions/color.sh'
 source '.utils/functions/functions.sh'
 source '.utils/variables/build_symbols.sh'
 source '.utils/variables/color.sh'
+source '.utils/functions/abi.sh'
+
+export PS4='Line ${LINENO}: '
 
 if [ -d '.tmp/' ]; then
     rm -r '.tmp/'
