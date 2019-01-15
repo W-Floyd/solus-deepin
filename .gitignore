@@ -3,3 +3,6 @@
 /graph.dot
 *.tar.gz
 /solus-image-deepin
+/.bin/
+/.tmp/
+/.rundeps/
