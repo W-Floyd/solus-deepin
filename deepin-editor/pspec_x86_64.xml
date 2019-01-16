@@ -30,6 +30,7 @@
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_ar.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_ast.qm</Path>
+            <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_bg.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_ca.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_cs.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_da.qm</Path>
@@ -38,10 +39,13 @@
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_es_419.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_fr.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_hu.qm</Path>
+            <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_id.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_it.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_ja.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_lt.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_ms.qm</Path>
+            <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_nb.qm</Path>
+            <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_ne.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_nl.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_pl.qm</Path>
             <Path fileType="data">/usr/share/deepin-editor/translations/deepin-editor_pt.qm</Path>
@@ -56,9 +60,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="17">
+        <Update release="18">
             <Date>2019-01-16</Date>
-            <Version>1.2.5</Version>
+            <Version>1.2.6.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

@@ -1,8 +1,8 @@
 name       : deepin-editor
-version    : 1.2.5
-release    : 17
+version    : 1.2.6.2
+release    : 18
 source     :
-    - git|https://github.com/linuxdeepin/deepin-editor.git : 1.2.5
+    - git|https://github.com/linuxdeepin/deepin-editor.git : 1.2.6.2
 license    : GPL-3.0-or-later # -or-later assumed from other projects
 component  : desktop.deepin
 summary    : Deepin Editor.
