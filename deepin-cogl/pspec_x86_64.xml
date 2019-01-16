@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>MIT</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">An object oriented GL/GLES Abstraction/Utility Layer for Deepin</Summary>
         <Description xml:lang="en">An object oriented GL/GLES Abstraction/Utility Layer for Deepin
@@ -240,7 +240,7 @@
     </Package>
     <History>
         <Update release="14">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>1.22.5</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

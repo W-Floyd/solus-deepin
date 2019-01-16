@@ -5,17 +5,17 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>LGPL-2.1</License>
+        <License>LGPL-2.1-only</License>
         <PartOf>desktop.deepin.core</PartOf>
-        <Summary xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.</Summary>
-        <Description xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
+        <Summary xml:lang="en">Deepin fork of clutter.</Summary>
+        <Description xml:lang="en">Deepin fork of clutter.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-clutter</Name>
-        <Summary xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.</Summary>
-        <Description xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
+        <Summary xml:lang="en">Deepin fork of clutter.</Summary>
+        <Description xml:lang="en">Deepin fork of clutter.
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
@@ -100,7 +100,7 @@
     <Package>
         <Name>deepin-clutter-devel</Name>
         <Summary xml:lang="en">Development files for deepin-clutter</Summary>
-        <Description xml:lang="en">A toolkit for creating fast, portable, compelling dynamic UIs for Deepin.
+        <Description xml:lang="en">Deepin fork of clutter.
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
@@ -266,7 +266,7 @@
     </Package>
     <History>
         <Update release="14">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>1.26.2</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

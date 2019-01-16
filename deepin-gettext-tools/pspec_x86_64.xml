@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>programming.tools</PartOf>
         <Summary xml:lang="en">Deepin Gettext Tools</Summary>
         <Description xml:lang="en">Deepin Gettext Tools
@@ -29,7 +29,7 @@
     </Package>
     <History>
         <Update release="15">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>1.0.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

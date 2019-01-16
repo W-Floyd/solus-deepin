@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>BSD</License>
+        <License>BSD-3-Clause</License>
         <PartOf>programming.library</PartOf>
         <Summary xml:lang="en">High-speed C++ MVC Framework for Web Application</Summary>
         <Description xml:lang="en">TreeFrog Framework is a high-speed and full-stack web application framework based on C++ and Qt, which supports HTTP and WebSocket protocol. Web applications can run faster than that of lightweight programming language. In application development, it provides an O/R mapping system and template system on an MVC architecture, aims to achieve high productivity through the policy of convention over configuration.
@@ -244,7 +244,7 @@
     </Package>
     <History>
         <Update release="21">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>1.22.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

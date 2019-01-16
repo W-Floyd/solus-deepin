@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>LGPL-3.0-or-later</License>
         <PartOf>desktop.theme</PartOf>
         <Summary xml:lang="en">Deepin GTK Theme.</Summary>
         <Description xml:lang="en">Deepin GTK Theme.
@@ -1340,7 +1340,7 @@
     </Package>
     <History>
         <Update release="17">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>17.10.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

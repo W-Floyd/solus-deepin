@@ -148,7 +148,7 @@
     </Package>
     <History>
         <Update release="41">
-            <Date>2018-12-31</Date>
+            <Date>2019-01-15</Date>
             <Version>4.8.7.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

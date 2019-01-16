@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-only</License>
         <PartOf>network.util</PartOf>
         <Summary xml:lang="en">A preloader which hooks calls to sockets in dynamically linked programs and redirects it through one or more socks/http proxies</Summary>
         <Description xml:lang="en">ProxyChains is a UNIX program, that hooks network-related libc functions in DYNAMICALLY LINKED programs via a preloaded DLL (dlsym(), LD_PRELOAD) and redirects the connections through SOCKS4a/5 or HTTP proxies. It supports TCP only (no UDP/ICMP etc).
@@ -37,7 +37,7 @@
     </Package>
     <History>
         <Update release="14">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>4.13</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

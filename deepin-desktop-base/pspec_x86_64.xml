@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Base component for Deepin.</Summary>
         <Description xml:lang="en">Base component for Deepin.
@@ -32,7 +32,7 @@
     </Package>
     <History>
         <Update release="22">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-16</Date>
             <Version>2018.12.13</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

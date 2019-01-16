@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>LGPL-3.0-or-later</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Deepin default settings</Summary>
         <Description xml:lang="en">Deepin default settings
@@ -25,7 +25,7 @@
     </Package>
     <History>
         <Update release="13">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>2018.8.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

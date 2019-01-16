@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.theme</PartOf>
         <Summary xml:lang="en">The freedesktop sound theme for Deepin.</Summary>
         <Description xml:lang="en">The freedesktop sound theme for Deepin.
@@ -45,7 +45,7 @@
     </Package>
     <History>
         <Update release="14">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>15.10.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

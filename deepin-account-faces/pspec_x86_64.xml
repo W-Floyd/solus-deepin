@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>CC0-1.0</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Account faces for Linux Deepin</Summary>
         <Description xml:lang="en">Account faces for Linux Deepin
@@ -56,7 +56,7 @@
     </Package>
     <History>
         <Update release="14">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>1.0.11</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>

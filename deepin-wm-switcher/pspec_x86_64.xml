@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop.deepin.core</PartOf>
         <Summary xml:lang="en">Deepin window manager monitoring and auto-switching service.</Summary>
         <Description xml:lang="en">Deepin window manager monitoring and auto-switching service.
@@ -26,7 +26,7 @@ It is capable of monitoring the health of the 3D WM and falling back to 2D if ba
     </Package>
     <History>
         <Update release="14">
-            <Date>2018-12-16</Date>
+            <Date>2019-01-15</Date>
             <Version>1.1.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
