@@ -1,8 +1,8 @@
 name       : deepin-polkit-agent
-version    : 0.2.1
-release    : 22
+version    : 0.2.3
+release    : 23
 source     :
-    - git|https://github.com/linuxdeepin/dde-polkit-agent.git : 0.2.1
+    - git|https://github.com/linuxdeepin/dde-polkit-agent.git : 0.2.3
 license    : GPL-3.0-or-later
 component  : desktop
 summary    : Deepin Polkit Agent
