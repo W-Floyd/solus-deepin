@@ -927,8 +927,8 @@ libdde-file-manager.so.1:_ZN14FileViewHelper11preHandleCdERK15DFMUrlBaseEvent
 libdde-file-manager.so.1:_ZN14FileViewHelper11qt_metacallEN11QMetaObject4CallEiPPv
 libdde-file-manager.so.1:_ZN14FileViewHelper11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN14FileViewHelper15refreshFileViewEy
-libdde-file-manager.so.1:_ZN14FileViewHelper17handleSelectEventERK19DFMUrlListBaseEvent
 libdde-file-manager.so.1:_ZN14FileViewHelper18setFoucsOnFileViewEy
+libdde-file-manager.so.1:_ZN14FileViewHelper24handleSelectEventOnPasteERK19DFMUrlListBaseEvent
 libdde-file-manager.so.1:_ZN14FileViewHelper2cdERK15DFMUrlBaseEvent
 libdde-file-manager.so.1:_ZN14FileViewHelper4cdUpERK15DFMUrlBaseEvent
 libdde-file-manager.so.1:_ZN14FileViewHelper6selectERK5QListI4DUrlE
@@ -1428,6 +1428,7 @@ libdde-file-manager.so.1:_ZN16GvfsMountManager17qMountToqDiskinfoERK6QMount
 libdde-file-manager.so.1:_ZN16GvfsMountManager18drive_disconnectedERK6QDrive
 libdde-file-manager.so.1:_ZN16GvfsMountManager18getDriveUnixDeviceERK7QString
 libdde-file-manager.so.1:_ZN16GvfsMountManager18qVolumeToqDiskInfoERK7QVolume
+libdde-file-manager.so.1:_ZN16GvfsMountManager19errorCodeNeedSilentEi
 libdde-file-manager.so.1:_ZN16GvfsMountManager19isDeviceCrypto_LUKSERK9QDiskInfo
 libdde-file-manager.so.1:_ZN16GvfsMountManager19monitor_mount_addedEP15_GVolumeMonitorP7_GMount
 libdde-file-manager.so.1:_ZN16GvfsMountManager20isIgnoreUnusedMountsERK6QMount
@@ -2007,7 +2008,7 @@ libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob12stateChangedEN
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob14setErrorHandleEPNS0_6HandleEP7QThread
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob14supportActionsENS0_5ErrorE
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob15progressChangedEdx
-libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob17currentJobChangedERK4DUrlS3_
+libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob17currentJobChangedE4DUrlS1_
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob20setActionOfErrorTypeENS0_5ErrorENS0_6ActionE
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob22fileStatisticsFinishedEv
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob26completedFilesCountChangedEi
@@ -2018,7 +2019,7 @@ libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob5startERK5QListI
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob6Handle14getNewFileNameEPS0_PK17DAbstractFileInfo
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob6Handle20getNonExistsFileNameEPS0_PK17DAbstractFileInfoS5_
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob7setModeENS0_4ModeE
-libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob8finishedERK4DUrlS3_
+libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJob8finishedE4DUrlS1_
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJobC1EP7QObject
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJobC1ERNS_23DFileCopyMoveJobPrivateEP7QObject
 libdde-file-manager.so.1:_ZN16dde_file_manager16DFileCopyMoveJobC2EP7QObject
@@ -2914,10 +2915,10 @@ libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget17onJobSpeedChangedEx
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget17setDestinationObjE7QString
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget18updateMessageByJobEv
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget20onJobProgressChangedEd
-libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget22onJobCurrentJobChangedERK4DUrlS2_
+libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget22onJobCurrentJobChangedE4DUrlS0_
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget23initConflictDetailFrameEv
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget25conflictResponseConfirmedERK4QMapI7QStringS1_ERKS0_IS1_8QVariantE
-libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget25updateConflictDetailFrameERK4DUrlS2_
+libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget25updateConflictDetailFrameE4DUrlS0_
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget5eventEP6QEvent
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget6closedERK4QMapI7QStringS1_E
 libdde-file-manager.so.1:_ZN18MoveCopyTaskWidget6initUIEv
@@ -4650,6 +4651,7 @@ libdde-file-manager.so.1:_ZNK14RecentFileInfo21disableMenuActionListEv
 libdde-file-manager.so.1:_ZNK14RecentFileInfo22subtitleForEmptyFloderEv
 libdde-file-manager.so.1:_ZNK14RecentFileInfo5isDirEv
 libdde-file-manager.so.1:_ZNK14RecentFileInfo6existsEv
+libdde-file-manager.so.1:_ZNK14RecentFileInfo7canDropEv
 libdde-file-manager.so.1:_ZNK14RecentFileInfo9parentUrlEv
 libdde-file-manager.so.1:_ZNK14SearchFileInfo10filesCountEv
 libdde-file-manager.so.1:_ZNK14SearchFileInfo10hasOrderlyEv
@@ -4791,6 +4793,7 @@ libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo19getUrlByNewFileNameERK7QString
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo21canRedirectionFileUrlEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo21deviceTypeDisplayNameEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo21disableMenuActionListEv
+libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo21getUrlByChildFileNameERK7QString
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo4sizeEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo5getIdEv
 libdde-file-manager.so.1:_ZNK15UDiskDeviceInfo5isDirEv
