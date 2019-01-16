@@ -19,6 +19,5 @@ libm.so.6
 libstdc++.so.6
 libxcb-composite.so.0
 libxcb-ewmh.so.2
-libxcb-icccm.so.4
 libxcb-image.so.0
 libxcb.so.1
