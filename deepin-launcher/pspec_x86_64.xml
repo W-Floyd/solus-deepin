@@ -57,6 +57,7 @@
             <Path fileType="data">/usr/share/dde-launcher/translations/dde-launcher_kn_IN.qm</Path>
             <Path fileType="data">/usr/share/dde-launcher/translations/dde-launcher_ko.qm</Path>
             <Path fileType="data">/usr/share/dde-launcher/translations/dde-launcher_ku_IQ.qm</Path>
+            <Path fileType="data">/usr/share/dde-launcher/translations/dde-launcher_lo.qm</Path>
             <Path fileType="data">/usr/share/dde-launcher/translations/dde-launcher_lt.qm</Path>
             <Path fileType="data">/usr/share/dde-launcher/translations/dde-launcher_ml.qm</Path>
             <Path fileType="data">/usr/share/dde-launcher/translations/dde-launcher_mn.qm</Path>
@@ -94,7 +95,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="34">deepin-launcher</Dependency>
+            <Dependency release="35">deepin-launcher</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-launcher/dbusdisplay.h</Path>
@@ -109,9 +110,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="34">
-            <Date>2019-01-15</Date>
-            <Version>4.6.2</Version>
+        <Update release="35">
+            <Date>2019-01-16</Date>
+            <Version>4.6.3</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
