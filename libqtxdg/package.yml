@@ -1,8 +1,8 @@
 name       : libqtxdg
-version    : 3.2.0
-release    : 13
+version    : 3.3.0
+release    : 14
 source     :
-    - git|https://github.com/lxde/libqtxdg.git : 3.2.0
+    - git|https://github.com/lxde/libqtxdg.git : 3.3.0
 license    : LGPL-2.1-or-later
 component  : programming.library
 summary    : A Qt 5 implementation of freedesktop.org XDG specifications.
