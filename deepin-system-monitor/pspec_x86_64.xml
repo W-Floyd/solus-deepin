@@ -40,9 +40,11 @@
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_hu.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_id.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_it.qm</Path>
+            <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_ja.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_lt.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_ms.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_nb.qm</Path>
+            <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_ne.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_nl.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_pl.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_pt.qm</Path>
@@ -60,9 +62,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="26">
-            <Date>2019-01-15</Date>
-            <Version>1.4.8</Version>
+        <Update release="27">
+            <Date>2019-01-27</Date>
+            <Version>1.4.8.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
