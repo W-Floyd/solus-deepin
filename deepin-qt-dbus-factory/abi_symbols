@@ -654,6 +654,7 @@ libdframeworkdbus.so.2:_ZN5__JobD2Ev
 libdframeworkdbus.so.2:_ZN6__Dock10CallQueuedERK7QStringRK5QListI8QVariantE
 libdframeworkdbus.so.2:_ZN6__Dock10EntryAddedERK15QDBusObjectPathi
 libdframeworkdbus.so.2:_ZN6__Dock10dockedAppsEv
+libdframeworkdbus.so.2:_ZN6__Dock10setOpacityEd
 libdframeworkdbus.so.2:_ZN6__Dock11displayModeEv
 libdframeworkdbus.so.2:_ZN6__Dock11hideTimeoutEv
 libdframeworkdbus.so.2:_ZN6__Dock11qt_metacallEN11QMetaObject4CallEiPPv
@@ -669,8 +670,10 @@ libdframeworkdbus.so.2:_ZN6__Dock14setShowTimeoutEj
 libdframeworkdbus.so.2:_ZN6__Dock16ServiceRestartedEv
 libdframeworkdbus.so.2:_ZN6__Dock17onPropertyChangedERK7QStringRK8QVariant
 libdframeworkdbus.so.2:_ZN6__Dock18frontendWindowRectEv
+libdframeworkdbus.so.2:_ZN6__Dock20PluginSettingsSyncedEv
 libdframeworkdbus.so.2:_ZN6__Dock21onPendingCallFinishedEP23QDBusPendingCallWatcher
 libdframeworkdbus.so.2:_ZN6__Dock7entriesEv
+libdframeworkdbus.so.2:_ZN6__Dock7opacityEv
 libdframeworkdbus.so.2:_ZN6__Dock8hideModeEv
 libdframeworkdbus.so.2:_ZN6__Dock8iconSizeEv
 libdframeworkdbus.so.2:_ZN6__Dock8positionEv
@@ -1370,6 +1373,7 @@ libdframeworkdbus.so.2:_ZNK5__Job18ElapsedTimeChangedEi
 libdframeworkdbus.so.2:_ZNK5__Job9IdChangedERK7QString
 libdframeworkdbus.so.2:_ZNK6__Dock10metaObjectEv
 libdframeworkdbus.so.2:_ZNK6__Dock14EntriesChangedERK5QListI15QDBusObjectPathE
+libdframeworkdbus.so.2:_ZNK6__Dock14OpacityChangedEd
 libdframeworkdbus.so.2:_ZNK6__Dock15HideModeChangedEi
 libdframeworkdbus.so.2:_ZNK6__Dock15IconSizeChangedEj
 libdframeworkdbus.so.2:_ZNK6__Dock15PositionChangedEi
