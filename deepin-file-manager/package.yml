@@ -1,8 +1,8 @@
 name       : deepin-file-manager
-version    : 4.7.4.4
-release    : 42
+version    : 4.7.5
+release    : 43
 source     :
-    - git|https://github.com/linuxdeepin/dde-file-manager.git : 4.7.4.4
+    - git|https://github.com/linuxdeepin/dde-file-manager.git : 4.7.5
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    :
