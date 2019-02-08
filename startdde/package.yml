@@ -1,8 +1,8 @@
 name       : startdde
-version    : 3.20.0
-release    : 30
+version    : 3.11.0
+release    : 31
 source     :
-    - git|https://github.com/linuxdeepin/startdde.git : 3.10.0
+    - git|https://github.com/linuxdeepin/startdde.git : 3.11.0
 networking : yes
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core

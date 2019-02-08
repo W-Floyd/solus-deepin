@@ -19,6 +19,7 @@
 </Description>
         <PartOf>desktop.deepin.core</PartOf>
         <Files>
+            <Path fileType="config">/etc/X11/Xsession.d/00deepin-dde-env</Path>
             <Path fileType="executable">/usr/bin/startdde</Path>
             <Path fileType="executable">/usr/sbin/deepin-fix-xauthority-perm</Path>
             <Path fileType="executable">/usr/sbin/deepin-session</Path>
@@ -29,9 +30,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="30">
-            <Date>2019-01-16</Date>
-            <Version>3.20.0</Version>
+        <Update release="31">
+            <Date>2019-02-08</Date>
+            <Version>3.11.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
