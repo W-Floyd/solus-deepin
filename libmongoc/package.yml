@@ -1,8 +1,8 @@
 name       : libmongoc
-version    : 1.13.0
-release    : 24
+version    : 1.13.1
+release    : 25
 source     :
-    - git|https://github.com/mongodb/mongo-c-driver.git : 1.13.0
+    - git|https://github.com/mongodb/mongo-c-driver.git : 1.13.1
 license    : Apache-2.0
 component  : programming.library
 summary    : A high-performance MongoDB driver for C
@@ -11,8 +11,6 @@ description: |
 builddeps  :
     - pkgconfig(libsasl2)
     - snappy-devel
-setup      : |
-    %patch -p1 < $pkgfiles/fix-path.patch
 build      : |
     mkdir cmake-build
     pushd cmake-build
