@@ -5,7 +5,7 @@
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-only</License>
         <PartOf>system.utils</PartOf>
         <Summary xml:lang="en">AVFS enables all programs to access archived, compressed, or remote files transparently.</Summary>
         <Description xml:lang="en">AVFS is a system which enables all programs to look inside archived or compressed files, or access remote files without recompiling the programs or changing the kernel.
@@ -85,7 +85,7 @@
     </Package>
     <History>
         <Update release="14">
-            <Date>2018-12-16</Date>
+            <Date>2019-02-04</Date>
             <Version>1.0.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
