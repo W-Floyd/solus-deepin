@@ -1,8 +1,8 @@
 name       : deepin-go-lib
-version    : 1.8.0
-release    : 30
+version    : 1.9.1
+release    : 31
 source     :
-    - git|https://github.com/linuxdeepin/go-lib.git : 1.8.0
+    - git|https://github.com/linuxdeepin/go-lib.git : 1.9.1
 license    : GPL-3.0-or-later
 component  : programming.library
 summary    : A library containing many useful go routines for things such as glib,
