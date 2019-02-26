@@ -1,3 +1,4 @@
+libbson-1.0.so.0:_bson_context_set_oid_rand
 libbson-1.0.so.0:_bson_iso8601_date_format
 libbson-1.0.so.0:_bson_iso8601_date_parse
 libbson-1.0.so.0:_bson_md5_append
@@ -6,7 +7,6 @@ libbson-1.0.so.0:_bson_md5_init
 libbson-1.0.so.0:_bson_timegm
 libbson-1.0.so.0:_dec128_istreq
 libbson-1.0.so.0:_dec128_tolower
-libbson-1.0.so.0:_mongoc_fnv_24a_str
 libbson-1.0.so.0:bcon_append
 libbson-1.0.so.0:bcon_append_ctx
 libbson-1.0.so.0:bcon_append_ctx_init
@@ -66,6 +66,7 @@ libbson-1.0.so.0:bson_copy
 libbson-1.0.so.0:bson_copy_to
 libbson-1.0.so.0:bson_copy_to_excluding
 libbson-1.0.so.0:bson_copy_to_excluding_noinit
+libbson-1.0.so.0:bson_copy_to_excluding_noinit_va
 libbson-1.0.so.0:bson_count_keys
 libbson-1.0.so.0:bson_decimal128_from_string
 libbson-1.0.so.0:bson_decimal128_from_string_w_len
@@ -282,6 +283,8 @@ libmongoc-1.0.so.0:_mongoc_bulk_update_one_opts_parse
 libmongoc-1.0.so.0:_mongoc_change_stream_new_from_client
 libmongoc-1.0.so.0:_mongoc_change_stream_new_from_collection
 libmongoc-1.0.so.0:_mongoc_change_stream_new_from_database
+libmongoc-1.0.so.0:_mongoc_change_stream_opts_cleanup
+libmongoc-1.0.so.0:_mongoc_change_stream_opts_parse
 libmongoc-1.0.so.0:_mongoc_client_command_with_opts
 libmongoc-1.0.so.0:_mongoc_client_create_stream
 libmongoc-1.0.so.0:_mongoc_client_end_sessions
@@ -321,9 +324,12 @@ libmongoc-1.0.so.0:_mongoc_convert_array
 libmongoc-1.0.so.0:_mongoc_convert_bool
 libmongoc-1.0.so.0:_mongoc_convert_bson_value_t
 libmongoc-1.0.so.0:_mongoc_convert_document
+libmongoc-1.0.so.0:_mongoc_convert_int32_positive
 libmongoc-1.0.so.0:_mongoc_convert_int32_t
 libmongoc-1.0.so.0:_mongoc_convert_int64_positive
+libmongoc-1.0.so.0:_mongoc_convert_read_concern
 libmongoc-1.0.so.0:_mongoc_convert_server_id
+libmongoc-1.0.so.0:_mongoc_convert_timestamp
 libmongoc-1.0.so.0:_mongoc_convert_utf8
 libmongoc-1.0.so.0:_mongoc_convert_validate_flags
 libmongoc-1.0.so.0:_mongoc_convert_write_concern
@@ -372,10 +378,19 @@ libmongoc-1.0.so.0:_mongoc_delete_many_opts_cleanup
 libmongoc-1.0.so.0:_mongoc_delete_many_opts_parse
 libmongoc-1.0.so.0:_mongoc_delete_one_opts_cleanup
 libmongoc-1.0.so.0:_mongoc_delete_one_opts_parse
+libmongoc-1.0.so.0:_mongoc_download_stream_gridfs_new
 libmongoc-1.0.so.0:_mongoc_get_command_name
 libmongoc-1.0.so.0:_mongoc_get_db_name
 libmongoc-1.0.so.0:_mongoc_get_documents_field_name
 libmongoc-1.0.so.0:_mongoc_get_server_id_from_opts
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_file_destroy
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_file_readv
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_file_save
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_file_writev
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_opts_cleanup
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_opts_parse
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_upload_opts_cleanup
+libmongoc-1.0.so.0:_mongoc_gridfs_bucket_upload_opts_parse
 libmongoc-1.0.so.0:_mongoc_gridfs_file_list_new
 libmongoc-1.0.so.0:_mongoc_gridfs_file_list_new_with_opts
 libmongoc-1.0.so.0:_mongoc_gridfs_file_new
@@ -491,6 +506,13 @@ libmongoc-1.0.so.0:_mongoc_ssl_opts_cleanup
 libmongoc-1.0.so.0:_mongoc_ssl_opts_copy_to
 libmongoc-1.0.so.0:_mongoc_ssl_opts_from_uri
 libmongoc-1.0.so.0:_mongoc_stream_writev_full
+libmongoc-1.0.so.0:_mongoc_timestamp_append
+libmongoc-1.0.so.0:_mongoc_timestamp_clear
+libmongoc-1.0.so.0:_mongoc_timestamp_empty
+libmongoc-1.0.so.0:_mongoc_timestamp_set
+libmongoc-1.0.so.0:_mongoc_timestamp_set_from_bson
+libmongoc-1.0.so.0:_mongoc_topology_background_thread_stop
+libmongoc-1.0.so.0:_mongoc_topology_clear_session_pool
 libmongoc-1.0.so.0:_mongoc_topology_description_copy_to
 libmongoc-1.0.so.0:_mongoc_topology_description_monitor_changed
 libmongoc-1.0.so.0:_mongoc_topology_description_monitor_closed
@@ -525,8 +547,8 @@ libmongoc-1.0.so.0:_mongoc_update_many_opts_cleanup
 libmongoc-1.0.so.0:_mongoc_update_many_opts_parse
 libmongoc-1.0.so.0:_mongoc_update_one_opts_cleanup
 libmongoc-1.0.so.0:_mongoc_update_one_opts_parse
+libmongoc-1.0.so.0:_mongoc_upload_stream_gridfs_new
 libmongoc-1.0.so.0:_mongoc_uri_requires_auth_negotiation
-libmongoc-1.0.so.0:_mongoc_uri_set_option_as_int32
 libmongoc-1.0.so.0:_mongoc_usleep
 libmongoc-1.0.so.0:_mongoc_validate_new_document
 libmongoc-1.0.so.0:_mongoc_validate_replace
@@ -717,6 +739,7 @@ libmongoc-1.0.so.0:mongoc_client_pool_set_ssl_opts
 libmongoc-1.0.so.0:mongoc_client_pool_try_pop
 libmongoc-1.0.so.0:mongoc_client_read_command_with_opts
 libmongoc-1.0.so.0:mongoc_client_read_write_command_with_opts
+libmongoc-1.0.so.0:mongoc_client_reset
 libmongoc-1.0.so.0:mongoc_client_select_server
 libmongoc-1.0.so.0:mongoc_client_session_abort_transaction
 libmongoc-1.0.so.0:mongoc_client_session_advance_cluster_time
@@ -744,6 +767,7 @@ libmongoc-1.0.so.0:mongoc_client_watch
 libmongoc-1.0.so.0:mongoc_client_write_command_with_opts
 libmongoc-1.0.so.0:mongoc_cluster_check_interval
 libmongoc-1.0.so.0:mongoc_cluster_destroy
+libmongoc-1.0.so.0:mongoc_cluster_disconnect
 libmongoc-1.0.so.0:mongoc_cluster_disconnect_node
 libmongoc-1.0.so.0:mongoc_cluster_get_max_bson_obj_size
 libmongoc-1.0.so.0:mongoc_cluster_get_max_msg_size
@@ -901,6 +925,18 @@ libmongoc-1.0.so.0:mongoc_get_major_version
 libmongoc-1.0.so.0:mongoc_get_micro_version
 libmongoc-1.0.so.0:mongoc_get_minor_version
 libmongoc-1.0.so.0:mongoc_get_version
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_abort_upload
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_delete_by_id
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_destroy
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_download_to_stream
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_find
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_new
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_open_download_stream
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_open_upload_stream
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_open_upload_stream_with_id
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_stream_error
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_upload_from_stream
+libmongoc-1.0.so.0:mongoc_gridfs_bucket_upload_from_stream_with_id
 libmongoc-1.0.so.0:mongoc_gridfs_create_file
 libmongoc-1.0.so.0:mongoc_gridfs_create_file_from_stream
 libmongoc-1.0.so.0:mongoc_gridfs_destroy
@@ -995,6 +1031,7 @@ libmongoc-1.0.so.0:mongoc_server_description_host
 libmongoc-1.0.so.0:mongoc_server_description_id
 libmongoc-1.0.so.0:mongoc_server_description_init
 libmongoc-1.0.so.0:mongoc_server_description_ismaster
+libmongoc-1.0.so.0:mongoc_server_description_last_update_time
 libmongoc-1.0.so.0:mongoc_server_description_new_copy
 libmongoc-1.0.so.0:mongoc_server_description_reset
 libmongoc-1.0.so.0:mongoc_server_description_round_trip_time
@@ -1021,6 +1058,7 @@ libmongoc-1.0.so.0:mongoc_set_destroy
 libmongoc-1.0.so.0:mongoc_set_find_id
 libmongoc-1.0.so.0:mongoc_set_find_item
 libmongoc-1.0.so.0:mongoc_set_for_each
+libmongoc-1.0.so.0:mongoc_set_for_each_with_id
 libmongoc-1.0.so.0:mongoc_set_get
 libmongoc-1.0.so.0:mongoc_set_get_item
 libmongoc-1.0.so.0:mongoc_set_get_item_and_id
@@ -1063,6 +1101,7 @@ libmongoc-1.0.so.0:mongoc_stream_poll
 libmongoc-1.0.so.0:mongoc_stream_read
 libmongoc-1.0.so.0:mongoc_stream_readv
 libmongoc-1.0.so.0:mongoc_stream_setsockopt
+libmongoc-1.0.so.0:mongoc_stream_should_retry
 libmongoc-1.0.so.0:mongoc_stream_socket_get_socket
 libmongoc-1.0.so.0:mongoc_stream_socket_new
 libmongoc-1.0.so.0:mongoc_stream_timed_out
@@ -1108,6 +1147,7 @@ libmongoc-1.0.so.0:mongoc_topology_new
 libmongoc-1.0.so.0:mongoc_topology_reconcile
 libmongoc-1.0.so.0:mongoc_topology_scanner_add
 libmongoc-1.0.so.0:mongoc_topology_scanner_destroy
+libmongoc-1.0.so.0:mongoc_topology_scanner_disconnect
 libmongoc-1.0.so.0:mongoc_topology_scanner_get_error
 libmongoc-1.0.so.0:mongoc_topology_scanner_get_node
 libmongoc-1.0.so.0:mongoc_topology_scanner_has_node_for_host

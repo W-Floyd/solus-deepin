@@ -1,8 +1,8 @@
 name       : libmongoc
-version    : 1.13.1
-release    : 25
+version    : 1.14.0
+release    : 26
 source     :
-    - git|https://github.com/mongodb/mongo-c-driver.git : 1.13.1
+    - git|https://github.com/mongodb/mongo-c-driver.git : 1.14.0
 license    : Apache-2.0
 component  : programming.library
 summary    : A high-performance MongoDB driver for C

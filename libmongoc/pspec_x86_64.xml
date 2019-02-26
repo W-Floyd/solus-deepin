@@ -24,6 +24,10 @@
             <Path fileType="library">/usr/lib64/libbson-1.0.so.0.0.0</Path>
             <Path fileType="library">/usr/lib64/libmongoc-1.0.so.0</Path>
             <Path fileType="library">/usr/lib64/libmongoc-1.0.so.0.0.0</Path>
+            <Path fileType="data">/usr/share/mongo-c-driver/COPYING</Path>
+            <Path fileType="data">/usr/share/mongo-c-driver/NEWS</Path>
+            <Path fileType="data">/usr/share/mongo-c-driver/README.rst</Path>
+            <Path fileType="data">/usr/share/mongo-c-driver/THIRD_PARTY_NOTICES</Path>
             <Path fileType="data">/usr/share/mongo-c-driver/uninstall.sh</Path>
         </Files>
     </Package>
@@ -34,7 +38,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="25">libmongoc</Dependency>
+            <Dependency release="26">libmongoc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libbson-1.0/bson.h</Path>
@@ -54,6 +58,7 @@
             <Path fileType="header">/usr/include/libbson-1.0/bson/bson-md5.h</Path>
             <Path fileType="header">/usr/include/libbson-1.0/bson/bson-memory.h</Path>
             <Path fileType="header">/usr/include/libbson-1.0/bson/bson-oid.h</Path>
+            <Path fileType="header">/usr/include/libbson-1.0/bson/bson-prelude.h</Path>
             <Path fileType="header">/usr/include/libbson-1.0/bson/bson-reader.h</Path>
             <Path fileType="header">/usr/include/libbson-1.0/bson/bson-string.h</Path>
             <Path fileType="header">/usr/include/libbson-1.0/bson/bson-types.h</Path>
@@ -77,6 +82,7 @@
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-error.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-find-and-modify.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-flags.h</Path>
+            <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-bucket.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-file-list.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-file-page.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-file.h</Path>
@@ -90,6 +96,7 @@
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-macros.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-matcher.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-opcode.h</Path>
+            <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-prelude.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-rand.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-read-concern.h</Path>
             <Path fileType="header">/usr/include/libmongoc-1.0/mongoc/mongoc-read-prefs.h</Path>
@@ -130,9 +137,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="25">
-            <Date>2019-02-08</Date>
-            <Version>1.13.1</Version>
+        <Update release="26">
+            <Date>2019-02-23</Date>
+            <Version>1.14.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
