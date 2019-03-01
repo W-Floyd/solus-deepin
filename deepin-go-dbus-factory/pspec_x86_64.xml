@@ -31,6 +31,9 @@
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.pinyin/Pinyin.xml</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.pinyin/auto.go</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.pinyin/config.json</Path>
+            <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.soundthemeplayer/SoundThemePlayer.xml</Path>
+            <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.soundthemeplayer/auto.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.soundthemeplayer/config.json</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.xeventmonitor/XEventMonitor.xml</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.xeventmonitor/auto.go</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.api.xeventmonitor/config.json</Path>
@@ -92,6 +95,9 @@
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.dde.launcher/Launcher.xml</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.dde.launcher/auto.go</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.dde.launcher/config.json</Path>
+            <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.dde.osd/OSD.xml</Path>
+            <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.dde.osd/auto.go</Path>
+            <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.dde.osd/config.json</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.lastore/Job.xml</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.lastore/Lastore.xml</Path>
             <Path fileType="data">/usr/share/gocode/src/github.com/linuxdeepin/go-dbus-factory/com.deepin.lastore/auto.go</Path>
@@ -250,9 +256,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="21">
-            <Date>2019-01-15</Date>
-            <Version>0.2.0</Version>
+        <Update release="22">
+            <Date>2019-03-01</Date>
+            <Version>0.3.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>

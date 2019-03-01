@@ -1,8 +1,8 @@
 name       : deepin-go-dbus-factory
-version    : 0.2.0
-release    : 21
+version    : 0.3.0
+release    : 22
 source     :
-    - git|https://github.com/linuxdeepin/go-dbus-factory.git : 0.2.0
+    - git|https://github.com/linuxdeepin/go-dbus-factory.git : 0.3.0
 networking : yes
 license    : Undeclared
 component  : desktop.deepin.core
