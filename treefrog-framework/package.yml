@@ -1,6 +1,6 @@
 name       : treefrog-framework
 version    : 1.23.0
-release    : 22
+release    : 23
 source     :
     - git|https://github.com/treefrogframework/treefrog-framework.git : v1.23.0
 license    : BSD-3-Clause
