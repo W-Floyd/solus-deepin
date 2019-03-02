@@ -1,8 +1,8 @@
 name       : deepin-api
-version    : 3.16.0
-release    : 39
+version    : 3.17.1
+release    : 42
 source     :
-    - git|https://github.com/linuxdeepin/dde-api.git : 3.16.0
+    - git|https://github.com/linuxdeepin/dde-api.git : 3.17.1
 extract    : no
 networking : yes
 license    : GPL-3.0-or-later
@@ -24,7 +24,6 @@ builddeps  :
     - golang
     - pkgconfig(alsa)
     - pkgconfig(gdk-3.0)
-    - pkgconfig(libcanberra)
     - pkgconfig(libpulse-simple)
     - pkgconfig(librsvg-2.0)
     - pkgconfig(poppler-glib)
