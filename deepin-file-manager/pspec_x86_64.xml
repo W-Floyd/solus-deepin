@@ -119,6 +119,7 @@
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_eo.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_fi.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_fr.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_gl_ES.qm</Path>
             <Path fileType="data">/usr/share/dde-file-manager/translations/dde-file-manager_hr.qm</Path>
@@ -160,6 +161,7 @@
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_el.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_es.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_es_419.qm</Path>
+            <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_fi.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_fr.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_gl_ES.qm</Path>
             <Path fileType="data">/usr/share/usb-device-formatter/translations/usb-device-formatter_hr.qm</Path>
@@ -191,7 +193,7 @@
         <Summary xml:lang="en">Deepin Desktop</Summary>
         <Description xml:lang="en">Deepin Desktop</Description>
         <RuntimeDependencies>
-            <Dependency release="44">deepin-file-manager</Dependency>
+            <Dependency release="46">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/dde-desktop</Path>
@@ -209,6 +211,7 @@
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_el.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_es.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_fi.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_fr.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_gl_ES.qm</Path>
             <Path fileType="data">/usr/share/dde-desktop/translations/dde-desktop_hr.qm</Path>
@@ -241,7 +244,7 @@
         <Description xml:lang="en">Deepin File Manager is a file management tool independently developed by Deepin Technology, featured with searching, copying, trash, compression/decompression, file property and other file management functions.</Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="44">deepin-file-manager</Dependency>
+            <Dependency release="46">deepin-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-file-manager/dabstractfilecontroller.h</Path>
@@ -323,9 +326,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="44">
-            <Date>2019-02-13</Date>
-            <Version>4.7.6</Version>
+        <Update release="46">
+            <Date>2019-03-06</Date>
+            <Version>4.7.7.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
