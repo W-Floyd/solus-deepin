@@ -22,11 +22,15 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <Files>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbatom.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbbackingstore.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbclipboard.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbconnection.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbconnection_basic.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbcursor.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbdrag.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbeventdispatcher.h</Path>
+            <Path fileType="header">/usr/include/qtxcb-private/qxcbeventqueue.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbexport.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbimage.h</Path>
             <Path fileType="header">/usr/include/qtxcb-private/qxcbintegration.h</Path>
@@ -46,9 +50,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2019-01-15</Date>
-            <Version>5.11.1</Version>
+        <Update release="15">
+            <Date>2019-03-06</Date>
+            <Version>5.12.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
