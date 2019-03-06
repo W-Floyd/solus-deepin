@@ -1,8 +1,8 @@
 name       : deepin-session-ui
-version    : 4.8.11
-release    : 44
+version    : 4.8.12
+release    : 45
 source     :
-    - git|https://github.com/linuxdeepin/dde-session-ui.git : 4.8.11
+    - git|https://github.com/linuxdeepin/dde-session-ui.git : 4.8.12
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin desktop-environment - Session UI module
