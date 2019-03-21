@@ -1,8 +1,8 @@
 name       : proxychains-ng
-version    : 4.13
-release    : 14
+version    : 4.14
+release    : 15
 source     :
-    - git|https://github.com/rofl0r/proxychains-ng.git : v4.13
+    - git|https://github.com/rofl0r/proxychains-ng.git : v4.14
 license    : GPL-2.0-only
 component  : network.util
 summary    : A preloader which hooks calls to sockets in dynamically linked programs
