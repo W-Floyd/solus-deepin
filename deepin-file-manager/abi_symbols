@@ -1476,6 +1476,7 @@ libdde-file-manager.so.1:_ZN16RecentController11qt_metacallEN11QMetaObject4CallE
 libdde-file-manager.so.1:_ZN16RecentController11qt_metacastEPKc
 libdde-file-manager.so.1:_ZN16RecentController11realUrlListERK5QListI4DUrlE
 libdde-file-manager.so.1:_ZN16RecentController17handleFileChangedEv
+libdde-file-manager.so.1:_ZN16RecentController22asyncHandleFileChangedEv
 libdde-file-manager.so.1:_ZN16RecentControllerC1EP7QObject
 libdde-file-manager.so.1:_ZN16RecentControllerC2EP7QObject
 libdde-file-manager.so.1:_ZN16SearchController11qt_metacallEN11QMetaObject4CallEiPPv
