@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Something like everything, but nothing is really like anything...</Summary>
         <Description xml:lang="en">Something like everything, but nothing is really like anything...
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-anything</Name>
@@ -18,10 +18,17 @@
         <Description xml:lang="en">Something like everything, but nothing is really like anything...
 </Description>
         <PartOf>desktop.deepin</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="14">deepin-anything-devel</Dependency>
+        </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/lib/systemd/system/deepin-anything-server.service</Path>
-            <Path fileType="executable">/usr/bin/deepin-anything-server</Path>
+            <Path fileType="config">/etc/dbus-1/system.d/com.deepin.anything.conf</Path>
+            <Path fileType="data">/lib/systemd/system/deepin-anything-monitor.service</Path>
+            <Path fileType="data">/lib/systemd/system/deepin-anything-tool.service</Path>
+            <Path fileType="executable">/usr/bin/deepin-anything-monitor</Path>
+            <Path fileType="executable">/usr/bin/deepin-anything-tool</Path>
             <Path fileType="library">/usr/lib/deepin-anything-server-lib/plugins/handlers/README.txt</Path>
+            <Path fileType="library">/usr/lib/deepin-anything-server-lib/plugins/handlers/libupdate-lft.so</Path>
             <Path fileType="library">/usr/lib/libanything.so.1</Path>
             <Path fileType="library">/usr/lib/libanything.so.1.0</Path>
             <Path fileType="library">/usr/lib/libanything.so.1.0.0</Path>
@@ -29,7 +36,9 @@
             <Path fileType="library">/usr/lib/libdeepin-anything-server-lib.so.0.0</Path>
             <Path fileType="library">/usr/lib/libdeepin-anything-server-lib.so.0.0.1</Path>
             <Path fileType="library">/usr/lib/modules-load.d/anything.conf</Path>
-            <Path fileType="library">/usr/lib/sysusers.d/deepin-anything-server.conf</Path>
+            <Path fileType="library">/usr/lib/sysusers.d/deepin-anything-monitor.conf</Path>
+            <Path fileType="data">/usr/share/dbus-1/interfaces/com.deepin.anything.xml</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services/com.deepin.anything.service</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/Makefile</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/arg_extractor.c</Path>
             <Path fileType="data">/usr/src/deepin-anything-0.0/arg_extractor.h</Path>
@@ -49,13 +58,14 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="13">deepin-anything</Dependency>
+            <Dependency release="14">deepin-anything</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/deepin-anything-server/dasdefine.h</Path>
             <Path fileType="header">/usr/include/deepin-anything-server/dasfactory.h</Path>
             <Path fileType="header">/usr/include/deepin-anything-server/dasinterface.h</Path>
             <Path fileType="header">/usr/include/deepin-anything-server/dasplugin.h</Path>
+            <Path fileType="header">/usr/include/deepin-anything-server/lftmanager.h</Path>
             <Path fileType="header">/usr/include/deepin-anything/fs_buf.h</Path>
             <Path fileType="header">/usr/include/deepin-anything/index/composite_str.h</Path>
             <Path fileType="header">/usr/include/deepin-anything/index/index.h</Path>
@@ -73,9 +83,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="13">
-            <Date>2019-01-15</Date>
-            <Version>0.0.4</Version>
+        <Update release="14">
+            <Date>2019-04-01</Date>
+            <Version>0.0.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
