@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Deepin Dock is the dock of Deepin Desktop Environment.</Summary>
         <Description xml:lang="en">Deepin Dock is the dock of Deepin Desktop Environment.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-dock</Name>
@@ -24,6 +24,7 @@
             <Path fileType="library">/usr/lib/dde-dock/plugins/libdatetime.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libkeyboard-layout.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libonboard.so</Path>
+            <Path fileType="library">/usr/lib/dde-dock/plugins/liboverlay-warning.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libshutdown.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libtrash.so</Path>
             <Path fileType="library">/usr/lib/dde-dock/plugins/libtray.so</Path>
@@ -95,6 +96,7 @@
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_zh_CN.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_zh_HK.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_zh_TW.qm</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/com.deepin.dde.dock.overlay.policy</Path>
         </Files>
     </Package>
     <Package>
@@ -104,7 +106,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="44">deepin-dock</Dependency>
+            <Dependency release="45">deepin-dock</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-dock/constants.h</Path>
@@ -115,9 +117,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="44">
-            <Date>2019-03-20</Date>
-            <Version>4.9.1.1</Version>
+        <Update release="45">
+            <Date>2019-04-01</Date>
+            <Version>4.9.2.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
