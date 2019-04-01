@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Qt platform theme integration plugins for DDE</Summary>
         <Description xml:lang="en">The Qt platform theme integration plugins for Deepin Desktop Environment. It includes multiple Qt5 plugins to make make DDE more Qt5 Apps friendly.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-qt5integration</Name>
@@ -26,9 +26,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="33">
-            <Date>2019-01-16</Date>
-            <Version>0.3.7.2</Version>
+        <Update release="34">
+            <Date>2019-04-01</Date>
+            <Version>0.3.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
