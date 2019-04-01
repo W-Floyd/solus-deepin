@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Music player for the Deepin DE</Summary>
         <Description xml:lang="en">Deepin Music is an application developed by Deepin Technology Team which focused on local music playing. It brings all brand new UI design, extreme playing experience, and it has local music scanning and lyric sync functions, etc.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-music</Name>
@@ -187,7 +187,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="28">deepin-music</Dependency>
+            <Dependency release="29">deepin-music</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/DBusExtended/DBusExtended</Path>
@@ -212,9 +212,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="28">
-            <Date>2019-03-01</Date>
-            <Version>3.1.15</Version>
+        <Update release="29">
+            <Date>2019-04-01</Date>
+            <Version>3.1.16</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
