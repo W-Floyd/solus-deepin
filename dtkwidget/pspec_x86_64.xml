@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Base development tool of all C++/Qt Developer work on Deepin.</Summary>
         <Description xml:lang="en">Deepin Tool Kit (Dtk) is the base development tool of all C++/Qt Developer work on Deepin.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>dtkwidget</Name>
@@ -71,7 +71,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="39">dtkwidget</Dependency>
+            <Dependency release="40">dtkwidget</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdtk-2.0.9/DCore</Path>
@@ -221,9 +221,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="39">
-            <Date>2019-03-01</Date>
-            <Version>2.0.9.17</Version>
+        <Update release="40">
+            <Date>2019-04-01</Date>
+            <Version>2.0.10</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
