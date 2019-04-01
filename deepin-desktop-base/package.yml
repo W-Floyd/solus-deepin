@@ -1,8 +1,8 @@
 name       : deepin-desktop-base
-version    : 2019.03.06
-release    : 25
+version    : 2019.03.29
+release    : 26
 source     :
-    - git|https://github.com/linuxdeepin/deepin-desktop-base.git : 2019.03.06
+    - git|https://github.com/linuxdeepin/deepin-desktop-base.git : 2019.03.29
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Base component for Deepin.
