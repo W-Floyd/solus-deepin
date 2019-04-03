@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Deepin Window Manager</Summary>
         <Description xml:lang="en">Default window manager for Deepin, started as a fork of Elementary Gala, based on libmutter. Mostly rewritten to work with Deepin Desktop Environment, such as redesign the UI for window switching, enhance user experience for the workspace preview mode, support multiple backgrounds, and many of other changes.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-wm</Name>
@@ -137,7 +137,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="27">deepin-wm</Dependency>
+            <Dependency release="28">deepin-wm</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/deepin-wm/deepin-wm.h</Path>
@@ -148,9 +148,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="27">
-            <Date>2019-03-04</Date>
-            <Version>1.9.37</Version>
+        <Update release="28">
+            <Date>2019-04-03</Date>
+            <Version>1.9.38</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
