@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Advanced tool to make and edit screenshots</Summary>
         <Description xml:lang="en">Deepin screenshot is an advanced tool to make screenshots on Linux desktop environment. It has a user-friendly UI which eases cropping and saving of screenshot.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-screenshot</Name>
@@ -27,7 +27,7 @@
     </Package>
     <History>
         <Update release="27">
-            <Date>2019-03-01</Date>
+            <Date>2019-04-10</Date>
             <Version>4.1.8</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
