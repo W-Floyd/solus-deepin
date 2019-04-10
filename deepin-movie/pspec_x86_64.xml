@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Deepin Movie Player.</Summary>
         <Description xml:lang="en">Deepin Movie provides an intuitive easy to use operation interface and rich complete shortcuts. You can complete all play operations by keyboard, which will make you thoroughly get rid of the constraint of mouse click. Video files in various formats can be played through Deepin Movie, and you can use the streaming function to easily enjoy online video resources.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-movie</Name>
@@ -109,7 +109,7 @@
     </Package>
     <History>
         <Update release="24">
-            <Date>2019-01-15</Date>
+            <Date>2019-04-10</Date>
             <Version>3.2.17</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
