@@ -12,7 +12,7 @@
         <Summary xml:lang="en">LightDM Qt client library.</Summary>
         <Description xml:lang="en">LightDM Qt client library.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>liblightdm-qt5</Name>
@@ -53,7 +53,7 @@
     </Package>
     <History>
         <Update release="28">
-            <Date>2019-01-15</Date>
+            <Date>2019-04-10</Date>
             <Version>1.28.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
