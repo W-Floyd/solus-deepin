@@ -50,6 +50,7 @@
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_eo.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_es.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_es_419.qm</Path>
+            <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_et.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_fa.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_fi.qm</Path>
             <Path fileType="data">/usr/share/dde-dock/translations/dde-dock_fi_FI.qm</Path>
@@ -106,7 +107,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="45">deepin-dock</Dependency>
+            <Dependency release="46">deepin-dock</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/dde-dock/constants.h</Path>
@@ -117,9 +118,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="45">
-            <Date>2019-04-01</Date>
-            <Version>4.9.2.1</Version>
+        <Update release="46">
+            <Date>2019-04-10</Date>
+            <Version>4.9.6</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
