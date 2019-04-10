@@ -10,7 +10,7 @@
         <Summary xml:lang="en">A more user-friendly system monitor.</Summary>
         <Description xml:lang="en">Deepin system monitor: a more user-friendly system monitor.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>deepin-system-monitor</Name>
@@ -42,6 +42,7 @@
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_it.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_ja.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_lt.qm</Path>
+            <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_mn.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_ms.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_nb.qm</Path>
             <Path fileType="data">/usr/share/deepin-system-monitor/translations/deepin-system-monitor_ne.qm</Path>
@@ -62,9 +63,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="27">
-            <Date>2019-01-27</Date>
-            <Version>1.4.8.1</Version>
+        <Update release="28">
+            <Date>2019-04-10</Date>
+            <Version>1.5.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
