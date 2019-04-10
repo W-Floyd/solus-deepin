@@ -13,7 +13,7 @@
         <Summary xml:lang="en">Private headers for Qt5 Xcb</Summary>
         <Description xml:lang="en">Private headers for Qt5 Xcb
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>qt5-xcb-private-headers-devel</Name>
@@ -51,7 +51,7 @@
     </Package>
     <History>
         <Update release="15">
-            <Date>2019-03-06</Date>
+            <Date>2019-04-10</Date>
             <Version>5.12.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
