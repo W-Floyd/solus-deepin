@@ -10,7 +10,7 @@
         <Summary xml:lang="en">A high-performance MongoDB driver for C</Summary>
         <Description xml:lang="en">mongo-c-driver is a client library written in C for MongoDB.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>libmongoc</Name>
@@ -138,7 +138,7 @@
     </Package>
     <History>
         <Update release="26">
-            <Date>2019-02-23</Date>
+            <Date>2019-04-10</Date>
             <Version>1.14.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
