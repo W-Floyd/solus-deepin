@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Deepin Tool Kit Wm.</Summary>
         <Description xml:lang="en">Deepin Tool Kit Wm.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>dtkwm</Name>
@@ -21,7 +21,7 @@
         <Files>
             <Path fileType="library">/usr/lib64/libdtkwm.so.2</Path>
             <Path fileType="library">/usr/lib64/libdtkwm.so.2.0</Path>
-            <Path fileType="library">/usr/lib64/libdtkwm.so.2.0.9</Path>
+            <Path fileType="library">/usr/lib64/libdtkwm.so.2.0.10</Path>
             <Path fileType="library">/usr/lib64/qt5/mkspecs/modules/qt_lib_dtkwm.pri</Path>
         </Files>
     </Package>
@@ -35,10 +35,10 @@
             <Dependency release="20">dtkwm</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DCore</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWm/dscreenwindowsutil.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWm/dtkwm_global.h</Path>
-            <Path fileType="header">/usr/include/libdtk-2.0.9/DWm/dwindowmanager.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.10/DCore</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.10/DWm/dscreenwindowsutil.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.10/DWm/dtkwm_global.h</Path>
+            <Path fileType="header">/usr/include/libdtk-2.0.10/DWm/dwindowmanager.h</Path>
             <Path fileType="library">/usr/lib64/cmake/DtkWm/DtkWmConfig.cmake</Path>
             <Path fileType="library">/usr/lib64/libdtkwm.so</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/dtkwm.pc</Path>
@@ -46,7 +46,7 @@
     </Package>
     <History>
         <Update release="20">
-            <Date>2019-01-15</Date>
+            <Date>2019-04-10</Date>
             <Version>2.0.9</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
