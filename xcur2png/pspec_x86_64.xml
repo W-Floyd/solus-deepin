@@ -10,7 +10,7 @@
         <Summary xml:lang="en">Converter from X cursor to PNG image.</Summary>
         <Description xml:lang="en">xcur2png is a program which let you take PNG image from X cursor, and generate config-file which is reusable by xcursorgen.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>xcur2png</Name>
@@ -25,7 +25,7 @@
     </Package>
     <History>
         <Update release="14">
-            <Date>2019-01-16</Date>
+            <Date>2019-04-10</Date>
             <Version>0.7.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
