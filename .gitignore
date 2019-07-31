@@ -6,4 +6,4 @@
 /.bin/
 /.tmp/
 /.rundeps/
-.rundeps_hash/
+/.packagecache
