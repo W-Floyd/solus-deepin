@@ -7,12 +7,10 @@ license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    :
     - Deepin File Manager is a file management tool developed for Deepin
-    - ^deepin-desktop : Deepin Desktop
 description:
     - Deepin File Manager is a file management tool independently developed by Deepin
       Technology, featured with searching, copying, trash, compression/decompression,
       file property and other file management functions.
-    - ^deepin-desktop : Deepin Desktop
 builddeps  :
     - deepin-anything-devel
     - deepin-dock-devel
@@ -39,18 +37,6 @@ rundeps    :
     - avfs
     - deepin-qt5integration
     - treefrog-framework
-    - ^deepin-desktop :
-        - deepin-control-center
-        - deepin-dock
-        - deepin-launcher
-        - deepin-session-ui
-        - deepin-terminal
-        - deepin-wallpapers
-patterns   :
-    - ^deepin-desktop :
-        - /usr/bin/dde-desktop
-        - /usr/share/dbus-1/services/com.deepin.dde.desktop.service
-        - /usr/share/dde-desktop/*
 setup      : |
     %qmake PREFIX=%PREFIX% LIB_INSTALL_DIR=%libdir%
 build      : |
