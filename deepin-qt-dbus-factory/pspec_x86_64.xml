@@ -31,11 +31,12 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="27">deepin-qt-dbus-factory</Dependency>
+            <Dependency release="28">deepin-qt-dbus-factory</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/DBusExtended</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/DBusExtendedAbstractInterface</Path>
+            <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_anything.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_api_xeventmonitor.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_appstore_metadata.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_chromeextension_tabslimit.h</Path>
@@ -79,6 +80,7 @@
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_dde_daemon_dock_entry.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_dde_launcher.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_dde_notification.h</Path>
+            <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_deepinid.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_lastore_job.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_lastore_jobmanager.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_lastore_smartmirror.h</Path>
@@ -86,6 +88,7 @@
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_lastoresessionhelper.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_sessionmanager.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_startmanager.h</Path>
+            <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_sync_daemon.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_system_systempower.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_wm.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/com_deepin_wmswitcher.h</Path>
@@ -117,6 +120,7 @@
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/types/dbustooltip.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/types/dockrect.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/types/inputdevicelist.h</Path>
+            <Path fileType="header">/usr/include/libdframeworkdbus-2.0/types/intstring.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/types/keyboardlayoutlist.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/types/linkinfolist.h</Path>
             <Path fileType="header">/usr/include/libdframeworkdbus-2.0/types/localelist.h</Path>
@@ -144,9 +148,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="27">
-            <Date>2019-04-01</Date>
-            <Version>1.1.1</Version>
+        <Update release="28">
+            <Date>2019-08-01</Date>
+            <Version>5.0.0</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
