@@ -1,8 +1,8 @@
 name       : dtkcore
-version    : 2.0.10
-release    : 30
+version    : 2.1.1
+release    : 31
 source     :
-    - git|https://github.com/linuxdeepin/dtkcore.git : 2.0.10
+    - git|https://github.com/linuxdeepin/dtkcore.git : 2.1.1
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin Tool Kit (Dtk) is the base devlopment tool of all C++/Qt Developer
