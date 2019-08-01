@@ -1,8 +1,8 @@
 name       : deepin-network-utils
-version    : 0.1.3
-release    : 14
+version    : 5.0.1
+release    : 15
 source     :
-    - git|https://github.com/linuxdeepin/dde-network-utils.git : 0.1.3
+    - git|https://github.com/linuxdeepin/dde-network-utils.git : 5.0.1
 license    : GPL-3.0-or-later
 component  : desktop.deepin.core
 summary    : Deepin network utilities

@@ -70,6 +70,7 @@
             <Path fileType="data">/usr/share/dde-network-utils/translations/dde-network-utils_sl.qm</Path>
             <Path fileType="data">/usr/share/dde-network-utils/translations/dde-network-utils_sr.qm</Path>
             <Path fileType="data">/usr/share/dde-network-utils/translations/dde-network-utils_sv.qm</Path>
+            <Path fileType="data">/usr/share/dde-network-utils/translations/dde-network-utils_sw.qm</Path>
             <Path fileType="data">/usr/share/dde-network-utils/translations/dde-network-utils_ta.qm</Path>
             <Path fileType="data">/usr/share/dde-network-utils/translations/dde-network-utils_tr.qm</Path>
             <Path fileType="data">/usr/share/dde-network-utils/translations/dde-network-utils_ug.qm</Path>
@@ -87,7 +88,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="14">deepin-network-utils</Dependency>
+            <Dependency release="15">deepin-network-utils</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/libddenetworkutils/NetworkDevice</Path>
@@ -106,9 +107,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="14">
-            <Date>2019-04-10</Date>
-            <Version>0.1.3</Version>
+        <Update release="15">
+            <Date>2019-08-01</Date>
+            <Version>5.0.1</Version>
             <Comment>Packaging update</Comment>
             <Name>William Floyd</Name>
             <Email>william.png2000@gmail.com</Email>
