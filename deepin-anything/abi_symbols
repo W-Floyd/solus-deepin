@@ -36,6 +36,7 @@ libdeepin-anything-server-lib.so.0:_ZN10LFTManager11qt_metacastEPKc
 libdeepin-anything-server-lib.so.0:_ZN10LFTManager11setLogLevelEi
 libdeepin-anything-server-lib.so.0:_ZN10LFTManager12onMountAddedERK7QStringRK10QByteArray
 libdeepin-anything-server-lib.so.0:_ZN10LFTManager14_cleanAllIndexEv
+libdeepin-anything-server-lib.so.0:_ZN10LFTManager14_indexAllDelayEi
 libdeepin-anything-server-lib.so.0:_ZN10LFTManager14onMountRemovedERK7QStringRK10QByteArray
 libdeepin-anything-server-lib.so.0:_ZN10LFTManager15addPathFinishedERK7QStringb
 libdeepin-anything-server-lib.so.0:_ZN10LFTManager15logCategoryListEv
