@@ -1,5 +1,14 @@
 ### Updates
 
+*2020-04-19.1* - It's been a while.
+Truth be told, I haven't even been using Linux for some time - school is just easier to get done on Windows, whether I like it or not.
+Plus, my games run better there, so...
+Anyway, I still miss using Linux, so I've installed Solus again on my previous laptop, I want to get back into this.
+First though, I need to rewrite the tooling for this repo.
+I've tried before, but I think I need to do it from scratch, and not get too ambitious.
+
+***
+
 *2018-12-18.1* - Break has been good, on top of updates right now.
 Finally got some housekeeping done and whipped package licenses into shape again, properly.
 Also added some stuff so builds by default don't rebuilt current packages.
